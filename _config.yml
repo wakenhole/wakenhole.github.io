@@ -16,17 +16,17 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Wakenhole Blog"
+title                    : "개발하는 설계자 Blog"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "wh"
+subtitle                 : "beta"
+name                     : "wakenhole"
 description              : "An amazing website."
 url                      : "https://wakenhole.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "wakenhole/wakenhole.github.io"\"
+repository               : "wakenhole/wakenhole.github.io"
 teaser                   : "/assets/images/teaser.jpg"
 logo                     : "/assets/images/logo.jpg"
-masthead_title           : "코스모스"
+masthead_title           : "Architect & Engineer"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -104,18 +104,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Wakenhole"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  location         : "Korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
+      url: "mailto:okhwan.lee@gmail.com"
+    - label: "Portfolio"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://sites.google.com/site/okhwanlee/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
