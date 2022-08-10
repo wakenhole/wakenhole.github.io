@@ -1,5 +1,16 @@
 # main links
 main:
+main:
+  - title: "Categories"
+    url: /categories-grid/
+  - title: "Tags"
+    url: /tags-grid/
+  - title: "Archives"
+    url: /year-archive-grid/
+  - title: "Map"
+    url: /sitemap/
+  - title: "About"
+    url: /about/
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
