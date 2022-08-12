@@ -6,16 +6,16 @@ var store = [{
         "teaser": "/assets/images/teaser.jpg"
       },{
         "title": "건축 가능한 토지 지목 종류 이해하기",
-        "excerpt":"Reference 토지 지목에 따른 활용 방법 지목의 종류 지목은 토지의 주된 사용 목적에 따라서 토지의 종류를 구분하는 명칭입니다. 총 28개의 많은 종류가 있지만 알아야 하는 건축 지목은 전, 답, 임야, 대 크게 4가지 지목종류로 나눌 수 있습니다. 전: 밭으로 식물을 재배를 위한 토지 답: 논으로 물을 상시 이용이 필요한 토지...","categories": [],
-        "tags": ["부동산","토지"],
-        "url": "/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/",
-        "teaser": "/assets/images/teaser.jpg"
+        "excerpt":"Reference 토지 지목에 따른 활용 방법 지목의 종류 지목은 토지의 주된 사용 목적에 따라서 토지의 종류를 구분하는 명칭이다. 총 28개의 많은 종류가 있지만 알아야 하는 건축 지목은 전, 답, 임야, 대 크게 4가지 종류이다. 전: 밭으로 식물을 재배를 위한 토지 답: 논으로 물을 상시 이용이 필요한 토지 임야: 산림, 자갈...","categories": ["부동산"],
+        "tags": ["지목","토지"],
+        "url": "/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/",
+        "teaser": "https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/3xR/image/kAumR8L62A5Va7-63budXTKMkpc.JPG"
       },{
         "title": "용도 지역 이해하기",
-        "excerpt":"1. 용도 지역 용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다. 2. 투자 투지를 위해 적합한 지역은 아래와 같이 분류 할수 있다. 단기 투자 도시지역 / 주거지역 도시지역 / 상업지역 도시지역 / 공업지역 장기 투자...","categories": [],
-        "tags": ["부동산","토지","건물","상가"],
-        "url": "/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/",
-        "teaser": "/assets/images/teaser.jpg"
+        "excerpt":"1. 용도 지역 용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다. 2. 투자 투지를 위해 적합한 지역은 아래와 같이 분류 할수 있다. 단기 투자 도시지역 / 주거지역 도시지역 / 상업지역 도시지역 / 공업지역 장기 투자...","categories": ["부동산"],
+        "tags": ["용도지역","자연녹지지역","계획관리지역","건폐율","용적율"],
+        "url": "/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/",
+        "teaser": "https://t1.daumcdn.net/cfile/tistory/990D9B415BF3C6BD07"
       },{
     "title": "Page Not Found",
     "excerpt":"Sorry, but the page you were trying to view does not exist.  ","url": "http://localhost:4000/404.html"

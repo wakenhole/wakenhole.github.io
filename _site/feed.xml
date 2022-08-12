@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-12T16:50:05+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">DevTM</title><subtitle>An dev website.</subtitle><author><name>Wakenhole</name></author><entry><title type="html">용도 지역 이해하기</title><link href="http://localhost:4000/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/" rel="alternate" type="text/html" title="용도 지역 이해하기" /><published>2022-08-12T00:00:00+09:00</published><updated>2022-08-12T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9A%A9%EB%8F%84%20%EC%A7%80%EC%97%AD</id><content type="html" xml:base="http://localhost:4000/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/">&lt;h2 id=&quot;1-용도-지역&quot;&gt;1. 용도 지역&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-12T17:48:52+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">DevTM</title><subtitle>An dev website.</subtitle><author><name>Wakenhole</name></author><entry><title type="html">용도 지역 이해하기</title><link href="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/" rel="alternate" type="text/html" title="용도 지역 이해하기" /><published>2022-08-12T00:00:00+09:00</published><updated>2022-08-12T00:00:00+09:00</updated><id>http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84%20%EC%A7%80%EC%97%AD</id><content type="html" xml:base="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/">&lt;h2 id=&quot;1-용도-지역&quot;&gt;1. 용도 지역&lt;/h2&gt;
 &lt;p&gt;용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://t1.daumcdn.net/cfile/tistory/27388F4B56C985A736&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -24,9 +24,7 @@
 &lt;p&gt;자연녹지지역은 향후 주거, 상업, 공업지역으로 편입 가능성이 있고, 계획관리지역은 도시지역으로 편입될 가능성이 있다. 특히 자연녹지지역의 경우 제한적으로 개발이 가능하다 (건폐율 20% 용적률 100%).
 하지만 경사도 임목도 등에 따라서 개발행위를 금하고 있기도 하기 때문에 확인이 필요하다.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;용도 지역은 &lt;a href=&quot;https://www.eum.go.kr/&quot;&gt;토지e음&lt;/a&gt;에서 &lt;strong&gt;토지 이용 계획 열람&lt;/strong&gt;을 통해서 조회 가능하다.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p class=&quot;notice--info&quot;&gt;용도 지역은 &lt;a href=&quot;https://www.eum.go.kr/&quot;&gt;토지e음&lt;/a&gt;에서 &lt;strong&gt;토지 이용 계획 열람&lt;/strong&gt;을 통해서 조회 가능하다.&lt;/p&gt;
 
 &lt;h2 id=&quot;3-예제&quot;&gt;3. 예제&lt;/h2&gt;
 
@@ -53,15 +51,15 @@
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;4-건폐율-용적률&quot;&gt;4. 건폐율 용적률&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.eum.go.kr/web/FileDownload.do?file=/20200828/regguide/rgregister/RgFacilityFormPopup.jsp/008_02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="부동산" /><category term="토지" /><category term="건물" /><category term="상가" /><summary type="html">1. 용도 지역 용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다.</summary></entry><entry><title type="html">건축 가능한 토지 지목 종류 이해하기</title><link href="http://localhost:4000/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="건축 가능한 토지 지목 종류 이해하기" /><published>2022-08-11T00:00:00+09:00</published><updated>2022-08-11T00:00:00+09:00</updated><id>http://localhost:4000/%EA%B1%B4%EC%B6%95%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%ED%86%A0%EC%A7%80%20%EC%A7%80%EB%AA%A9%20%EC%A2%85%EB%A5%98%20%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.eum.go.kr/web/FileDownload.do?file=/20200828/regguide/rgregister/RgFacilityFormPopup.jsp/008_02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="부동산" /><category term="용도지역" /><category term="자연녹지지역" /><category term="계획관리지역" /><category term="건폐율" /><category term="용적율" /><summary type="html">1. 용도 지역 용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다.</summary></entry><entry><title type="html">건축 가능한 토지 지목 종류 이해하기</title><link href="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="건축 가능한 토지 지목 종류 이해하기" /><published>2022-08-11T00:00:00+09:00</published><updated>2022-08-11T00:00:00+09:00</updated><id>http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B1%B4%EC%B6%95%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%ED%86%A0%EC%A7%80%20%EC%A7%80%EB%AA%A9%20%EC%A2%85%EB%A5%98%20%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=airvil&amp;amp;logNo=221931722416&amp;amp;categoryNo=12&amp;amp;parentCategoryNo=0&amp;amp;viewDate=&amp;amp;currentPage=1&amp;amp;postListTopCurrentPage=&amp;amp;from=thumbnailList&amp;amp;userTopListOpen=true&amp;amp;userTopListCount=30&amp;amp;userTopListManageOpen=false&amp;amp;userTopListCurrentPage=1&quot;&gt;토지 지목에 따른 활용 방법&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;지목의-종류&quot;&gt;지목의 종류&lt;/h2&gt;
 
-&lt;p&gt;지목은 토지의 주된 사용 목적에 따라서 토지의 종류를 구분하는 명칭입니다.
-총 28개의 많은 종류가 있지만 알아야 하는 건축 지목은 전, 답, 임야, 대 크게 4가지 지목종류로 나눌 수 있습니다.&lt;/p&gt;
+&lt;p&gt;지목은 토지의 주된 사용 목적에 따라서 토지의 종류를 구분하는 명칭이다.
+총 28개의 많은 종류가 있지만 알아야 하는 건축 지목은 전, 답, 임야, 대 크게 4가지 종류이다.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;전: 밭으로 식물을 재배를 위한 토지&lt;/li&gt;
@@ -70,9 +68,7 @@
   &lt;li&gt;대: 건축물을 지을 수 있는 토지 (대지 증명원으로 확인 가능)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;나대지: 지목의 종류는 아니고, 대지 중 건축물이 없는 경우를 말함. 지목 변경비용이 들지 않기 때문에, 가장 선호되는 타입&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Wakenhole</name></author><category term="부동산" /><category term="토지" /><summary type="html">Reference 토지 지목에 따른 활용 방법</summary></entry><entry><title type="html">Markup: HTML Tags and Formatting</title><link href="http://localhost:4000/markup/markup-html-tags-and-formatting/" rel="alternate" type="text/html" title="Markup: HTML Tags and Formatting" /><published>2013-01-11T00:00:00+09:00</published><updated>2013-01-11T00:00:00+09:00</updated><id>http://localhost:4000/markup/markup-html-tags-and-formatting</id><content type="html" xml:base="http://localhost:4000/markup/markup-html-tags-and-formatting/">&lt;p&gt;A variety of common markup showing how the theme styles them.&lt;/p&gt;
+&lt;p class=&quot;notice--info&quot;&gt;나대지: 지목의 종류는 아니고, 대지 중 건축물이 없는 경우를 말함. 지목 변경비용이 들지 않기 때문에, 가장 선호되는 타입&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="부동산" /><category term="지목" /><category term="토지" /><summary type="html">Reference 토지 지목에 따른 활용 방법</summary></entry><entry><title type="html">Markup: HTML Tags and Formatting</title><link href="http://localhost:4000/markup/markup-html-tags-and-formatting/" rel="alternate" type="text/html" title="Markup: HTML Tags and Formatting" /><published>2013-01-11T00:00:00+09:00</published><updated>2013-01-11T00:00:00+09:00</updated><id>http://localhost:4000/markup/markup-html-tags-and-formatting</id><content type="html" xml:base="http://localhost:4000/markup/markup-html-tags-and-formatting/">&lt;p&gt;A variety of common markup showing how the theme styles them.&lt;/p&gt;
 
 &lt;h2 id=&quot;header-two&quot;&gt;Header two&lt;/h2&gt;
 
