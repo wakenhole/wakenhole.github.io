@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-12T16:36:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">DevTM</title><subtitle>An dev website.</subtitle><author><name>Wakenhole</name></author><entry><title type="html">용도 지역 이해하기</title><link href="http://localhost:4000/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/" rel="alternate" type="text/html" title="용도 지역 이해하기" /><published>2022-08-12T00:00:00+09:00</published><updated>2022-08-12T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9A%A9%EB%8F%84%20%EC%A7%80%EC%97%AD</id><content type="html" xml:base="http://localhost:4000/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/">&lt;h1 id=&quot;용도-지역&quot;&gt;용도 지역&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-12T16:50:05+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">DevTM</title><subtitle>An dev website.</subtitle><author><name>Wakenhole</name></author><entry><title type="html">용도 지역 이해하기</title><link href="http://localhost:4000/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/" rel="alternate" type="text/html" title="용도 지역 이해하기" /><published>2022-08-12T00:00:00+09:00</published><updated>2022-08-12T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9A%A9%EB%8F%84%20%EC%A7%80%EC%97%AD</id><content type="html" xml:base="http://localhost:4000/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/">&lt;h2 id=&quot;1-용도-지역&quot;&gt;1. 용도 지역&lt;/h2&gt;
 &lt;p&gt;용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://t1.daumcdn.net/cfile/tistory/27388F4B56C985A736&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://t1.daumcdn.net/cfile/tistory/232A7A455358AC6528&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;투자&quot;&gt;투자&lt;/h1&gt;
+&lt;h2 id=&quot;2-투자&quot;&gt;2. 투자&lt;/h2&gt;
 &lt;p&gt;투지를 위해 적합한 지역은 아래와 같이 분류 할수 있다.&lt;/p&gt;
 
 &lt;h3 id=&quot;단기-투자&quot;&gt;단기 투자&lt;/h3&gt;
@@ -21,37 +21,39 @@
   &lt;li&gt;비도시지역 / 관리지역 / 계획관리지역&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;자연녹지지역은 향후 주거, 상업, 공업지역으로 편입 가능성이 있고, 계획관리지역은 도시지역으로 편입될 가능성이 있다. 특히 자연녹지지역의 경우 제한적으로 개발이 가능하다. (건폐율 20% 용적률 100%)&lt;/p&gt;
-
-&lt;p&gt;하지만 경사도 임목도 등에 따라서 개발행위를 금하고 있기도 하기 때문에 확인이 필요하다.&lt;/p&gt;
+&lt;p&gt;자연녹지지역은 향후 주거, 상업, 공업지역으로 편입 가능성이 있고, 계획관리지역은 도시지역으로 편입될 가능성이 있다. 특히 자연녹지지역의 경우 제한적으로 개발이 가능하다 (건폐율 20% 용적률 100%).
+하지만 경사도 임목도 등에 따라서 개발행위를 금하고 있기도 하기 때문에 확인이 필요하다.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;용도 지역은 &lt;a href=&quot;https://www.eum.go.kr/&quot;&gt;토지e음&lt;/a&gt;에서 &lt;strong&gt;토지 이용 계획 열람&lt;/strong&gt;을 통해서 조회 가능하다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h1 id=&quot;예제&quot;&gt;예제&lt;/h1&gt;
-&lt;h3 id=&quot;주거지역-구좌리-얼큰이-칼국수&quot;&gt;주거지역 (구좌리 얼큰이 칼국수)&lt;/h3&gt;
+&lt;h2 id=&quot;3-예제&quot;&gt;3. 예제&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;경기도 성남시 수정구 사송동 597-3번지&lt;/li&gt;
-  &lt;li&gt;대지&lt;/li&gt;
-  &lt;li&gt;도시지역 , 제1종일반주거지역 , 지구단위계획구역(GB 우선해제 샘골) , 소로3류(폭 8m 미만)(접합)&lt;/li&gt;
-  &lt;li&gt;건폐율 60%&lt;/li&gt;
-  &lt;li&gt;용적률 160%&lt;/li&gt;
+  &lt;li&gt;주거지역
+    &lt;ul&gt;
+      &lt;li&gt;경기도 성남시 수정구 사송동 597-3번지&lt;/li&gt;
+      &lt;li&gt;대지&lt;/li&gt;
+      &lt;li&gt;도시지역 , 제1종일반주거지역 , 지구단위계획구역(GB 우선해제 샘골) , 소로3류(폭 8m 미만)(접합)&lt;/li&gt;
+      &lt;li&gt;건폐율 60%&lt;/li&gt;
+      &lt;li&gt;용적률 160%&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;자연녹지지역
+    &lt;ul&gt;
+      &lt;li&gt;경기도 성남시 수정구 시흥동 38-1번지&lt;/li&gt;
+      &lt;li&gt;대지&lt;/li&gt;
+      &lt;li&gt;도시지역 , 자연녹지지역 , 자연취락지구 , 소로3류(폭 8m 미만)(접합)&lt;/li&gt;
+      &lt;li&gt;건폐율 20%&lt;/li&gt;
+      &lt;li&gt;용적률 100%&lt;/li&gt;
+      &lt;li&gt;층수제한 4층&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;자연녹지지역-청담-추어정&quot;&gt;자연녹지지역 (청담 추어정)&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;경기도 성남시 수정구 시흥동 38-1번지&lt;/li&gt;
-  &lt;li&gt;대지&lt;/li&gt;
-  &lt;li&gt;도시지역 , 자연녹지지역 , 자연취락지구 , 소로3류(폭 8m 미만)(접합)&lt;/li&gt;
-  &lt;li&gt;건폐율 20%&lt;/li&gt;
-  &lt;li&gt;용적률 100%&lt;/li&gt;
-  &lt;li&gt;층수제한 4층&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;건폐율-용적률&quot;&gt;건폐율 용적률&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.eum.go.kr/web/FileDownload.do?file=/20200828/regguide/rgregister/RgFacilityFormPopup.jsp/008_02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="부동산" /><category term="토지" /><category term="건물" /><category term="상가" /><summary type="html">용도 지역 용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다.</summary></entry><entry><title type="html">건축 가능한 토지 지목 종류 이해하기</title><link href="http://localhost:4000/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="건축 가능한 토지 지목 종류 이해하기" /><published>2022-08-11T00:00:00+09:00</published><updated>2022-08-11T00:00:00+09:00</updated><id>http://localhost:4000/%EA%B1%B4%EC%B6%95%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%ED%86%A0%EC%A7%80%20%EC%A7%80%EB%AA%A9%20%EC%A2%85%EB%A5%98%20%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;h2 id=&quot;4-건폐율-용적률&quot;&gt;4. 건폐율 용적률&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.eum.go.kr/web/FileDownload.do?file=/20200828/regguide/rgregister/RgFacilityFormPopup.jsp/008_02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="부동산" /><category term="토지" /><category term="건물" /><category term="상가" /><summary type="html">1. 용도 지역 용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다.</summary></entry><entry><title type="html">건축 가능한 토지 지목 종류 이해하기</title><link href="http://localhost:4000/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="건축 가능한 토지 지목 종류 이해하기" /><published>2022-08-11T00:00:00+09:00</published><updated>2022-08-11T00:00:00+09:00</updated><id>http://localhost:4000/%EA%B1%B4%EC%B6%95%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%ED%86%A0%EC%A7%80%20%EC%A7%80%EB%AA%A9%20%EC%A2%85%EB%A5%98%20%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=airvil&amp;amp;logNo=221931722416&amp;amp;categoryNo=12&amp;amp;parentCategoryNo=0&amp;amp;viewDate=&amp;amp;currentPage=1&amp;amp;postListTopCurrentPage=&amp;amp;from=thumbnailList&amp;amp;userTopListOpen=true&amp;amp;userTopListCount=30&amp;amp;userTopListManageOpen=false&amp;amp;userTopListCurrentPage=1&quot;&gt;토지 지목에 따른 활용 방법&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -70,4 +72,300 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;나대지: 지목의 종류는 아니고, 대지 중 건축물이 없는 경우를 말함. 지목 변경비용이 들지 않기 때문에, 가장 선호되는 타입&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Wakenhole</name></author><category term="부동산" /><category term="토지" /><summary type="html">Reference 토지 지목에 따른 활용 방법</summary></entry></feed>
+&lt;/blockquote&gt;</content><author><name>Wakenhole</name></author><category term="부동산" /><category term="토지" /><summary type="html">Reference 토지 지목에 따른 활용 방법</summary></entry><entry><title type="html">Markup: HTML Tags and Formatting</title><link href="http://localhost:4000/markup/markup-html-tags-and-formatting/" rel="alternate" type="text/html" title="Markup: HTML Tags and Formatting" /><published>2013-01-11T00:00:00+09:00</published><updated>2013-01-11T00:00:00+09:00</updated><id>http://localhost:4000/markup/markup-html-tags-and-formatting</id><content type="html" xml:base="http://localhost:4000/markup/markup-html-tags-and-formatting/">&lt;p&gt;A variety of common markup showing how the theme styles them.&lt;/p&gt;
+
+&lt;h2 id=&quot;header-two&quot;&gt;Header two&lt;/h2&gt;
+
+&lt;h3 id=&quot;header-three&quot;&gt;Header three&lt;/h3&gt;
+
+&lt;h4 id=&quot;header-four&quot;&gt;Header four&lt;/h4&gt;
+
+&lt;h5 id=&quot;header-five&quot;&gt;Header five&lt;/h5&gt;
+
+&lt;h6 id=&quot;header-six&quot;&gt;Header six&lt;/h6&gt;
+
+&lt;h2 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h2&gt;
+
+&lt;p&gt;Single line blockquote:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Stay hungry. Stay foolish.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Multi line blockquote with a cite reference:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I’m actually as proud of the things we haven’t done as the things I have done. Innovation is saying no to 1,000 things.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;small&quot;&gt;&lt;cite&gt;Steve Jobs&lt;/cite&gt; — Apple Worldwide Developers’ Conference, 1997&lt;/p&gt;
+
+&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Employee&lt;/th&gt;
+      &lt;th&gt;Salary&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;John Doe&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;$1&lt;/td&gt;
+      &lt;td&gt;Because that’s all Steve Jobs needed for a salary.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Jane Doe&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;$100K&lt;/td&gt;
+      &lt;td&gt;For all the blogging she does.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Fred Bloggs&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;$100M&lt;/td&gt;
+      &lt;td&gt;Pictures are worth a thousand words, right? So Jane × 1,000.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Jane Bloggs&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;$100B&lt;/td&gt;
+      &lt;td&gt;With hair like that?! Enough said.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Header1&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Header2&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Header3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cell1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;cell2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;cell3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cell4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;cell5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;cell6&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cell1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;cell2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;cell3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cell4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;cell5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;cell6&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Foot1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Foot2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Foot3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;definition-lists&quot;&gt;Definition Lists&lt;/h2&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Definition List Title&lt;/dt&gt;
+  &lt;dd&gt;Definition list division.&lt;/dd&gt;
+  &lt;dt&gt;Startup&lt;/dt&gt;
+  &lt;dd&gt;A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.&lt;/dd&gt;
+  &lt;dt&gt;#dowork&lt;/dt&gt;
+  &lt;dd&gt;Coined by Rob Dyrdek and his personal body guard Christopher “Big Black” Boykins, “Do Work” works as a self motivator, to motivating your friends.&lt;/dd&gt;
+  &lt;dt&gt;Do It Live&lt;/dt&gt;
+  &lt;dd&gt;I’ll let Bill O’Reilly &lt;a href=&quot;https://www.youtube.com/watch?v=O_HyZ5aW76c&quot; title=&quot;We&apos;ll Do It Live&quot;&gt;explain&lt;/a&gt; this one.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h2 id=&quot;unordered-lists-nested&quot;&gt;Unordered Lists (Nested)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;List item one
+    &lt;ul&gt;
+      &lt;li&gt;List item one
+        &lt;ul&gt;
+          &lt;li&gt;List item one&lt;/li&gt;
+          &lt;li&gt;List item two&lt;/li&gt;
+          &lt;li&gt;List item three&lt;/li&gt;
+          &lt;li&gt;List item four&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;List item two&lt;/li&gt;
+      &lt;li&gt;List item three&lt;/li&gt;
+      &lt;li&gt;List item four&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List item two&lt;/li&gt;
+  &lt;li&gt;List item three&lt;/li&gt;
+  &lt;li&gt;List item four&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ordered-list-nested&quot;&gt;Ordered List (Nested)&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;List item one
+    &lt;ol&gt;
+      &lt;li&gt;List item one
+        &lt;ol&gt;
+          &lt;li&gt;List item one&lt;/li&gt;
+          &lt;li&gt;List item two&lt;/li&gt;
+          &lt;li&gt;List item three&lt;/li&gt;
+          &lt;li&gt;List item four&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;List item two&lt;/li&gt;
+      &lt;li&gt;List item three&lt;/li&gt;
+      &lt;li&gt;List item four&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List item two&lt;/li&gt;
+  &lt;li&gt;List item three&lt;/li&gt;
+  &lt;li&gt;List item four&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;forms&quot;&gt;Forms&lt;/h2&gt;
+
+&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Personalia:&lt;/legend&gt;
+    Name: &lt;input type=&quot;text&quot; size=&quot;30&quot; /&gt;&lt;br /&gt;
+    Email: &lt;input type=&quot;text&quot; size=&quot;30&quot; /&gt;&lt;br /&gt;
+    Date of birth: &lt;input type=&quot;text&quot; size=&quot;10&quot; /&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+
+&lt;h2 id=&quot;buttons&quot;&gt;Buttons&lt;/h2&gt;
+
+&lt;p&gt;Make any link standout more when applying the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.btn&lt;/code&gt; class.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn--success&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Success Button&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Default Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--primary&quot;&gt;Primary Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--success&quot;&gt;Success Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--warning&quot;&gt;Warning Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--danger&quot;&gt;Danger Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--info&quot;&gt;Info Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--inverse&quot;&gt;Inverse Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--light-outline&quot;&gt;Light Outline Button&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Default Button Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;{: .btn}
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Primary Button Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;{: .btn .btn--primary}
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Success Button Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;{: .btn .btn--success}
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Warning Button Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;{: .btn .btn--warning}
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Danger Button Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;{: .btn .btn--danger}
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Info Button Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;{: .btn .btn--info}
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Inverse Button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;{: .btn .btn--inverse}
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Light Outline Button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;{: .btn .btn--light-outline}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--primary btn--x-large&quot;&gt;X-Large Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--primary btn--large&quot;&gt;Large Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--primary&quot;&gt;Default Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--primary btn--small&quot;&gt;Small Button&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;X-Large Button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;{: .btn .btn--primary .btn--x-large}
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Large Button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;{: .btn .btn--primary .btn--large}
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Default Button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;{: .btn .btn--primary }
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Small Button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;{: .btn .btn--primary .btn--small}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;notices&quot;&gt;Notices&lt;/h2&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; This paragraph of text has been &lt;a href=&quot;#&quot;&gt;emphasized&lt;/a&gt; with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{: .notice}&lt;/code&gt; class.&lt;/p&gt;
+
+&lt;p class=&quot;notice--primary&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; This paragraph of text has been &lt;a href=&quot;#&quot;&gt;emphasized&lt;/a&gt; with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{: .notice--primary}&lt;/code&gt; class.&lt;/p&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; This paragraph of text has been &lt;a href=&quot;#&quot;&gt;emphasized&lt;/a&gt; with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{: .notice--info}&lt;/code&gt; class.&lt;/p&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; This paragraph of text has been &lt;a href=&quot;#&quot;&gt;emphasized&lt;/a&gt; with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{: .notice--warning}&lt;/code&gt; class.&lt;/p&gt;
+
+&lt;p class=&quot;notice--success&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; This paragraph of text has been &lt;a href=&quot;#&quot;&gt;emphasized&lt;/a&gt; with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{: .notice--success}&lt;/code&gt; class.&lt;/p&gt;
+
+&lt;p class=&quot;notice--danger&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; This paragraph of text has been &lt;a href=&quot;#&quot;&gt;emphasized&lt;/a&gt; with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{: .notice--danger}&lt;/code&gt; class.&lt;/p&gt;
+
+&lt;h2 id=&quot;html-tags&quot;&gt;HTML Tags&lt;/h2&gt;
+
+&lt;h3 id=&quot;address-tag&quot;&gt;Address Tag&lt;/h3&gt;
+
+&lt;address&gt;
+  1 Infinite Loop&lt;br /&gt; Cupertino, CA 95014&lt;br /&gt; United States
+&lt;/address&gt;
+
+&lt;h3 id=&quot;anchor-tag-aka-link&quot;&gt;Anchor Tag (aka. Link)&lt;/h3&gt;
+
+&lt;p&gt;This is an example of a &lt;a href=&quot;http://apple.com&quot; title=&quot;Apple&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;abbreviation-tag&quot;&gt;Abbreviation Tag&lt;/h3&gt;
+
+&lt;p&gt;The abbreviation &lt;abbr title=&quot;Cascading Style Sheets&quot;&gt;CSS&lt;/abbr&gt; stands for “Cascading Style Sheets”.&lt;/p&gt;
+
+&lt;h3 id=&quot;cite-tag&quot;&gt;Cite Tag&lt;/h3&gt;
+
+&lt;p&gt;“Code is poetry.” —&lt;cite&gt;Automattic&lt;/cite&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;code-tag&quot;&gt;Code Tag&lt;/h3&gt;
+
+&lt;p&gt;You will learn later on in these tests that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;word-wrap: break-word;&lt;/code&gt; will be your best friend.&lt;/p&gt;
+
+&lt;h3 id=&quot;strike-tag&quot;&gt;Strike Tag&lt;/h3&gt;
+
+&lt;p&gt;This tag will let you &lt;strike&gt;strikeout text&lt;/strike&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;emphasize-tag&quot;&gt;Emphasize Tag&lt;/h3&gt;
+
+&lt;p&gt;The emphasize tag should &lt;em&gt;italicize&lt;/em&gt; text.&lt;/p&gt;
+
+&lt;h3 id=&quot;insert-tag&quot;&gt;Insert Tag&lt;/h3&gt;
+
+&lt;p&gt;This tag should denote &lt;ins&gt;inserted&lt;/ins&gt; text.&lt;/p&gt;
+
+&lt;h3 id=&quot;keyboard-tag&quot;&gt;Keyboard Tag&lt;/h3&gt;
+
+&lt;p&gt;This scarcely known tag emulates &lt;kbd&gt;keyboard text&lt;/kbd&gt;, which is usually styled like the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;code&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
+
+&lt;h3 id=&quot;preformatted-tag&quot;&gt;Preformatted Tag&lt;/h3&gt;
+
+&lt;p&gt;This tag styles large blocks of code.&lt;/p&gt;
+
+&lt;pre&gt;
+.post-title {
+	margin: 0 0 5px;
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 1.2;
+	and here&apos;s a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
+}
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;quote-tag&quot;&gt;Quote Tag&lt;/h3&gt;
+
+&lt;p&gt;&lt;q&gt;Developers, developers, developers…&lt;/q&gt; –Steve Ballmer&lt;/p&gt;
+
+&lt;h3 id=&quot;strong-tag&quot;&gt;Strong Tag&lt;/h3&gt;
+
+&lt;p&gt;This tag shows &lt;strong&gt;bold text&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;subscript-tag&quot;&gt;Subscript Tag&lt;/h3&gt;
+
+&lt;p&gt;Getting our science styling on with H&lt;sub&gt;2&lt;/sub&gt;O, which should push the “2” down.&lt;/p&gt;
+
+&lt;h3 id=&quot;superscript-tag&quot;&gt;Superscript Tag&lt;/h3&gt;
+
+&lt;p&gt;Still sticking with science and Albert Einstein’s E = MC&lt;sup&gt;2&lt;/sup&gt;, which should lift the 2 up.&lt;/p&gt;
+
+&lt;h3 id=&quot;variable-tag&quot;&gt;Variable Tag&lt;/h3&gt;
+
+&lt;p&gt;This allows you to denote &lt;var&gt;variables&lt;/var&gt;.&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="Markup" /><category term="content" /><category term="css" /><category term="formatting" /><category term="html" /><category term="markup" /><summary type="html">A variety of common markup showing how the theme styles them.</summary></entry></feed>

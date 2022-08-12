@@ -1,4 +1,10 @@
 var store = [{
+        "title": "Markup: HTML Tags and Formatting",
+        "excerpt":"A variety of common markup showing how the theme styles them. Header two Header three Header four Header five Header six Blockquotes Single line blockquote: Stay hungry. Stay foolish. Multi line blockquote with a cite reference: People think focus means saying yes to the thing you’ve got to focus on....","categories": ["Markup"],
+        "tags": ["content","css","formatting","html","markup"],
+        "url": "/markup/markup-html-tags-and-formatting/",
+        "teaser": "/assets/images/teaser.jpg"
+      },{
         "title": "건축 가능한 토지 지목 종류 이해하기",
         "excerpt":"Reference 토지 지목에 따른 활용 방법 지목의 종류 지목은 토지의 주된 사용 목적에 따라서 토지의 종류를 구분하는 명칭입니다. 총 28개의 많은 종류가 있지만 알아야 하는 건축 지목은 전, 답, 임야, 대 크게 4가지 지목종류로 나눌 수 있습니다. 전: 밭으로 식물을 재배를 위한 토지 답: 논으로 물을 상시 이용이 필요한 토지...","categories": [],
         "tags": ["부동산","토지"],
@@ -6,7 +12,7 @@ var store = [{
         "teaser": "/assets/images/teaser.jpg"
       },{
         "title": "용도 지역 이해하기",
-        "excerpt":"용도 지역 용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다. 투자 투지를 위해 적합한 지역은 아래와 같이 분류 할수 있다. 단기 투자 도시지역 / 주거지역 도시지역 / 상업지역 도시지역 / 공업지역 장기 투자 도시지역 /...","categories": [],
+        "excerpt":"1. 용도 지역 용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다. 2. 투자 투지를 위해 적합한 지역은 아래와 같이 분류 할수 있다. 단기 투자 도시지역 / 주거지역 도시지역 / 상업지역 도시지역 / 공업지역 장기 투자...","categories": [],
         "tags": ["부동산","토지","건물","상가"],
         "url": "/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/",
         "teaser": "/assets/images/teaser.jpg"

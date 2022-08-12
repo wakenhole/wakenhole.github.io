@@ -290,9 +290,10 @@ defaults:
       comments: # true
       share: true
       related: true
-      sidebar:
-        title: "Sample Title"
-        nav: sidebar-sample
+      # sidebar:
+      #   title: "Sample Title"
+      #   nav: sidebar-sample
+      
   # _pages
   - scope:
       path: "_pages"
