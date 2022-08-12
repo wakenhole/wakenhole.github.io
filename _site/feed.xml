@@ -1,614 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-10T18:56:43+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">DevTM</title><subtitle>An dev website.</subtitle><author><name>Wakenhole</name></author><entry><title type="html">Layout: Sidebar Custom</title><link href="http://localhost:4000/layout-sidebar-custom/" rel="alternate" type="text/html" title="Layout: Sidebar Custom" /><published>2012-03-15T00:00:00+09:00</published><updated>2012-03-15T00:00:00+09:00</updated><id>http://localhost:4000/layout-sidebar-custom</id><content type="html" xml:base="http://localhost:4000/layout-sidebar-custom/">&lt;p&gt;This post has a custom sidebar set in the post’s YAML Front Matter.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-12T16:36:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">DevTM</title><subtitle>An dev website.</subtitle><author><name>Wakenhole</name></author><entry><title type="html">용도 지역 이해하기</title><link href="http://localhost:4000/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/" rel="alternate" type="text/html" title="용도 지역 이해하기" /><published>2022-08-12T00:00:00+09:00</published><updated>2022-08-12T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9A%A9%EB%8F%84%20%EC%A7%80%EC%97%AD</id><content type="html" xml:base="http://localhost:4000/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/">&lt;h1 id=&quot;용도-지역&quot;&gt;용도 지역&lt;/h1&gt;
+&lt;p&gt;용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다.&lt;/p&gt;
 
-&lt;p&gt;An example of how that YAML could look is:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://t1.daumcdn.net/cfile/tistory/27388F4B56C985A736&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;sidebar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Title&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://placehold.it/350x250&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;image_alt&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;image&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Some&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;here.&quot;&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Another&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Title&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;More&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;here.&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Wakenhole</name></author><summary type="html">A post with custom sidebar content.</summary></entry><entry><title type="html">Layout: Sidebar with Navigation List</title><link href="http://localhost:4000/layout-sidebar-nav-list/" rel="alternate" type="text/html" title="Layout: Sidebar with Navigation List" /><published>2012-03-15T00:00:00+09:00</published><updated>2012-03-15T00:00:00+09:00</updated><id>http://localhost:4000/layout-sidebar-nav-list</id><content type="html" xml:base="http://localhost:4000/layout-sidebar-nav-list/">&lt;p&gt;This post has a custom navigation list set in the post’s YAML Front Matter.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://t1.daumcdn.net/cfile/tistory/232A7A455358AC6528&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;sidebar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Sample&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Title&quot;&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;nav&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;sidebar-sample&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;투자&quot;&gt;투자&lt;/h1&gt;
+&lt;p&gt;투지를 위해 적합한 지역은 아래와 같이 분류 할수 있다.&lt;/p&gt;
 
-&lt;p&gt;Along with navigation elements set in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_data/navigation.yml&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;sidebar-sample&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Parent&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;A&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;children&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;A1&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;A2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;A3&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;A4&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Parent&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;B&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;children&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;B1&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;B2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;B3&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;B4&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;B5&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Parent&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;C&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;children&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;C1&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;C2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;C3&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;C4&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;C5&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Parent&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;D&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;children&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;D1&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Child&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Page&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;D2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Wakenhole</name></author><summary type="html">A post with a sidebar navigation list.</summary></entry><entry><title type="html">Layout: Post with Nested Table of Contents via Helper</title><link href="http://localhost:4000/layout-table-of-contents-include-post/" rel="alternate" type="text/html" title="Layout: Post with Nested Table of Contents via Helper" /><published>2012-01-03T00:00:00+09:00</published><updated>2012-01-03T00:00:00+09:00</updated><id>http://localhost:4000/layout-table-of-contents-include-post</id><content type="html" xml:base="http://localhost:4000/layout-table-of-contents-include-post/">&lt;p&gt;Tests table of contents with multiple levels to verify indentation is readible via helper include (deprecated).&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% include toc %}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;aside class=&quot;sidebar__right&quot;&gt;
-&lt;nav class=&quot;toc&quot;&gt;
-    &lt;header&gt;&lt;h4 class=&quot;nav__title&quot;&gt;&lt;i class=&quot;fas fa-file-alt&quot;&gt;&lt;/i&gt; On This Page&lt;/h4&gt;&lt;/header&gt;
-&lt;ul class=&quot;toc__menu&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#enim-laboris-id-ea-elit-elit-deserunt&quot; id=&quot;markdown-toc-enim-laboris-id-ea-elit-elit-deserunt&quot;&gt;Enim laboris id ea elit elit deserunt&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#2-sit-adipisicing-tempor-duis-velit-cupidatat-occaecat-do-amet&quot; id=&quot;markdown-toc-2-sit-adipisicing-tempor-duis-velit-cupidatat-occaecat-do-amet&quot;&gt;2 Sit adipisicing tempor duis velit cupidatat occaecat do amet&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#21-ex-et-quis-exercitation-fugiat-excepteur-eiusmod-mollit-consequat-id-pariatur-non-adipisicing-magna-tempor&quot; id=&quot;markdown-toc-21-ex-et-quis-exercitation-fugiat-excepteur-eiusmod-mollit-consequat-id-pariatur-non-adipisicing-magna-tempor&quot;&gt;2.1 Ex et quis exercitation fugiat excepteur eiusmod mollit consequat id pariatur non adipisicing magna tempor&lt;/a&gt;            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;#211-ut-nostrud-reprehenderit-proident-culpa-enim-irure-cupidatat-sunt-ex-ea-minim-nostrud&quot; id=&quot;markdown-toc-211-ut-nostrud-reprehenderit-proident-culpa-enim-irure-cupidatat-sunt-ex-ea-minim-nostrud&quot;&gt;2.1.1 Ut nostrud reprehenderit proident culpa enim irure cupidatat sunt ex ea minim nostrud&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#212-nisi-non-nisi-ullamco-ipsum-cillum&quot; id=&quot;markdown-toc-212-nisi-non-nisi-ullamco-ipsum-cillum&quot;&gt;2.1.2 Nisi non nisi ullamco ipsum cillum&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#213-ut-pariatur-do-do-eiusmod-consequat-do-pariatur-nisi-ex-anim-reprehenderit-nostrud&quot; id=&quot;markdown-toc-213-ut-pariatur-do-do-eiusmod-consequat-do-pariatur-nisi-ex-anim-reprehenderit-nostrud&quot;&gt;2.1.3 Ut pariatur do do eiusmod consequat do pariatur nisi ex anim reprehenderit nostrud&lt;/a&gt;                &lt;ul&gt;
-                  &lt;li&gt;&lt;a href=&quot;#2111-ut-aute-quis-ipsum-fugiat-dolor&quot; id=&quot;markdown-toc-2111-ut-aute-quis-ipsum-fugiat-dolor&quot;&gt;2.1.1.1 Ut aute quis ipsum fugiat dolor&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href=&quot;#2112-consequat-nostrud-quis-officia-et-aliquip-quis-magna-mollit-veniam&quot; id=&quot;markdown-toc-2112-consequat-nostrud-quis-officia-et-aliquip-quis-magna-mollit-veniam&quot;&gt;2.1.1.2 Consequat nostrud quis officia et aliquip quis magna mollit veniam&lt;/a&gt;                    &lt;ul&gt;
-                      &lt;li&gt;&lt;a href=&quot;#21111-id-cillum-proident-labore-occaecat-reprehenderit-excepteur-fugiat-est&quot; id=&quot;markdown-toc-21111-id-cillum-proident-labore-occaecat-reprehenderit-excepteur-fugiat-est&quot;&gt;2.1.1.1.1 Id cillum proident labore occaecat reprehenderit excepteur fugiat est&lt;/a&gt;&lt;/li&gt;
-                      &lt;li&gt;&lt;a href=&quot;#21112-in-consectetur-ea-qui-quis-culpa-nulla&quot; id=&quot;markdown-toc-21112-in-consectetur-ea-qui-quis-culpa-nulla&quot;&gt;2.1.1.1.2 In consectetur ea qui quis culpa nulla&lt;/a&gt;&lt;/li&gt;
-                      &lt;li&gt;&lt;a href=&quot;#21113-culpa-magna-pariatur-magna-officia-adipisicing-ex-minim-ea-do-est&quot; id=&quot;markdown-toc-21113-culpa-magna-pariatur-magna-officia-adipisicing-ex-minim-ea-do-est&quot;&gt;2.1.1.1.3 Culpa magna pariatur magna officia adipisicing ex minim ea do est&lt;/a&gt;&lt;/li&gt;
-                      &lt;li&gt;&lt;a href=&quot;#21114-veniam-ipsum-non-reprehenderit-pariatur&quot; id=&quot;markdown-toc-21114-veniam-ipsum-non-reprehenderit-pariatur&quot;&gt;2.1.1.1.4 Veniam ipsum non reprehenderit pariatur&lt;/a&gt;&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                  &lt;li&gt;&lt;a href=&quot;#2113-ut-qui-labore-officia-ad-laboris-eu-amet-minim-tempor-qui-cupidatat-duis-aute&quot; id=&quot;markdown-toc-2113-ut-qui-labore-officia-ad-laboris-eu-amet-minim-tempor-qui-cupidatat-duis-aute&quot;&gt;2.1.1.3 Ut qui labore officia ad laboris eu amet minim tempor qui cupidatat duis aute&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href=&quot;#2114-magna-ipsum-nisi-velit-anim&quot; id=&quot;markdown-toc-2114-magna-ipsum-nisi-velit-anim&quot;&gt;2.1.1.4 Magna ipsum nisi velit anim&lt;/a&gt;                    &lt;ul&gt;
-                      &lt;li&gt;&lt;a href=&quot;#21141-mollit-nulla-est-tempor-fugiat-occaecat-nostrud&quot; id=&quot;markdown-toc-21141-mollit-nulla-est-tempor-fugiat-occaecat-nostrud&quot;&gt;2.1.1.4.1 Mollit nulla est tempor fugiat occaecat nostrud&lt;/a&gt;&lt;/li&gt;
-                      &lt;li&gt;&lt;a href=&quot;#21121-culpa-aliquip-irure-et-nostrud-esse-consequat-fugiat-dolor&quot; id=&quot;markdown-toc-21121-culpa-aliquip-irure-et-nostrud-esse-consequat-fugiat-dolor&quot;&gt;2.1.1.2.1 Culpa aliquip irure et nostrud esse consequat fugiat dolor&lt;/a&gt;&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#214-laboris-exercitation-nisi-tempor-dolore&quot; id=&quot;markdown-toc-214-laboris-exercitation-nisi-tempor-dolore&quot;&gt;2.1.4 Laboris exercitation nisi tempor dolore&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#22-officia-irure-duis-et-est-sunt&quot; id=&quot;markdown-toc-22-officia-irure-duis-et-est-sunt&quot;&gt;2.2 Officia irure duis et est sunt&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#3-laborum-eu-magna-proident-proident-tempor&quot; id=&quot;markdown-toc-3-laborum-eu-magna-proident-proident-tempor&quot;&gt;3 Laborum eu magna proident proident tempor&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#31-amet-enim-do-laboris-ipsum-aliqua-eiusmod-non-eu&quot; id=&quot;markdown-toc-31-amet-enim-do-laboris-ipsum-aliqua-eiusmod-non-eu&quot;&gt;3.1 Amet enim do laboris ipsum aliqua eiusmod non eu&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#32-do-exercitation-ex-elit-incididunt-sit-cupidatat&quot; id=&quot;markdown-toc-32-do-exercitation-ex-elit-incididunt-sit-cupidatat&quot;&gt;3.2 Do exercitation ex elit incididunt sit cupidatat&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#33-officia-aliquip-fugiat-ex-pariatur-nisi-et-nostrud-adipisicing-eu-minim-laboris-eiusmod-ea-sunt&quot; id=&quot;markdown-toc-33-officia-aliquip-fugiat-ex-pariatur-nisi-et-nostrud-adipisicing-eu-minim-laboris-eiusmod-ea-sunt&quot;&gt;3.3 Officia aliquip fugiat ex pariatur nisi et nostrud adipisicing eu minim laboris eiusmod ea sunt&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#34-ipsum-velit-laborum-est-nostrud-qui-enim-ullamco-velit-dolor-lorem-magna&quot; id=&quot;markdown-toc-34-ipsum-velit-laborum-est-nostrud-qui-enim-ullamco-velit-dolor-lorem-magna&quot;&gt;3.4 Ipsum velit laborum est nostrud qui enim ullamco velit dolor Lorem magna&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#35-officia-fugiat-fugiat-voluptate-ullamco-eiusmod-duis-minim-aliqua-consequat-consectetur-qui-do-sunt-fugiat&quot; id=&quot;markdown-toc-35-officia-fugiat-fugiat-voluptate-ullamco-eiusmod-duis-minim-aliqua-consequat-consectetur-qui-do-sunt-fugiat&quot;&gt;3.5 Officia fugiat fugiat voluptate ullamco eiusmod duis minim aliqua consequat consectetur qui do sunt fugiat&lt;/a&gt;            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;#351-mollit-laborum-ea-aliquip-mollit-quis-commodo-fugiat-tempor-deserunt-exercitation-sint-culpa-ipsum-tempor&quot; id=&quot;markdown-toc-351-mollit-laborum-ea-aliquip-mollit-quis-commodo-fugiat-tempor-deserunt-exercitation-sint-culpa-ipsum-tempor&quot;&gt;3.5.1 Mollit laborum ea aliquip mollit quis commodo fugiat tempor deserunt exercitation sint culpa ipsum tempor&lt;/a&gt;                &lt;ul&gt;
-                  &lt;li&gt;&lt;a href=&quot;#3511-nisi-anim-commodo-consequat-quis-amet&quot; id=&quot;markdown-toc-3511-nisi-anim-commodo-consequat-quis-amet&quot;&gt;3.5.1.1 Nisi anim commodo consequat quis amet&lt;/a&gt;                    &lt;ul&gt;
-                      &lt;li&gt;&lt;a href=&quot;#35111-culpa-nulla-lorem-adipisicing-ut-sit-cupidatat-laborum-laborum-cupidatat-proident&quot; id=&quot;markdown-toc-35111-culpa-nulla-lorem-adipisicing-ut-sit-cupidatat-laborum-laborum-cupidatat-proident&quot;&gt;3.5.1.1.1 Culpa nulla Lorem adipisicing ut sit cupidatat laborum laborum cupidatat proident&lt;/a&gt;&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#36-reprehenderit-culpa-consectetur-veniam-minim-cillum-in-nostrud&quot; id=&quot;markdown-toc-36-reprehenderit-culpa-consectetur-veniam-minim-cillum-in-nostrud&quot;&gt;3.6 Reprehenderit culpa consectetur veniam minim cillum in nostrud&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#4-laboris-aute-consequat-id-eu-et-lorem-amet&quot; id=&quot;markdown-toc-4-laboris-aute-consequat-id-eu-et-lorem-amet&quot;&gt;4 Laboris aute consequat id eu et Lorem amet&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#5-esse-eu-consequat-consequat-aliqua-fugiat-nulla-ad-labore-consectetur-eu-pariatur-nisi-aute&quot; id=&quot;markdown-toc-5-esse-eu-consequat-consequat-aliqua-fugiat-nulla-ad-labore-consectetur-eu-pariatur-nisi-aute&quot;&gt;5 Esse eu consequat consequat aliqua fugiat nulla ad labore consectetur eu pariatur nisi aute&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#6-aliquip-sunt-laborum-excepteur-cupidatat-officia-ad-tempor-veniam-esse-amet-ea-commodo-sunt&quot; id=&quot;markdown-toc-6-aliquip-sunt-laborum-excepteur-cupidatat-officia-ad-tempor-veniam-esse-amet-ea-commodo-sunt&quot;&gt;6 Aliquip sunt laborum excepteur cupidatat officia ad tempor veniam esse amet ea commodo sunt&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+&lt;h3 id=&quot;단기-투자&quot;&gt;단기 투자&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;도시지역 / 주거지역&lt;/li&gt;
+  &lt;li&gt;도시지역 / 상업지역&lt;/li&gt;
+  &lt;li&gt;도시지역 / 공업지역&lt;/li&gt;
 &lt;/ul&gt;
 
-  &lt;/nav&gt;
-&lt;/aside&gt;
-
-&lt;h1 id=&quot;enim-laboris-id-ea-elit-elit-deserunt&quot;&gt;Enim laboris id ea elit elit deserunt&lt;/h1&gt;
-
-&lt;p&gt;Magna incididunt elit id enim nisi quis excepteur reprehenderit Lorem dolore dolore ad enim. Labore esse elit excepteur et elit dolor. Elit ut consectetur labore velit elit esse voluptate id commodo. Magna cillum officia consequat non occaecat mollit esse nisi quis.&lt;/p&gt;
-
-&lt;p&gt;Nostrud veniam excepteur commodo enim pariatur velit est. Dolor consequat elit occaecat enim veniam ullamco qui est anim ex elit. Est minim aute magna laborum reprehenderit magna reprehenderit ullamco voluptate id sit aliqua. Id labore veniam ad duis aliquip commodo qui ex ut ipsum irure. In et sit ea cupidatat consectetur in nisi amet in cupidatat excepteur commodo amet.&lt;/p&gt;
-
-&lt;h2 id=&quot;2-sit-adipisicing-tempor-duis-velit-cupidatat-occaecat-do-amet&quot;&gt;2 Sit adipisicing tempor duis velit cupidatat occaecat do amet&lt;/h2&gt;
-
-&lt;p&gt;Ad non dolore irure in. In do ut nostrud reprehenderit consequat aliqua sunt culpa voluptate amet minim ea. Eu dolore deserunt consectetur eu in minim sit nulla id id est amet consectetur. Tempor dolore ipsum magna amet velit aliquip ea anim non eu Lorem deserunt. Irure excepteur id adipisicing elit dolor ipsum eiusmod non nulla nisi sint qui et. Occaecat pariatur tempor ex nisi pariatur.&lt;/p&gt;
-
-&lt;p&gt;Proident culpa nostrud id est qui fugiat duis aute. Cillum commodo pariatur nostrud culpa Lorem exercitation non. Consequat elit deserunt dolore voluptate sunt labore minim ut consequat minim.&lt;/p&gt;
-
-&lt;p&gt;Sunt pariatur in ex non nulla proident ex ullamco Lorem do ipsum. Cillum est mollit reprehenderit excepteur labore labore elit dolore adipisicing ad quis quis aliqua sunt. Proident amet est reprehenderit deserunt amet cupidatat incididunt irure est elit.&lt;/p&gt;
-
-&lt;h3 id=&quot;21-ex-et-quis-exercitation-fugiat-excepteur-eiusmod-mollit-consequat-id-pariatur-non-adipisicing-magna-tempor&quot;&gt;2.1 Ex et quis exercitation fugiat excepteur eiusmod mollit consequat id pariatur non adipisicing magna tempor&lt;/h3&gt;
-
-&lt;p&gt;Nostrud sunt nostrud incididunt adipisicing officia esse minim irure duis dolore adipisicing cupidatat. Eu non labore veniam ad sunt pariatur qui. Irure reprehenderit qui elit duis cillum sit officia consectetur sint deserunt do aute velit. Do id occaecat magna occaecat reprehenderit veniam pariatur Lorem. Officia sit cupidatat adipisicing laborum.&lt;/p&gt;
-
-&lt;h4 id=&quot;211-ut-nostrud-reprehenderit-proident-culpa-enim-irure-cupidatat-sunt-ex-ea-minim-nostrud&quot;&gt;2.1.1 Ut nostrud reprehenderit proident culpa enim irure cupidatat sunt ex ea minim nostrud&lt;/h4&gt;
-
-&lt;p&gt;Laborum laboris et ut proident sit qui pariatur nisi commodo. Deserunt eiusmod eiusmod elit anim exercitation quis. Anim laboris irure minim elit fugiat velit esse officia amet reprehenderit id. Dolor eiusmod incididunt excepteur sint aute qui esse nostrud. Nisi qui adipisicing consectetur enim pariatur sint veniam esse.&lt;/p&gt;
-
-&lt;h4 id=&quot;212-nisi-non-nisi-ullamco-ipsum-cillum&quot;&gt;2.1.2 Nisi non nisi ullamco ipsum cillum&lt;/h4&gt;
-&lt;p&gt;Minim officia tempor eiusmod sint magna reprehenderit do amet ex velit. Irure nulla ut veniam eu veniam proident esse pariatur cillum. Esse anim et proident cillum esse magna sint.&lt;/p&gt;
-
-&lt;h4 id=&quot;213-ut-pariatur-do-do-eiusmod-consequat-do-pariatur-nisi-ex-anim-reprehenderit-nostrud&quot;&gt;2.1.3 Ut pariatur do do eiusmod consequat do pariatur nisi ex anim reprehenderit nostrud&lt;/h4&gt;
-&lt;p&gt;Reprehenderit consectetur tempor labore dolore ad. Ullamco qui sunt quis deserunt id ipsum sit qui nisi esse deserunt ad exercitation. Dolore qui in mollit ex qui minim et ipsum reprehenderit. Tempor magna ipsum proident voluptate mollit quis consectetur veniam non aliquip cupidatat nisi culpa aute.&lt;/p&gt;
-
-&lt;h5 id=&quot;2111-ut-aute-quis-ipsum-fugiat-dolor&quot;&gt;2.1.1.1 Ut aute quis ipsum fugiat dolor&lt;/h5&gt;
-&lt;p&gt;Occaecat excepteur et ea et exercitation ad aute minim incididunt incididunt aute sint officia aliquip. Quis cupidatat nostrud dolor consequat laboris eu ullamco qui esse excepteur aute. Veniam ut ipsum aute Lorem proident minim ea fugiat Lorem cillum. Qui esse id minim consequat ullamco aliqua pariatur ea mollit. Minim ea ipsum laborum consequat esse mollit pariatur. Voluptate sit voluptate non ut consectetur irure laboris ex adipisicing dolore elit aliquip velit. In eu veniam voluptate incididunt aute eu reprehenderit ut id voluptate.&lt;/p&gt;
-
-&lt;h5 id=&quot;2112-consequat-nostrud-quis-officia-et-aliquip-quis-magna-mollit-veniam&quot;&gt;2.1.1.2 Consequat nostrud quis officia et aliquip quis magna mollit veniam&lt;/h5&gt;
-&lt;p&gt;Magna duis exercitation dolor amet. Ea irure laborum sit officia reprehenderit enim aute magna duis. Elit fugiat ut proident sit.&lt;/p&gt;
-
-&lt;h6 id=&quot;21111-id-cillum-proident-labore-occaecat-reprehenderit-excepteur-fugiat-est&quot;&gt;2.1.1.1.1 Id cillum proident labore occaecat reprehenderit excepteur fugiat est&lt;/h6&gt;
-
-&lt;p&gt;Irure qui veniam incididunt irure consequat mollit consectetur est nostrud deserunt eiusmod nostrud quis. Eiusmod id proident eu aute exercitation irure consectetur sit dolor dolor in esse. Qui eu dolor ea est magna amet laborum qui irure. Reprehenderit excepteur voluptate fugiat exercitation voluptate laboris nostrud qui magna et officia.&lt;/p&gt;
-
-&lt;h6 id=&quot;21112-in-consectetur-ea-qui-quis-culpa-nulla&quot;&gt;2.1.1.1.2 In consectetur ea qui quis culpa nulla&lt;/h6&gt;
-
-&lt;p&gt;Ad quis duis dolore voluptate laborum eiusmod consequat sint. Cupidatat officia ex laborum ad non mollit excepteur ea. Nostrud elit in consequat sunt adipisicing reprehenderit ipsum proident irure. Sint velit laborum sint laboris ea. Veniam occaecat et in Lorem proident minim deserunt labore laborum reprehenderit. Consequat laborum deserunt culpa consectetur. Incididunt reprehenderit amet esse duis dolore pariatur adipisicing quis elit.&lt;/p&gt;
-
-&lt;h6 id=&quot;21113-culpa-magna-pariatur-magna-officia-adipisicing-ex-minim-ea-do-est&quot;&gt;2.1.1.1.3 Culpa magna pariatur magna officia adipisicing ex minim ea do est&lt;/h6&gt;
-
-&lt;p&gt;Dolore reprehenderit aute ex id. Ipsum laboris sit quis enim labore ut sint cillum exercitation. Commodo aliqua exercitation enim sunt velit do laborum mollit irure dolor.&lt;/p&gt;
-
-&lt;h6 id=&quot;21114-veniam-ipsum-non-reprehenderit-pariatur&quot;&gt;2.1.1.1.4 Veniam ipsum non reprehenderit pariatur&lt;/h6&gt;
-
-&lt;p&gt;Laboris amet quis sunt id dolor consectetur Lorem id aliquip laboris fugiat. Non ex magna deserunt veniam eiusmod. Irure culpa culpa dolore pariatur. Elit enim deserunt ut amet adipisicing elit laborum exercitation cupidatat et. Aliqua aliqua laborum exercitation commodo reprehenderit reprehenderit amet laboris ea ea ex amet in. Aute minim voluptate et ipsum culpa consequat.&lt;/p&gt;
-
-&lt;h5 id=&quot;2113-ut-qui-labore-officia-ad-laboris-eu-amet-minim-tempor-qui-cupidatat-duis-aute&quot;&gt;2.1.1.3 Ut qui labore officia ad laboris eu amet minim tempor qui cupidatat duis aute&lt;/h5&gt;
-
-&lt;p&gt;In in dolore laboris irure est consequat magna ea non aute cupidatat tempor. Officia sit pariatur consequat laborum aliqua nulla anim nisi aliquip reprehenderit consequat. Ad duis labore minim consequat reprehenderit labore ex minim cillum magna incididunt adipisicing dolor. Non velit mollit minim consectetur minim. Cillum elit et amet est reprehenderit non. Elit adipisicing nostrud ea veniam occaecat commodo deserunt.&lt;/p&gt;
-
-&lt;h5 id=&quot;2114-magna-ipsum-nisi-velit-anim&quot;&gt;2.1.1.4 Magna ipsum nisi velit anim&lt;/h5&gt;
-
-&lt;p&gt;Eiusmod tempor dolor proident pariatur consequat sit non nostrud. Eiusmod duis elit esse Lorem dolore et minim elit consectetur eu ullamco. Adipisicing sunt excepteur eu mollit in nostrud.&lt;/p&gt;
-
-&lt;h6 id=&quot;21141-mollit-nulla-est-tempor-fugiat-occaecat-nostrud&quot;&gt;2.1.1.4.1 Mollit nulla est tempor fugiat occaecat nostrud&lt;/h6&gt;
-
-&lt;p&gt;Exercitation eu labore Lorem culpa id enim ut officia aute proident in est irure. Nostrud adipisicing magna elit tempor ipsum culpa in incididunt consectetur incididunt veniam aute tempor sint. Officia est consectetur sint sint nostrud proident mollit. Dolore duis proident mollit consectetur tempor.&lt;/p&gt;
-
-&lt;h6 id=&quot;21121-culpa-aliquip-irure-et-nostrud-esse-consequat-fugiat-dolor&quot;&gt;2.1.1.2.1 Culpa aliquip irure et nostrud esse consequat fugiat dolor&lt;/h6&gt;
-
-&lt;p&gt;Ad ut commodo elit amet officia ipsum labore do amet. Eiusmod sint irure magna proident nisi adipisicing mollit excepteur mollit proident culpa duis. Est reprehenderit consequat eiusmod deserunt duis ipsum esse amet incididunt.&lt;/p&gt;
-
-&lt;h4 id=&quot;214-laboris-exercitation-nisi-tempor-dolore&quot;&gt;2.1.4 Laboris exercitation nisi tempor dolore&lt;/h4&gt;
-
-&lt;p&gt;Elit culpa est eiusmod nostrud occaecat. Labore incididunt nostrud consectetur sint. Ut pariatur laborum incididunt culpa proident incididunt veniam veniam laboris adipisicing mollit. Ullamco magna tempor fugiat veniam in ipsum nisi mollit labore amet et sit quis. In consectetur fugiat Lorem culpa veniam minim. Irure aliqua est mollit consectetur id Lorem velit minim sit velit. Eiusmod magna do dolor est id reprehenderit minim fugiat minim incididunt incididunt laboris velit consequat.&lt;/p&gt;
-
-&lt;h3 id=&quot;22-officia-irure-duis-et-est-sunt&quot;&gt;2.2 Officia irure duis et est sunt&lt;/h3&gt;
-
-&lt;p&gt;Consequat anim quis non nulla. Eiusmod pariatur sunt non culpa culpa ipsum nulla anim in. Non ad exercitation ut reprehenderit ut dolor laborum tempor ad qui magna fugiat irure. Sint commodo ea sint sunt. Irure qui pariatur tempor veniam reprehenderit amet est. Amet laboris proident Lorem deserunt proident duis esse do sit eu dolor qui duis eu. Mollit laboris nisi aute nulla consectetur exercitation nulla aliqua anim.&lt;/p&gt;
-
-&lt;h2 id=&quot;3-laborum-eu-magna-proident-proident-tempor&quot;&gt;3 Laborum eu magna proident proident tempor&lt;/h2&gt;
-
-&lt;p&gt;Occaecat aliqua id voluptate mollit aliquip. Elit excepteur magna esse commodo pariatur reprehenderit in in quis. Id dolore proident proident mollit tempor duis magna ullamco nulla velit consequat. In ut est aliquip in commodo ullamco sit sint.&lt;/p&gt;
-
-&lt;h3 id=&quot;31-amet-enim-do-laboris-ipsum-aliqua-eiusmod-non-eu&quot;&gt;3.1 Amet enim do laboris ipsum aliqua eiusmod non eu&lt;/h3&gt;
-
-&lt;p&gt;Laborum magna deserunt do anim quis proident adipisicing. Dolore qui ex minim reprehenderit. Consectetur in cillum ad dolore ut id deserunt irure aute sint magna dolore adipisicing.&lt;/p&gt;
-
-&lt;h3 id=&quot;32-do-exercitation-ex-elit-incididunt-sit-cupidatat&quot;&gt;3.2 Do exercitation ex elit incididunt sit cupidatat&lt;/h3&gt;
-
-&lt;p&gt;Excepteur aliqua nisi ullamco sunt fugiat laborum elit aliquip officia culpa. Est exercitation enim laborum amet exercitation. Eu quis qui eiusmod incididunt id do aliquip nostrud do esse enim excepteur enim pariatur. Aute adipisicing velit non culpa quis exercitation. Quis cupidatat anim occaecat Lorem ad mollit aute eiusmod quis dolor duis. Proident anim et nostrud ut aliquip irure adipisicing reprehenderit proident dolore magna. Consequat eu fugiat esse proident duis eu proident fugiat laboris ea veniam nisi reprehenderit.&lt;/p&gt;
-
-&lt;h3 id=&quot;33-officia-aliquip-fugiat-ex-pariatur-nisi-et-nostrud-adipisicing-eu-minim-laboris-eiusmod-ea-sunt&quot;&gt;3.3 Officia aliquip fugiat ex pariatur nisi et nostrud adipisicing eu minim laboris eiusmod ea sunt&lt;/h3&gt;
-
-&lt;p&gt;Consectetur irure elit nulla elit non officia. Culpa Lorem minim dolor laboris enim labore do minim laborum. Fugiat deserunt nisi ut do incididunt incididunt ea anim exercitation sit duis. Irure esse pariatur labore enim labore qui anim culpa laborum velit consequat. Culpa in adipisicing excepteur est ipsum. In reprehenderit eiusmod ad ad non.&lt;/p&gt;
-
-&lt;h3 id=&quot;34-ipsum-velit-laborum-est-nostrud-qui-enim-ullamco-velit-dolor-lorem-magna&quot;&gt;3.4 Ipsum velit laborum est nostrud qui enim ullamco velit dolor Lorem magna&lt;/h3&gt;
-
-&lt;p&gt;Nulla magna dolor minim commodo. Sunt nulla cupidatat consequat eiusmod elit irure eiusmod excepteur. Sit incididunt irure minim magna. Tempor ipsum exercitation minim sunt labore dolor ullamco veniam enim nisi veniam adipisicing occaecat proident.&lt;/p&gt;
-
-&lt;h3 id=&quot;35-officia-fugiat-fugiat-voluptate-ullamco-eiusmod-duis-minim-aliqua-consequat-consectetur-qui-do-sunt-fugiat&quot;&gt;3.5 Officia fugiat fugiat voluptate ullamco eiusmod duis minim aliqua consequat consectetur qui do sunt fugiat&lt;/h3&gt;
-
-&lt;p&gt;Non aute culpa irure qui aute adipisicing aute id commodo id. Laborum ullamco laboris velit in quis duis ut consequat do minim. In minim amet ut reprehenderit et voluptate. In quis Lorem occaecat nostrud excepteur nostrud dolore in nulla ad Lorem nisi. Dolor exercitation Lorem qui sint aute ipsum officia eiusmod aliquip Lorem sit. Reprehenderit ex veniam excepteur laboris magna dolore fugiat sit exercitation esse et consequat in sit. Incididunt pariatur ad esse anim aute do id eu.&lt;/p&gt;
-
-&lt;h4 id=&quot;351-mollit-laborum-ea-aliquip-mollit-quis-commodo-fugiat-tempor-deserunt-exercitation-sint-culpa-ipsum-tempor&quot;&gt;3.5.1 Mollit laborum ea aliquip mollit quis commodo fugiat tempor deserunt exercitation sint culpa ipsum tempor&lt;/h4&gt;
-
-&lt;p&gt;Est cillum laborum cupidatat ullamco cupidatat magna laborum enim duis consequat est eu. Magna cillum Lorem proident non ut officia. Esse irure et laboris eu occaecat aute.&lt;/p&gt;
-
-&lt;h5 id=&quot;3511-nisi-anim-commodo-consequat-quis-amet&quot;&gt;3.5.1.1 Nisi anim commodo consequat quis amet&lt;/h5&gt;
-
-&lt;p&gt;Sunt eu dolor enim enim consectetur et anim irure dolor velit cillum. Esse reprehenderit cillum incididunt adipisicing amet nostrud adipisicing. Minim mollit nostrud ipsum ea ut sit ex elit. Do esse ad et ipsum nisi sint anim culpa excepteur ipsum. Commodo nisi irure qui reprehenderit incididunt.&lt;/p&gt;
-
-&lt;h6 id=&quot;35111-culpa-nulla-lorem-adipisicing-ut-sit-cupidatat-laborum-laborum-cupidatat-proident&quot;&gt;3.5.1.1.1 Culpa nulla Lorem adipisicing ut sit cupidatat laborum laborum cupidatat proident&lt;/h6&gt;
-
-&lt;p&gt;Dolore dolor sit sunt anim eu amet consectetur quis ea proident ex aliqua. Sunt laborum consectetur consectetur enim velit eiusmod labore commodo commodo laboris deserunt. Eiusmod enim do amet laborum commodo qui.&lt;/p&gt;
-
-&lt;h3 id=&quot;36-reprehenderit-culpa-consectetur-veniam-minim-cillum-in-nostrud&quot;&gt;3.6 Reprehenderit culpa consectetur veniam minim cillum in nostrud&lt;/h3&gt;
-
-&lt;p&gt;Lorem dolore sit aliqua tempor do voluptate ut esse. Minim velit ad velit commodo minim laborum. Qui qui reprehenderit non proident ullamco veniam aliquip.&lt;/p&gt;
-
-&lt;h2 id=&quot;4-laboris-aute-consequat-id-eu-et-lorem-amet&quot;&gt;4 Laboris aute consequat id eu et Lorem amet&lt;/h2&gt;
-
-&lt;p&gt;Ad qui voluptate dolor veniam. Veniam mollit aute eiusmod eu labore incididunt sint proident. Non minim consequat anim sint. Aliquip non nisi nostrud proident. Eiusmod ut duis commodo sunt laboris irure eu. Laboris quis amet ad qui officia.&lt;/p&gt;
-
-&lt;h2 id=&quot;5-esse-eu-consequat-consequat-aliqua-fugiat-nulla-ad-labore-consectetur-eu-pariatur-nisi-aute&quot;&gt;5 Esse eu consequat consequat aliqua fugiat nulla ad labore consectetur eu pariatur nisi aute&lt;/h2&gt;
-
-&lt;p&gt;Duis proident ullamco fugiat aliqua sunt anim ea do irure est amet quis nulla cillum. Commodo voluptate dolor culpa sint aliquip voluptate exercitation anim cillum ad eu in amet. Sint fugiat qui commodo quis ex eu commodo officia aliquip irure. Non dolore elit excepteur id laboris irure consequat magna consectetur. Qui proident deserunt culpa tempor sit aute velit proident cillum ea.&lt;/p&gt;
-
-&lt;h2 id=&quot;6-aliquip-sunt-laborum-excepteur-cupidatat-officia-ad-tempor-veniam-esse-amet-ea-commodo-sunt&quot;&gt;6 Aliquip sunt laborum excepteur cupidatat officia ad tempor veniam esse amet ea commodo sunt&lt;/h2&gt;
-
-&lt;p&gt;Ex minim pariatur est nisi exercitation exercitation reprehenderit id aliqua deserunt est. Laborum ullamco do ipsum minim ipsum aliquip voluptate voluptate aliqua. Magna proident velit veniam et minim commodo officia officia mollit nisi. Excepteur occaecat deserunt irure adipisicing minim adipisicing cupidatat non anim exercitation ex. Amet quis sunt sint veniam non id nisi ipsum mollit voluptate quis tempor tempor.&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="table of contents" /><summary type="html">Tests table of contents with multiple levels to verify indentation is readible via helper include (deprecated).</summary></entry><entry><title type="html">Layout: Post with Nested Table of Contents</title><link href="http://localhost:4000/layout-table-of-contents-indent-post/" rel="alternate" type="text/html" title="Layout: Post with Nested Table of Contents" /><published>2012-01-03T00:00:00+09:00</published><updated>2012-01-03T00:00:00+09:00</updated><id>http://localhost:4000/layout-table-of-contents-indent-post</id><content type="html" xml:base="http://localhost:4000/layout-table-of-contents-indent-post/">&lt;p&gt;Tests table of contents with multiple levels to verify indentation is readible.&lt;/p&gt;
-
-&lt;h1 id=&quot;enim-laboris-id-ea-elit-elit-deserunt&quot;&gt;Enim laboris id ea elit elit deserunt&lt;/h1&gt;
-
-&lt;p&gt;Magna incididunt elit id enim nisi quis excepteur reprehenderit Lorem dolore dolore ad enim. Labore esse elit excepteur et elit dolor. Elit ut consectetur labore velit elit esse voluptate id commodo. Magna cillum officia consequat non occaecat mollit esse nisi quis.&lt;/p&gt;
-
-&lt;p&gt;Nostrud veniam excepteur commodo enim pariatur velit est. Dolor consequat elit occaecat enim veniam ullamco qui est anim ex elit. Est minim aute magna laborum reprehenderit magna reprehenderit ullamco voluptate id sit aliqua. Id labore veniam ad duis aliquip commodo qui ex ut ipsum irure. In et sit ea cupidatat consectetur in nisi amet in cupidatat excepteur commodo amet.&lt;/p&gt;
-
-&lt;h2 id=&quot;2-sit-adipisicing-tempor-duis-velit-cupidatat-occaecat-do-amet&quot;&gt;2 Sit adipisicing tempor duis velit cupidatat occaecat do amet&lt;/h2&gt;
-
-&lt;p&gt;Ad non dolore irure in. In do ut nostrud reprehenderit consequat aliqua sunt culpa voluptate amet minim ea. Eu dolore deserunt consectetur eu in minim sit nulla id id est amet consectetur. Tempor dolore ipsum magna amet velit aliquip ea anim non eu Lorem deserunt. Irure excepteur id adipisicing elit dolor ipsum eiusmod non nulla nisi sint qui et. Occaecat pariatur tempor ex nisi pariatur.&lt;/p&gt;
-
-&lt;p&gt;Proident culpa nostrud id est qui fugiat duis aute. Cillum commodo pariatur nostrud culpa Lorem exercitation non. Consequat elit deserunt dolore voluptate sunt labore minim ut consequat minim.&lt;/p&gt;
-
-&lt;p&gt;Sunt pariatur in ex non nulla proident ex ullamco Lorem do ipsum. Cillum est mollit reprehenderit excepteur labore labore elit dolore adipisicing ad quis quis aliqua sunt. Proident amet est reprehenderit deserunt amet cupidatat incididunt irure est elit.&lt;/p&gt;
-
-&lt;h3 id=&quot;21-ex-et-quis-exercitation-fugiat-excepteur-eiusmod-mollit-consequat-id-pariatur-non-adipisicing-magna-tempor&quot;&gt;2.1 Ex et quis exercitation fugiat excepteur eiusmod mollit consequat id pariatur non adipisicing magna tempor&lt;/h3&gt;
-
-&lt;p&gt;Nostrud sunt nostrud incididunt adipisicing officia esse minim irure duis dolore adipisicing cupidatat. Eu non labore veniam ad sunt pariatur qui. Irure reprehenderit qui elit duis cillum sit officia consectetur sint deserunt do aute velit. Do id occaecat magna occaecat reprehenderit veniam pariatur Lorem. Officia sit cupidatat adipisicing laborum.&lt;/p&gt;
-
-&lt;h4 id=&quot;211-ut-nostrud-reprehenderit-proident-culpa-enim-irure-cupidatat-sunt-ex-ea-minim-nostrud&quot;&gt;2.1.1 Ut nostrud reprehenderit proident culpa enim irure cupidatat sunt ex ea minim nostrud&lt;/h4&gt;
-
-&lt;p&gt;Laborum laboris et ut proident sit qui pariatur nisi commodo. Deserunt eiusmod eiusmod elit anim exercitation quis. Anim laboris irure minim elit fugiat velit esse officia amet reprehenderit id. Dolor eiusmod incididunt excepteur sint aute qui esse nostrud. Nisi qui adipisicing consectetur enim pariatur sint veniam esse.&lt;/p&gt;
-
-&lt;h4 id=&quot;212-nisi-non-nisi-ullamco-ipsum-cillum&quot;&gt;2.1.2 Nisi non nisi ullamco ipsum cillum&lt;/h4&gt;
-&lt;p&gt;Minim officia tempor eiusmod sint magna reprehenderit do amet ex velit. Irure nulla ut veniam eu veniam proident esse pariatur cillum. Esse anim et proident cillum esse magna sint.&lt;/p&gt;
-
-&lt;h4 id=&quot;213-ut-pariatur-do-do-eiusmod-consequat-do-pariatur-nisi-ex-anim-reprehenderit-nostrud&quot;&gt;2.1.3 Ut pariatur do do eiusmod consequat do pariatur nisi ex anim reprehenderit nostrud&lt;/h4&gt;
-&lt;p&gt;Reprehenderit consectetur tempor labore dolore ad. Ullamco qui sunt quis deserunt id ipsum sit qui nisi esse deserunt ad exercitation. Dolore qui in mollit ex qui minim et ipsum reprehenderit. Tempor magna ipsum proident voluptate mollit quis consectetur veniam non aliquip cupidatat nisi culpa aute.&lt;/p&gt;
-
-&lt;h5 id=&quot;2111-ut-aute-quis-ipsum-fugiat-dolor&quot;&gt;2.1.1.1 Ut aute quis ipsum fugiat dolor&lt;/h5&gt;
-&lt;p&gt;Occaecat excepteur et ea et exercitation ad aute minim incididunt incididunt aute sint officia aliquip. Quis cupidatat nostrud dolor consequat laboris eu ullamco qui esse excepteur aute. Veniam ut ipsum aute Lorem proident minim ea fugiat Lorem cillum. Qui esse id minim consequat ullamco aliqua pariatur ea mollit. Minim ea ipsum laborum consequat esse mollit pariatur. Voluptate sit voluptate non ut consectetur irure laboris ex adipisicing dolore elit aliquip velit. In eu veniam voluptate incididunt aute eu reprehenderit ut id voluptate.&lt;/p&gt;
-
-&lt;h5 id=&quot;2112-consequat-nostrud-quis-officia-et-aliquip-quis-magna-mollit-veniam&quot;&gt;2.1.1.2 Consequat nostrud quis officia et aliquip quis magna mollit veniam&lt;/h5&gt;
-&lt;p&gt;Magna duis exercitation dolor amet. Ea irure laborum sit officia reprehenderit enim aute magna duis. Elit fugiat ut proident sit.&lt;/p&gt;
-
-&lt;h6 id=&quot;21111-id-cillum-proident-labore-occaecat-reprehenderit-excepteur-fugiat-est&quot;&gt;2.1.1.1.1 Id cillum proident labore occaecat reprehenderit excepteur fugiat est&lt;/h6&gt;
-
-&lt;p&gt;Irure qui veniam incididunt irure consequat mollit consectetur est nostrud deserunt eiusmod nostrud quis. Eiusmod id proident eu aute exercitation irure consectetur sit dolor dolor in esse. Qui eu dolor ea est magna amet laborum qui irure. Reprehenderit excepteur voluptate fugiat exercitation voluptate laboris nostrud qui magna et officia.&lt;/p&gt;
-
-&lt;h6 id=&quot;21112-in-consectetur-ea-qui-quis-culpa-nulla&quot;&gt;2.1.1.1.2 In consectetur ea qui quis culpa nulla&lt;/h6&gt;
-
-&lt;p&gt;Ad quis duis dolore voluptate laborum eiusmod consequat sint. Cupidatat officia ex laborum ad non mollit excepteur ea. Nostrud elit in consequat sunt adipisicing reprehenderit ipsum proident irure. Sint velit laborum sint laboris ea. Veniam occaecat et in Lorem proident minim deserunt labore laborum reprehenderit. Consequat laborum deserunt culpa consectetur. Incididunt reprehenderit amet esse duis dolore pariatur adipisicing quis elit.&lt;/p&gt;
-
-&lt;h6 id=&quot;21113-culpa-magna-pariatur-magna-officia-adipisicing-ex-minim-ea-do-est&quot;&gt;2.1.1.1.3 Culpa magna pariatur magna officia adipisicing ex minim ea do est&lt;/h6&gt;
-
-&lt;p&gt;Dolore reprehenderit aute ex id. Ipsum laboris sit quis enim labore ut sint cillum exercitation. Commodo aliqua exercitation enim sunt velit do laborum mollit irure dolor.&lt;/p&gt;
-
-&lt;h6 id=&quot;21114-veniam-ipsum-non-reprehenderit-pariatur&quot;&gt;2.1.1.1.4 Veniam ipsum non reprehenderit pariatur&lt;/h6&gt;
-
-&lt;p&gt;Laboris amet quis sunt id dolor consectetur Lorem id aliquip laboris fugiat. Non ex magna deserunt veniam eiusmod. Irure culpa culpa dolore pariatur. Elit enim deserunt ut amet adipisicing elit laborum exercitation cupidatat et. Aliqua aliqua laborum exercitation commodo reprehenderit reprehenderit amet laboris ea ea ex amet in. Aute minim voluptate et ipsum culpa consequat.&lt;/p&gt;
-
-&lt;h5 id=&quot;2113-ut-qui-labore-officia-ad-laboris-eu-amet-minim-tempor-qui-cupidatat-duis-aute&quot;&gt;2.1.1.3 Ut qui labore officia ad laboris eu amet minim tempor qui cupidatat duis aute&lt;/h5&gt;
-
-&lt;p&gt;In in dolore laboris irure est consequat magna ea non aute cupidatat tempor. Officia sit pariatur consequat laborum aliqua nulla anim nisi aliquip reprehenderit consequat. Ad duis labore minim consequat reprehenderit labore ex minim cillum magna incididunt adipisicing dolor. Non velit mollit minim consectetur minim. Cillum elit et amet est reprehenderit non. Elit adipisicing nostrud ea veniam occaecat commodo deserunt.&lt;/p&gt;
-
-&lt;h5 id=&quot;2114-magna-ipsum-nisi-velit-anim&quot;&gt;2.1.1.4 Magna ipsum nisi velit anim&lt;/h5&gt;
-
-&lt;p&gt;Eiusmod tempor dolor proident pariatur consequat sit non nostrud. Eiusmod duis elit esse Lorem dolore et minim elit consectetur eu ullamco. Adipisicing sunt excepteur eu mollit in nostrud.&lt;/p&gt;
-
-&lt;h6 id=&quot;21141-mollit-nulla-est-tempor-fugiat-occaecat-nostrud&quot;&gt;2.1.1.4.1 Mollit nulla est tempor fugiat occaecat nostrud&lt;/h6&gt;
-
-&lt;p&gt;Exercitation eu labore Lorem culpa id enim ut officia aute proident in est irure. Nostrud adipisicing magna elit tempor ipsum culpa in incididunt consectetur incididunt veniam aute tempor sint. Officia est consectetur sint sint nostrud proident mollit. Dolore duis proident mollit consectetur tempor.&lt;/p&gt;
-
-&lt;h6 id=&quot;21121-culpa-aliquip-irure-et-nostrud-esse-consequat-fugiat-dolor&quot;&gt;2.1.1.2.1 Culpa aliquip irure et nostrud esse consequat fugiat dolor&lt;/h6&gt;
-
-&lt;p&gt;Ad ut commodo elit amet officia ipsum labore do amet. Eiusmod sint irure magna proident nisi adipisicing mollit excepteur mollit proident culpa duis. Est reprehenderit consequat eiusmod deserunt duis ipsum esse amet incididunt.&lt;/p&gt;
-
-&lt;h4 id=&quot;214-laboris-exercitation-nisi-tempor-dolore&quot;&gt;2.1.4 Laboris exercitation nisi tempor dolore&lt;/h4&gt;
-
-&lt;p&gt;Elit culpa est eiusmod nostrud occaecat. Labore incididunt nostrud consectetur sint. Ut pariatur laborum incididunt culpa proident incididunt veniam veniam laboris adipisicing mollit. Ullamco magna tempor fugiat veniam in ipsum nisi mollit labore amet et sit quis. In consectetur fugiat Lorem culpa veniam minim. Irure aliqua est mollit consectetur id Lorem velit minim sit velit. Eiusmod magna do dolor est id reprehenderit minim fugiat minim incididunt incididunt laboris velit consequat.&lt;/p&gt;
-
-&lt;h3 id=&quot;22-officia-irure-duis-et-est-sunt&quot;&gt;2.2 Officia irure duis et est sunt&lt;/h3&gt;
-
-&lt;p&gt;Consequat anim quis non nulla. Eiusmod pariatur sunt non culpa culpa ipsum nulla anim in. Non ad exercitation ut reprehenderit ut dolor laborum tempor ad qui magna fugiat irure. Sint commodo ea sint sunt. Irure qui pariatur tempor veniam reprehenderit amet est. Amet laboris proident Lorem deserunt proident duis esse do sit eu dolor qui duis eu. Mollit laboris nisi aute nulla consectetur exercitation nulla aliqua anim.&lt;/p&gt;
-
-&lt;h2 id=&quot;3-laborum-eu-magna-proident-proident-tempor&quot;&gt;3 Laborum eu magna proident proident tempor&lt;/h2&gt;
-
-&lt;p&gt;Occaecat aliqua id voluptate mollit aliquip. Elit excepteur magna esse commodo pariatur reprehenderit in in quis. Id dolore proident proident mollit tempor duis magna ullamco nulla velit consequat. In ut est aliquip in commodo ullamco sit sint.&lt;/p&gt;
-
-&lt;h3 id=&quot;31-amet-enim-do-laboris-ipsum-aliqua-eiusmod-non-eu&quot;&gt;3.1 Amet enim do laboris ipsum aliqua eiusmod non eu&lt;/h3&gt;
-
-&lt;p&gt;Laborum magna deserunt do anim quis proident adipisicing. Dolore qui ex minim reprehenderit. Consectetur in cillum ad dolore ut id deserunt irure aute sint magna dolore adipisicing.&lt;/p&gt;
-
-&lt;h3 id=&quot;32-do-exercitation-ex-elit-incididunt-sit-cupidatat&quot;&gt;3.2 Do exercitation ex elit incididunt sit cupidatat&lt;/h3&gt;
-
-&lt;p&gt;Excepteur aliqua nisi ullamco sunt fugiat laborum elit aliquip officia culpa. Est exercitation enim laborum amet exercitation. Eu quis qui eiusmod incididunt id do aliquip nostrud do esse enim excepteur enim pariatur. Aute adipisicing velit non culpa quis exercitation. Quis cupidatat anim occaecat Lorem ad mollit aute eiusmod quis dolor duis. Proident anim et nostrud ut aliquip irure adipisicing reprehenderit proident dolore magna. Consequat eu fugiat esse proident duis eu proident fugiat laboris ea veniam nisi reprehenderit.&lt;/p&gt;
-
-&lt;h3 id=&quot;33-officia-aliquip-fugiat-ex-pariatur-nisi-et-nostrud-adipisicing-eu-minim-laboris-eiusmod-ea-sunt&quot;&gt;3.3 Officia aliquip fugiat ex pariatur nisi et nostrud adipisicing eu minim laboris eiusmod ea sunt&lt;/h3&gt;
-
-&lt;p&gt;Consectetur irure elit nulla elit non officia. Culpa Lorem minim dolor laboris enim labore do minim laborum. Fugiat deserunt nisi ut do incididunt incididunt ea anim exercitation sit duis. Irure esse pariatur labore enim labore qui anim culpa laborum velit consequat. Culpa in adipisicing excepteur est ipsum. In reprehenderit eiusmod ad ad non.&lt;/p&gt;
-
-&lt;h3 id=&quot;34-ipsum-velit-laborum-est-nostrud-qui-enim-ullamco-velit-dolor-lorem-magna&quot;&gt;3.4 Ipsum velit laborum est nostrud qui enim ullamco velit dolor Lorem magna&lt;/h3&gt;
-
-&lt;p&gt;Nulla magna dolor minim commodo. Sunt nulla cupidatat consequat eiusmod elit irure eiusmod excepteur. Sit incididunt irure minim magna. Tempor ipsum exercitation minim sunt labore dolor ullamco veniam enim nisi veniam adipisicing occaecat proident.&lt;/p&gt;
-
-&lt;h3 id=&quot;35-officia-fugiat-fugiat-voluptate-ullamco-eiusmod-duis-minim-aliqua-consequat-consectetur-qui-do-sunt-fugiat&quot;&gt;3.5 Officia fugiat fugiat voluptate ullamco eiusmod duis minim aliqua consequat consectetur qui do sunt fugiat&lt;/h3&gt;
-
-&lt;p&gt;Non aute culpa irure qui aute adipisicing aute id commodo id. Laborum ullamco laboris velit in quis duis ut consequat do minim. In minim amet ut reprehenderit et voluptate. In quis Lorem occaecat nostrud excepteur nostrud dolore in nulla ad Lorem nisi. Dolor exercitation Lorem qui sint aute ipsum officia eiusmod aliquip Lorem sit. Reprehenderit ex veniam excepteur laboris magna dolore fugiat sit exercitation esse et consequat in sit. Incididunt pariatur ad esse anim aute do id eu.&lt;/p&gt;
-
-&lt;h4 id=&quot;351-mollit-laborum-ea-aliquip-mollit-quis-commodo-fugiat-tempor-deserunt-exercitation-sint-culpa-ipsum-tempor&quot;&gt;3.5.1 Mollit laborum ea aliquip mollit quis commodo fugiat tempor deserunt exercitation sint culpa ipsum tempor&lt;/h4&gt;
-
-&lt;p&gt;Est cillum laborum cupidatat ullamco cupidatat magna laborum enim duis consequat est eu. Magna cillum Lorem proident non ut officia. Esse irure et laboris eu occaecat aute.&lt;/p&gt;
-
-&lt;h5 id=&quot;3511-nisi-anim-commodo-consequat-quis-amet&quot;&gt;3.5.1.1 Nisi anim commodo consequat quis amet&lt;/h5&gt;
-
-&lt;p&gt;Sunt eu dolor enim enim consectetur et anim irure dolor velit cillum. Esse reprehenderit cillum incididunt adipisicing amet nostrud adipisicing. Minim mollit nostrud ipsum ea ut sit ex elit. Do esse ad et ipsum nisi sint anim culpa excepteur ipsum. Commodo nisi irure qui reprehenderit incididunt.&lt;/p&gt;
-
-&lt;h6 id=&quot;35111-culpa-nulla-lorem-adipisicing-ut-sit-cupidatat-laborum-laborum-cupidatat-proident&quot;&gt;3.5.1.1.1 Culpa nulla Lorem adipisicing ut sit cupidatat laborum laborum cupidatat proident&lt;/h6&gt;
-
-&lt;p&gt;Dolore dolor sit sunt anim eu amet consectetur quis ea proident ex aliqua. Sunt laborum consectetur consectetur enim velit eiusmod labore commodo commodo laboris deserunt. Eiusmod enim do amet laborum commodo qui.&lt;/p&gt;
-
-&lt;h3 id=&quot;36-reprehenderit-culpa-consectetur-veniam-minim-cillum-in-nostrud&quot;&gt;3.6 Reprehenderit culpa consectetur veniam minim cillum in nostrud&lt;/h3&gt;
-
-&lt;p&gt;Lorem dolore sit aliqua tempor do voluptate ut esse. Minim velit ad velit commodo minim laborum. Qui qui reprehenderit non proident ullamco veniam aliquip.&lt;/p&gt;
-
-&lt;h2 id=&quot;4-laboris-aute-consequat-id-eu-et-lorem-amet&quot;&gt;4 Laboris aute consequat id eu et Lorem amet&lt;/h2&gt;
-
-&lt;p&gt;Ad qui voluptate dolor veniam. Veniam mollit aute eiusmod eu labore incididunt sint proident. Non minim consequat anim sint. Aliquip non nisi nostrud proident. Eiusmod ut duis commodo sunt laboris irure eu. Laboris quis amet ad qui officia.&lt;/p&gt;
-
-&lt;h2 id=&quot;5-esse-eu-consequat-consequat-aliqua-fugiat-nulla-ad-labore-consectetur-eu-pariatur-nisi-aute&quot;&gt;5 Esse eu consequat consequat aliqua fugiat nulla ad labore consectetur eu pariatur nisi aute&lt;/h2&gt;
-
-&lt;p&gt;Duis proident ullamco fugiat aliqua sunt anim ea do irure est amet quis nulla cillum. Commodo voluptate dolor culpa sint aliquip voluptate exercitation anim cillum ad eu in amet. Sint fugiat qui commodo quis ex eu commodo officia aliquip irure. Non dolore elit excepteur id laboris irure consequat magna consectetur. Qui proident deserunt culpa tempor sit aute velit proident cillum ea.&lt;/p&gt;
-
-&lt;h2 id=&quot;6-aliquip-sunt-laborum-excepteur-cupidatat-officia-ad-tempor-veniam-esse-amet-ea-commodo-sunt&quot;&gt;6 Aliquip sunt laborum excepteur cupidatat officia ad tempor veniam esse amet ea commodo sunt&lt;/h2&gt;
-
-&lt;p&gt;Ex minim pariatur est nisi exercitation exercitation reprehenderit id aliqua deserunt est. Laborum ullamco do ipsum minim ipsum aliquip voluptate voluptate aliqua. Magna proident velit veniam et minim commodo officia officia mollit nisi. Excepteur occaecat deserunt irure adipisicing minim adipisicing cupidatat non anim exercitation ex. Amet quis sunt sint veniam non id nisi ipsum mollit voluptate quis tempor tempor.&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="table of contents" /><summary type="html">Tests table of contents with multiple levels to verify indentation is readible.</summary></entry><entry><title type="html">Layout: Post with Table of Contents</title><link href="http://localhost:4000/layout-table-of-contents-post/" rel="alternate" type="text/html" title="Layout: Post with Table of Contents" /><published>2012-01-03T00:00:00+09:00</published><updated>2012-01-03T00:00:00+09:00</updated><id>http://localhost:4000/layout-table-of-contents-post</id><content type="html" xml:base="http://localhost:4000/layout-table-of-contents-post/">&lt;p&gt;Enable table of contents on post or page by adding &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;toc: true&lt;/code&gt; to its YAML Front Matter. The title and icon can also be changed with:&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;toc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;toc_label&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Unique&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Title&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;toc_icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;heart&quot;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# corresponding Font Awesome icon name (without fa prefix)&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;html-elements&quot;&gt;HTML Elements&lt;/h2&gt;
-
-&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
-
-&lt;h2 id=&quot;body-text&quot;&gt;Body text&lt;/h2&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. &lt;strong&gt;This is strong&lt;/strong&gt;. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
-
-&lt;p class=&quot;image-right&quot;&gt;&lt;img src=&quot;http://localhost:4000/assets/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;This is emphasized&lt;/em&gt;. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.&lt;/p&gt;
-
-&lt;p&gt;HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.&lt;/p&gt;
-
-&lt;h3 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h3&gt;
+&lt;h3 id=&quot;장기-투자&quot;&gt;장기 투자&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;도시지역 / 녹지지역 / 자연녹지지역&lt;/li&gt;
+  &lt;li&gt;비도시지역 / 관리지역 / 계획관리지역&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;자연녹지지역은 향후 주거, 상업, 공업지역으로 편입 가능성이 있고, 계획관리지역은 도시지역으로 편입될 가능성이 있다. 특히 자연녹지지역의 경우 제한적으로 개발이 가능하다. (건폐율 20% 용적률 100%)&lt;/p&gt;
+
+&lt;p&gt;하지만 경사도 임목도 등에 따라서 개발행위를 금하고 있기도 하기 때문에 확인이 필요하다.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
+  &lt;p&gt;용도 지역은 &lt;a href=&quot;https://www.eum.go.kr/&quot;&gt;토지e음&lt;/a&gt;에서 &lt;strong&gt;토지 이용 계획 열람&lt;/strong&gt;을 통해서 조회 가능하다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;list-types&quot;&gt;List Types&lt;/h2&gt;
-
-&lt;h3 id=&quot;ordered-lists&quot;&gt;Ordered Lists&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Item one
-    &lt;ol&gt;
-      &lt;li&gt;sub item one&lt;/li&gt;
-      &lt;li&gt;sub item two&lt;/li&gt;
-      &lt;li&gt;sub item three&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Item two&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;unordered-lists&quot;&gt;Unordered Lists&lt;/h3&gt;
+&lt;h1 id=&quot;예제&quot;&gt;예제&lt;/h1&gt;
+&lt;h3 id=&quot;주거지역-구좌리-얼큰이-칼국수&quot;&gt;주거지역 (구좌리 얼큰이 칼국수)&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Item one&lt;/li&gt;
-  &lt;li&gt;Item two&lt;/li&gt;
-  &lt;li&gt;Item three&lt;/li&gt;
+  &lt;li&gt;경기도 성남시 수정구 사송동 597-3번지&lt;/li&gt;
+  &lt;li&gt;대지&lt;/li&gt;
+  &lt;li&gt;도시지역 , 제1종일반주거지역 , 지구단위계획구역(GB 우선해제 샘골) , 소로3류(폭 8m 미만)(접합)&lt;/li&gt;
+  &lt;li&gt;건폐율 60%&lt;/li&gt;
+  &lt;li&gt;용적률 160%&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
+&lt;h3 id=&quot;자연녹지지역-청담-추어정&quot;&gt;자연녹지지역 (청담 추어정)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;경기도 성남시 수정구 시흥동 38-1번지&lt;/li&gt;
+  &lt;li&gt;대지&lt;/li&gt;
+  &lt;li&gt;도시지역 , 자연녹지지역 , 자연취락지구 , 소로3류(폭 8m 미만)(접합)&lt;/li&gt;
+  &lt;li&gt;건폐율 20%&lt;/li&gt;
+  &lt;li&gt;용적률 100%&lt;/li&gt;
+  &lt;li&gt;층수제한 4층&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;table rules=&quot;groups&quot;&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Header1&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Header2&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Header3&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell3&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell4&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell6&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell3&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell4&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell6&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;tfoot&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Foot1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Foot2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Foot3&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tfoot&gt;
-&lt;/table&gt;
+&lt;h1 id=&quot;건폐율-용적률&quot;&gt;건폐율 용적률&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.eum.go.kr/web/FileDownload.do?file=/20200828/regguide/rgregister/RgFacilityFormPopup.jsp/008_02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="부동산" /><category term="토지" /><category term="건물" /><category term="상가" /><summary type="html">용도 지역 용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다.</summary></entry><entry><title type="html">건축 가능한 토지 지목 종류 이해하기</title><link href="http://localhost:4000/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="건축 가능한 토지 지목 종류 이해하기" /><published>2022-08-11T00:00:00+09:00</published><updated>2022-08-11T00:00:00+09:00</updated><id>http://localhost:4000/%EA%B1%B4%EC%B6%95%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%ED%86%A0%EC%A7%80%20%EC%A7%80%EB%AA%A9%20%EC%A2%85%EB%A5%98%20%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=airvil&amp;amp;logNo=221931722416&amp;amp;categoryNo=12&amp;amp;parentCategoryNo=0&amp;amp;viewDate=&amp;amp;currentPage=1&amp;amp;postListTopCurrentPage=&amp;amp;from=thumbnailList&amp;amp;userTopListOpen=true&amp;amp;userTopListCount=30&amp;amp;userTopListManageOpen=false&amp;amp;userTopListCurrentPage=1&quot;&gt;토지 지목에 따른 활용 방법&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h2 id=&quot;code-snippets&quot;&gt;Code Snippets&lt;/h2&gt;
+&lt;h2 id=&quot;지목의-종류&quot;&gt;지목의 종류&lt;/h2&gt;
 
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;#container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-240px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;지목은 토지의 주된 사용 목적에 따라서 토지의 종류를 구분하는 명칭입니다.
+총 28개의 많은 종류가 있지만 알아야 하는 건축 지목은 전, 답, 임야, 대 크게 4가지 지목종류로 나눌 수 있습니다.&lt;/p&gt;
 
-&lt;h2 id=&quot;buttons&quot;&gt;Buttons&lt;/h2&gt;
-
-&lt;p&gt;Make any link standout more when applying the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.btn&lt;/code&gt; class.&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn--success&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Success Button&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Primary Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--success&quot;&gt;Success Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--warning&quot;&gt;Warning Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--danger&quot;&gt;Danger Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--info&quot;&gt;Info Button&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;notices&quot;&gt;Notices&lt;/h2&gt;
-
-&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; You can also add notices by appending &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{: .notice}&lt;/code&gt; to a paragraph.&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="table of contents" /><summary type="html">Enable table of contents on post or page by adding toc: true to its YAML Front Matter. The title and icon can also be changed with:</summary></entry><entry><title type="html">Layout: Post with Sticky Table of Contents</title><link href="http://localhost:4000/layout-table-of-contents-sticky/" rel="alternate" type="text/html" title="Layout: Post with Sticky Table of Contents" /><published>2012-01-03T00:00:00+09:00</published><updated>2012-01-03T00:00:00+09:00</updated><id>http://localhost:4000/layout-table-of-contents-sticky</id><content type="html" xml:base="http://localhost:4000/layout-table-of-contents-sticky/">&lt;p&gt;“Stick” table of contents to the top of a page by adding &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;toc_sticky: true&lt;/code&gt; to its YAML Front Matter.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;toc&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;toc_sticky&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;html-elements&quot;&gt;HTML Elements&lt;/h2&gt;
-
-&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
-
-&lt;h2 id=&quot;body-text&quot;&gt;Body text&lt;/h2&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. &lt;strong&gt;This is strong&lt;/strong&gt;. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
-
-&lt;p class=&quot;image-right&quot;&gt;&lt;img src=&quot;http://localhost:4000/assets/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;This is emphasized&lt;/em&gt;. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.&lt;/p&gt;
-
-&lt;p&gt;HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.&lt;/p&gt;
-
-&lt;h3 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;전: 밭으로 식물을 재배를 위한 토지&lt;/li&gt;
+  &lt;li&gt;답: 논으로 물을 상시 이용이 필요한 토지&lt;/li&gt;
+  &lt;li&gt;임야: 산림, 자갈 모래땅등을 말함&lt;/li&gt;
+  &lt;li&gt;대: 건축물을 지을 수 있는 토지 (대지 증명원으로 확인 가능)&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;list-types&quot;&gt;List Types&lt;/h2&gt;
-
-&lt;h3 id=&quot;ordered-lists&quot;&gt;Ordered Lists&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Item one
-    &lt;ol&gt;
-      &lt;li&gt;sub item one&lt;/li&gt;
-      &lt;li&gt;sub item two&lt;/li&gt;
-      &lt;li&gt;sub item three&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Item two&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;unordered-lists&quot;&gt;Unordered Lists&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Item one&lt;/li&gt;
-  &lt;li&gt;Item two&lt;/li&gt;
-  &lt;li&gt;Item three&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
-
-&lt;table rules=&quot;groups&quot;&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Header1&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Header2&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Header3&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell3&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell4&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell6&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell3&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;cell4&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;cell5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;cell6&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;tfoot&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Foot1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Foot2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Foot3&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tfoot&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;code-snippets&quot;&gt;Code Snippets&lt;/h2&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;#container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-240px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;buttons&quot;&gt;Buttons&lt;/h2&gt;
-
-&lt;p&gt;Make any link standout more when applying the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.btn&lt;/code&gt; class.&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn btn--success&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Success Button&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Primary Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--success&quot;&gt;Success Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--warning&quot;&gt;Warning Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--danger&quot;&gt;Danger Button&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--info&quot;&gt;Info Button&lt;/a&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;notices&quot;&gt;Notices&lt;/h2&gt;
-
-&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; You can also add notices by appending &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{: .notice}&lt;/code&gt; to a paragraph.&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="table of contents" /><summary type="html">“Stick” table of contents to the top of a page by adding toc_sticky: true to its YAML Front Matter.</summary></entry></feed>
+  &lt;p&gt;나대지: 지목의 종류는 아니고, 대지 중 건축물이 없는 경우를 말함. 지목 변경비용이 들지 않기 때문에, 가장 선호되는 타입&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Wakenhole</name></author><category term="부동산" /><category term="토지" /><summary type="html">Reference 토지 지목에 따른 활용 방법</summary></entry></feed>

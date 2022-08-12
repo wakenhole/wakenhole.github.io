@@ -1,38 +1,14 @@
 var store = [{
-        "title": "Layout: Post with Nested Table of Contents via Helper",
-        "excerpt":"Tests table of contents with multiple levels to verify indentation is readible via helper include (deprecated). {% include toc %} On This Page Enim laboris id ea elit elit deserunt 2 Sit adipisicing tempor duis velit cupidatat occaecat do amet 2.1 Ex et quis exercitation fugiat excepteur eiusmod mollit consequat...","categories": [],
-        "tags": ["table of contents"],
-        "url": "/layout-table-of-contents-include-post/",
+        "title": "건축 가능한 토지 지목 종류 이해하기",
+        "excerpt":"Reference 토지 지목에 따른 활용 방법 지목의 종류 지목은 토지의 주된 사용 목적에 따라서 토지의 종류를 구분하는 명칭입니다. 총 28개의 많은 종류가 있지만 알아야 하는 건축 지목은 전, 답, 임야, 대 크게 4가지 지목종류로 나눌 수 있습니다. 전: 밭으로 식물을 재배를 위한 토지 답: 논으로 물을 상시 이용이 필요한 토지...","categories": [],
+        "tags": ["부동산","토지"],
+        "url": "/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/",
         "teaser": "/assets/images/teaser.jpg"
       },{
-        "title": "Layout: Post with Nested Table of Contents",
-        "excerpt":"Tests table of contents with multiple levels to verify indentation is readible. Enim laboris id ea elit elit deserunt Magna incididunt elit id enim nisi quis excepteur reprehenderit Lorem dolore dolore ad enim. Labore esse elit excepteur et elit dolor. Elit ut consectetur labore velit elit esse voluptate id commodo....","categories": [],
-        "tags": ["table of contents"],
-        "url": "/layout-table-of-contents-indent-post/",
-        "teaser": "/assets/images/teaser.jpg"
-      },{
-        "title": "Layout: Post with Table of Contents",
-        "excerpt":"Enable table of contents on post or page by adding toc: true to its YAML Front Matter. The title and icon can also be changed with: --- toc: true toc_label: \"Unique Title\" toc_icon: \"heart\" # corresponding Font Awesome icon name (without fa prefix) --- HTML Elements Below is just about...","categories": [],
-        "tags": ["table of contents"],
-        "url": "/layout-table-of-contents-post/",
-        "teaser": "/assets/images/teaser.jpg"
-      },{
-        "title": "Layout: Post with Sticky Table of Contents",
-        "excerpt":"“Stick” table of contents to the top of a page by adding toc_sticky: true to its YAML Front Matter. --- toc: true toc_sticky: true --- HTML Elements Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within...","categories": [],
-        "tags": ["table of contents"],
-        "url": "/layout-table-of-contents-sticky/",
-        "teaser": "/assets/images/teaser.jpg"
-      },{
-        "title": "Layout: Sidebar Custom",
-        "excerpt":"This post has a custom sidebar set in the post’s YAML Front Matter.   An example of how that YAML could look is:   sidebar:   - title: \"Title\"     image: http://placehold.it/350x250     image_alt: \"image\"     text: \"Some text here.\"   - title: \"Another Title\"     text: \"More text here.\"  ","categories": [],
-        "tags": [],
-        "url": "/layout-sidebar-custom/",
-        "teaser": "/assets/images/teaser.jpg"
-      },{
-        "title": "Layout: Sidebar with Navigation List",
-        "excerpt":"This post has a custom navigation list set in the post’s YAML Front Matter. sidebar: title: \"Sample Title\" nav: sidebar-sample Along with navigation elements set in _data/navigation.yml. sidebar-sample: - title: \"Parent Page A\" children: - title: \"Child Page A1\" url: / - title: \"Child Page A2\" url: / - title:...","categories": [],
-        "tags": [],
-        "url": "/layout-sidebar-nav-list/",
+        "title": "용도 지역 이해하기",
+        "excerpt":"용도 지역 용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다. 투자 투지를 위해 적합한 지역은 아래와 같이 분류 할수 있다. 단기 투자 도시지역 / 주거지역 도시지역 / 상업지역 도시지역 / 공업지역 장기 투자 도시지역 /...","categories": [],
+        "tags": ["부동산","토지","건물","상가"],
+        "url": "/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/",
         "teaser": "/assets/images/teaser.jpg"
       },{
     "title": "Page Not Found",
@@ -85,9 +61,6 @@ var store = [{
   },{
     "title": null,
     "excerpt":"{% if page.xsl %}{% endif %}Jekyll{{ site.time | date_to_xmlschema }}{{ page.url | absolute_url | xml_escape }}{% assign title = site.title | default: site.name %}{% if page.collection != \"posts\" %}{% assign collection = page.collection | capitalize %}{% assign title = title | append: \" | \" | append: collection %}{% endif...","url": "http://localhost:4000/feed.xml"
-  },{
-    "title": null,
-    "excerpt":"","url": "http://localhost:4000/page2/"
   },{
     "title": null,
     "excerpt":"{% if page.xsl %} {% endif %} {% assign collections = site.collections | where_exp:'collection','collection.output != false' %}{% for collection in collections %}{% assign docs = collection.docs | where_exp:'doc','doc.sitemap != false' %}{% for doc in docs %} {{ doc.url | replace:'/index.html','/' | absolute_url | xml_escape }} {% if doc.last_modified_at or doc.date...","url": "http://localhost:4000/sitemap.xml"
