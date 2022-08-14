@@ -1,10 +1,4 @@
 var store = [{
-        "title": "Markup: HTML Tags and Formatting",
-        "excerpt":"A variety of common markup showing how the theme styles them. Header two Header three Header four Header five Header six Blockquotes Single line blockquote: Stay hungry. Stay foolish. Multi line blockquote with a cite reference: People think focus means saying yes to the thing you’ve got to focus on....","categories": ["Markup"],
-        "tags": ["content","css","formatting","html","markup"],
-        "url": "/markup/markup-html-tags-and-formatting/",
-        "teaser": "/assets/images/teaser.jpg"
-      },{
         "title": "건축 가능한 토지 지목 종류 이해하기",
         "excerpt":"Reference 토지 지목에 따른 활용 방법 지목의 종류 지목은 토지의 주된 사용 목적에 따라서 토지의 종류를 구분하는 명칭이다. 총 28개의 많은 종류가 있지만 알아야 하는 건축 지목은 전, 답, 임야, 대 크게 4가지 종류이다. 전: 밭으로 식물을 재배를 위한 토지 답: 논으로 물을 상시 이용이 필요한 토지 임야: 산림, 자갈...","categories": ["부동산"],
         "tags": ["지목","토지"],
@@ -18,59 +12,59 @@ var store = [{
         "teaser": "https://t1.daumcdn.net/cfile/tistory/990D9B415BF3C6BD07"
       },{
     "title": "Page Not Found",
-    "excerpt":"Sorry, but the page you were trying to view does not exist.  ","url": "http://localhost:4000/404.html"
+    "excerpt":"Sorry, but the page you were trying to view does not exist.  ","url": "http://localhost:5000/404.html"
   },{
     "title": "About",
-    "excerpt":"Who I am?  ","url": "http://localhost:4000/about/"
+    "excerpt":"Who I am?  ","url": "http://localhost:5000/about/"
   },{
     "title": "Posts by Category (grid view)",
-    "excerpt":" ","url": "http://localhost:4000/categories-grid/"
+    "excerpt":" ","url": "http://localhost:5000/categories-grid/"
   },{
     "title": "Posts by Category",
-    "excerpt":" ","url": "http://localhost:4000/categories/"
+    "excerpt":" ","url": "http://localhost:5000/categories/"
   },{
     "title": null,
-    "excerpt":"","url": "http://localhost:4000/"
+    "excerpt":"","url": "http://localhost:5000/"
   },{
     "title": null,
-    "excerpt":"var idx = lunr(function () { this.field('title') this.field('excerpt') this.field('categories') this.field('tags') this.ref('id') this.pipeline.remove(lunr.trimmer) for (var item in store) { this.add({ title: store[item].title, excerpt: store[item].excerpt, categories: store[item].categories, tags: store[item].tags, id: item }) } }); $(document).ready(function() { $('input#search').on('keyup', function () { var resultdiv = $('#results'); var query = $(this).val().toLowerCase(); var result = idx.query(function...","url": "http://localhost:4000/assets/js/lunr/lunr-en.js"
+    "excerpt":"var idx = lunr(function () { this.field('title') this.field('excerpt') this.field('categories') this.field('tags') this.ref('id') this.pipeline.remove(lunr.trimmer) for (var item in store) { this.add({ title: store[item].title, excerpt: store[item].excerpt, categories: store[item].categories, tags: store[item].tags, id: item }) } }); $(document).ready(function() { $('input#search').on('keyup', function () { var resultdiv = $('#results'); var query = $(this).val().toLowerCase(); var result = idx.query(function...","url": "http://localhost:5000/assets/js/lunr/lunr-en.js"
   },{
     "title": null,
-    "excerpt":"step1list = new Array(); step1list[\"ΦΑΓΙΑ\"] = \"ΦΑ\"; step1list[\"ΦΑΓΙΟΥ\"] = \"ΦΑ\"; step1list[\"ΦΑΓΙΩΝ\"] = \"ΦΑ\"; step1list[\"ΣΚΑΓΙΑ\"] = \"ΣΚΑ\"; step1list[\"ΣΚΑΓΙΟΥ\"] = \"ΣΚΑ\"; step1list[\"ΣΚΑΓΙΩΝ\"] = \"ΣΚΑ\"; step1list[\"ΟΛΟΓΙΟΥ\"] = \"ΟΛΟ\"; step1list[\"ΟΛΟΓΙΑ\"] = \"ΟΛΟ\"; step1list[\"ΟΛΟΓΙΩΝ\"] = \"ΟΛΟ\"; step1list[\"ΣΟΓΙΟΥ\"] = \"ΣΟ\"; step1list[\"ΣΟΓΙΑ\"] = \"ΣΟ\"; step1list[\"ΣΟΓΙΩΝ\"] = \"ΣΟ\"; step1list[\"ΤΑΤΟΓΙΑ\"] = \"ΤΑΤΟ\"; step1list[\"ΤΑΤΟΓΙΟΥ\"] = \"ΤΑΤΟ\"; step1list[\"ΤΑΤΟΓΙΩΝ\"] = \"ΤΑΤΟ\"; step1list[\"ΚΡΕΑΣ\"]...","url": "http://localhost:4000/assets/js/lunr/lunr-gr.js"
+    "excerpt":"step1list = new Array(); step1list[\"ΦΑΓΙΑ\"] = \"ΦΑ\"; step1list[\"ΦΑΓΙΟΥ\"] = \"ΦΑ\"; step1list[\"ΦΑΓΙΩΝ\"] = \"ΦΑ\"; step1list[\"ΣΚΑΓΙΑ\"] = \"ΣΚΑ\"; step1list[\"ΣΚΑΓΙΟΥ\"] = \"ΣΚΑ\"; step1list[\"ΣΚΑΓΙΩΝ\"] = \"ΣΚΑ\"; step1list[\"ΟΛΟΓΙΟΥ\"] = \"ΟΛΟ\"; step1list[\"ΟΛΟΓΙΑ\"] = \"ΟΛΟ\"; step1list[\"ΟΛΟΓΙΩΝ\"] = \"ΟΛΟ\"; step1list[\"ΣΟΓΙΟΥ\"] = \"ΣΟ\"; step1list[\"ΣΟΓΙΑ\"] = \"ΣΟ\"; step1list[\"ΣΟΓΙΩΝ\"] = \"ΣΟ\"; step1list[\"ΤΑΤΟΓΙΑ\"] = \"ΤΑΤΟ\"; step1list[\"ΤΑΤΟΓΙΟΥ\"] = \"ΤΑΤΟ\"; step1list[\"ΤΑΤΟΓΙΩΝ\"] = \"ΤΑΤΟ\"; step1list[\"ΚΡΕΑΣ\"]...","url": "http://localhost:5000/assets/js/lunr/lunr-gr.js"
   },{
     "title": null,
-    "excerpt":"var store = [ {%- for c in site.collections -%} {%- if forloop.last -%} {%- assign l = true -%} {%- endif -%} {%- assign docs = c.docs | where_exp:'doc','doc.search != false' -%} {%- for doc in docs -%} {%- if doc.header.teaser -%} {%- capture teaser -%}{{ doc.header.teaser }}{%- endcapture...","url": "http://localhost:4000/assets/js/lunr/lunr-store.js"
+    "excerpt":"var store = [ {%- for c in site.collections -%} {%- if forloop.last -%} {%- assign l = true -%} {%- endif -%} {%- assign docs = c.docs | where_exp:'doc','doc.search != false' -%} {%- for doc in docs -%} {%- if doc.header.teaser -%} {%- capture teaser -%}{{ doc.header.teaser }}{%- endcapture...","url": "http://localhost:5000/assets/js/lunr/lunr-store.js"
   },{
     "title": "Markup",
-    "excerpt":"Sample post listing for the tag `markup`. ","url": "http://localhost:4000/tags/markup/"
+    "excerpt":"Sample post listing for the tag `markup`. ","url": "http://localhost:5000/tags/markup/"
   },{
     "title": "Portfolio",
-    "excerpt":"Sample document listing for the collection `_portfolio`. ","url": "http://localhost:4000/portfolio/"
+    "excerpt":"Sample document listing for the collection `_portfolio`. ","url": "http://localhost:5000/portfolio/"
   },{
     "title": "Search",
-    "excerpt":"","url": "http://localhost:4000/search/"
+    "excerpt":"","url": "http://localhost:5000/search/"
   },{
     "title": "Sitemap",
-    "excerpt":"A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{ '/sitemap.xml' | relative_url }}) available for digesting as well. Pages {% for post in site.pages %} {% include archive-single.html %} {% endfor %} Posts {% for post in site.posts...","url": "http://localhost:4000/sitemap/"
+    "excerpt":"A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{ '/sitemap.xml' | relative_url }}) available for digesting as well. Pages {% for post in site.pages %} {% include archive-single.html %} {% endfor %} Posts {% for post in site.posts...","url": "http://localhost:5000/sitemap/"
   },{
     "title": "Posts by Tag (grid view)",
-    "excerpt":"","url": "http://localhost:4000/tags-grid/"
+    "excerpt":"","url": "http://localhost:5000/tags-grid/"
   },{
     "title": "Posts by Tag",
-    "excerpt":"","url": "http://localhost:4000/tags/"
+    "excerpt":"","url": "http://localhost:5000/tags/"
   },{
     "title": "Posts by Year (grid view)",
-    "excerpt":"","url": "http://localhost:4000/year-archive-grid/"
+    "excerpt":"","url": "http://localhost:5000/year-archive-grid/"
   },{
     "title": "Posts by Year",
-    "excerpt":"","url": "http://localhost:4000/year-archive/"
+    "excerpt":"","url": "http://localhost:5000/year-archive/"
   },{
     "title": null,
-    "excerpt":"{% if page.xsl %}{% endif %}Jekyll{{ site.time | date_to_xmlschema }}{{ page.url | absolute_url | xml_escape }}{% assign title = site.title | default: site.name %}{% if page.collection != \"posts\" %}{% assign collection = page.collection | capitalize %}{% assign title = title | append: \" | \" | append: collection %}{% endif...","url": "http://localhost:4000/feed.xml"
+    "excerpt":"{% if page.xsl %}{% endif %}Jekyll{{ site.time | date_to_xmlschema }}{{ page.url | absolute_url | xml_escape }}{% assign title = site.title | default: site.name %}{% if page.collection != \"posts\" %}{% assign collection = page.collection | capitalize %}{% assign title = title | append: \" | \" | append: collection %}{% endif...","url": "http://localhost:5000/feed.xml"
   },{
     "title": null,
-    "excerpt":"{% if page.xsl %} {% endif %} {% assign collections = site.collections | where_exp:'collection','collection.output != false' %}{% for collection in collections %}{% assign docs = collection.docs | where_exp:'doc','doc.sitemap != false' %}{% for doc in docs %} {{ doc.url | replace:'/index.html','/' | absolute_url | xml_escape }} {% if doc.last_modified_at or doc.date...","url": "http://localhost:4000/sitemap.xml"
+    "excerpt":"{% if page.xsl %} {% endif %} {% assign collections = site.collections | where_exp:'collection','collection.output != false' %}{% for collection in collections %}{% assign docs = collection.docs | where_exp:'doc','doc.sitemap != false' %}{% for doc in docs %} {{ doc.url | replace:'/index.html','/' | absolute_url | xml_escape }} {% if doc.last_modified_at or doc.date...","url": "http://localhost:5000/sitemap.xml"
   },{
     "title": null,
-    "excerpt":"Sitemap: {{ \"sitemap.xml\" | absolute_url }} ","url": "http://localhost:4000/robots.txt"
+    "excerpt":"Sitemap: {{ \"sitemap.xml\" | absolute_url }} ","url": "http://localhost:5000/robots.txt"
   }]
