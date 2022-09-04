@@ -11,11 +11,11 @@ var store = [{
         "url": "/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/",
         "teaser": "https://t1.daumcdn.net/cfile/tistory/990D9B415BF3C6BD07"
       },{
-        "title": "다주택자 종합부동산세 중과세",
-        "excerpt":"지목의 종류 종합부동산세(종부세)는 매년 6월 1일 기준 부동산 보유자가 그 해 12월에 납부 한다. 종부세를 계산함에 있어서 중요한 것은 아래와 같다. \\[\\sum_{}^{} \\{공시가격 × (1-감면율)\\} × 공정시장가액비율\\] 주 택 분 : $[{전국합산 공시가격× (1 - 감면율)} - 6억 원(11억 원]× 95%$ 법 인 : [전국합산 {공시가격× (1 - 감면율)}]× 95%...","categories": ["부동산"],
+        "title": "다주택 종합부동산세 계산법 예시",
+        "excerpt":"Reference 종합부동산세 기본 공제 종합부동산세 안내 자료 개요 종합부동산세(종부세)는 매년 6월 1일 기준 부동산 보유자가 그 해 12월에 납부 한다. 계산법이 정책이 바뀜에 따라서 매우 복잡하게 바뀌어서 혼란스러운데, 특히 다른 재산세와 다르게 인별과세가 일부 항목에 한해서 적용된다는 점이 있다. 기본적인 과세 방법은 아래 식을 따른다. $종합부동산세 = 과세 표준 ×...","categories": ["부동산"],
         "tags": ["세금","종합부동산세"],
         "url": "/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%A2%85%ED%95%A9%EB%B6%80%EB%8F%99%EC%82%B0%EC%84%B8-%EC%A4%91%EA%B3%BC%EC%84%B8/",
-        "teaser": "https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/3xR/image/kAumR8L62A5Va7-63budXTKMkpc.JPG"
+        "teaser": "http://magazine.bizforms.co.kr/editor_img/20191030_154417.png"
       },{
     "title": "Page Not Found",
     "excerpt":"Sorry, but the page you were trying to view does not exist.  ","url": "http://localhost:4000/404.html"

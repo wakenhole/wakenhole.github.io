@@ -1,26 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-09-04T19:06:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">DevTM</title><subtitle>An dev website.</subtitle><author><name>Wakenhole</name></author><entry><title type="html">다주택자 종합부동산세 중과세</title><link href="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%A2%85%ED%95%A9%EB%B6%80%EB%8F%99%EC%82%B0%EC%84%B8-%EC%A4%91%EA%B3%BC%EC%84%B8/" rel="alternate" type="text/html" title="다주택자 종합부동산세 중과세" /><published>2022-09-04T00:00:00+09:00</published><updated>2022-09-04T00:00:00+09:00</updated><id>http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%A2%85%ED%95%A9%EB%B6%80%EB%8F%99%EC%82%B0%EC%84%B8%20%EC%A4%91%EA%B3%BC%EC%84%B8</id><content type="html" xml:base="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%A2%85%ED%95%A9%EB%B6%80%EB%8F%99%EC%82%B0%EC%84%B8-%EC%A4%91%EA%B3%BC%EC%84%B8/">&lt;h2 id=&quot;지목의-종류&quot;&gt;지목의 종류&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-09-04T20:55:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">DevTM</title><subtitle>An dev website.</subtitle><author><name>Wakenhole</name></author><entry><title type="html">다주택 종합부동산세 계산법 예시</title><link href="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%A2%85%ED%95%A9%EB%B6%80%EB%8F%99%EC%82%B0%EC%84%B8-%EC%A4%91%EA%B3%BC%EC%84%B8/" rel="alternate" type="text/html" title="다주택 종합부동산세 계산법 예시" /><published>2022-09-04T00:00:00+09:00</published><updated>2022-09-04T00:00:00+09:00</updated><id>http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%A2%85%ED%95%A9%EB%B6%80%EB%8F%99%EC%82%B0%EC%84%B8%20%EC%A4%91%EA%B3%BC%EC%84%B8</id><content type="html" xml:base="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%A2%85%ED%95%A9%EB%B6%80%EB%8F%99%EC%82%B0%EC%84%B8-%EC%A4%91%EA%B3%BC%EC%84%B8/">&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.getnews.co.kr/news/articleView.html?idxno=593758&quot;&gt;종합부동산세 기본 공제&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2357&amp;amp;cntntsId=7739&quot;&gt;종합부동산세 안내 자료&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;종합부동산세(종부세)는 매년 6월 1일 기준 부동산 보유자가 그 해 12월에 납부 한다. 
-종부세를 계산함에 있어서 중요한 것은 아래와 같다.&lt;/p&gt;
+&lt;h2 id=&quot;개요&quot;&gt;개요&lt;/h2&gt;
 
-\[\sum_{}^{} \{공시가격 × (1-감면율)\}  × 공정시장가액비율\]
+&lt;p&gt;종합부동산세(종부세)는 매년 6월 1일 기준 부동산 보유자가 그 해 12월에 납부 한다. 계산법이 정책이 바뀜에 따라서 매우 복잡하게 바뀌어서 혼란스러운데, 특히 다른 재산세와 다르게 인별과세가 일부 항목에 한해서 적용된다는 점이 있다. 기본적인 과세 방법은 아래 식을 따른다.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+$종합부동산세 = 과세 표준 × 세율$
+&lt;/p&gt;
 
-&lt;p&gt;주 택 분 : $[{전국합산 공시가격× (1 - 감면율)} - 6억 원(11억 원]× 95%$
-법 인 : [전국합산 {공시가격× (1 - 감면율)}]× 95%
-종합합산토지분 : [전국합산 {공시가격× (1 - 감면율)} - 5억 원]× 95%
-별도합산토지분 : [전국합산 {공시가격× (1 - 감면율)} - 80억 원]× 95%&lt;/p&gt;
+&lt;h2 id=&quot;과세-표준&quot;&gt;과세 표준&lt;/h2&gt;
+&lt;p&gt;과세 표준의 기본 계산법은 아래와 같으며 기본적으로 용도에 따라서 분리하여 과세 한다.&lt;/p&gt;
+
+&lt;p&gt;$[\sum_{}^{} (공시가격 × (1-감면율)) - 공제금액)]  × 공정시장가액비율$&lt;/p&gt;
+
+&lt;p&gt;주택의 종부세를 계산함에 있어서 중요한 것은 아래와 같으며, 정부 정책에 따라서 고정인 것과 변동이 있는 것으로 구분된다.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;인별 과세: 인당 보유한 주택 수와 공시가격의 합산이 중요하다.&lt;/li&gt;
-  &lt;li&gt;공제 금액: 공제금액은 기본 6억, 1세대 1주택의 경우 5억&lt;/li&gt;
-  &lt;li&gt;임야: 산림, 자갈 모래땅등을 말함&lt;/li&gt;
-  &lt;li&gt;대: 건축물을 지을 수 있는 토지 (대지 증명원으로 확인 가능)&lt;/li&gt;
+  &lt;li&gt;인별 과세(고정): 인당 보유한 주택 수와 공시가격의 합산이 중요하다.&lt;/li&gt;
+  &lt;li&gt;공제 금액(변동): 공제금액은 기본 6억, 1세대 1주택 단독명의 경우 11억으로 공제 금액이 중가한다.&lt;/li&gt;
+  &lt;li&gt;공정시장가액 비율(변동): 현재는 60%이나 정책에 따라서 가장 쉽게 변하는 것으로 2021년에는 95%였다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;인별 과세와 유일하게 무관한 항목이 공제 금액으로 이는 1세대 1주택 여부가 중요하다.{: .notice–info}
-2022년 1세대에 1주택 단독 명의에 한해서.{: .notice–info}&lt;/p&gt;
+&lt;p class=&quot;notice--info&quot;&gt;인별 과세와 유일하게 무관한 항목이 공제 금액으로 이는 &lt;strong&gt;가구별&lt;/strong&gt; 1주택 여부가 중요하다.&lt;/p&gt;
 
-&lt;p&gt;d&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="부동산" /><category term="세금" /><category term="종합부동산세" /><summary type="html">지목의 종류</summary></entry><entry><title type="html">용도 지역 이해하기</title><link href="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/" rel="alternate" type="text/html" title="용도 지역 이해하기" /><published>2022-08-12T00:00:00+09:00</published><updated>2022-08-12T00:00:00+09:00</updated><id>http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84%20%EC%A7%80%EC%97%AD</id><content type="html" xml:base="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/">&lt;h2 id=&quot;1-용도-지역&quot;&gt;1. 용도 지역&lt;/h2&gt;
+&lt;p class=&quot;notice--info&quot;&gt;2022년 1세대에 1주택 단독 명의에 한해서 14억까지 증가시킨다는 이야기가 있지만 확정은 아니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;공동명의&quot;&gt;공동명의&lt;/h2&gt;
+
+&lt;p&gt;종부세 전세를 위해서 공동 명의로 할 경우가 많았다. 이유는 기존에는 공제 금액이 1세대 1주택 단독명의의 경우 11억&lt;del&gt;9억&lt;/del&gt;, 1세대 1주택 부부 공동명의의 경우 각각 6억 해서 12억을 공제 받을 수 있었다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;2021년 부터 단독명의의 경우 11억으로 증액되면서 공동명의의 혜택이 상대적으로 크게 줄었다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;계산-예시&quot;&gt;계산 예시&lt;/h3&gt;
+&lt;p&gt;즉 감면율이 없는 상태에서 12억 공시지가의 주택의 경우 아래와 같다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;단독명의 과세표준 = $[12 - 11 = 1억] × 공정시장가액비율$&lt;/li&gt;
+  &lt;li&gt;공동명의의 과세표준 = $[12/2 - 6 = 0억] × 공정시장가액비율$
+즉 공동명의의 경우 과세가 되지 않는다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;다만 2023년 부터 기본공제 금액도 9억으로 증액한다는 기조를 발표하였다. 따라서 국회를 통과하면 18억까지 세금이 없을 것으로 예상된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;세율&quot;&gt;세율&lt;/h2&gt;
+
+&lt;p&gt;세율 산성에 있어서 가장 중요한 것은 인별 다주택 여부 이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dimg.donga.com/wps/NEWS/IMAGE/2022/07/22/114578227.1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;즉, 2주택을 가지고 있는 경우 부부 개별 명의로 하면 인별 1주택이기 때문에 중과세 대상에서 제외되지만, 공동명의로 할 경우 인별 다주택이 되어서 세율이 중과된다.&lt;/p&gt;
+
+&lt;p&gt;따라서 공동명의로 할 경우 공제금액에서 유리하고 개별 명의로 할 경우 중과세에서 유리하다.&lt;/p&gt;
+
+&lt;h3 id=&quot;계산-예시-1&quot;&gt;계산 예시&lt;/h3&gt;
+
+&lt;p&gt;만약 공시지가 20억 상당의 주택이 2개 있는 경우 대략적인 다음과 같다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;개별 명의: $[20 - 6 = 14억] × 0.6(공정시장가액) × 1.2(세율) × 2 (2채)$ = 약 2000만원&lt;/li&gt;
+  &lt;li&gt;공동 명의: $[20 - 6 = 14억] × 0.6(공정시장가액) × 2.2(세율) × 2 (2명)$ = 약 3700만원&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;극단적으로 4인가족이 20억 1채 10억 2채를 가지고 있을 경우는 20억 물건에 대해서 2인 공동명의 10억 물건에 대해서는 각각 개별 명의로 진행 하는 것이 바람직하다. 이에 최근 증여가 크게 급증한 것이다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;20억 물건: $[10 - 6 = 4억] × 0.6(공정시장가액) × 0.6(세율) × 2 (2명)$ = 약 288만원&lt;/li&gt;
+  &lt;li&gt;10억 물건: $[10 - 6 = 4억] × 0.6(공정시장가액) × 0.6(세율) × 2 (2채)$ = 약 288만원&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;즉, 자산 배분을 어떻게 하느냐에 따라서 세금이 수천만원, 수억원 차이날 수 있다.&lt;/p&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;과세 표준 구간별 세금 및 제산새 중복분등이 고려해야 정확하다. 개념을 이해하기 위해서 간략화 한다. 실제는 저것의 약 70% 수준일 것이다.&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="부동산" /><category term="세금" /><category term="종합부동산세" /><summary type="html">Reference 종합부동산세 기본 공제 종합부동산세 안내 자료</summary></entry><entry><title type="html">용도 지역 이해하기</title><link href="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/" rel="alternate" type="text/html" title="용도 지역 이해하기" /><published>2022-08-12T00:00:00+09:00</published><updated>2022-08-12T00:00:00+09:00</updated><id>http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84%20%EC%A7%80%EC%97%AD</id><content type="html" xml:base="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/">&lt;h2 id=&quot;1-용도-지역&quot;&gt;1. 용도 지역&lt;/h2&gt;
 &lt;p&gt;용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://t1.daumcdn.net/cfile/tistory/27388F4B56C985A736&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
