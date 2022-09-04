@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:5000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:5000/" rel="alternate" type="text/html" /><updated>2022-08-14T18:59:03+09:00</updated><id>http://localhost:5000/feed.xml</id><title type="html">DevTM</title><subtitle>An dev website.</subtitle><author><name>Wakenhole</name></author><entry><title type="html">용도 지역 이해하기</title><link href="http://localhost:5000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/" rel="alternate" type="text/html" title="용도 지역 이해하기" /><published>2022-08-12T00:00:00+09:00</published><updated>2022-08-12T00:00:00+09:00</updated><id>http://localhost:5000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84%20%EC%A7%80%EC%97%AD</id><content type="html" xml:base="http://localhost:5000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/">&lt;h2 id=&quot;1-용도-지역&quot;&gt;1. 용도 지역&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-09-04T19:06:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">DevTM</title><subtitle>An dev website.</subtitle><author><name>Wakenhole</name></author><entry><title type="html">다주택자 종합부동산세 중과세</title><link href="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%A2%85%ED%95%A9%EB%B6%80%EB%8F%99%EC%82%B0%EC%84%B8-%EC%A4%91%EA%B3%BC%EC%84%B8/" rel="alternate" type="text/html" title="다주택자 종합부동산세 중과세" /><published>2022-09-04T00:00:00+09:00</published><updated>2022-09-04T00:00:00+09:00</updated><id>http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%A2%85%ED%95%A9%EB%B6%80%EB%8F%99%EC%82%B0%EC%84%B8%20%EC%A4%91%EA%B3%BC%EC%84%B8</id><content type="html" xml:base="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%A2%85%ED%95%A9%EB%B6%80%EB%8F%99%EC%82%B0%EC%84%B8-%EC%A4%91%EA%B3%BC%EC%84%B8/">&lt;h2 id=&quot;지목의-종류&quot;&gt;지목의 종류&lt;/h2&gt;
+
+&lt;p&gt;종합부동산세(종부세)는 매년 6월 1일 기준 부동산 보유자가 그 해 12월에 납부 한다. 
+종부세를 계산함에 있어서 중요한 것은 아래와 같다.&lt;/p&gt;
+
+\[\sum_{}^{} \{공시가격 × (1-감면율)\}  × 공정시장가액비율\]
+
+&lt;p&gt;주 택 분 : $[{전국합산 공시가격× (1 - 감면율)} - 6억 원(11억 원]× 95%$
+법 인 : [전국합산 {공시가격× (1 - 감면율)}]× 95%
+종합합산토지분 : [전국합산 {공시가격× (1 - 감면율)} - 5억 원]× 95%
+별도합산토지분 : [전국합산 {공시가격× (1 - 감면율)} - 80억 원]× 95%&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;인별 과세: 인당 보유한 주택 수와 공시가격의 합산이 중요하다.&lt;/li&gt;
+  &lt;li&gt;공제 금액: 공제금액은 기본 6억, 1세대 1주택의 경우 5억&lt;/li&gt;
+  &lt;li&gt;임야: 산림, 자갈 모래땅등을 말함&lt;/li&gt;
+  &lt;li&gt;대: 건축물을 지을 수 있는 토지 (대지 증명원으로 확인 가능)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;인별 과세와 유일하게 무관한 항목이 공제 금액으로 이는 1세대 1주택 여부가 중요하다.{: .notice–info}
+2022년 1세대에 1주택 단독 명의에 한해서.{: .notice–info}&lt;/p&gt;
+
+&lt;p&gt;d&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="부동산" /><category term="세금" /><category term="종합부동산세" /><summary type="html">지목의 종류</summary></entry><entry><title type="html">용도 지역 이해하기</title><link href="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/" rel="alternate" type="text/html" title="용도 지역 이해하기" /><published>2022-08-12T00:00:00+09:00</published><updated>2022-08-12T00:00:00+09:00</updated><id>http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84%20%EC%A7%80%EC%97%AD</id><content type="html" xml:base="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EC%9A%A9%EB%8F%84-%EC%A7%80%EC%97%AD/">&lt;h2 id=&quot;1-용도-지역&quot;&gt;1. 용도 지역&lt;/h2&gt;
 &lt;p&gt;용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://t1.daumcdn.net/cfile/tistory/27388F4B56C985A736&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -51,7 +73,7 @@
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;4-건폐율-용적률&quot;&gt;4. 건폐율 용적률&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.eum.go.kr/web/FileDownload.do?file=/20200828/regguide/rgregister/RgFacilityFormPopup.jsp/008_02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="부동산" /><category term="용도지역" /><category term="자연녹지지역" /><category term="계획관리지역" /><category term="건폐율" /><category term="용적율" /><summary type="html">1. 용도 지역 용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다.</summary></entry><entry><title type="html">건축 가능한 토지 지목 종류 이해하기</title><link href="http://localhost:5000/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="건축 가능한 토지 지목 종류 이해하기" /><published>2022-08-11T00:00:00+09:00</published><updated>2022-08-11T00:00:00+09:00</updated><id>http://localhost:5000/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B1%B4%EC%B6%95%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%ED%86%A0%EC%A7%80%20%EC%A7%80%EB%AA%A9%20%EC%A2%85%EB%A5%98%20%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:5000/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.eum.go.kr/web/FileDownload.do?file=/20200828/regguide/rgregister/RgFacilityFormPopup.jsp/008_02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Wakenhole</name></author><category term="부동산" /><category term="용도지역" /><category term="자연녹지지역" /><category term="계획관리지역" /><category term="건폐율" /><category term="용적율" /><summary type="html">1. 용도 지역 용도 지역은 아래와 같이 도시, 관리, 농림 자연환경 보전 지역으로 분류 할 수 있다. 용도 지역에 따라서 건축물의 용도 및 크기를 제한 한다.</summary></entry><entry><title type="html">건축 가능한 토지 지목 종류 이해하기</title><link href="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="건축 가능한 토지 지목 종류 이해하기" /><published>2022-08-11T00:00:00+09:00</published><updated>2022-08-11T00:00:00+09:00</updated><id>http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B1%B4%EC%B6%95%20%EA%B0%80%EB%8A%A5%ED%95%9C%20%ED%86%A0%EC%A7%80%20%EC%A7%80%EB%AA%A9%20%EC%A2%85%EB%A5%98%20%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/%EB%B6%80%EB%8F%99%EC%82%B0/%EA%B1%B4%EC%B6%95-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%86%A0%EC%A7%80-%EC%A7%80%EB%AA%A9-%EC%A2%85%EB%A5%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/">&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=airvil&amp;amp;logNo=221931722416&amp;amp;categoryNo=12&amp;amp;parentCategoryNo=0&amp;amp;viewDate=&amp;amp;currentPage=1&amp;amp;postListTopCurrentPage=&amp;amp;from=thumbnailList&amp;amp;userTopListOpen=true&amp;amp;userTopListCount=30&amp;amp;userTopListManageOpen=false&amp;amp;userTopListCurrentPage=1&quot;&gt;토지 지목에 따른 활용 방법&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
