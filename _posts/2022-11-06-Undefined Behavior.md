@@ -55,6 +55,8 @@ test(int*, int, int):
         cmovle  %edx, %eax
         ret
 ```
+[demo](https://godbolt.org/z/zh45457bv) 
+{: .notice--info}
 
 ## Poison value: Deferred UB
 p가 0xFFFFFFFF 일지라도 n=0이라면 문제가 없는 코드이다.
