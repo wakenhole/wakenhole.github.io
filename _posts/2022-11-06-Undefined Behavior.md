@@ -4,7 +4,7 @@ categories:
   - Compiler
 tags:
   - Optimization
-  - LLVM
+  - Undefined behavior
 toc: true
 header:
   image: https://2.bp.blogspot.com/-uilL1GOdl0E/WrVbVxsAxHI/AAAAAAAAAoU/oDi-ww1rx8I-xlHhmFHtUiLK_FgCUVajQCLcBGAs/s1600/DragonPony.png
