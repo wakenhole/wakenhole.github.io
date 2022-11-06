@@ -7,33 +7,71 @@ tags:
   - LLVM
 toc: true
 header:
-  image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs942VryGg2sW4OTDaVuHRbOqzK1bOBeeyEw&usqp=CAU
+  image: https://2.bp.blogspot.com/-uilL1GOdl0E/WrVbVxsAxHI/AAAAAAAAAoU/oDi-ww1rx8I-xlHhmFHtUiLK_FgCUVajQCLcBGAs/s1600/DragonPony.png
   teaser: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs942VryGg2sW4OTDaVuHRbOqzK1bOBeeyEw&usqp=CAU
 ---
 
 
-## 지목의 종류
+# Undefined behavior (UB)
 
-종합부동산세(종부세)는 매년 6월 1일 기준 부동산 보유자가 그 해 12월에 납부 한다. 
-종부세를 계산함에 있어서 중요한 것은 아래와 같다. 
+Complier는 최적화를 위해서 다양한 기법을 적용하는데, 이 결과로 기대한 결과와 다른 결과가 나올 수가 있다. 이러한 프로그램은 잘못 짠 프로그램으로 간주하고 compiler는 특별한 행동을 할 필요는 없다.
+## overflow
+Singed overflow 문제로, compiler는 x+1 > x를 비교해서 return 하는 것이 아니라 그냥 true를 return 한다.
+```cpp
+int foo(int x) {
+    return x+1 > x; // either true or UB due to signed overflow
+}
+```
+```asm
+foo(int):                                # @foo(int)
+        movl    $1, %eax
+        retq
+```
 
+Pointer arithmetic overflow 문제로, compiler는 p+a & p+b를 비교하는 것이 아니라 a와 b만 비교한다. 
+gcc와 llvm의 차이가 있지만, 결과는 같다.
+```cpp
+int overflow(int*p, int a, int b) {
+   return (p + a >  p + b ? a : b);
+}
+overflow((int*)0xffffffff, 1, 0);
+```
 
-$$ \sum_{}^{} \{공시가격 × (1-감면율)\}  × 공정시장가액비율 $$
+```assembly
+.clang
+overflow(int*, int, int):                            # @overflow(int*, int, int)
+        movl    %edx, %eax
+        cmpl    %edx, %esi
+        cmovgel %esi, %eax
+        retq
+.gcc
+test(int*, int, int):
+        movslq  %esi, %rsi
+        movslq  %edx, %rcx
+        movq    %rsi, %rax
+        salq    $2, %rcx
+        salq    $2, %rsi
+        cmpq    %rcx, %rsi
+        cmovle  %edx, %eax
+        ret
+```
 
+## Poison value: Deferred UB
+p가 0xFFFFFFFF 일지라도 n=0이라면 문제가 없는 코드이다.
+하지만 아래 코드와 같이 최적화를 할경우 undefined behavior가 발생한다. 
+따라서 이런 당장 발생하지 않는 변수에 대해서 poision value라고 하고 eventually undefined behavior를 발생시킬 수 있다.
 
-주 택 분 : $[{전국합산 공시가격× (1 - 감면율)} - 6억 원(11억 원]× 95%$
-법 인 : [전국합산 {공시가격× (1 - 감면율)}]× 95%
-종합합산토지분 : [전국합산 {공시가격× (1 - 감면율)} - 5억 원]× 95%
-별도합산토지분 : [전국합산 {공시가격× (1 - 감면율)} - 80억 원]× 95%
-
-
-* 인별 과세: 인당 보유한 주택 수와 공시가격의 합산이 중요하다.
-* 공제 금액: 공제금액은 기본 6억, 1세대 1주택의 경우 5억
-* 임야: 산림, 자갈 모래땅등을 말함
-* 대: 건축물을 지을 수 있는 토지 (대지 증명원으로 확인 가능)
-
-인별 과세와 유일하게 무관한 항목이 공제 금액으로 이는 1세대 1주택 여부가 중요하다.{: .notice--info}
-2022년 1세대에 1주택 단독 명의에 한해서.{: .notice--info}
-  
-
-d 
+```cpp
+int n = 0;
+for (auto i = 0; i < n; ++i){
+  a[i] = p + 0x1;
+}
+```
+```cpp
+// optimized
+int n = 0;
+auto temp = p + 0x1;
+for (auto i = 0; i < n; ++i){
+  a[i] = temp;
+}
+```
