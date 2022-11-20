@@ -1,7 +1,7 @@
 ---
 title: "Undefined Behavior"
 categories:
-  - Compiler
+  - Programming
 tags:
   - Optimization
   - Undefined behavior

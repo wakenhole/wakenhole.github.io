@@ -15,7 +15,7 @@ header:
 1. [SIMD basic](https://www.cs.cmu.edu/afs/cs/academic/class/15213-s19/www/lectures613/04-simd.pdf)
 2. [Intel Instrinsics Guide](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html)
 
-# Single Instruction Multiple Data(SIMD)
+## Single Instruction Multiple Data(SIMD)
 
 데이터 처리 속도를 높이기 위해 병렬처리 (Parallel processing) 기법을 많이 사용한다. 흔히 많이 알고 있는 방법은 CPU core level에서 
 여러 multiple process or thread를 생성해서 multiple core를 동시에 (simultaneously) 활용하여 처리하는 방식이다. 
@@ -23,12 +23,10 @@ header:
 
 
 | ![image](https://user-images.githubusercontent.com/2586880/202849587-f7b398be-7a9f-48c4-86bf-36220830f322.png) |
-
 {:.image-caption}
 *Scalar*
 
 ![image](https://user-images.githubusercontent.com/2586880/202849607-9e44e4d8-3107-4dfa-808f-22b8100b53ba.png)
-
 {:.image-caption}
 *SIMD*
 
