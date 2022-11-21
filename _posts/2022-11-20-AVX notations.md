@@ -61,6 +61,13 @@ _mm<bit_width>_<operation>_<data_type>
 | epu8/epu16/epu32/epu64 | vectors contain 8/16/32/64 bits unsigned integers packed data |
 | si128/si256/si512 | unspecified 128/256/512 bits vector |
 
+| Data Type	| Description |
+|----------:|:-------------|
+| ps | vectors contain single-precision packed data |
+| pd | vectors contain double-precision packed data |
+| epi64 | vectors contain 64 bits signed integers packed data |
+
+
 앞선 예제에서 살펴봤던 아래 구현은 16bit integer 32개를 add operation 한 후 512 bit vector를 return 하는 함수이다.
 ```cpp
 __m512i A, B;
