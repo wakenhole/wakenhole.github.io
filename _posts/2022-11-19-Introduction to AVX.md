@@ -1,8 +1,8 @@
 ---
-title: "Chapter 1 Introduction To AVX"
+title: "Chapter 1. Introduction To AVX"
 categories:
   - AVX
-tags:p
+tags:
   - SIMD
   - Programming
 toc: true

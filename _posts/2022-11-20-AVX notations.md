@@ -1,8 +1,8 @@
 ---
-title: "Chapter 2 AVX Notations"
+title: "Chapter 2. AVX Notations"
 categories:
   - AVX
-tags:p
+tags:
   - SIMD
   - Programming
   - Notations
@@ -52,14 +52,6 @@ _mm<bit_width>_<operation>_<data_type>
 1. \<bit_width\>: return 되는 (때로는 사용되는) bit 수를 의미한다. 128인 경우는 해당 영역이 비어있다.
 3. \<operation\>: 일종의 함수 이름으로 instrinsc operation을 나타낸다.
 4. \<data_type\>: instrinsic의 primary argument의 데이터 타입이며, 대략적인 종류는 아래와 같다.
-
-| Data Type	| Description |
-| ------: | :--------- |
-| ps | vectors contain single-precision packed data |
-| pd | vectors contain double-precision packed data |
-| epi8/epi16/epi32/epi64 | vectors contain 8/16/32/64 bits signed integers packed data |
-| epu8/epu16/epu32/epu64 | vectors contain 8/16/32/64 bits unsigned integers packed data |
-| si128/si256/si512 | unspecified 128/256/512 bits vector |
 
 | Data Type	| Description |
 |----------:|:-------------|
