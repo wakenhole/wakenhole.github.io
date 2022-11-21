@@ -8,8 +8,8 @@ tags:p
   - Notations
 toc: true
 header:
-  image: https://colfaxresearch.com/wp-content/uploads/2017/09/Skylake-AVX512-banner-NOCTA.png
-  teaser: https://colfaxresearch.com/wp-content/uploads/2017/09/Skylake-AVX512-banner-NOCTA.png
+  image: https://cdn.appuals.com/wp-content/uploads/2022/02/Intel-3rd-Gen-Xeon-Scalable-5-Custom-2060x1373-1.jpg
+  teaser: https://cdn.appuals.com/wp-content/uploads/2022/02/Intel-3rd-Gen-Xeon-Scalable-5-Custom-2060x1373-1.jpg
 ---
 
 ### Reference 
@@ -54,7 +54,7 @@ _mm<bit_width>_<operation>_<data_type>
 4. <data_type>: instrinsic의 primary argument의 데이터 타입이며, 대략적인 종류는 아래와 같다.
 
 | Data Type	| Description |
-|----------:|:-------------|
+| ------: | :--------- |
 | ps | vectors contain single-precision packed data |
 | pd | vectors contain double-precision packed data |
 | epi8/epi16/epi32/epi64 | vectors contain 8/16/32/64 bits signed integers packed data |

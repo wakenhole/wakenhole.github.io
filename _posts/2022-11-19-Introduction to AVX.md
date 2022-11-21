@@ -8,7 +8,7 @@ tags:p
 toc: true
 header:
   image: https://colfaxresearch.com/wp-content/uploads/2017/09/Skylake-AVX512-banner-NOCTA.png
-  teaser: https://colfaxresearch.com/wp-content/uploads/2017/09/Skylake-AVX512-banner-NOCTA.png
+  teaser: https://cdn.appuals.com/wp-content/uploads/2022/02/Intel-3rd-Gen-Xeon-Scalable-5-Custom-2060x1373-1.jpg
 ---
 
 ## Reference 
