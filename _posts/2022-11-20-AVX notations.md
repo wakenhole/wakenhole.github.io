@@ -49,9 +49,9 @@ i는 integer type (bit수 무관), d는 double-precision 64 bit floating point, 
 _mm<bit_width>_<operation>_<data_type>
 ```
 이 포맷은 아래와 같이 구성된다. 
-1. <bit_width>: return 되는 (때로는 사용되는) bit 수를 의미한다. 128인 경우는 해당 영역이 비어있다.
-3. <operation>: 일종의 함수 이름으로 instrinsc operation을 나타낸다.
-4. <data_type>: instrinsic의 primary argument의 데이터 타입이며, 대략적인 종류는 아래와 같다.
+1. \<bit_width\>: return 되는 (때로는 사용되는) bit 수를 의미한다. 128인 경우는 해당 영역이 비어있다.
+3. \<operation\>: 일종의 함수 이름으로 instrinsc operation을 나타낸다.
+4. \<data_type\>: instrinsic의 primary argument의 데이터 타입이며, 대략적인 종류는 아래와 같다.
 
 | Data Type	| Description |
 | ------: | :--------- |
