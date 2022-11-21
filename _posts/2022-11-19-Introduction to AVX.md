@@ -1,5 +1,5 @@
 ---
-title: "Chapter 1. Introduction To AVX"
+title: "Chapter 1 Introduction To AVX"
 categories:
   - AVX
 tags:p
@@ -7,7 +7,7 @@ tags:p
   - Programming
 toc: true
 header:
-  image: https://user-images.githubusercontent.com/2586880/202849607-9e44e4d8-3107-4dfa-808f-22b8100b53ba.png
+  image: https://cdn.appuals.com/wp-content/uploads/2022/02/Intel-3rd-Gen-Xeon-Scalable-5-Custom-2060x1373-1.jpg
   teaser: https://user-images.githubusercontent.com/2586880/202849607-9e44e4d8-3107-4dfa-808f-22b8100b53ba.png
 ---
 
@@ -22,7 +22,7 @@ header:
 하지만 SIMD는 CPU core level 동작이 아닌 data level에서 병렬 처리를 위해 등장한 vectorize 기술로 여러 데이터에데서 반복적인 동일한 연산을 처리하는데 주로 사용된다.
 
 
-| ![image](https://user-images.githubusercontent.com/2586880/202849587-f7b398be-7a9f-48c4-86bf-36220830f322.png) |
+![image](https://user-images.githubusercontent.com/2586880/202849587-f7b398be-7a9f-48c4-86bf-36220830f322.png)
 {:.image-caption}
 *Scalar*
 
