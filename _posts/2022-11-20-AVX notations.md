@@ -67,6 +67,7 @@ _mm<bit_width>_<operation>_<data_type>
 | pd | vectors contain double-precision packed data |
 | epi8/epi16/epi32/epi64 | vectors contain 8/16/32/64 bits signed integers packed data |
 | epu8/epu16/epu32/epu64 | vectors contain 8/16/32/64 bits unsigned integers packed data |
+| si128/si256/si512 | unspecified 128/256/512 bits vector |
 
 
 
