@@ -1,5 +1,5 @@
 ---
-title: "Chapter 1. Introduction To AVX"
+title: "Basic Chapter 1. Introduction To AVX"
 categories:
   - AVX
 tags:
