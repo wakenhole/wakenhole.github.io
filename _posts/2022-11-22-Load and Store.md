@@ -1,5 +1,5 @@
 ---
-title: "Advaced Chapter 1. Load and Store"
+title: "Advanced Chapter 1. Load and Store"
 categories:
   - AVX
 tags:
@@ -15,6 +15,7 @@ header:
 ## Register & Memory
 AVX vectorize 구현시 가장 중요한 것은 Memory와 Register 관리 이다.
 AVX 연산 자체는 빠르다고 하더라도, 이를 사용하기 위해서는 register에 load 해야 하고, 연산 후에 다시 memory에 저장해야 하기 때문이다. 
+
 예를 들면 A[16]+B[16] 덧셈을 element-wise 하기 위한 아래 예제를 살펴보자. 
 
 ```cpp
@@ -37,6 +38,7 @@ _mm512_store_epi32(output_A, C);        // 5 cycle
 
 실제로 16개의 add 연산을 1 cycle에 처리한다고 하더라도 사용되는 cycle은 22 cycle이다. scalar level 연산을 1cycle이 가정하면 소모되는 16 cycle 보다 느리다는 의미이다. (scalar가 register load되는 시간 제외)
 이 경우는 vectorize를 하지 않는 것이 오히려 바람직 할 수도 있다. 
+
 하지만 만약 A+B, A-B, B-A를 모두 구해야 하는 상황 이라면 아래와 같을 수 있다. 
 
 
