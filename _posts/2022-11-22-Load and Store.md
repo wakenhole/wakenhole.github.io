@@ -7,9 +7,10 @@ tags:
   - Programming
   - Optimization
 toc: true
+classes: wide
 header:
-  image: https://cvw.cac.cornell.edu/vector/images/registers_updated.png
   teaser: https://cvw.cac.cornell.edu/vector/images/registers_updated.png
+#   image: https://cvw.cac.cornell.edu/vector/images/registers_updated.png
 ---
 
 ## Register & Memory
