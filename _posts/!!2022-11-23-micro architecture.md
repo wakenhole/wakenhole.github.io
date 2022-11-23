@@ -42,14 +42,9 @@ header:
 
 > The number of clock cycles required to wait before the issue ports are free to accept the same instruction again. For many instructions, the throughput of an instruction can be significantly less than its latency.
 
-Intel의 정의에 따르면, 하나의 instruction이 다시 수행을 하기 위해 필요한 clock cycle을 의미한다. 이는 흔히 reciprocal throughput 정의를 따르는데 이는 CPU의 pipeline과 instruction level prallelism를 고려하기 위함이다. 
-즉, CPU pipeline에서 같은 instruction을 다시 수행하기 위한 시간이 1 cycle이라고 할지라도, 동시에 2개가 수행될 수 있으면 throughput은 0.5 cycle이다.
-예를 들면, _mm512_add_epi16 가 0.5 cycle throughput을 가진다. 
+Intel의 정의에 따르면, 하나의 instruction이 다시 수행을 하기 위해 필요한 clock cycle을 의미한다. 이는 흔히 Reciprocal throughput 정의를 따르는데 이는 CPU의 pipeline과 instruction level prallelism를 고려하기 위함이다. 
+즉 
 
-
-## Example
-
-아래 그림은 latency와 cycle의 개념적인 의미를 보여준다. 
 
 ![image](https://user-images.githubusercontent.com/2586880/203658732-b7c12a92-fcb2-402b-8d56-4145b6bd7783.png)
 
@@ -69,3 +64,21 @@ Intel의 정의에 따르면, 하나의 instruction이 다시 수행을 하기 �
     * Write the result to the register file.
     * For stores and branches, do nothing.
 
+
+
+
+
+### Port Usage
+
+> We use the following notation for the port usage: 3*p015+1*p23, for example, denotes an instruction with four μops; three of these μops can each be executed on ports 0, 1, and 5, and one μop can be executed on ports 2 and 3. 
+
+
+| Port Number | Main Purpose | Width |
+|:--------|:-------:|--------:|
+| 0 | FMA, general vector | 256-bit |
+| 1 |  FMA, general vector |  256-bit | 
+| 2 |  Load unit + addressing | 512-bit | 
+| 3 |  Load unit + addressing | 512-bit | 
+| 4 |  Store unit | 512-bit | 
+| 5 |  Permute FMA, general vector | 512-bit | 
+| 6 | + Addressing, scalar, branch | 64-bit | 
