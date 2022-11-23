@@ -7,6 +7,7 @@ tags:
   - Programming
   - Notations
 toc: true
+classes: wide
 header:
   image: https://user-images.githubusercontent.com/2586880/202849607-9e44e4d8-3107-4dfa-808f-22b8100b53ba.png
   teaser: https://cdn.appuals.com/wp-content/uploads/2022/02/Intel-3rd-Gen-Xeon-Scalable-5-Custom-2060x1373-1.jpg
@@ -55,10 +56,11 @@ _mm<bit_width>_<operation>_<data_type>
 
 | Data Type	| Description |
 |----------:|:-------------|
-| ps | vectors contain single-precision packed data |
-| pd | vectors contain double-precision packed data |
-| epi8/epi16/epi32/epi64 | vectors contain 8/16/32/64 bits signed integers packed data |
-| epu8/epu16/epu32/epu64 | vectors contain 8/16/32/64 bits unsigned integers packed data |
+| ph | *p*acked *h*alf-precision floating point (16 bits) |
+| ps | *p*acked *s*ingle-precision floating point (32 bits) |
+| pd | *p*acked *d*ouble-precision floating point (64 bits) |
+| epi8/epi16/epi32/epi64 | 8/16/32/64 bits *e*xtended *p*acked signed integers |
+| epu8/epu16/epu32/epu64 | 8/16/32/64 bits *e*xtended *p*acked unsigned integers |
 | si128/si256/si512 | unspecified 128/256/512 bits vector |
 
 
