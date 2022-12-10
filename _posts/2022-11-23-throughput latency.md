@@ -1,5 +1,5 @@
 ---
-title: "Basic Chapter 6. Understanding Performance Metric"
+title: "Understanding Performance Metric"
 categories:
   - AVX
 tags:
@@ -7,10 +7,16 @@ tags:
   - Programming
   - Performance
 toc: true
-classes: wide
+toc_sticky: true
+tagline: "Basic Chapter 3"
 header:
-  # image: https://cdn.comparitech.com/wp-content/uploads/2018/11/Latency-vs-Throughput-.jpg
-  # teaser: https://cdn.comparitech.com/wp-content/uploads/2018/11/Latency-vs-Throughput-.jpg
+  overlay_image: https://images.unsplash.com/photo-1498084393753-b411b2d26b34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  actions:
+    - label: "More Info"
+      url: "https://unsplash.com"
+  teaser: https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80
 ---
 
 ## Reference

@@ -19,33 +19,33 @@ var store = [{
       },{
         "title": "Undefined Behavior",
         "excerpt":"Undefined behavior (UB) Complier는 최적화를 위해서 다양한 기법을 적용하는데, 이 결과로 기대한 결과와 다른 결과가 나올 수가 있다. 이러한 프로그램은 잘못 짠 프로그램으로 간주하고 compiler는 특별한 행동을 할 필요는 없다. overflow Singed overflow 문제로, compiler는 x+1 &gt; x를 비교해서 return 하는 것이 아니라 그냥 true를 return 한다. int foo(int x)...","categories": ["Programming"],
-        "tags": ["Optimization","Undefined behavior"],
+        "tags": ["Optimization","Undefined behavior","C++","Compiler"],
         "url": "/programming/Undefined-Behavior/",
-        "teaser": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs942VryGg2sW4OTDaVuHRbOqzK1bOBeeyEw&usqp=CAU"
+        "teaser": "https://2.bp.blogspot.com/-uilL1GOdl0E/WrVbVxsAxHI/AAAAAAAAAoU/oDi-ww1rx8I-xlHhmFHtUiLK_FgCUVajQCLcBGAs/s1600/DragonPony.png"
       },{
         "title": "Introduction To AVX",
         "excerpt":"Reference SIMD basic Intel Instrinsics Guide Single Instruction Multiple Data(SIMD) 데이터 처리 속도를 높이기 위해 병렬처리 (Parallel processing) 기법을 많이 사용한다. 흔히 많이 알고 있는 방법은 CPU core level에서 여러 multiple process or thread를 생성해서 multiple core를 동시에 (simultaneously) 활용하여 처리하는 방식이다. 하지만 SIMD는 CPU core level 동작이 아닌 data...","categories": ["AVX"],
         "tags": ["SIMD","Programming"],
         "url": "/avx/Introduction-to-AVX/",
-        "teaser": "/assets/images/teaser.jpg"
+        "teaser": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
       },{
-        "title": "Basic Chapter 2. AVX Notations",
+        "title": "AVX Notations",
         "excerpt":"Reference Crunching Numbers with AVX and AVX2 AVX는 기존 C++ programming과는 다른 용어들이 많이 존재하기 때문에 이에 대해서 알아보자. Data type naming rule 기본적인 정의 방법은 다음과 같이 표시한다. __&lt;bit_width&gt;&lt;data_type&gt; &lt;ddd&gt;는 bit수를 의미하며 128, 256, 512가 지원된다. &lt;s&gt;는 data type을 나타내며 i, d, empty가 있다. i는 integer type (bit수 무관),...","categories": ["AVX"],
         "tags": ["SIMD","Programming","Notations"],
         "url": "/avx/AVX-notations/",
-        "teaser": "https://cdn.appuals.com/wp-content/uploads/2022/02/Intel-3rd-Gen-Xeon-Scalable-5-Custom-2060x1373-1.jpg"
+        "teaser": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
       },{
-        "title": "Advanced Chapter 1. Load and Store",
+        "title": "Load and Store",
         "excerpt":"Register &amp; Memory AVX vectorize 구현시 가장 중요한 것은 Memory와 Register 관리 이다. AVX 연산 자체는 빠르다고 하더라도, 이를 사용하기 위해서는 register에 load 해야 하고, 연산 후에 다시 memory에 저장해야 하기 때문이다. Bad example 예를 들면 A[16]+B[16] 덧셈을 element-wise 하기 위한 아래 예제를 살펴보자. int input_A[16]; int input_B[16]; int output[16];...","categories": ["AVX"],
         "tags": ["SIMD","Programming","Optimization"],
         "url": "/avx/Load-and-Store/",
-        "teaser": "https://cvw.cac.cornell.edu/vector/images/registers_updated.png"
+        "teaser": "https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1206&q=80"
       },{
-        "title": "Basic Chapter 6. Understanding Performance Metric",
+        "title": "Understanding Performance Metric",
         "excerpt":"Reference Software Optimization Reference Manual Agner Fog’s Guide μops Pipeline Latency and Throughput Overview 일반적으로 Software의 성능은 cache miss, IO bandwidth, bus bandwidth 등에 영향을 받지만 여기서는 그 이외의 부분에 대해서 논의 한다. 이를 통해서 instruction sequence의 chain latency를 최소화 할수 있는 방법을 이해할 수 있다. Definition 가장 중요한 두...","categories": ["AVX"],
         "tags": ["SIMD","Programming","Performance"],
         "url": "/avx/throughput-latency/",
-        "teaser": "/assets/images/teaser.jpg"
+        "teaser": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
       },{
     "title": "Page Not Found",
     "excerpt":"Sorry, but the page you were trying to view does not exist.  ","url": "http://localhost:5000/404.html"
@@ -103,7 +103,4 @@ var store = [{
   },{
     "title": null,
     "excerpt":"Sitemap: {{ \"sitemap.xml\" | absolute_url }} ","url": "http://localhost:5000/robots.txt"
-  },{
-    "title": null,
-    "excerpt":"","url": "http://localhost:5000/page2/"
   }]

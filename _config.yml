@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "air" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dirt" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -96,9 +96,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : google # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-24590587-1
     anonymize_ip         : # true, false (default)
 
 
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Wakenhole"
   avatar           : "/assets/images/avatar.png"
-  bio              : "I am an **Software Architect and Developer**."
+  bio              : "**Software Architect**"
   location         : "Korea"
   email            :
   links:
@@ -117,7 +117,7 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://sites.google.com/site/okhwanlee/"
     - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin-square"
+      icon: "fab fa-fw fa-linkedin"
       url: "www.linkedin.com/in/okhwan-lee-13558056"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
@@ -218,7 +218,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 20 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 

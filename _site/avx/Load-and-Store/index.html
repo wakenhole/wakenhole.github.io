@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Advanced Chapter 1. Load and Store - DevTM</title>
+<!-- begin _includes/seo.html --><title>Load and Store - DevTM</title>
 <meta name="description" content="Register &amp; Memory AVX vectorize 구현시 가장 중요한 것은 Memory와 Register 관리 이다. AVX 연산 자체는 빠르다고 하더라도, 이를 사용하기 위해서는 register에 load 해야 하고, 연산 후에 다시 memory에 저장해야 하기 때문이다.">
 
 
@@ -22,7 +22,7 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="DevTM">
-<meta property="og:title" content="Advanced Chapter 1. Load and Store">
+<meta property="og:title" content="Load and Store">
 <meta property="og:url" content="http://localhost:5000/avx/Load-and-Store/">
 
 
@@ -30,7 +30,7 @@
 
 
 
-  <meta property="og:image" content="https://cvw.cac.cornell.edu/vector/images/registers_updated.png">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1504376830547-506dedfe1fe9?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80">
 
 
 
@@ -113,7 +113,7 @@
 
   </head>
 
-  <body class="layout--single wide">
+  <body class="layout--single">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -165,6 +165,66 @@
 
     <div class="initial-content">
       
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1504376830547-506dedfe1fe9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Load and Store
+
+        
+      </h1>
+      
+        <p class="page__lead">Advanced Chapter 1
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+      
+      
+        <p>
+        
+          <a href="https://unsplash.com" class="btn btn--light-outline btn--large">More Info</a>
+        
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://unsplash.com"><strong>Unsplash</strong></a>
+</span>
+  
+</div>
+
+
 
 
 
@@ -217,6 +277,8 @@
             <li><a href="https://sites.google.com/site/okhwanlee/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Portfolio</span></a></li>
           
         
+          
+            <li><a href="www.linkedin.com/in/okhwan-lee-13558056" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
           
         
           
@@ -292,45 +354,17 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Advanced Chapter 1. Load and Store">
+    <meta itemprop="headline" content="Load and Store">
     <meta itemprop="description" content="Register &amp; MemoryAVX vectorize 구현시 가장 중요한 것은 Memory와 Register 관리 이다.AVX 연산 자체는 빠르다고 하더라도, 이를 사용하기 위해서는 register에 load 해야 하고, 연산 후에 다시 memory에 저장해야 하기 때문이다.">
     <meta itemprop="datePublished" content="2022-11-22T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
-        <header>
-          <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:5000/avx/Load-and-Store/" class="u-url" itemprop="url">Advanced Chapter 1. Load and Store
-</a>
-          </h1>
-          
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-        </header>
-      
 
       <section class="page__content e-content" itemprop="text">
         
-          <aside class="sidebar__right ">
+          <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
               <ul class="toc__menu"><li><a href="#register--memory">Register &amp; Memory</a></li><li><a href="#bad-example">Bad example</a></li><li><a href="#good-example">Good example</a></li></ul>
@@ -472,7 +506,7 @@ AVX 연산 자체는 빠르다고 하더라도, 이를 사용하기 위해서는
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Advanced+Chapter+1.+Load+and+Store%20http%3A%2F%2Flocalhost%3A5000%2Favx%2FLoad-and-Store%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Load+and+Store%20http%3A%2F%2Flocalhost%3A5000%2Favx%2FLoad-and-Store%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A5000%2Favx%2FLoad-and-Store%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -483,11 +517,11 @@ AVX 연산 자체는 빠르다고 하더라도, 이를 사용하기 위해서는
       
   <nav class="pagination">
     
-      <a href="/avx/AVX-notations/" class="pagination--pager" title="Basic Chapter 2. AVX Notations
+      <a href="/avx/AVX-notations/" class="pagination--pager" title="AVX Notations
 ">이전</a>
     
     
-      <a href="/avx/throughput-latency/" class="pagination--pager" title="Basic Chapter 6. Understanding Performance Metric
+      <a href="/avx/throughput-latency/" class="pagination--pager" title="Understanding Performance Metric
 ">다음</a>
     
   </nav>
@@ -511,12 +545,12 @@ AVX 연산 자체는 빠르다고 하더라도, 이를 사용하기 위해서는
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="/assets/images/teaser.jpg" alt="">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/avx/throughput-latency/" rel="permalink">Basic Chapter 6. Understanding Performance Metric
+        <a href="/avx/throughput-latency/" rel="permalink">Understanding Performance Metric
 </a>
       
     </h2>
@@ -562,12 +596,12 @@ AVX 연산 자체는 빠르다고 하더라도, 이를 사용하기 위해서는
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="https://cdn.appuals.com/wp-content/uploads/2022/02/Intel-3rd-Gen-Xeon-Scalable-5-Custom-2060x1373-1.jpg" alt="">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/avx/AVX-notations/" rel="permalink">Basic Chapter 2. AVX Notations
+        <a href="/avx/AVX-notations/" rel="permalink">AVX Notations
 </a>
       
     </h2>
@@ -612,7 +646,7 @@ AVX는 기존 C++ programming과는 다른 용어들이 많이 존재하기 때�
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="/assets/images/teaser.jpg" alt="">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -661,7 +695,7 @@ AVX는 기존 C++ programming과는 다른 용어들이 많이 존재하기 때�
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs942VryGg2sW4OTDaVuHRbOqzK1bOBeeyEw&usqp=CAU" alt="">
+        <img src="https://2.bp.blogspot.com/-uilL1GOdl0E/WrVbVxsAxHI/AAAAAAAAAoU/oDi-ww1rx8I-xlHhmFHtUiLK_FgCUVajQCLcBGAs/s1600/DragonPony.png" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">

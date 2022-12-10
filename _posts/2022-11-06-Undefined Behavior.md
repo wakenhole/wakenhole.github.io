@@ -5,10 +5,19 @@ categories:
 tags:
   - Optimization
   - Undefined behavior
+  - C++
+  - Compiler
 toc: true
+toc_sticky: true
+tagline: "C++"
 header:
-  image: https://2.bp.blogspot.com/-uilL1GOdl0E/WrVbVxsAxHI/AAAAAAAAAoU/oDi-ww1rx8I-xlHhmFHtUiLK_FgCUVajQCLcBGAs/s1600/DragonPony.png
-  teaser: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs942VryGg2sW4OTDaVuHRbOqzK1bOBeeyEw&usqp=CAU
+  overlay_image: https://2.bp.blogspot.com/-uilL1GOdl0E/WrVbVxsAxHI/AAAAAAAAAoU/oDi-ww1rx8I-xlHhmFHtUiLK_FgCUVajQCLcBGAs/s1600/DragonPony.png
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  actions:
+    - label: "More Info"
+      url: "https://unsplash.com"
+  teaser: https://2.bp.blogspot.com/-uilL1GOdl0E/WrVbVxsAxHI/AAAAAAAAAoU/oDi-ww1rx8I-xlHhmFHtUiLK_FgCUVajQCLcBGAs/s1600/DragonPony.png
 ---
 
 
