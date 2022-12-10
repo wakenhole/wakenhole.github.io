@@ -53,7 +53,8 @@ One of most popular one is boost:static_vector.
 * index_of(iterator) - Returns the index of the position the iterator is pointing to.
 * pop_back() - Removes the last element of the list
 
-### Example
+## Example
+> https://godbolt.org/z/1G3vYohdz 
 
 ```cpp
 #include <iostream>
@@ -124,10 +125,9 @@ int main() {
   std::cout<<"The last element of vector v1 is "<<v1.back()<<std::endl;  
 }
 ```
-> https://godbolt.org/z/1G3vYohdz 
 
 
-## Output
+### Output
 ```
 v1: max_size=8, capacity=8
 Is vector v1 empty true

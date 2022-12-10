@@ -367,7 +367,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#reference">Reference</a></li><li><a href="#overview">Overview</a></li><li><a href="#member-functions">Member functions</a><ul><li><a href="#example">Example</a></li></ul></li><li><a href="#output">Output</a></li></ul>
+              <ul class="toc__menu"><li><a href="#reference">Reference</a></li><li><a href="#overview">Overview</a></li><li><a href="#member-functions">Member functions</a></li><li><a href="#example">Example</a><ul><li><a href="#output">Output</a></li></ul></li></ul>
 
             </nav>
           </aside>
@@ -410,7 +410,10 @@ One of most popular one is boost:static_vector.</p>
   <li>pop_back() - Removes the last element of the list</li>
 </ul>
 
-<h3 id="example">Example</h3>
+<h2 id="example">Example</h2>
+<blockquote>
+  <p>https://godbolt.org/z/1G3vYohdz</p>
+</blockquote>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
 #include&lt;boost/container/static_vector.hpp&gt;
@@ -480,11 +483,8 @@ One of most popular one is boost:static_vector.</p>
   <span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"The last element of vector v1 is "</span><span class="o">&lt;&lt;</span><span class="n">v1</span><span class="p">.</span><span class="n">back</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>  
 <span class="p">}</span>
 </code></pre></div></div>
-<blockquote>
-  <p>https://godbolt.org/z/1G3vYohdz</p>
-</blockquote>
 
-<h2 id="output">Output</h2>
+<h3 id="output">Output</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>v1: max_size=8, capacity=8
 Is vector v1 empty true
 v1: current_size=0, capacity=8
