@@ -21,7 +21,7 @@ var store = [{
         "excerpt":"Undefined behavior (UB) Complier는 최적화를 위해서 다양한 기법을 적용하는데, 이 결과로 기대한 결과와 다른 결과가 나올 수가 있다. 이러한 프로그램은 잘못 짠 프로그램으로 간주하고 compiler는 특별한 행동을 할 필요는 없다. overflow Singed overflow 문제로, compiler는 x+1 &gt; x를 비교해서 return 하는 것이 아니라 그냥 true를 return 한다. int foo(int x)...","categories": ["Programming"],
         "tags": ["Optimization","Undefined behavior","C++","Compiler"],
         "url": "/programming/Undefined-Behavior/",
-        "teaser": "https://2.bp.blogspot.com/-uilL1GOdl0E/WrVbVxsAxHI/AAAAAAAAAoU/oDi-ww1rx8I-xlHhmFHtUiLK_FgCUVajQCLcBGAs/s1600/DragonPony.png"
+        "teaser": "https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       },{
         "title": "Introduction To AVX",
         "excerpt":"Reference SIMD basic Intel Instrinsics Guide Single Instruction Multiple Data(SIMD) 데이터 처리 속도를 높이기 위해 병렬처리 (Parallel processing) 기법을 많이 사용한다. 흔히 많이 알고 있는 방법은 CPU core level에서 여러 multiple process or thread를 생성해서 multiple core를 동시에 (simultaneously) 활용하여 처리하는 방식이다. 하지만 SIMD는 CPU core level 동작이 아닌 data...","categories": ["AVX"],
@@ -46,6 +46,12 @@ var store = [{
         "tags": ["SIMD","Programming","Performance"],
         "url": "/avx/throughput-latency/",
         "teaser": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+      },{
+        "title": "static_vector",
+        "excerpt":"Reference Boost Open standard Overview To implement the time critical real time application, we have to avoid to allocate the memory dynamically. Especially, huge page expose applications to high latency variation. However, lots of modern standard library container, such as std::vector, std::map, std::list and so on, use dynamic memory allocation...","categories": ["Programming"],
+        "tags": ["Optimization","C++","vector"],
+        "url": "/programming/static_vector/",
+        "teaser": "https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       },{
     "title": "Page Not Found",
     "excerpt":"Sorry, but the page you were trying to view does not exist.  ","url": "http://localhost:5000/404.html"
