@@ -1,14 +1,20 @@
 ---
-title: "Basic Chapter 1. Introduction To AVX"
+title: "Introduction To AVX"
 categories:
   - AVX
 tags:
   - SIMD
   - Programming
 toc: true
+tagline: "Basic Chapter 1"
 header:
-  image: https://cdn.appuals.com/wp-content/uploads/2022/02/Intel-3rd-Gen-Xeon-Scalable-5-Custom-2060x1373-1.jpg
-  teaser: https://user-images.githubusercontent.com/2586880/202849607-9e44e4d8-3107-4dfa-808f-22b8100b53ba.png
+  overlay_image: https://cdn.appuals.com/wp-content/uploads/2022/02/Intel-3rd-Gen-Xeon-Scalable-5-Custom-2060x1373-1.jpg
+  overlay_filter: 0.5
+  # overlay_filter: rgba(255, 0, 0, 0.5)
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  # actions:
+  #   - label: "More Info"
+  #     url: "https://unsplash.com"
 ---
 
 ## Reference 

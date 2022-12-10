@@ -9,8 +9,8 @@ tags:
 toc: true
 classes: wide
 header:
-  # image: https://cdn.comparitech.com/wp-content/uploads/2018/11/Latency-vs-Throughput-.jpg
-  # teaser: https://cdn.comparitech.com/wp-content/uploads/2018/11/Latency-vs-Throughput-.jpg
+  image: https://cdn.comparitech.com/wp-content/uploads/2018/11/Latency-vs-Throughput-.jpg
+  teaser: https://cdn.comparitech.com/wp-content/uploads/2018/11/Latency-vs-Throughput-.jpg
 ---
 
 ## Reference
