@@ -47,6 +47,12 @@ var store = [{
         "url": "/avx/throughput-latency/",
         "teaser": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
       },{
+        "title": "연구원 개발자 주재원 파견 결정 과정",
+        "excerpt":"연구 개발직에게 주재원이란? 회사를 다니다보면 가끔씩 접하는 career path 중 하나가 주재원 일 것이다. 보통 2~4년 정도로 또는 연장 시스템을 통해서 5년까지 파견나가서 현지 법인에서 근무를 한다. 일반적으로 주재원 과정을 가는 것은 회사에서 더 높은 자리로 올리가기 위한 기회의 장이며, 회사의 다양한 지원을 받으면서 개인의 성장 뿐만아니라 가족들에게도 다양한 혜택이...","categories": ["Resident employee"],
+        "tags": ["주재원","Resident employee","Developer"],
+        "url": "/resident%20employee/resident_employee_story_01/",
+        "teaser": "https://images.unsplash.com/photo-1491336477066-31156b5e4f35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      },{
         "title": "static_vector",
         "excerpt":"Reference Boost Open standard Overview To implement the time critical real time application, we have to avoid to allocate the memory dynamically. Especially, huge page expose applications to high latency variation. However, lots of modern standard library container, such as std::vector, std::map, std::list and so on, use dynamic memory allocation...","categories": ["Programming"],
         "tags": ["Optimization","C++","vector"],
