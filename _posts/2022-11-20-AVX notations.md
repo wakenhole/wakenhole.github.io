@@ -13,9 +13,6 @@ header:
   overlay_image: https://user-images.githubusercontent.com/2586880/202849607-9e44e4d8-3107-4dfa-808f-22b8100b53ba.png
   overlay_filter: 0.5
   caption: "[**Unsplash**](https://unsplash.com)"
-  actions:
-    - label: "More Info"
-      url: "https://unsplash.com"
   teaser:  https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80
 ---
 

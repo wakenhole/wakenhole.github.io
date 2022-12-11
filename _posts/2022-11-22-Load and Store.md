@@ -13,9 +13,6 @@ header:
   overlay_image: https://images.unsplash.com/photo-1504376830547-506dedfe1fe9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
   overlay_filter: 0.5
   caption: "[**Unsplash**](https://unsplash.com)"
-  actions:
-    - label: "More Info"
-      url: "https://unsplash.com"
   teaser: https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1206&q=80
 ---
 

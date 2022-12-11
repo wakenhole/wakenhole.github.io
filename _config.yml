@@ -239,7 +239,9 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
 
-
+lunr:
+  search_within_pages: true
+  
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)

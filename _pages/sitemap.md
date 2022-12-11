@@ -2,23 +2,15 @@
 layout: archive
 title: "Sitemap"
 permalink: /sitemap/
-author_profile: true
-sidebar:
-  - title: "Title"
-    image: http://placehold.it/350x250
-    image_alt: "image"
-    text: "Some text here."
-    nav: sidebar-sample
-  - title: Another sidebar nav
-    nav: sidebar-sample
+author_profile: false
 ---
 
 A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{ '/sitemap.xml' | relative_url }}) available for digesting as well.
 
-<h2>Pages</h2>
+<!-- <h2>Pages</h2>
 {% for post in site.pages %}
   {% include archive-single.html %}
-{% endfor %}
+{% endfor %} -->
 
 <h2>Posts</h2>
 {% for post in site.posts %}
