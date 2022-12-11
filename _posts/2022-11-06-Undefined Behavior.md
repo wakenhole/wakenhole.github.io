@@ -13,7 +13,7 @@ tagline: "C++"
 header:
   overlay_image: https://2.bp.blogspot.com/-uilL1GOdl0E/WrVbVxsAxHI/AAAAAAAAAoU/oDi-ww1rx8I-xlHhmFHtUiLK_FgCUVajQCLcBGAs/s1600/DragonPony.png
   overlay_filter: 0.5
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  caption: "[**Unsplash**](https://unsplash.com)"
   actions:
     - label: "More Info"
       url: "https://unsplash.com"
