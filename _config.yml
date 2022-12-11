@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dirt" # "default" # "air", "aqua", "contrast", "dark
 locale                   : "ko-KR"
 title                    : "DevTM"
 title_separator          : "-"
-subtitle                 : "Dev. tips & memos"
+subtitle                 : "Development Tips & Memos"
 name                     : "wakenhole"
 description              : "An dev website."
 url                      : "https://wakenhole.github.io"
@@ -26,7 +26,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "wakenhole/wakenhole.github.io"
 teaser                   : "/assets/images/teaser.jpg"
 logo                     : "/assets/favicon/android-chrome-512x512.png"
-masthead_title           : "Wakenhole Blog"
+masthead_title           : "Wakenhole Logs"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -241,7 +241,7 @@ whitelist:
 
 lunr:
   search_within_pages: true
-  
+
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
