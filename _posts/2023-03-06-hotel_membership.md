@@ -28,7 +28,8 @@ header:
 
 ## 호텔 별 요약
 
-상위 등급은 하위 등급 혜택 포함합니다.{: .notice--info}
+상위 등급은 하위 등급 혜택 포함합니다.
+{: .notice--info}
 
 ### 메리어트 본보이 (Marriott Bonvoy)
 
