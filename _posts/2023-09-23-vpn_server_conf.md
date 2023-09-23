@@ -1,5 +1,5 @@
 ---
-title: "간단한 개인용 VPN 서버 구축의 모든것 1: VPN 서버 구축 (v2ray, x-ui)"
+title: "간단한 개인용 VPN 서버 구축의 모든것 1: VPN용 VM 서버 구축 (v2ray, x-ui)"
 categories:
   - VPN 
 tags:
@@ -113,5 +113,30 @@ HnTDV2UNdmCpnkjjh48z9n8mDp8r1oRBxczZgkG2yeVCqw==
 * Remote host: 생성된 VM의 공인 IP
 * Use private key 활성화 해서 아까 저장한 kt-vpn.pem을 선택해 주면 됨
 * username은 root로 하면 됨
+
+맥 사용시에는 Terminal을 열어서 아래 명령어로 간단히 접속할 수 있다. 
+```sh
+$ ssh -i kt-vpn.pem root@{공인 IP}
+//예제 (공인 IP = 14.14.14.14)
+$ ssh -i kt-vpn.pem root@14.14.14.14
+```
+
+## DNS 등록
+
+마지막으로 DNS 설정까지 하도록 하자
+
+### DNS 사용의 필요성
+
+DNS는 꼭 필요한 것은 아니니 다음 chapter로 넘어가도 무방하다. 
+다만 공인 IP 주소는 외우기가 힘들기 때문에, 하나쯤 만들어 두면, 편리하게 사용할 수 있다. 
+
+### DuckDns를 이용한 무료 DNS 서버 
+
+[DuckDns](https://www.duckdns.org/)에 가입한 후 아래 그림 같은 곳에 sub domain 이름을 적당히 정한후 생성한다. 
+(본 글에서 ktvpn.duckdns.org로 사용)
+![image](https://user-images.githubusercontent.com/2586880/270111450-0116b5c0-dc58-4f22-909e-c684271fab84.png)
+
+생성된 리스트에서, Current IP를 KT Cloud의 공인 IP로 변경하면 된다. 
+그럼 KT Cloud의 공인 IP 대신, 
 
 여기 까지 완료하면 VPN 서버를 구축하기 위한 VM 생성은 완료된 것이다. 
