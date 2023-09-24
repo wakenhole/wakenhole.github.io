@@ -1,9 +1,9 @@
 ---
-title: "간단한 개인용 VPN 서버 구축의 모든것 1: VPN용 VM 서버 구축 (v2ray, x-ui)"
+title: "간단한 개인용 VPN 서버 구축의 모든것 1: VPN용 VM 서버 구축 (V2Ray using X-UI)"
 categories:
   - VPN 
 tags:
-  - v2ray
+  - V2Ray
   - x-ui
   - 중국
   - vless
@@ -22,6 +22,18 @@ header:
   caption: "[**Unsplash**](https://unsplash.com)"
   teaser: https://images.unsplash.com/photo-1691435828932-911a7801adfb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80
 ---
+
+## 전체 글 목록
+1. [VPN용 VM 서버 구축](https://wakenhole.github.io/vpn/vpn_server_conf_0/)
+2. [VPN용 VM 서버 구축](https://wakenhole.github.io/vpn/vpn_server_conf_1/)
+3. [VPN용 VM 서버 구축](https://wakenhole.github.io/vpn/vpn_server_conf_2/)
+4. [VPN용 VM 서버 구축](https://wakenhole.github.io/vpn/vpn_server_conf_3/)
+
+
+## Reference
+1. [V2Ray](https://www.v2ray.com/)
+2. [X-UI, a multi-user Xray graphical management panel](https://seakfind.github.io/2021/10/10/X-UI/)
+3. [중국 외노자를 위한 VPS에 VPN 구축기 (V2ray with X-UI 제어콘솔)](https://www.clien.net/service/board/lecture/17799473)
 
 ## VPN 사용의 필요성
 
@@ -100,7 +112,7 @@ AoGAQ7G7896iX5KZ
 
 ...
 
-+cJxEeVaEiW/kfezh
++cJxEeVaEiW
 HnTDV2UNdmCpnkjjh48z9n8mDp8r1oRBxczZgkG2yeVCqw==
 -----END RSA PRIVATE KEY-----
 ```
@@ -116,27 +128,33 @@ HnTDV2UNdmCpnkjjh48z9n8mDp8r1oRBxczZgkG2yeVCqw==
 
 맥 사용시에는 Terminal을 열어서 아래 명령어로 간단히 접속할 수 있다. 
 ```sh
-$ ssh -i kt-vpn.pem root@{공인 IP}
+ssh -i {private key file} root@{공인 IP}
+```
 //예제 (공인 IP = 14.14.14.14)
-$ ssh -i kt-vpn.pem root@14.14.14.14
+```sh
+ssh -i kt-vpn.pem root@14.14.14.14
 ```
 
 ## DNS 등록
 
-마지막으로 DNS 설정까지 하도록 하자
+마지막으로 DNS (Domain Name Service) 설정까지 하도록 하자
 
 ### DNS 사용의 필요성
 
 DNS는 꼭 필요한 것은 아니니 다음 chapter로 넘어가도 무방하다. 
 다만 공인 IP 주소는 외우기가 힘들기 때문에, 하나쯤 만들어 두면, 편리하게 사용할 수 있다. 
 
-### DuckDns를 이용한 무료 DNS 서버 
+### Duck DNS를 이용한 무료 DNS 서버 
 
-[DuckDns](https://www.duckdns.org/)에 가입한 후 아래 그림 같은 곳에 sub domain 이름을 적당히 정한후 생성한다. 
+[Duck DNS](https://www.duckdns.org/)에 가입한 후 아래 그림 같은 곳에 sub domain 이름을 적당히 정한후 생성한다. 
 (본 글에서 ktvpn.duckdns.org로 사용)
 ![image](https://user-images.githubusercontent.com/2586880/270111450-0116b5c0-dc58-4f22-909e-c684271fab84.png)
 
 생성된 리스트에서, Current IP를 KT Cloud의 공인 IP로 변경하면 된다. 
-그럼 KT Cloud의 공인 IP 대신, 
+그럼 KT Cloud의 공인 IP 대신, 지정한 subdomain 주소로 접속이 가능하다.
+
+```sh
+ssh -i kt-vpn.pem root@ktvpn.duckdns.org
+```
 
 여기 까지 완료하면 VPN 서버를 구축하기 위한 VM 생성은 완료된 것이다. 
