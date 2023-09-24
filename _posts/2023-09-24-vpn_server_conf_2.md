@@ -48,17 +48,34 @@ apt install curl socat -y
 
 ## 서버 보안 설정
 보안을 설정하는 이유는 여러가지가 있지만, 개인용으로 사용하는 VPN이다보니 개인정보에 대한 우려가 많이 있을 수 있다. 
+
 또한 V2Ray client를 사용하다보면, 내 VPN서버 주소가 유출될 가능성이 높은데, 
 외부 사용자가 침입해서 사용하는 것을 막는 것이 중요하다. 
 
 
 ## 서버 Password 설정
 사실 [1편](https://wakenhole.github.io/vpn/vpn_server_conf_1/)에서 준비한 서버를 private키로만 접속을 하는것이 가장 안전하다. 
-KT의 경우 default가 password로 점속가능하기 때문에, 아래 명령어를 통해서 복잡한 비밀번호로 변경할 수 있다.
+
+KT의 경우 default가 password로 접속이 가능하기 때문에, 아래 명령어를 통해서 복잡한 비밀번호로 변경할 수 있다.
 
 ```sh
-sudo password
+sudo passwd
 ```
+
+
+## 방화벽 해제
+KT의 경우 VM Port 접속 설정할 경우 방화벽이 자동으로 등록되니 이 과정은 스킵해도 됩니다. 
+{: .notice--info}
+
+아래 명령어를 통해서 V2Ray를 위해 사용할 Port의 방화벽을 해제하도록 하자.
+
+```
+iptables -I INPUT 1 -p tcp --dport 3000 -j ACCEPT
+iptables -I INPUT 1 -p tcp --dport 5000 -j ACCEPT
+iptables -I INPUT 1 -p tcp --dport 80 -j ACCEPT
+iptables -I INPUT 1 -p tcp --dport 443 -j ACCEPT
+```
+
 
 ## SSL 환경 구축
 우선 SSL환경을 구축하기 위한 Script를 다운로드 및 설치 한다. 
@@ -108,5 +125,5 @@ And the full chain certs is there: /root/.acme.sh/ktvpn.duckdns.org_ecc/fullchai
 ~/.acme.sh/acme.sh --installcert -d ktvpn.duckdns.org --key-file /root/private.key --fullchain-file /root/cert.crt
 ```
 
-
+![image](https://github.com/wakenhole/wakenhole.github.io/assets/2586880/e18cfa81-c065-4f93-88a9-d25c40f124f0)
 

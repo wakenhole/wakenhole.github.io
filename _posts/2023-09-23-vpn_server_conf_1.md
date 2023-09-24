@@ -24,10 +24,9 @@ header:
 ---
 
 ## 전체 글 목록
-1. [VPN용 VM 서버 구축](https://wakenhole.github.io/vpn/vpn_server_conf_0/)
-2. [VPN용 VM 서버 구축](https://wakenhole.github.io/vpn/vpn_server_conf_1/)
-3. [VPN용 VM 서버 구축](https://wakenhole.github.io/vpn/vpn_server_conf_2/)
-4. [VPN용 VM 서버 구축](https://wakenhole.github.io/vpn/vpn_server_conf_3/)
+1. [VPN용 VM 서버 구축](https://wakenhole.github.io/vpn/vpn_server_conf_1/)
+2. [VPN 서버 보안 설정](https://wakenhole.github.io/vpn/vpn_server_conf_2/)
+3. [X-UI 설치 및 설정](https://wakenhole.github.io/vpn/vpn_server_conf_3/)
 
 
 ## Reference
@@ -93,12 +92,16 @@ KT Cloud 가입 후 결재 정보를 등록하고 나면 무료 할인 쿠폰을
 서버가 생성되고나면 등록된 e-mail로 SSH 접속을 위한 key가 날라온다.
 이것을 이용해서 우리는 SSH 접속을 해야 한다. 하지만 사전에 SSH를 접속하기 위한 Port (22)를 열어 줘야 한다. 
 
-![image](https://user-images.githubusercontent.com/2586880/270099944-35a61693-3482-49c2-9fab-30e7bf651f32.png)
+![image](https://user-images.githubusercontent.com/2586880/270139894-d23ddb39-0730-424c-ac9d-1960928346ed.png)
 
 위 사진과 같이 포트를 추가한다. 
 * 22: SSH
-* 443/80: v2ray 관리자 Web
-* 3000: v2ray 포트 (여러개를 나눠서 쓰려면 여러개 만들면 됨)
+* 80/443: SSL을 위한 http/https 포트
+* 3000: V2Ray 포트 (여러개를 나눠서 쓰려면 여러개 만들면 됨)
+* 5000: V2Ray 관리자 Web
+
+추가적으로 **공인 IP**에 적혀 있는 IP 주소 (e.g., 14.14.14.14)는 기록해두록하자. 
+
 
 ### 서버 접속하기 
 
@@ -146,12 +149,15 @@ DNS는 꼭 필요한 것은 아니니 다음 chapter로 넘어가도 무방하�
 
 ### Duck DNS를 이용한 무료 DNS 서버 
 
-[Duck DNS](https://www.duckdns.org/)에 가입한 후 아래 그림 같은 곳에 sub domain 이름을 적당히 정한후 생성한다. 
+[Duck DNS](https://www.duckdns.org/)에 가입한 후 아래 그림 같은 곳에 sub domain 이름을 적당히 정한 후 생성한다. 
 (본 글에서 ktvpn.duckdns.org로 사용)
 ![image](https://user-images.githubusercontent.com/2586880/270111450-0116b5c0-dc58-4f22-909e-c684271fab84.png)
 
-생성된 리스트에서, Current IP를 KT Cloud의 공인 IP로 변경하면 된다. 
-그럼 KT Cloud의 공인 IP 대신, 지정한 subdomain 주소로 접속이 가능하다.
+생성된 리스트에서, Current IP를 KT Cloud의 공인 IP로 변경 후 update ip 버튼을 눌러 적용한다. 
+
+![image](https://github.com/wakenhole/wakenhole.github.io/assets/2586880/5dc8d091-69c0-4e51-9e19-93005bd339d6)
+
+적용하고 나면 KT Cloud의 공인 IP 대신, 지정한 subdomain 주소로 접속이 가능하다.
 
 ```sh
 ssh -i kt-vpn.pem root@ktvpn.duckdns.org
