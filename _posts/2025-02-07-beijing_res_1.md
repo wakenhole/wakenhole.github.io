@@ -20,6 +20,7 @@ header:
 ### 위치 및 특징
 량마허 (亮马河) 근처에 위치한 고급 광둥음식 (粤菜, 위에차이) 레스토랑입니다. 주로 귀빈 접대나 특별한 날에 방문하기 좋은 곳으로 알려져 있습니다.
 
+<!--ad-->
 ### 광둥요리, 북경오리 (粤菜, 北京烤鸭)
 다양한 광둥요리를 합리적인 가격에 맛볼 수 있어 인기가 많습니다.
 점심시간에는 大众点评을 통해 저렴한 가격으로 세트메뉴 (套餐)를 즐길 수 있습니다. 
@@ -38,13 +39,18 @@ header:
 ![20241107_145210.jpg](https://github.com/user-attachments/assets/241320e2-d0b1-4d99-ac02-af5e26bf0f4d)
 ![20241107_145205.jpg](https://github.com/user-attachments/assets/f53aae84-5323-4394-82d2-9023f4348024)
 
+<!--ad-->
 ### 음식
 ![](https://dimg04.c-ctrip.com/images/1me5s12000baq83aaA326.jpg)
 ![dimg](https://dimg04.c-ctrip.com/images/1me1o12000hhn97sz6A26.jpg)
+
+<!--ad-->
 ![20241107_140006.jpg](https://github.com/user-attachments/assets/591469e9-6446-4ccc-9640-bbfc56ba0baf)
 
 ![20241218_120911.jpg](https://github.com/user-attachments/assets/b98aea5f-e82e-4f3a-adf5-e6a7017d1da9)
 
+
+<!--ad-->
 ![20241107_135948.jpg](https://github.com/user-attachments/assets/8b275e03-4b22-4351-a680-66f8a042b42e)
 
 ![20241218_122110.jpg](https://github.com/user-attachments/assets/d3d1377f-95a5-43db-9654-fa8c6856e1a4)
