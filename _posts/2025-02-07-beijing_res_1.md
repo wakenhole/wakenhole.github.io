@@ -7,6 +7,7 @@ tags:
   - 베이징
   - 粤菜
 toc: true
+ads: true
 toc_sticky: true
 tagline: "Restaurant"
 header:
