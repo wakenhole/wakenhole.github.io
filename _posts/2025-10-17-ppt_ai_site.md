@@ -13,10 +13,10 @@ toc_icon: "cog"
 tagline: ""
 ads: true
 header:
-  overlay_image: https://media.istockphoto.com/id/1425207412/ko/사진/ppt-문서-파일-기호-3d-렌더링-개념-프리젠-테이션-광고판.webp?a=1&b=1&s=612x612&w=0&k=20&c=kNVx3NfYjRvjkEjfcV0Y2OPyOs7sDb67K75C7F13Tp4=
+  overlay_image: https://media.istockphoto.com/id/1448628255/ko/사진/프리젠-테이션-비즈니스-사람들-및-여성-연사와의-회의-수익-통계-및-인포-그래픽-데이터-분석의-ppt가있는-화면-토론-기업-및-재무-보고서-그래프-또는-마케팅-통계.jpg?s=1024x1024&w=is&k=20&c=3Ui835TzcQzsiN663onsZPwnJ8qItZk9cZ11UQiptac= 
   overlay_filter: 0.5
   caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://media.istockphoto.com/id/1448628255/ko/사진/프리젠-테이션-비즈니스-사람들-및-여성-연사와의-회의-수익-통계-및-인포-그래픽-데이터-분석의-ppt가있는-화면-토론-기업-및-재무-보고서-그래프-또는-마케팅-통계.jpg?s=1024x1024&w=is&k=20&c=3Ui835TzcQzsiN663onsZPwnJ8qItZk9cZ11UQiptac=
+  teaser: https://media.istockphoto.com/id/1425207412/ko/사진/ppt-문서-파일-기호-3d-렌더링-개념-프리젠-테이션-광고판.webp?a=1&b=1&s=612x612&w=0&k=20&c=kNVx3NfYjRvjkEjfcV0Y2OPyOs7sDb67K75C7F13Tp4=
 ---
 
 # 💡 PPT 만들 때 유용한 AI 사이트 총정리 (무료·유료 비교표 포함)
@@ -27,6 +27,7 @@ header:
 이번 글에서는 **PPT 제작을 도와주는 AI 사이트 10가지**를 정리하고,  
 **무료/유료 여부, 주요 기능, 장단점**을 한눈에 볼 수 있도록 정리했습니다.  
 <!--ad-->
+
 ---
 
 ## 🌍 해외 주요 AI PPT 생성 사이트 TOP 7
