@@ -17,11 +17,6 @@ layout: archive
   {% endfor %}
 </ul>
 
-{% comment %} 상단에 1회 노출 {% endcomment %}
-{% if page.ads != false %}
-  {% include ad-inpost.html %}
-{% endif %}
-
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 {% assign postsByYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
 {% for year in postsByYear %}
