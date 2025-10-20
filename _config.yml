@@ -106,19 +106,19 @@ analytics:
 author:
   name             : "Wakenhole"
   avatar           : "/assets/images/avatar.png"
-  bio              : "**Software Architect**"
+  bio              : "帅哥"
   location         : "Korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:okhwan.lee@gmail.com"
+      url: "mailto:hardtochoice@gmail.com"
     - label: "Portfolio"
       icon: "fas fa-fw fa-link"
-      url: "https://sites.google.com/site/okhwanlee/"
+      # url: "https://sites.google.com/site/okhwanlee/"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/okhwan-lee-13558056"
+      # url: "https://www.linkedin.com/in/okhwan-lee-13558056"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
