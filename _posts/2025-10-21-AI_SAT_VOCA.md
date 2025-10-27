@@ -107,8 +107,12 @@ Vibe 코딩을 통해서 이런 간단한 프로그램은 누구나 만들 수 �
 ChatGPT가 위 요구사항을 기반으로 자동 생성한  
 **로컬 실행용 Python 퀴즈 프로그램 예제**는 아래 GitHub에서 확인할 수 있습니다.  
 
-👉 [🧩 실제 코드 예제 보기 — quiz_local.py](https://github.com/wakenhole/sat-voca/blob/main/quiz_local.py)
+<!--ad-->
 
+👉 [🔗 실제 코드 예제 클릭 — quiz_local.py](https://github.com/wakenhole/sat-voca/blob/main/quiz_local.py)
+
+
+<!--ad-->
 이 예제는  
 - CSV로 된 단어 데이터베이스를 불러오고,  
 - 위의 5가지 퀴즈 유형을 랜덤하게 출제하며,  
@@ -124,7 +128,6 @@ Google App Script와 Form을 이용하면, 매일 아침 자동으로 퀴즈를 
 
 ---
 
-<!--ad-->
 ## 💡 5단계: ChatGPT가 도와주는 전체 흐름 요약
 
 | 단계 | 내용 | 결과 |
