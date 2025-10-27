@@ -1,5 +1,5 @@
 ---
-title: "📚 ChatGPT로 단어장 사진을 데이터베이스화하고, 퀴즈 프로그램까지 만드는 방법"
+title: "📚 AI로 영어 공부하기: 단어장 사진을 데이터베이스화하고, 퀴즈 프로그램까지 만드는 방법 (예제 코드 포함)"
 categories:
   - 학습
 tags:
@@ -17,10 +17,10 @@ toc_icon: "cog"
 tagline: ""
 ads: true
 header:
-  overlay_image: https://www.istockphoto.com/kr/사진/칠판에-쓴-여자-학생-gm1150326349-311359676
+  overlay_image: https://unsplash.com/ko/사진/공부를-위해-종이-펜-형광펜이-놓여-있습니다-h6pUcouJ9BA
   overlay_filter: 0.5
   caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://unsplash.com/ko/사진/사전-열기-U3Ptj3jafX8
+  teaser: https://images.unsplash.com/photo-1761311984594-3f38e73c83b5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3164
 ---
 
 # 📚 ChatGPT로 단어장 사진을 데이터베이스화하고, 퀴즈 프로그램까지 만드는 방법
