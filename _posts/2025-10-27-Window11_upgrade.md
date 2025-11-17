@@ -17,6 +17,19 @@ header:
   teaser: https://images.unsplash.com/photo-1679269241012-f7640862d242?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3132
 ---
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4802170714228040"
+     crossorigin="anonymous"></script>
+<!-- Display -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4802170714228040"
+     data-ad-slot="7087125516"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 # 🪄 Windows 11 우회 설치 완전 가이드  
 _AveYo **MediaCreationTool.bat** 사용법_
 
@@ -115,7 +128,18 @@ TPM 2.0·Secure Boot·CPU 검사 등 **설치 제한을 자동으로 우회**합
 > 💡 **처음이라면 → `Create ISO` 권장**  
 > ISO로 안전하게 파일을 만든 후 USB 설치나 업그레이드를 진행하세요.
 
-<!--ad-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4802170714228040"
+     crossorigin="anonymous"></script>
+<!-- Display -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4802170714228040"
+     data-ad-slot="7087125516"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ---
 
@@ -165,6 +189,19 @@ AveYo의 스크립트에는 내부적으로 `Skip_TPM_Check_on_Dynamic_Update.cm
 4. 🔁 문제 시 복구 드라이브로 복원 / Windows 10 재설치 가능
 
 ---
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4802170714228040"
+     crossorigin="anonymous"></script>
+<!-- Display -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4802170714228040"
+     data-ad-slot="7087125516"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 🧠 고급 팁
 
@@ -224,3 +261,16 @@ A3. 보안/정책 위반 우려가 있으므로 절대 권장하지 않습니다
 > ⚙️ 다음 글에서는 “Rufus로 Windows 11 우회 설치 USB 만드는 방법”을 다룹니다.
 
 ---
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4802170714228040"
+     crossorigin="anonymous"></script>
+<!-- Display -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4802170714228040"
+     data-ad-slot="7087125516"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
