@@ -24,8 +24,6 @@ _AveYo **MediaCreationTool.bat** 사용법_
 > AveYo의 **MediaCreationTool.bat** 스크립트를 이용하면 안전하게 ISO 생성 및 업그레이드가 가능합니다.  
 > 단, Microsoft는 비호환 PC의 설치를 **공식적으로 지원하지 않으며**, 반드시 **백업 후 진행**하세요.
 
-<!--ad-->
-
 ---
 
 ## 📘 목차
@@ -106,6 +104,7 @@ TPM 2.0·Secure Boot·CPU 검사 등 **설치 제한을 자동으로 우회**합
 ---
 
 ### ③ 동작 모드 선택
+
 | 모드 | 설명 |
 |------|------|
 | **Auto Upgrade** | 현재 PC를 그대로 Windows 11로 업그레이드 |
