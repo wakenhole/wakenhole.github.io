@@ -62,7 +62,7 @@ ChatGPT가 **자동으로 단어·뜻·예문** 등을 인식해서 표 형태�
 
 ---
 
-<!--ad-->
+{% include ad-inpost.html %}
 
 ## 🧾 2단계: 데이터베이스로 변환하기
 
@@ -107,7 +107,7 @@ Vibe 코딩을 통해서 이런 간단한 프로그램은 누구나 만들 수 �
 ChatGPT가 위 요구사항을 기반으로 자동 생성한  
 **로컬 실행용 Python 퀴즈 프로그램 예제**는 아래 GitHub에서 확인할 수 있습니다.  
 
-<!--ad-->
+{% include ad-inpost.html %}
 
 👉 [🔗 실제 코드 예제 클릭 — quiz_local.py](https://github.com/wakenhole/sat-voca/blob/main/quiz_local.py)
 
@@ -140,7 +140,7 @@ Google App Script와 Form을 이용하면, 매일 아침 자동으로 퀴즈를 
 
 ---
 
-<!--ad-->
+{% include ad-inpost.html %}
 ## 🚀 마무리하며
 
 이제 단어장은 더 이상 손으로 정리하지 않아도 됩니다.  

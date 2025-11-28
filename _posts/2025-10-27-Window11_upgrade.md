@@ -25,7 +25,7 @@ _AveYo **MediaCreationTool.bat** 사용법_
 > 단, Microsoft는 비호환 PC의 설치를 **공식적으로 지원하지 않으며**, 반드시 **백업 후 진행**하세요.
 
 
-<!--ad-->
+{% include ad-inpost.html %}
 ---
 
 ## 📘 목차
@@ -55,7 +55,7 @@ TPM 2.0·Secure Boot·CPU 검사 등 **설치 제한을 자동으로 우회**합
 🔗 **공식 GitHub:** [https://github.com/AveYo/MediaCreationTool.bat](https://github.com/AveYo/MediaCreationTool.bat)
 
 
-<!--ad-->
+{% include ad-inpost.html %}
 ---
 
 ## 👥 누구에게 적합한가
