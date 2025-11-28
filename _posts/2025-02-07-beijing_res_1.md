@@ -26,13 +26,13 @@ header:
 점심시간에는 大众点评을 통해 저렴한 가격으로 세트메뉴 (套餐)를 즐길 수 있습니다. 
 광둥음식 외에도 베이징카오야 (北京烤鸭)와 같은 대표적인 중국 요리를 모두 맛볼 수 있습니다.
 
-<!--ad-->
+
 ### 최고급 서비스
 
 고급스러운 분위기와 최상의 서비스로 고객 만족도가 높은 곳입니다. 기회가 된다면 꼭 방문해 보시길 추천합니다!
 
 
-<!--ad-->
+
 ### 홀 (大厅)
 ![20241107_140019.jpg](https://github.com/user-attachments/assets/3a6e934e-e605-45e0-86f4-483423730a66)
 
@@ -41,18 +41,18 @@ header:
 ![20241107_145210.jpg](https://github.com/user-attachments/assets/241320e2-d0b1-4d99-ac02-af5e26bf0f4d)
 ![20241107_145205.jpg](https://github.com/user-attachments/assets/f53aae84-5323-4394-82d2-9023f4348024)
 
-<!--ad-->
+
 ### 음식
 ![](https://dimg04.c-ctrip.com/images/1me5s12000baq83aaA326.jpg)
 ![dimg](https://dimg04.c-ctrip.com/images/1me1o12000hhn97sz6A26.jpg)
 
-<!--ad-->
+
 ![20241107_140006.jpg](https://github.com/user-attachments/assets/591469e9-6446-4ccc-9640-bbfc56ba0baf)
 
 ![20241218_120911.jpg](https://github.com/user-attachments/assets/b98aea5f-e82e-4f3a-adf5-e6a7017d1da9)
 
 
-<!--ad-->
+
 ![20241107_135948.jpg](https://github.com/user-attachments/assets/8b275e03-4b22-4351-a680-66f8a042b42e)
 
 ![20241218_122110.jpg](https://github.com/user-attachments/assets/d3d1377f-95a5-43db-9654-fa8c6856e1a4)
