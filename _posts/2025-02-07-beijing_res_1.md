@@ -18,6 +18,8 @@ header:
 ---
 # 베이징 조양구 량마허 근처 고급 광둥음식 맛집 - [怡秀坊]
 
+{% include ad-inpost.html %}
+
 ### 위치 및 특징
 량마허 (亮马河) 근처에 위치한 고급 광둥음식 (粤菜, 위에차이) 레스토랑입니다. 주로 귀빈 접대나 특별한 날에 방문하기 좋은 곳으로 알려져 있습니다.
 
@@ -26,6 +28,8 @@ header:
 점심시간에는 大众点评을 통해 저렴한 가격으로 세트메뉴 (套餐)를 즐길 수 있습니다. 
 광둥음식 외에도 베이징카오야 (北京烤鸭)와 같은 대표적인 중국 요리를 모두 맛볼 수 있습니다.
 
+
+{% include ad-inpost.html %}
 
 ### 최고급 서비스
 
@@ -57,6 +61,8 @@ header:
 
 ![20241218_122110.jpg](https://github.com/user-attachments/assets/d3d1377f-95a5-43db-9654-fa8c6856e1a4)
 
+
+{% include ad-inpost.html %}
 
 ### 정보 
 * 주소: 怡秀坊 (亮马桥店) https://surl.amap.com/7DhGFr98QM

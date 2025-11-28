@@ -71,6 +71,7 @@ header:
 ---
 
 
+{% include ad-inpost.html %}
 
 ## 💬 활용 팁
 

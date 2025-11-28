@@ -52,8 +52,10 @@ TPM 2.0·Secure Boot·CPU 검사 등 **설치 제한을 자동으로 우회**합
 - ✅ Windows 10에서 바로 업그레이드 가능  
 - ✅ 완전 무료 & 깃허브 공개
 
-🔗 **공식 GitHub:** [https://github.com/AveYo/MediaCreationTool.bat](https://github.com/AveYo/MediaCreationTool.bat)
 
+{% include ad-inpost.html %}
+
+🔗 **공식 GitHub:** [https://github.com/AveYo/MediaCreationTool.bat](https://github.com/AveYo/MediaCreationTool.bat)
 
 {% include ad-inpost.html %}
 ---
@@ -89,11 +91,17 @@ TPM 2.0·Secure Boot·CPU 검사 등 **설치 제한을 자동으로 우회**합
 ## ⚙️ 설치 절차
 
 ### ① GitHub에서 파일 다운로드
+
+{% include ad-inpost.html %}
+
 1. [MediaCreationTool.bat 저장소](https://github.com/AveYo/MediaCreationTool.bat) 접속  
 2. 우측 **Code → Download ZIP** 클릭  
 3. 압축 해제 (예: `C:\MediaCreationTool` 폴더)
 
 ---
+
+
+{% include ad-inpost.html %}
 
 ### ② 관리자 권한으로 실행
 - `MediaCreationTool.bat`을 **우클릭 → 관리자 권한으로 실행**
@@ -196,6 +204,8 @@ A3. 보안/정책 위반 우려가 있으므로 절대 권장하지 않습니다
 ---
 
 ## 🔗 참고 링크
+
+{% include ad-inpost.html %}
 
 - 🔹 [MediaCreationTool.bat (AveYo)](https://github.com/AveYo/MediaCreationTool.bat)  
 - 🔹 [Rufus 공식 사이트](https://rufus.ie/)  

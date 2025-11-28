@@ -22,6 +22,9 @@ header:
   teaser: https://images.unsplash.com/photo-1761311984594-3f38e73c83b5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3164
 ---
 
+
+{% include ad-inpost.html %}
+
 # 📚 ChatGPT로 단어장 사진을 데이터베이스화하고, 퀴즈 프로그램까지 만드는 방법
 
 ## 🧠 ChatGPT가 공부의 판을 바꾸다
@@ -112,6 +115,7 @@ ChatGPT가 위 요구사항을 기반으로 자동 생성한
 👉 [🔗 실제 코드 예제 클릭 — quiz_local.py](https://github.com/wakenhole/sat-voca/blob/main/quiz_local.py)
 
 
+{% include ad-inpost.html %}
 
 이 예제는  
 - CSV로 된 단어 데이터베이스를 불러오고,  

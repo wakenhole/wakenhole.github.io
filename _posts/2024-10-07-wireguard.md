@@ -17,8 +17,9 @@ header:
 ---
 
 
-## 전체 글 목록
+{% include ad-inpost.html %}
 
+## 전체 글 목록
 
 ## Reference
 1. [VPN용 VM 서버 구축](https://wakenhole.github.io/vpn/vpn_server_conf_1/)
@@ -38,6 +39,9 @@ V2Ray는 설치가 조금 복잡하긴 하지만, 몇 가지 큰 장점이 있�
 1. 설치가 매우 간단함
 2. 모든 종류의 기기에 Client App이 있음 (X-UI의 경우 MAC 이나 윈도우에서 사용에 한계가 있음)
 3. GL.iNet MT2500과 같이 전문 Server용 기기도 저렴하게 구매 가능 (서버 운용비 절약 가능)
+
+
+{% include ad-inpost.html %}
 
 ### Wireguard 서버 설정
 
@@ -73,6 +77,7 @@ What do you want to do?
 Select an option [1-5]:
 ```
 
+{% include ad-inpost.html %}
 
 ### OpenWRT 서버 설정
 
