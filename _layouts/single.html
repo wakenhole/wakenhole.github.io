@@ -46,21 +46,9 @@ layout: default
             </nav>
           </aside>
         {% endif %}
-        {% include ad-marker.html %}
+        <!-- {% include ad-marker.html %} -->
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
-<!-- 
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4802170714228040"
-      crossorigin="anonymous"></script>
-      <ins class="adsbygoogle"
-            style="display:block; text-align:center;"
-            data-ad-layout="in-article"
-            data-ad-format="fluid"
-            data-ad-client="ca-pub-4802170714228040"
-            data-ad-slot="8668883113"></ins>
-      <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-      </script> -->
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
