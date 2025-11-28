@@ -11,7 +11,6 @@ toc: true
 toc_sticky: true
 toc_icon: "cog"
 tagline: ""
-ads: true
 header:
   overlay_image: https://media.istockphoto.com/id/1448628255/ko/사진/프리젠-테이션-비즈니스-사람들-및-여성-연사와의-회의-수익-통계-및-인포-그래픽-데이터-분석의-ppt가있는-화면-토론-기업-및-재무-보고서-그래프-또는-마케팅-통계.jpg?s=1024x1024&w=is&k=20&c=3Ui835TzcQzsiN663onsZPwnJ8qItZk9cZ11UQiptac= 
   overlay_filter: 0.5
