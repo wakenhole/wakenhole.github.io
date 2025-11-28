@@ -95,3 +95,21 @@
     font-size: $type-size-7;
   }
 }
+
+.copy-code-button {
+  background: #008cff;
+  color: #fff;
+  border: none;
+  padding: 0.25em 0.75em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85em;
+  z-index: 10;
+  transition: background 0.2s;
+}
+.copy-code-button:hover {
+  background: #005fad;
+}
+pre {
+  position: relative;
+}
