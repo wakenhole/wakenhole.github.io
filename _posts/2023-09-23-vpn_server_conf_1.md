@@ -28,14 +28,10 @@ header:
 2. [VPN 서버 보안 설정](https://wakenhole.github.io/vpn/vpn_server_conf_2/)
 3. [X-UI 설치 및 설정](https://wakenhole.github.io/vpn/vpn_server_conf_3/)
 
-<!-- {% include ad-inpost.html %} -->
-
 ## Reference
 1. [V2Ray](https://www.v2ray.com/)
 2. [X-UI, a multi-user Xray graphical management panel](https://seakfind.github.io/2021/10/10/X-UI/)
 3. [중국 외노자를 위한 VPS에 VPN 구축기 (V2ray with X-UI 제어콘솔)](https://www.clien.net/service/board/lecture/17799473)
-
-<!-- {% include ad-inpost.html %} -->
 
 ## VPN 사용의 필요성
 
