@@ -25,7 +25,7 @@ _AveYo **MediaCreationTool.bat** 사용법_
 > 단, Microsoft는 비호환 PC의 설치를 **공식적으로 지원하지 않으며**, 반드시 **백업 후 진행**하세요.
 
 
-
+<!--ad-->
 ---
 
 ## 📘 목차
@@ -55,7 +55,7 @@ TPM 2.0·Secure Boot·CPU 검사 등 **설치 제한을 자동으로 우회**합
 🔗 **공식 GitHub:** [https://github.com/AveYo/MediaCreationTool.bat](https://github.com/AveYo/MediaCreationTool.bat)
 
 
-
+<!--ad-->
 ---
 
 ## 👥 누구에게 적합한가
@@ -83,7 +83,7 @@ TPM 2.0·Secure Boot·CPU 검사 등 **설치 제한을 자동으로 우회**합
 > ✅ 설치 전 `제어판 → 복구 → 복원 드라이브 만들기`로 복구 USB를 꼭 만들어 두세요.
 
 
-
+<!--ad-->
 ---
 
 ## ⚙️ 설치 절차
@@ -117,7 +117,7 @@ TPM 2.0·Secure Boot·CPU 검사 등 **설치 제한을 자동으로 우회**합
 > ISO로 안전하게 파일을 만든 후 USB 설치나 업그레이드를 진행하세요.
 
 
-
+<!--ad-->
 ---
 
 ### ④ 자동 우회 패치 적용
@@ -155,7 +155,7 @@ AveYo의 스크립트에는 내부적으로 `Skip_TPM_Check_on_Dynamic_Update.cm
 > 💡 설치 중 오류나 부팅 문제 시, 복구 USB로 “시스템 복원” 기능을 사용하세요.
 
 
-
+<!--ad-->
 ---
 
 ## 🧾 설치 후 점검 사항
@@ -178,7 +178,7 @@ BIOS 업데이트 + 최신 칩셋/그래픽 드라이버 설치
 가능하다면 TPM 모듈 장착으로 정식 호환 유지
 
 
-
+<!--ad-->
 ---
 
 ## ❓ FAQ
