@@ -21,6 +21,9 @@ header:
   teaser: https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80
 ---
 
+{% include ad-inpost.html %}
+
+
 ## 호텔 멤버십에 관해서
 
 출장을 자주가거나 호텔에 장기 투숙을 하게 될 경우 호텔 멤버쉽을 잘 활용하면 다양한 혜택을 볼 수 있습니다. 
@@ -30,6 +33,9 @@ header:
 
 상위 등급은 하위 등급 혜택 포함합니다.
 {: .notice--info}
+
+{% include ad-inpost.html %}
+
 
 ### 메리어트 본보이 (Marriott Bonvoy)
 
@@ -41,6 +47,9 @@ header:
 | 플래티넘 엘리트 | 50박 | 50%         | 스위트 룸 업그레이드, 라운지 이용 보장, 스위트 나이트 어워드 5박 또는 기프트 중 택1, 레이트 체크아웃 4시 |
 | 티타늄 엘리트   | 75박 | 75%         | 48시간 이용 보장                                                                                         |
 | 앰배서더 엘리트 | 100박 + $23K  | 75%         | 24시간 자유 체크 아웃, 앰배서더 서비스                                                                   |
+
+
+{% include ad-inpost.html %}
 
 
 ### 하얏트 (World of Hayatt)
@@ -61,6 +70,9 @@ header:
 | 다이아몬드 엘리트 | 70박 | 100%        | 무료 조식 (2인)                                                  |
 
 ## 혜택 비교
+
+{% include ad-inpost.html %}
+
 
 혜택 비교는 본인의 년간 숙박횟수와 취향에 따라 골라야 한다. 
 기본적으로 박당 포인트 혜택은 확실히 IHG가 좋고, 70 박 이상을 할 경우 조식 2인이 된다는 것이 매우 큰 매리트이다. 

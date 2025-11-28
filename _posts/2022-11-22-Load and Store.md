@@ -16,6 +16,9 @@ header:
   teaser: https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1206&q=80
 ---
 
+{% include ad-inpost.html %}
+
+
 ## Register & Memory
 AVX vectorize 구현시 가장 중요한 것은 Memory와 Register 관리 이다.
 AVX 연산 자체는 빠르다고 하더라도, 이를 사용하기 위해서는 register에 load 해야 하고, 연산 후에 다시 memory에 저장해야 하기 때문이다. 

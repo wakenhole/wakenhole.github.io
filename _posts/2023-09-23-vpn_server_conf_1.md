@@ -23,10 +23,15 @@ header:
   teaser: https://images.unsplash.com/photo-1691435828932-911a7801adfb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80
 ---
 
+{% include ad-inpost.html %}
+
+
 ## 전체 글 목록
 1. [VPN용 VM 서버 구축](https://wakenhole.github.io/vpn/vpn_server_conf_1/)
 2. [VPN 서버 보안 설정](https://wakenhole.github.io/vpn/vpn_server_conf_2/)
 3. [X-UI 설치 및 설정](https://wakenhole.github.io/vpn/vpn_server_conf_3/)
+
+{% include ad-inpost.html %}
 
 
 ## Reference
@@ -52,6 +57,9 @@ header:
 기본적으로 jitter가 크기 때문에 사용하기에 어려움이 있다. 
 게임을 할정도로 안정적인 서비스를 하려면 더 비싼 subscription을 가입해야 한다. 
 
+{% include ad-inpost.html %}
+
+
 ## Cloud 선택 및 구축
 
 하지만 한국에서 제공하는 다양한 Cloud 업체의 VM (Virtual Machine)를 활용해서 개인용 VPN을 구축하게 되면, 
@@ -71,6 +79,9 @@ Oracle은 무료로 서버를 제공하지만, 절대 추천하지 않는다.
 KT Cloud 가입 후 결재 정보를 등록하고 나면 무료 할인 쿠폰을 받을 수 있다. 
 3개월에 100만원까지 사용하는 것이기 때문에, 
 비싼 서버에 수천 GB 를 사용하지만 않는다면 10만원으로도 충분하다.
+
+{% include ad-inpost.html %}
+
 
 ### VPN용 VM 서버 생성
 아래 그림을 참조해서 적당한 서버를 골라주면 된다. 

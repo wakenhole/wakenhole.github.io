@@ -16,6 +16,8 @@ header:
   teaser: https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80
 ---
 
+{% include ad-inpost.html %}
+
 ## Reference
 1. [Software Optimization Reference Manual](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html#optimization)
 2. [Agner Fog's Guide](https://www.agner.org/optimize/)

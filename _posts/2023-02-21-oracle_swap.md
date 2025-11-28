@@ -18,6 +18,9 @@ header:
   teaser: https://1330878074.rsc.cdn77.org/wp-content/uploads/2022/05/Oracle-Enhances-its-Comprehensive-Cloud-Security-Capabilities-with-Integrated-Threat-Management.jpg
 ---
 
+{% include ad-inpost.html %}
+
+
 ## Oracle 클라우드 메모리 부족 문제
 
 Oracle cloud의 경우 매우 매력적인 무로 VM서비스를 제공합니다. 
