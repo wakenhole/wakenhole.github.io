@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     block.insertAdjacentHTML("beforebegin", adHTML);
 
     // 📌 뒤에 삽입
-    block.insertAdjacentHTML("afterend", adHTML);
+    // block.insertAdjacentHTML("afterend", adHTML);
 
     // 렌더링 trigger
     try {
