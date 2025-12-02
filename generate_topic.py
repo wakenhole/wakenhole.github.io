@@ -36,44 +36,32 @@ def generate_topic():
 
     print(f"[{DATE_STR}] Gemini API를 호출하여 블로그 주제를 생성합니다...")
 
-    # LLM이 따라야 할 시스템 지침
+    # 🟢 [수정됨] 시스템 지침 변경: JSON 형식 '만' 반환하도록 강력하게 지시
     system_prompt = (
         "당신은 IT/기술 블로그의 전문 에디터입니다. 한국 독자를 대상으로 오늘 날짜의 최신 "
         "기술 트렌드, 흥미로운 개발 소식, 또는 깊이 있는 프로그래밍 주제 중 하나를 선정합니다. "
-        "결과는 반드시 JSON 스키마를 따라야 합니다. 생성된 주제는 15자 이내, 요약은 30자 이내로 작성합니다."
+        "응답은 다른 텍스트 설명 없이, 오직 JSON 객체만 반환해야 합니다. "
+        "JSON 객체는 반드시 'topic'(15자 이내 제목)과 'summary'(30자 이내 요약) 필드를 포함해야 합니다."
     )
 
     # 사용자 질의 (Google Search grounding을 통해 최신 정보를 가져오도록 유도)
     user_query = (
         f"오늘 ({DATE_STR}), 한국 개발자들이 가장 관심 가질 만한 최신 기술 뉴스 또는 "
-        "유용한 개발 팁 주제 하나와 이에 대한 짧은 부제를 생성해 주세요."
+        "유용한 개발 팁 주제 하나와 이에 대한 짧은 부제를 다음 JSON 형식으로 생성해 주세요: "
+        '{"topic": "제목", "summary": "요약"}'
     )
 
-    # JSON 응답 스키마
-    response_schema = {
-        "type": "OBJECT",
-        "properties": {
-            "topic": { "type": "STRING", "description": "15자 이내의 한국어 블로그 글 제목." },
-            "summary": { "type": "STRING", "description": "블로그 글의 부제로 사용할 30자 이내의 짧은 요약." }
-        },
-        "required": ["topic", "summary"]
-    }
-
+    # 🔴 [제거됨] generationConfig 제거 (Tool use와 충돌하는 부분)
     payload = {
         "contents": [{ "parts": [{ "text": user_query }] }],
         "tools": [{ "google_search": {} }], # Google Search grounding 활성화
         "systemInstruction": {
             "parts": [{ "text": system_prompt }]
         },
-        "generationConfig": {
-            "responseMimeType": "application/json",
-            "responseSchema": response_schema
-        }
     }
     
     # 🔎 디버깅 로그 출력
     print("\n--- 전송할 API 요청 페이로드 (Debug) ---")
-    # API 키는 보안상 출력하지 않음
     print(json.dumps(payload, indent=2, ensure_ascii=False))
     print("------------------------------------------\n")
 
@@ -92,21 +80,20 @@ def generate_topic():
             # HTTP 오류 발생 시
             if response.status_code != 200:
                 print(f"⚠️ HTTP 오류 발생: {response.status_code}")
-                # 오류 응답 본문을 출력하여 자세한 에러 메시지 확인
                 print(f"⚠️ 오류 메시지: {response.text}")
                 
-                # Bad Request (400)이나 기타 클라이언트 오류 시 재시도 없이 종료
+                # 4xx 클라이언트 오류 시 재시도 없이 종료
                 if response.status_code < 500:
                     print("클라이언트 오류(4xx)입니다. 설정을 확인해 주세요.")
                     sys.exit(1)
                 
-                # 서버 오류(5xx) 또는 타임아웃 시 재시도
+                # 서버 오류(5xx) 시 재시도
                 raise requests.exceptions.RequestException(f"API 서버 오류: {response.status_code}")
 
             # 성공적인 응답 (200 OK)
             result = response.json()
             
-            # 응답 파싱 및 JSON 데이터 추출
+            # 🟢 [수정 없음] 응답 텍스트 파싱. 모델이 JSON 형식만 반환하도록 프롬프트에서 지시했기 때문에 이 텍스트를 바로 JSON.loads로 파싱합니다.
             json_string = result.get('candidates', [{}])[0].get('content', {}).get('parts', [{}])[0].get('text')
             
             if not json_string:
@@ -114,7 +101,8 @@ def generate_topic():
                  return {"topic": "API 응답 오류로 주제 생성 실패", "summary": "내용을 수동으로 입력해 주세요."}
 
             # JSON 문자열을 Python 딕셔너리로 변환
-            topic_data = json.loads(json_string)
+            # (만약 모델이 불필요한 마크다운 백틱(```json)을 추가했다면 이 부분에서 에러가 날 수 있음)
+            topic_data = json.loads(json_string.strip().replace('```json', '').replace('```', ''))
             print(f"\n✅ 성공적으로 주제를 생성했습니다: {topic_data['topic']}")
             return topic_data
 
@@ -130,7 +118,7 @@ def generate_topic():
                 sys.exit(1)
         except json.JSONDecodeError as e:
             print(f"🚨 JSON 파싱 오류가 발생했습니다: {e}")
-            print(f"받은 원본 응답 텍스트: {json_string[:500]}...") # 긴 텍스트는 일부만 출력
+            print(f"받은 원본 응답 텍스트: {json_string[:500]}...")
             sys.exit(1)
         except Exception as e:
             print(f"🚨 예상치 못한 오류 발생: {e}")
