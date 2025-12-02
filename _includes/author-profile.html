@@ -3,8 +3,6 @@
 
 <div itemscope itemtype="https://schema.org/Person" class="h-card">
 
-  {% include ad-inpost.html %}
-
   {% if author.avatar %}
     <div class="author__avatar">
       <a href="{{ author.home | default: '/' | absolute_url }}">
@@ -245,4 +243,7 @@
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
+
+  {% include ad-inpost.html %}
+  
 </div>
