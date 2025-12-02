@@ -81,7 +81,7 @@ Google Gemini 공식 구독 페이지 및 사용자 피드백 정보를 반영�
 
 {% include ad-inpost.html %}
 
-![image](https://private-user-images.githubusercontent.com/2586880/521201622-dbe5d3d2-2730-4e30-872e-0c9669094ec4.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ2NjI0MDEsIm5iZiI6MTc2NDY2MjEwMSwicGF0aCI6Ii8yNTg2ODgwLzUyMTIwMTYyMi1kYmU1ZDNkMi0yNzMwLTRlMzAtODcyZS0wYzk2NjkwOTRlYzQuanBnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MTIwMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTEyMDJUMDc1NTAxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OGQxZDAwMGVlYjhhMWI4NDRiMmE5MWFmY2ZjZmUzMDY0MWYwZTY5OTQyYTYzMGNhYjY1NjA3ZmU2ZGFhZGQyOSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.fMDvQaQftgiBW-hIl3WH15rNh6z9upJmd9k4NRW3wmM)
+![Image](https://github.com/user-attachments/assets/dbe5d3d2-2730-4e30-872e-0c9669094ec4)
 
 
 {% include ad-inpost.html %}
