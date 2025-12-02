@@ -1,0 +1,52 @@
+name: Daily Blog Topic Generator (KST 8 AM)
+
+on:
+  # 매일 UTC 23:00 에 실행 (한국 시간 KST 08:00)
+  schedule:
+    - cron: '0 23 * * *'
+  # 수동 실행을 위한 워크플로우 디스패치 추가
+  workflow_dispatch:
+
+jobs:
+  generate_draft:
+    runs-on: ubuntu-latest
+    
+    # 환경 변수 설정: Python 스크립트에서 사용
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+    steps:
+      - name: 1. Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 2. Set up Python 3.x
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 3. Install dependencies
+        run: |
+          # 'requests' 라이브러리를 설치하여 API 호출에 사용합니다.
+          pip install requests
+
+      - name: 4. Run Topic Generation Script
+        id: topic_gen
+        run: python generate_topic.py
+        # 스크립트 실행 결과를 환경 변수로 저장 (파일명 사용을 위해)
+        # 생성된 파일명이 YYYY-MM-DD-draft-topic.md 형식이므로, 이를 기반으로 커밋 메시지를 생성합니다.
+        
+      - name: 5. Commit and Push new draft file
+        # 'git config'를 설정하여 GitHub Actions 봇의 이름으로 커밋합니다.
+        run: |
+          FILEPATH=_posts/$(date -u +%Y-%m-%d --date='9 hour')-draft-topic.md
+          if [ -f "$FILEPATH" ]; then
+            git config --global user.name 'GitHub Actions Bot'
+            git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add _posts/*.md
+            # 생성된 파일명을 커밋 메시지에 포함
+            git commit -m "🤖 Chore: Daily draft generated for $(date -u +%Y-%m-%d --date='9 hour')"
+            git push
+          else
+            echo "Draft file not found. Skipping commit."
+          fi
+
