@@ -5,11 +5,12 @@ import requests
 import json
 import time
 import base64
+import re  # 🟢 [추가됨] 파일명 정규화용
 
 # --- 설정 ---
 API_KEY = os.environ.get("GEMINI_API_KEY")
 
-# 모델 설정 (안정성을 위해 1.5 Flash 최신 버전 사용 권장, 필요시 2.5 Preview로 변경 가능)
+# 모델 설정
 TEXT_MODEL_NAME = "gemini-2.5-flash-preview-09-2025" 
 TEXT_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{TEXT_MODEL_NAME}:generateContent?key={API_KEY}"
 
@@ -25,8 +26,6 @@ IMAGE_FILENAME = f"{DATE_STR}-cover.png"
 
 POSTS_DIR = "_posts"
 ASSETS_DIR = "assets/images"
-FILENAME = f"{DATE_STR}-draft-topic.md"
-FILE_PATH = os.path.join(POSTS_DIR, FILENAME)
 IMAGE_FILE_PATH = os.path.join(ASSETS_DIR, IMAGE_FILENAME)
 
 REPO_FULL_NAME = os.environ.get('GITHUB_REPOSITORY', 'wakenhole/wakenhole.github.io')
@@ -45,8 +44,13 @@ def generate_and_save_image(topic, summary):
     )
     
     image_payload = {
-        "instances": { "prompt": image_prompt }, 
-        "parameters": { "sampleCount": 1, "aspectRatio": "16:9", "outputMimeType": "image/png" } 
+        "instances": [
+            { "prompt": image_prompt }
+        ],
+        "parameters": { 
+            "sampleCount": 1, 
+            "aspectRatio": "16:9"
+        } 
     }
     
     max_retries = 3
@@ -58,7 +62,11 @@ def generate_and_save_image(topic, summary):
                 data=json.dumps(image_payload),
                 timeout=120
             )
-            image_response.raise_for_status()
+            
+            if image_response.status_code != 200:
+                print(f"⚠️ 이미지 생성 API 오류 ({image_response.status_code}): {image_response.text}")
+                image_response.raise_for_status()
+
             image_result = image_response.json()
             predictions = image_result.get('predictions', [])
 
@@ -74,7 +82,7 @@ def generate_and_save_image(topic, summary):
                 print(f"✅ 이미지 생성 및 저장 완료: {raw_image_url}")
                 return raw_image_url
             else:
-                print("⚠️ 이미지 데이터 없음. 재시도합니다.")
+                print("⚠️ 이미지 데이터가 응답에 없습니다. 재시도합니다.")
                 time.sleep(2 ** attempt)
 
         except Exception as e:
@@ -92,7 +100,7 @@ def generate_topic_and_content():
 
     system_prompt = (
         "당신은 IT/기술 블로그 에디터입니다. 오늘 날짜의 최신 기술 트렌드나 개발 팁을 주제로 선정하세요. "
-        "응답은 오직 JSON 형식이어야 합니다. Markdown 포맷(` ```json `)을 사용하지 말고 순수 JSON 텍스트만 반환하세요."
+        "응답은 오직 JSON 형식이어야 합니다. Markdown 포맷을 사용하지 말고 순수 JSON 텍스트만 반환하세요."
     )
 
     user_query = (
@@ -119,39 +127,31 @@ def generate_topic_and_content():
                 timeout=90 
             )
             
-            # 🔍 [디버그] 응답 상태 및 본문 확인
-            print(f"📡 API 상태 코드: {response.status_code}")
-            
             if response.status_code != 200:
-                print(f"⚠️ API 오류 응답 본문: {response.text}")
+                print(f"⚠️ 텍스트 API 오류: {response.text}")
                 if response.status_code < 500: sys.exit(1)
                 raise requests.exceptions.RequestException(f"Status {response.status_code}")
 
-            # 1차 파싱: API 응답 자체가 JSON인지 확인
             try:
                 result = response.json()
             except json.JSONDecodeError:
-                print(f"🚨 API 응답이 JSON이 아닙니다. 원본: {response.text[:200]}...")
+                print(f"🚨 API 응답이 JSON이 아닙니다.")
                 continue
 
-            # 텍스트 추출
             try:
                 candidates = result.get('candidates', [{}])
                 if not candidates:
-                    print(f"⚠️ 생성된 후보(candidates)가 없습니다. 안전 차단될 가능성이 있습니다. 응답: {result}")
+                    print(f"⚠️ 생성된 후보가 없습니다. 응답: {result}")
                     continue
-                    
                 parts = candidates[0].get('content', {}).get('parts', [{}])
                 json_string = parts[0].get('text', '')
-            except (IndexError, AttributeError) as e:
+            except Exception as e:
                 print(f"⚠️ 응답 구조 파싱 실패: {e}")
                 continue
             
             if not json_string:
-                print("⚠️ LLM이 빈 텍스트를 반환했습니다. 재시도합니다.")
                 continue
 
-            # 2차 파싱: LLM이 생성한 텍스트가 JSON인지 확인
             json_string_clean = json_string.strip().replace('```json', '').replace('```', '')
             
             try:
@@ -159,16 +159,12 @@ def generate_topic_and_content():
                 print(f"✅ 주제 생성 성공: {topic_data.get('topic')}")
                 break
             except json.JSONDecodeError as e:
-                print(f"🚨 LLM 생성 텍스트 JSON 파싱 실패: {e}")
-                print(f"🔍 파싱 시도한 텍스트: {json_string_clean[:500]}...") # 문제가 되는 텍스트 출력
+                print(f"🚨 JSON 파싱 실패. 재시도합니다.")
                 time.sleep(2)
                 continue
 
-        except requests.exceptions.RequestException as e:
-            print(f"❌ 요청 오류: {e}")
-            time.sleep(2 ** attempt)
         except Exception as e:
-            print(f"🚨 예상치 못한 오류: {e}")
+            print(f"❌ 요청 오류: {e}")
             time.sleep(2 ** attempt)
 
     if topic_data:
@@ -182,10 +178,22 @@ def create_markdown_file(topic_data):
     try:
         os.makedirs(POSTS_DIR, exist_ok=True)
         content = topic_data.get('content', '')
+        topic_title = topic_data.get('topic', 'draft-topic')
+
+        # 🟢 [수정됨] 파일명 생성 로직: 주제를 이용하여 안전한 파일명 생성
+        # 공백을 하이픈으로, 특수문자는 제거 (한글/영문/숫자/하이픈만 허용)
+        safe_title = re.sub(r'[^\w\s-]', '', topic_title).strip().replace(' ', '-')
+        
+        # 파일명 길이 제한 (너무 길 경우 잘라냄)
+        if len(safe_title) > 50:
+            safe_title = safe_title[:50]
+            
+        filename = f"{DATE_STR}-{safe_title}.md"
+        file_path = os.path.join(POSTS_DIR, filename)
         
         markdown_content = f"""---
 layout: post
-title: "{topic_data.get('topic', '제목 없음')}"
+title: "{topic_title}"
 subtitle: "{topic_data.get('summary', '')}"
 date: {TIME_STR}
 author: WakenHole
@@ -205,9 +213,9 @@ header:
 ---
 *AI Generated Content*
 """
-        with open(FILE_PATH, "w", encoding="utf-8") as f:
+        with open(file_path, "w", encoding="utf-8") as f:
             f.write(markdown_content)
-        print(f"⭐ 파일 생성 완료: {FILE_PATH}")
+        print(f"⭐ 파일 생성 완료: {file_path}")
 
     except IOError as e:
         print(f"파일 쓰기 실패: {e}")
