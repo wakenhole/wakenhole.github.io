@@ -48,24 +48,19 @@ SSL 설정까지 완료 되면 아래 링크르 들어가고, Marzban 설치시 
 2. VLESS TCP NOTLS
 3. Shadowsocks TCP
 
+로그인을 하고 나면 아래와 같은 화면이 나오며, 우측 상단의 설정 버튼을 클릭합니다. 
+
+![Image](https://github.com/user-attachments/assets/d4852929-a785-4bdb-be8c-5d8a74759cb1)
+
+설정 버튼을 클릭하고 나면 아래와 같은 창이 나오며, 아래 json을 참고해서 inbound 설정을 추가 하면 됩니다.
+
+![Image](https://github.com/user-attachments/assets/597d17bd-c1d1-488b-8559-45bfe3271bb2)
+
 
 
 ```json
 {
-  "log": {
-    "loglevel": "warning"
-  },
-  "routing": {
-    "rules": [
-      {
-        "ip": [
-          "geoip:private"
-        ],
-        "outboundTag": "BLOCK",
-        "type": "field"
-      }
-    ]
-  },
+    ...
   "inbounds": [
     {
       "tag": "VLESS TCP REALITY",
@@ -138,15 +133,16 @@ SSL 설정까지 완료 되면 아래 링크르 들어가고, Marzban 설치시 
       }
     }
   ],
-  "outbounds": [
-    {
-      "protocol": "freedom",
-      "tag": "DIRECT"
-    },
-    {
-      "protocol": "blackhole",
-      "tag": "BLOCK"
-    }
-  ]
+   ...
 }
 ```
+
+```sh
+docker exec marzban-marzban-1 xray x25519
+```
+
+### 사용자 추가 
+
+아래 
+
+![Image](https://github.com/user-attachments/assets/c14180c5-56cc-4679-85b3-25336225a250)

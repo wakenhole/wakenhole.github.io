@@ -27,27 +27,31 @@ FILENAME = f"{DATE_STR}-draft-topic.md"
 def validate_image_url(url):
     """
     주어진 URL이 유효한 이미지 링크인지 확인합니다.
-    접속 불가하거나 404인 경우 빈 문자열을 반환합니다.
+    안정성을 위해 HEAD 대신 GET(stream=True)을 사용합니다.
     """
     if not url:
         return ""
     
     try:
         # 일부 사이트 차단 방지를 위한 User-Agent 헤더
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
         
-        # HEAD 요청으로 헤더만 확인 (빠름)
+        # HEAD 요청은 차단되는 경우가 많아 GET stream=True 사용
         print(f"🔗 이미지 링크 유효성 검사 중: {url[:60]}...")
-        response = requests.head(url, headers=headers, timeout=5, allow_redirects=True)
+        response = requests.get(url, headers=headers, timeout=5, stream=True)
         
         if response.status_code == 200:
-            # Content-Type이 이미지인지 확인 (선택적)
-            content_type = response.headers.get('Content-Type', '')
+            # Content-Type이 이미지인지 확인
+            content_type = response.headers.get('Content-Type', '').lower()
             if 'image' in content_type:
-                print("✅ 유효한 이미지 링크입니다.")
+                print(f"✅ 유효한 이미지 링크입니다 ({content_type}).")
+                response.close()
                 return url
             else:
                 print(f"⚠️ 링크가 이미지가 아닙니다 ({content_type}). 빈 값 사용.")
+                response.close()
                 return ""
         else:
             print(f"❌ 유효하지 않은 링크 (Status {response.status_code}). 빈 값 사용.")
@@ -63,13 +67,14 @@ def generate_topic_and_content():
 
     print(f"[{DATE_STR}] Gemini API({TEXT_MODEL_NAME}) 호출 중...")
 
-    # 🟢 [수정됨] 프롬프트: 제목 길이, 본문 길이, 이미지 검색 지침 강화
+    # 🟢 [사용자 정의] 강화된 시스템 프롬프트
     system_prompt = (
-        "당신은 IT/기술 블로그 에디터입니다. 오늘 날짜의 최신 기술 트렌드나 개발 팁을 주제로 선정하세요."
-        "주제는 최근 한달 뉴스 기반으로 선정하며, 독자들이 관심 가질 만한 내용이어야 합니다."
+        "당신은 IT/기술 블로그 에디터입니다. 오늘 날짜의 최신 기술 트렌드나 개발 팁을 주제로 선정하세요.\n"
+        "주제는 최근 한달 뉴스 기반으로 선정하며, 독자들이 관심 가질 만한 내용이어야 합니다.\n"
         "응답은 오직 JSON 형식이어야 합니다. Markdown 포맷을 사용하지 말고 순수 JSON 텍스트만 반환하세요."
     )
 
+    # 🟢 [사용자 정의] 강화된 사용자 질의
     user_query = (
         f"오늘({DATE_STR}) 한국 개발자를 위한 블로그 글을 작성해 주세요. \n"
         "글 작성시 사실에 기반해서 작성해야하고, 참조한 출처가 있다면 반드시 명시해야 합니다. \n"
@@ -82,7 +87,7 @@ def generate_topic_and_content():
 
     payload = {
         "contents": [{ "parts": [{ "text": user_query }] }],
-        "tools": [{ "google_search": {} }], # 구글 검색 도구 활성화 (이미지 찾기 용도)
+        "tools": [{ "google_search": {} }], # 구글 검색 도구 활성화
         "systemInstruction": { "parts": [{ "text": system_prompt }] },
     }
     
@@ -133,7 +138,7 @@ def generate_topic_and_content():
             print(f"❌ 요청 오류: {e}")
             time.sleep(2 ** attempt)
 
-    # 🟢 [수정됨] 이미지 URL 유효성 검사 및 할당
+    # 🟢 이미지 URL 유효성 검사 및 할당
     if topic_data:
         raw_url = topic_data.get('image_url', '')
         valid_url = validate_image_url(raw_url)
