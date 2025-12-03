@@ -32,8 +32,8 @@ jobs:
       - name: 4. Run Topic and Content Generation Script
         # 이 단계에서 _posts/ 파일과 assets/images/ 파일이 생성됩니다.
         run: |
-          python generate_blog_tech.py
-          python generate_blog_invest.py
+          python generate_post_tech.py
+          python generate_post_invest.py
         
       - name: 5. Commit and Push Generated Files
         # 글 파일(.md)과 이미지 파일(.png)을 모두 커밋합니다.
