@@ -8,6 +8,8 @@ import requests
 import typing_extensions as typing
 import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
+# 🟢 [추가됨] 명시적 도구 설정을 위한 protos 모듈 임포트
+from google.generativeai import protos
 
 # --- 설정 ---
 
@@ -105,11 +107,15 @@ class BlogPostSchema(typing.TypedDict):
 def generate_topic_and_content() -> dict:
     print(f"[{DATE_STR}] {TEXT_MODEL_NAME} 모델로 블로그 글 생성 중...")
 
-    # 모델 초기화 시 tools를 설정하는 것이 가장 안정적입니다.
-    # 🟢 [수정됨] 문자열 'google_search'를 사용하여 도구 선언 오류 방지
+    # 🟢 [수정됨] protos를 사용하여 Google Search 도구를 명시적으로 정의
+    # 이렇게 하면 SDK의 자동 파싱 오류(FunctionDeclaration 등)를 우회할 수 있습니다.
+    search_tool = protos.Tool(
+        google_search=protos.GoogleSearch()
+    )
+
     model = genai.GenerativeModel(
         model_name=TEXT_MODEL_NAME,
-        tools='google_search',  # 핵심 수정 사항
+        tools=[search_tool], # 수정됨: protos 객체 리스트 전달
         generation_config={
             "temperature": 0.7,
             "response_mime_type": "application/json",
@@ -129,8 +135,6 @@ def generate_topic_and_content() -> dict:
     )
 
     try:
-        # 이미 모델 초기화 단계에서 tools를 선언했으므로 여기서는 제거하거나 유지해도 무방하나,
-        # 중복 방지를 위해 여기서는 파라미터를 제거합니다.
         response = model.generate_content(prompt)
         
         # JSON 모드를 사용하므로 텍스트를 바로 파싱 가능
