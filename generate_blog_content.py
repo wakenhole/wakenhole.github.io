@@ -4,92 +4,57 @@ import datetime
 import requests
 import json
 import time
-import base64
-import re  # 🟢 [추가됨] 파일명 정규화용
+import re  # 파일명 정규화용
 
 # --- 설정 ---
 API_KEY = os.environ.get("GEMINI_API_KEY")
 
-# 모델 설정
+# 텍스트 모델 설정 (Google Search 도구 사용)
 TEXT_MODEL_NAME = "gemini-2.5-flash-preview-09-2025" 
 TEXT_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{TEXT_MODEL_NAME}:generateContent?key={API_KEY}"
-
-IMAGE_MODEL_NAME = "imagen-4.0-generate-001"
-IMAGE_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{IMAGE_MODEL_NAME}:predict?key={API_KEY}"
 
 KST = datetime.timezone(datetime.timedelta(hours=9))
 now = datetime.datetime.now(KST)
 
 DATE_STR = now.strftime("%Y-%m-%d")
 TIME_STR = now.strftime("%Y-%m-%d %H:%M:%S +0900")
-IMAGE_FILENAME = f"{DATE_STR}-cover.png"
 
 POSTS_DIR = "_posts"
-ASSETS_DIR = "assets/images"
-IMAGE_FILE_PATH = os.path.join(ASSETS_DIR, IMAGE_FILENAME)
+FILENAME = f"{DATE_STR}-draft-topic.md"
 
-REPO_FULL_NAME = os.environ.get('GITHUB_REPOSITORY', 'wakenhole/wakenhole.github.io')
-REPO_BRANCH = os.environ.get('GITHUB_REF_NAME', 'main')
-RAW_URL_BASE = f"https://raw.githubusercontent.com/{REPO_FULL_NAME}/{REPO_BRANCH}"
 # ---
 
-def generate_and_save_image(topic, summary):
-    print("🎨 블로그 주제 기반 이미지 생성 요청 중...")
+def validate_image_url(url):
+    """
+    주어진 URL이 유효한 이미지 링크인지 확인합니다.
+    접속 불가하거나 404인 경우 빈 문자열을 반환합니다.
+    """
+    if not url:
+        return ""
     
-    image_prompt = (
-        f"A cinematic, high-resolution digital art cover image for a tech blog post about '{topic}'. "
-        f"The image should be modern, visually engaging, and abstractly represent '{summary}'. "
-        "Use a dark background with neon blue and purple accents. "
-        "Aspect ratio: 16:9 for blog header/teaser."
-    )
-    
-    image_payload = {
-        "instances": [
-            { "prompt": image_prompt }
-        ],
-        "parameters": { 
-            "sampleCount": 1, 
-            "aspectRatio": "16:9"
-        } 
-    }
-    
-    max_retries = 3
-    for attempt in range(max_retries):
-        try:
-            image_response = requests.post(
-                IMAGE_API_URL,
-                headers={'Content-Type': 'application/json'},
-                data=json.dumps(image_payload),
-                timeout=120
-            )
-            
-            if image_response.status_code != 200:
-                print(f"⚠️ 이미지 생성 API 오류 ({image_response.status_code}): {image_response.text}")
-                image_response.raise_for_status()
-
-            image_result = image_response.json()
-            predictions = image_result.get('predictions', [])
-
-            if predictions and predictions[0].get('bytesBase64Encoded'):
-                base64_data = predictions[0]['bytesBase64Encoded']
-                
-                os.makedirs(ASSETS_DIR, exist_ok=True)
-                image_data = base64.b64decode(base64_data)
-                with open(IMAGE_FILE_PATH, "wb") as f:
-                    f.write(image_data)
-                
-                raw_image_url = f"{RAW_URL_BASE}/{IMAGE_FILE_PATH.replace(os.sep, '/')}"
-                print(f"✅ 이미지 생성 및 저장 완료: {raw_image_url}")
-                return raw_image_url
+    try:
+        # 일부 사이트 차단 방지를 위한 User-Agent 헤더
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+        
+        # HEAD 요청으로 헤더만 확인 (빠름)
+        print(f"🔗 이미지 링크 유효성 검사 중: {url[:60]}...")
+        response = requests.head(url, headers=headers, timeout=5, allow_redirects=True)
+        
+        if response.status_code == 200:
+            # Content-Type이 이미지인지 확인 (선택적)
+            content_type = response.headers.get('Content-Type', '')
+            if 'image' in content_type:
+                print("✅ 유효한 이미지 링크입니다.")
+                return url
             else:
-                print("⚠️ 이미지 데이터가 응답에 없습니다. 재시도합니다.")
-                time.sleep(2 ** attempt)
-
-        except Exception as e:
-            print(f"❌ 이미지 생성 실패 (시도 {attempt + 1}): {e}")
-            if attempt < max_retries - 1: time.sleep(2 ** attempt)
-            else: return ""
-    return ""
+                print(f"⚠️ 링크가 이미지가 아닙니다 ({content_type}). 빈 값 사용.")
+                return ""
+        else:
+            print(f"❌ 유효하지 않은 링크 (Status {response.status_code}). 빈 값 사용.")
+            return ""
+    except Exception as e:
+        print(f"❌ 링크 검사 중 오류 발생: {e}. 빈 값 사용.")
+        return ""
 
 def generate_topic_and_content():
     if not API_KEY:
@@ -98,20 +63,24 @@ def generate_topic_and_content():
 
     print(f"[{DATE_STR}] Gemini API({TEXT_MODEL_NAME}) 호출 중...")
 
+    # 🟢 [수정됨] 프롬프트: 제목 길이, 본문 길이, 이미지 검색 지침 강화
     system_prompt = (
         "당신은 IT/기술 블로그 에디터입니다. 오늘 날짜의 최신 기술 트렌드나 개발 팁을 주제로 선정하세요. "
         "응답은 오직 JSON 형식이어야 합니다. Markdown 포맷을 사용하지 말고 순수 JSON 텍스트만 반환하세요."
     )
 
     user_query = (
-        f"오늘({DATE_STR}) 한국 개발자를 위한 블로그 글 주제와 내용을 작성해 주세요. "
-        "다음 JSON 구조를 엄격히 따라 주세요: "
-        '{"topic": "제목", "summary": "요약", "content": "마크다운 본문"}'
+        f"오늘({DATE_STR}) 한국 개발자를 위한 블로그 글을 작성해 주세요. \n"
+        "1. **주제(topic)**: 임팩트 있는 **10자 내외**의 제목.\n"
+        "2. **내용(content)**: 깊이 있는 내용으로 마크다운 형식 **최소 800자 이상** 작성.\n"
+        "3. **이미지(image_url)**: 주제와 관련된 **저작권 문제없는 공개 이미지(Unsplash 등)의 직접 링크(URL)** 하나를 검색해서 찾아주세요.\n\n"
+        "응답은 다음 JSON 구조를 엄격히 따라 주세요: "
+        '{"topic": "제목(10자 내외)", "summary": "요약", "content": "본문(800자 이상)", "image_url": "https://..."}'
     )
 
     payload = {
         "contents": [{ "parts": [{ "text": user_query }] }],
-        "tools": [{ "google_search": {} }], 
+        "tools": [{ "google_search": {} }], # 구글 검색 도구 활성화 (이미지 찾기 용도)
         "systemInstruction": { "parts": [{ "text": system_prompt }] },
     }
     
@@ -128,25 +97,20 @@ def generate_topic_and_content():
             )
             
             if response.status_code != 200:
-                print(f"⚠️ 텍스트 API 오류: {response.text}")
+                print(f"⚠️ API 오류: {response.text}")
                 if response.status_code < 500: sys.exit(1)
                 raise requests.exceptions.RequestException(f"Status {response.status_code}")
 
             try:
                 result = response.json()
-            except json.JSONDecodeError:
-                print(f"🚨 API 응답이 JSON이 아닙니다.")
-                continue
-
-            try:
                 candidates = result.get('candidates', [{}])
                 if not candidates:
-                    print(f"⚠️ 생성된 후보가 없습니다. 응답: {result}")
+                    print(f"⚠️ 생성된 후보가 없습니다.")
                     continue
                 parts = candidates[0].get('content', {}).get('parts', [{}])
                 json_string = parts[0].get('text', '')
             except Exception as e:
-                print(f"⚠️ 응답 구조 파싱 실패: {e}")
+                print(f"⚠️ 응답 파싱 실패: {e}")
                 continue
             
             if not json_string:
@@ -167,10 +131,14 @@ def generate_topic_and_content():
             print(f"❌ 요청 오류: {e}")
             time.sleep(2 ** attempt)
 
+    # 🟢 [수정됨] 이미지 URL 유효성 검사 및 할당
     if topic_data:
-        image_url = generate_and_save_image(topic_data.get('topic', ''), topic_data.get('summary', ''))
-        topic_data['overlay_image'] = image_url
-        topic_data['teaser'] = image_url
+        raw_url = topic_data.get('image_url', '')
+        valid_url = validate_image_url(raw_url)
+        
+        # 유효하면 사용, 아니면 빈 값
+        topic_data['overlay_image'] = valid_url
+        topic_data['teaser'] = valid_url
         
     return topic_data
 
@@ -180,13 +148,9 @@ def create_markdown_file(topic_data):
         content = topic_data.get('content', '')
         topic_title = topic_data.get('topic', 'draft-topic')
 
-        # 🟢 [수정됨] 파일명 생성 로직: 주제를 이용하여 안전한 파일명 생성
-        # 공백을 하이픈으로, 특수문자는 제거 (한글/영문/숫자/하이픈만 허용)
+        # 파일명 생성: 공백을 하이픈으로, 특수문자 제거
         safe_title = re.sub(r'[^\w\s-]', '', topic_title).strip().replace(' ', '-')
-        
-        # 파일명 길이 제한 (너무 길 경우 잘라냄)
-        if len(safe_title) > 50:
-            safe_title = safe_title[:50]
+        if len(safe_title) > 50: safe_title = safe_title[:50]
             
         filename = f"{DATE_STR}-{safe_title}.md"
         file_path = os.path.join(POSTS_DIR, filename)
