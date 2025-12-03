@@ -10,7 +10,7 @@ import re  # 파일명 정규화용
 API_KEY = os.environ.get("GEMINI_API_KEY")
 
 # 텍스트 모델 설정 (Google Search 도구 사용)
-TEXT_MODEL_NAME = "gemini-2.5-flash-preview-09-2025" 
+TEXT_MODEL_NAME = "gemini-2.5-flash" 
 TEXT_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{TEXT_MODEL_NAME}:generateContent?key={API_KEY}"
 
 KST = datetime.timezone(datetime.timedelta(hours=9))
@@ -65,12 +65,14 @@ def generate_topic_and_content():
 
     # 🟢 [수정됨] 프롬프트: 제목 길이, 본문 길이, 이미지 검색 지침 강화
     system_prompt = (
-        "당신은 IT/기술 블로그 에디터입니다. 오늘 날짜의 최신 기술 트렌드나 개발 팁을 주제로 선정하세요. "
+        "당신은 금융 부동산 투자자 블로그 에디터입니다. 오늘 날짜의 최신 금용 및 부동산 투자 관련 주제로 선정하세요. "
+        "주제는 최근 일주일 뉴스 기반으로 선정하며, 독자들이 관심 가질 만한 내용이어야 합니다."
         "응답은 오직 JSON 형식이어야 합니다. Markdown 포맷을 사용하지 말고 순수 JSON 텍스트만 반환하세요."
     )
 
     user_query = (
-        f"오늘({DATE_STR}) 한국 개발자를 위한 블로그 글을 작성해 주세요. \n"
+        f"오늘({DATE_STR}) 주식과 부동산에 한국인 투자자들이 관심 있을 주제로 블로그 글을 작성해 주세요. \n"
+        "글 작성시 사실에 기반해서 작성해야하고, 참조한 출처가 있다면 반드시 명시해야 합니다. \n"
         "1. **주제(topic)**: 임팩트 있는 **10자 내외**의 제목.\n"
         "2. **내용(content)**: 깊이 있는 내용으로 마크다운 형식 **최소 800자 이상** 작성.\n"
         "3. **이미지(image_url)**: 주제와 관련된 **저작권 문제없는 공개 이미지(Unsplash 등)의 직접 링크(URL)** 하나를 검색해서 찾아주세요.\n\n"
