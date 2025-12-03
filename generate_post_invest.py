@@ -186,7 +186,6 @@ header:
 {content}
 
 ---
-*AI Generated Content*
 """
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(markdown_content)
