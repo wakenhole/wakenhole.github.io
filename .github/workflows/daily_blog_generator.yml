@@ -1,4 +1,4 @@
-name: Daily Blog Topic Generator (KST 8 AM)
+name: Daily Blog Content and Image Generator (KST 8 AM)
 
 on:
   # 매일 UTC 23:00 에 실행 (한국 시간 KST 08:00)

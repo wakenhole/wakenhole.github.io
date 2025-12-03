@@ -8,9 +8,11 @@ import base64
 
 # --- 설정 ---
 API_KEY = os.environ.get("GEMINI_API_KEY")
-# 텍스트 생성 모델 (최신 버전)
-TEXT_MODEL_NAME = "gemini-2.5-flash" 
+
+# 🟢 [복구됨] 안정적인 프리뷰 모델 버전으로 롤백
+TEXT_MODEL_NAME = "gemini-2.5-flash-preview-09-2025" 
 TEXT_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{TEXT_MODEL_NAME}:generateContent?key={API_KEY}"
+
 # 이미지 생성 모델
 IMAGE_MODEL_NAME = "imagen-4.0-generate-001"
 IMAGE_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{IMAGE_MODEL_NAME}:predict?key={API_KEY}"
@@ -31,7 +33,7 @@ FILENAME = f"{DATE_STR}-draft-topic.md"
 FILE_PATH = os.path.join(POSTS_DIR, FILENAME)
 IMAGE_FILE_PATH = os.path.join(ASSETS_DIR, IMAGE_FILENAME)
 
-# GitHub 환경 변수 (GitHub Actions에서 자동으로 제공됨)
+# GitHub 환경 변수
 REPO_FULL_NAME = os.environ.get('GITHUB_REPOSITORY', 'wakenhole/wakenhole.github.io')
 REPO_BRANCH = os.environ.get('GITHUB_REF_NAME', 'main')
 RAW_URL_BASE = f"https://raw.githubusercontent.com/{REPO_FULL_NAME}/{REPO_BRANCH}"
@@ -156,7 +158,11 @@ def generate_topic_and_content():
             
             if response.status_code != 200:
                 print(f"⚠️ HTTP 오류 발생: {response.status_code}")
+                # 🟢 [수정됨] 오류 내용을 반드시 출력하도록 수정
+                print(f"⚠️ 상세 오류 메시지: {response.text}")
+                
                 if response.status_code < 500:
+                    print("🚨 클라이언트 오류(4xx)가 발생하여 스크립트를 중단합니다.")
                     sys.exit(1)
                 raise requests.exceptions.RequestException(f"API 서버 오류: {response.status_code}")
 
@@ -173,6 +179,7 @@ def generate_topic_and_content():
             break 
 
         except requests.exceptions.RequestException as e:
+            print(f"❌ API 요청 중 예외 발생: {e}")
             if attempt < max_retries - 1:
                 time.sleep(2 ** attempt)
             else:
@@ -194,7 +201,7 @@ def generate_topic_and_content():
     return topic_data
 
 
-# 2. 마크다운 파일 생성 (Issue 생성 대신 파일 생성으로 복귀)
+# 2. 마크다운 파일 생성
 def create_markdown_file(topic_data):
     """
     생성된 주제와 내용을 바탕으로 Jekyll Front Matter를 포함한 마크다운 파일을 생성합니다.
