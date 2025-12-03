@@ -136,13 +136,28 @@ SSL 설정까지 완료 되면 아래 링크르 들어가고, Marzban 설치시 
    ...
 }
 ```
+### PRIVATE_KEY 및 SHORT_ID 생성 방법
+
+PRIVATE_KEY는 아래 명령어를 통해서 생성할 수 있습니다.
+
 
 ```sh
 docker exec marzban-marzban-1 xray x25519
 ```
 
+SHORT_ID는 16진수 8자리 문자열로 생성하면 됩니다. 예를 들어, `a1b2c3d4` 와 같은 형식입니다.
+
+```sh
+openssl rand -hex 8
+```
+
 ### 사용자 추가 
 
-아래 
+Creat User 버튼을 누루고 나면, 아래 이미지와 같이 User 생성이 가능하다.
+원하는 protocol을 선택하고, ID 및 기타 설정을 완료 한 후에 생성 버튼을 누르면 된다. 
+VLESS의 경우 ID는 UUID 형식이다. 자동 생성 되니 입력할 필요 없다.
 
 ![Image](https://github.com/user-attachments/assets/c14180c5-56cc-4679-85b3-25336225a250)
+
+User를 생성하고나면, User 목록에 추가된 것을 확인할 수 있다.
+QR Code 또는 shared link를 통해서 단말 app에 쉽게 서버 설정을 추가할 수 있다.
