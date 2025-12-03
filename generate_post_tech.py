@@ -168,7 +168,6 @@ def create_markdown_file(topic_data):
         file_path = os.path.join(POSTS_DIR, filename)
         
         markdown_content = f"""---
-layout: post
 title: "{topic_title}"
 subtitle: "{topic_data.get('summary', '')}"
 date: {TIME_STR}

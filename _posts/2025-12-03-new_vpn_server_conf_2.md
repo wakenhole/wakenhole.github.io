@@ -1,5 +1,5 @@
 ---
-title: "[NEW] 간단한 개인용 VPN 서버 구축의 모든것 1: Marzban VPN"
+title: "[NEW] 간단한 개인용 VPN 서버 구축의 모든것 2: Marzban VPN 설정"
 categories:
   - VPN 
 tags:
@@ -25,6 +25,8 @@ header:
 1. [VPN용 VM 서버 구축](https://wakenhole.github.io/vpn/vpn_server_conf_1/)
 2. [VPN 서버 보안 설정](https://wakenhole.github.io/vpn/vpn_server_conf_2/)
 3. [X-UI 설치 및 설정](https://wakenhole.github.io/vpn/vpn_server_conf_3/)
+4. [Marzban VPN 설치](https://wakenhole.github.io/vpn/new_vpn_server_conf_1/)
+5. [Marzban VPN 설정](https://wakenhole.github.io/vpn/new_vpn_server_conf_2/)
 
 {% include ad-inpost.html %}
 
