@@ -13,11 +13,10 @@ from google.generativeai.types import HarmCategory, HarmBlockThreshold
 
 API_KEY = os.environ.get("GEMINI_API_KEY")
 
-# 🟢 [변경됨] 텍스트 생성 모델을 Gemini 3.0 Pro Preview로 업그레이드
-# (주의: 실제 사용 가능한 모델 ID인지 Google AI Studio에서 확인이 필요할 수 있습니다)
+# 모델 설정
+# 주의: 3.0 Preview 모델이 API 키에서 활성화되지 않은 경우 404 오류가 날 수 있습니다.
+# 오류 지속 시 "gemini-1.5-pro" 또는 "gemini-2.0-flash-exp"로 변경하세요.
 TEXT_MODEL_NAME = "gemini-3.0-pro-preview" 
-
-# 이미지 생성 모델 (Imagen 4.0 유지)
 IMAGE_MODEL_NAME = "imagen-4.0-generate-001"
 
 # KST (한국 표준시) 설정
@@ -106,8 +105,11 @@ class BlogPostSchema(typing.TypedDict):
 def generate_topic_and_content() -> dict:
     print(f"[{DATE_STR}] {TEXT_MODEL_NAME} 모델로 블로그 글 생성 중...")
 
+    # 모델 초기화 시 tools를 설정하는 것이 가장 안정적입니다.
+    # 🟢 [수정됨] 문자열 'google_search'를 사용하여 도구 선언 오류 방지
     model = genai.GenerativeModel(
         model_name=TEXT_MODEL_NAME,
+        tools='google_search',  # 핵심 수정 사항
         generation_config={
             "temperature": 0.7,
             "response_mime_type": "application/json",
@@ -121,17 +123,15 @@ def generate_topic_and_content() -> dict:
 
     prompt = (
         f"오늘 ({DATE_STR}), 한국 개발자들이 관심 가질만한 최신 기술 뉴스나 개발 팁을 선정해 주세요. "
-        "Google Search 도구를 사용하여 최신 정보를 바탕으로 작성하세요. "
+        "Google Search 도구를 사용하여 반드시 최신 정보를 바탕으로 작성하세요. "
         "글은 전문적이지만 읽기 쉬운 톤으로 작성하고, 내용은 마크다운 포맷이어야 합니다. "
         "최소 1500자 이상 작성하세요."
     )
 
     try:
-        # 🟢 [수정 유지] google_search 도구 호출 방식 (최신 SDK 사양 준수)
-        response = model.generate_content(
-            prompt,
-            tools=[{'google_search': {}}] 
-        )
+        # 이미 모델 초기화 단계에서 tools를 선언했으므로 여기서는 제거하거나 유지해도 무방하나,
+        # 중복 방지를 위해 여기서는 파라미터를 제거합니다.
+        response = model.generate_content(prompt)
         
         # JSON 모드를 사용하므로 텍스트를 바로 파싱 가능
         result_json = json.loads(response.text)
@@ -146,7 +146,8 @@ def generate_topic_and_content() -> dict:
 
     except Exception as e:
         print(f"🚨 텍스트 생성 중 오류 발생: {e}")
-        # 오류 발생 시 디버깅을 위해 에러 메시지 출력 후 종료
+        import traceback
+        traceback.print_exc() # 상세 에러 로그 출력
         sys.exit(1)
 
 # --- 3. 파일 저장 ---
