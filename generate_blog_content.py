@@ -5,19 +5,18 @@ import json
 import time
 import base64
 import requests
-import typing_extensions as typing
-import google.generativeai as genai
-from google.generativeai.types import HarmCategory, HarmBlockThreshold
-# 🟢 [추가됨] 명시적 도구 설정을 위한 protos 모듈 임포트
-from google.generativeai import protos
+
+# 🟢 [변경] 새로운 SDK 임포트
+from google import genai
+from google.genai import types
+from pydantic import BaseModel, Field
 
 # --- 설정 ---
 
 API_KEY = os.environ.get("GEMINI_API_KEY")
 
-# 모델 설정
-# 주의: 3.0 Preview 모델이 API 키에서 활성화되지 않은 경우 404 오류가 날 수 있습니다.
-# 오류 지속 시 "gemini-1.5-pro" 또는 "gemini-2.0-flash-exp"로 변경하세요.
+# 🟢 [모델 변경] Gemini 3.0 Pro Preview
+# (권한 문제 시 'gemini-2.0-flash'로 변경하면 동일한 코드로 작동합니다)
 TEXT_MODEL_NAME = "gemini-3.0-pro-preview" 
 IMAGE_MODEL_NAME = "imagen-4.0-generate-001"
 
@@ -36,7 +35,6 @@ FILENAME = f"{DATE_STR}-draft-topic.md"
 FILE_PATH = os.path.join(POSTS_DIR, FILENAME)
 IMAGE_FILE_PATH = os.path.join(ASSETS_DIR, IMAGE_FILENAME)
 
-# GitHub URL 설정
 REPO_FULL_NAME = os.environ.get('GITHUB_REPOSITORY', 'wakenhole/wakenhole.github.io')
 REPO_BRANCH = os.environ.get('GITHUB_REF_NAME', '0.0.5')
 RAW_URL_BASE = f"https://raw.githubusercontent.com/{REPO_FULL_NAME}/{REPO_BRANCH}"
@@ -46,9 +44,12 @@ if not API_KEY:
     print("🚨 에러: GEMINI_API_KEY 환경 변수가 없습니다.")
     sys.exit(1)
 
-genai.configure(api_key=API_KEY)
+# 🟢 [변경] 새로운 Client 방식 초기화
+client = genai.Client(api_key=API_KEY)
 
-# --- 1. 이미지 생성 (Imagen 4.0 REST API) ---
+
+# --- 1. 이미지 생성 (Imagen 4.0 - REST API) ---
+# 이미지 생성은 기존 REST 방식이 여전히 가장 간편하고 호환성이 좋아 유지합니다.
 def generate_and_save_image(topic: str, summary: str) -> str:
     print(f"🎨 '{topic}' 주제로 이미지 생성 요청 중 ({IMAGE_MODEL_NAME})...")
     
@@ -85,7 +86,6 @@ def generate_and_save_image(topic: str, summary: str) -> str:
                 with open(IMAGE_FILE_PATH, "wb") as f:
                     f.write(base64.b64decode(base64_data))
                 
-                # Windows 호환성을 위해 경로 구분자 교체
                 raw_url = f"{RAW_URL_BASE}/{IMAGE_FILE_PATH.replace(os.sep, '/')}"
                 print(f"✅ 이미지 저장 완료: {IMAGE_FILE_PATH}")
                 return raw_url
@@ -97,61 +97,63 @@ def generate_and_save_image(topic: str, summary: str) -> str:
     print("❌ 이미지 생성 최종 실패")
     return ""
 
-# --- 2. 텍스트 생성 (Gemini SDK 사용) ---
 
-class BlogPostSchema(typing.TypedDict):
-    topic: str
-    summary: str
-    content: str
+# --- 2. 텍스트 생성 (New SDK & Pydantic) ---
+
+# 🟢 [추가] Pydantic을 이용한 명확한 데이터 구조 정의
+class BlogPost(BaseModel):
+    topic: str = Field(description="블로그 글의 매력적인 제목 (15자 이내)")
+    summary: str = Field(description="글의 핵심 요약 (30자 이내)")
+    content: str = Field(description="마크다운 형식의 블로그 본문. 최소 1500자 이상.")
 
 def generate_topic_and_content() -> dict:
-    print(f"[{DATE_STR}] {TEXT_MODEL_NAME} 모델로 블로그 글 생성 중...")
-
-    # 🟢 [수정됨] protos를 사용하여 Google Search 도구를 명시적으로 정의
-    # 이렇게 하면 SDK의 자동 파싱 오류(FunctionDeclaration 등)를 우회할 수 있습니다.
-    search_tool = protos.Tool(
-        google_search=protos.GoogleSearch()
-    )
-
-    model = genai.GenerativeModel(
-        model_name=TEXT_MODEL_NAME,
-        tools=[search_tool], # 수정됨: protos 객체 리스트 전달
-        generation_config={
-            "temperature": 0.7,
-            "response_mime_type": "application/json",
-            "response_schema": BlogPostSchema,
-        },
-        safety_settings={
-            HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
-            HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
-        }
-    )
+    print(f"[{DATE_STR}] {TEXT_MODEL_NAME} 모델로 글 생성 중 (New SDK)...")
 
     prompt = (
         f"오늘 ({DATE_STR}), 한국 개발자들이 관심 가질만한 최신 기술 뉴스나 개발 팁을 선정해 주세요. "
-        "Google Search 도구를 사용하여 반드시 최신 정보를 바탕으로 작성하세요. "
+        "반드시 Google Search 도구를 사용하여 최신 웹 정보를 검색하고 이를 바탕으로 글을 작성하세요. "
         "글은 전문적이지만 읽기 쉬운 톤으로 작성하고, 내용은 마크다운 포맷이어야 합니다. "
-        "최소 1500자 이상 작성하세요."
+        "본문은 최소 1500자 이상 풍부하게 작성해주세요."
     )
 
     try:
-        response = model.generate_content(prompt)
+        # 🟢 [변경] 새로운 generate_content 메서드 호출 방식
+        response = client.models.generate_content(
+            model=TEXT_MODEL_NAME,
+            contents=prompt,
+            config={
+                # 사용자가 원했던 딕셔너리 형태의 tools 설정이 여기서 가능합니다.
+                "tools": [{"google_search": {}}], 
+                "response_mime_type": "application/json",
+                # Pydantic 스키마를 직접 전달하여 자동 파싱 유도
+                "response_schema": BlogPost, 
+            },
+        )
+
+        # 🟢 [변경] Pydantic 모델로 자동 파싱된 결과 사용
+        # response.parsed는 위에서 정의한 BlogPost 객체입니다.
+        if not response.parsed:
+             raise ValueError("응답 파싱 실패 (내용 없음)")
+
+        result = response.parsed
         
-        # JSON 모드를 사용하므로 텍스트를 바로 파싱 가능
-        result_json = json.loads(response.text)
+        print(f"✅ 글 생성 성공: {result.topic}")
         
-        print(f"✅ 글 생성 성공: {result_json.get('topic')}")
+        # Pydantic 객체를 딕셔너리로 변환
+        result_dict = result.model_dump()
+
+        # 이미지 생성 연동
+        image_url = generate_and_save_image(result.topic, result.summary)
+        result_dict['overlay_image'] = image_url
+        result_dict['teaser'] = image_url
         
-        image_url = generate_and_save_image(result_json['topic'], result_json['summary'])
-        result_json['overlay_image'] = image_url
-        result_json['teaser'] = image_url
-        
-        return result_json
+        return result_dict
 
     except Exception as e:
         print(f"🚨 텍스트 생성 중 오류 발생: {e}")
+        # 상세 디버깅 정보
         import traceback
-        traceback.print_exc() # 상세 에러 로그 출력
+        traceback.print_exc()
         sys.exit(1)
 
 # --- 3. 파일 저장 ---
@@ -180,7 +182,7 @@ header:
 {data.get('content')}
 
 ---
-*Generated by {TEXT_MODEL_NAME} & {IMAGE_MODEL_NAME}*
+*Generated by {TEXT_MODEL_NAME} (Google Search Grounded) & {IMAGE_MODEL_NAME}*
 """
         with open(FILE_PATH, "w", encoding="utf-8") as f:
             f.write(md_content)

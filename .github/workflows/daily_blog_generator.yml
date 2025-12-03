@@ -2,43 +2,34 @@ name: Daily AI Blog Post Generation
 
 on:
   schedule:
-    # 한국 시간(KST) 오전 08:10 실행
-    # UTC 기준: 23:10 (전날) = 08:10 - 9시간
+    # 한국 시간 08:10 (UTC 23:10)
     - cron: '10 23 * * *'
-  
-  # 수동으로 실행하고 싶을 때를 위해 추가 (Actions 탭에서 버튼 클릭 가능)
   workflow_dispatch:
 
-# 생성된 파일을 레포지토리에 푸시하기 위해 쓰기 권한 부여
 permissions:
   contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
-    # 시간대를 KST로 설정 (로그 확인 용이성)
     env:
       TZ: 'Asia/Seoul'
 
     steps:
-    # 1. 코드 체크아웃
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    # 2. 파이썬 환경 설정
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
 
-    # 3. 의존성 패키지 설치
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install google-generativeai requests
+        # 🟢 [중요] 새로운 SDK(google-genai)와 pydantic 설치
+        pip install google-genai pydantic requests
 
-    # 4. 파이썬 스크립트 실행 (환경변수로 API 키 전달)
     - name: Run Blog Generator Script
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -46,16 +37,11 @@ jobs:
         # 파일명이 다르다면 여기서 수정해주세요 (예: main.py, blog_gen.py 등)
         python generate_blog_content.py
 
-    # 5. 변경 사항(생성된 글/이미지) 커밋 및 푸시
     - name: Commit and Push changes
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        
-        # 변경된 파일이 있는지 확인
         git add _posts/ assets/images/
-        
-        # 변경 사항이 있을 때만 커밋 (오류 방지)
         if git diff --staged --quiet; then
           echo "No changes to commit."
         else
