@@ -7,15 +7,15 @@ import time
 
 # --- 설정 ---
 API_KEY = os.environ.get("GEMINI_API_KEY")
-# 모델 이름 설정
-MODEL_NAME = "gemini-2.5-flash-preview-09-2025" 
-API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent?key={API_KEY}"
+# 텍스트 생성 모델
+TEXT_MODEL_NAME = "gemini-2.5-flash" 
+TEXT_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{TEXT_MODEL_NAME}:generateContent?key={API_KEY}"
 
 # KST (한국 표준시) 기준으로 오늘 날짜와 시간을 설정
 KST = datetime.timezone(datetime.timedelta(hours=9))
 now = datetime.datetime.now(KST)
 
-# 파일 이름과 Front Matter에 사용할 날짜/시간 포맷
+# 파일 이름 포맷
 DATE_STR = now.strftime("%Y-%m-%d")
 TIME_STR = now.strftime("%Y-%m-%d %H:%M:%S +0900")
 
@@ -49,7 +49,7 @@ def generate_topic_and_content():
         "이미지 URL은 Unsplash 또는 Pexels와 같은 고품질 무료 스톡 이미지 사이트의 링크여야 합니다."
     )
 
-    # 🟢 [수정됨] 사용자 질의: 이미지 필드를 포함하도록 JSON 형식 업데이트
+    # 사용자 질의: 글 작성을 명시적으로 요청
     user_query = (
         f"오늘 ({DATE_STR}), 한국 개발자들이 가장 관심 가질 만한 최신 기술 뉴스 또는 "
         "유용한 개발 팁에 대한 블로그 글(최소 500자 분량)을 작성해 주세요. "
@@ -75,10 +75,10 @@ def generate_topic_and_content():
     # API 호출 (최대 3회 재시도)
     max_retries = 3
     for attempt in range(max_retries):
+        # ... (API 호출 및 파싱 로직은 동일) ...
         try:
-            # 글 작성에 시간이 더 걸릴 수 있으므로 90초로 타임아웃 유지
             response = requests.post(
-                API_URL,
+                TEXT_API_URL, # 텍스트 API URL 사용
                 headers={'Content-Type': 'application/json'},
                 data=json.dumps(payload),
                 timeout=90 
@@ -149,6 +149,8 @@ author: WakenHole
 categories: [Tech, Development] 
 tags: [Gemini, Automation, Daily] 
 published: false # 이 값이 true여야 블로그에 게시됩니다.
+toc: true
+toc_sticky: true
 header:
   overlay_image: {overlay_image}
   overlay_filter: 0.5
