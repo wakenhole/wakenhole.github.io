@@ -27,6 +27,8 @@ repository               : "wakenhole/wakenhole.github.io"
 teaser                   : "/assets/images/teaser.jpg"
 logo                     : "/assets/favicon/android-chrome-512x512.png"
 masthead_title           : "Wakenhole Logs"
+enable_copy_code_button  : true
+
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
