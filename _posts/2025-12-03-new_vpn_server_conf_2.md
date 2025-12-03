@@ -3,7 +3,7 @@ title: "[NEW] 간단한 개인용 VPN 서버 구축의 모든것 1: Marzban VPN"
 categories:
   - VPN 
 tags:
-  - v2ray
+  - Xray
   - Marzban
   - 중국
   - vless
@@ -11,7 +11,7 @@ tags:
   - Virtual Private Network
 toc: true
 toc_sticky: true
-published: false
+published: true
 tagline: "VPN"
 header:
   overlay_image: https://images.unsplash.com/photo-1691435828932-911a7801adfb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80
@@ -150,6 +150,8 @@ SHORT_ID는 16진수 8자리 문자열로 생성하면 됩니다. 예를 들어,
 ```sh
 openssl rand -hex 8
 ```
+
+SERVER_NAME은 설치한 서버 주소를 입력하면 된다.
 
 ### 사용자 추가 
 
