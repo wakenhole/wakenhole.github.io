@@ -294,11 +294,11 @@ defaults:
       comments: # true
       share: true
       related: true
-      categproy_list: true
+      category_list: true
       tag_list: true
       sidebar:
         title: "Sample Title"
-        nav: sidebar-sample
+        nav: category-list
       
   # _pages
   - scope:
