@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wakenhole.github.io/sitemap.xml

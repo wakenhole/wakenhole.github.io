@@ -1,0 +1,53 @@
+name: Daily Blog Post Generator (KST 8 AM)
+
+on:
+  # 매일 UTC 23:00 에 실행 (한국 시간 KST 08:00)
+  # schedule:
+  #   - cron: '0 23 * * *'
+  # 수동 실행을 위한 워크플로우 디스패치 추가
+  workflow_dispatch:
+
+jobs:
+  generate_draft:
+    runs-on: ubuntu-latest
+    
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+    steps:
+      - name: 1. Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # 이미지 URL 구성을 위해 전체 히스토리 가져오기
+          fetch-depth: 0
+
+      - name: 2. Set up Python 3.x
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 3. Install dependencies
+        run: pip install requests
+
+      - name: 4. Run Topic and Content Generation Script
+        # 이 단계에서 _posts/ 파일과 assets/images/ 파일이 생성됩니다.
+        run: |
+          python generate_post_tech.py
+          python generate_post_invest.py
+        
+      - name: 5. Commit and Push Generated Files
+        # 글 파일(.md)과 이미지 파일(.png)을 모두 커밋합니다.
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          
+          # 새로운 파일이 생성되었는지 확인 후 커밋
+          # _posts 폴더의 md 파일과 assets/images 폴더의 png 파일을 모두 추가합니다.
+          if git status --porcelain | grep -qE '(_posts/|assets/images/)'; then
+            git add _posts/*.md assets/images/*.png
+            git commit -m "🤖 Chore: Daily draft & cover image generated for $(date -u +%Y-%m-%d --date='9 hour')"
+            git push
+            echo "✅ 파일 커밋 및 푸시 완료."
+          else
+            echo "⚠️ 변경 사항이 없습니다. 커밋을 건너뜁니다."
+          fi
