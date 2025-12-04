@@ -197,7 +197,6 @@ def create_markdown_file(topic_data, args):
 title: "{topic_title}"
 subtitle: "{topic_data.get('summary', '')}"
 date: {TIME_STR}
-author: WakenHole
 categories: 
   - {args.category}
 tags:

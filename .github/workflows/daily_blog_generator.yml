@@ -2,8 +2,8 @@ name: Daily Blog Post Generator (KST 8 AM)
 
 on:
   # 매일 UTC 23:00 에 실행 (한국 시간 KST 08:00)
-  schedule:
-    - cron: '0 23 * * *'
+  # schedule:
+  #   - cron: '0 23 * * *'
   # 수동 실행을 위한 워크플로우 디스패치 추가
   workflow_dispatch:
 
