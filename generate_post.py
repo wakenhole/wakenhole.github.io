@@ -196,7 +196,7 @@ def create_markdown_file(topic_data, args):
         markdown_content = f"""---
 title: "{topic_title}"
 subtitle: "{topic_data.get('summary', '')}"
-date: {TIME_STR}
+lastmod: {TIME_STR}
 categories: 
   - {args.category}
 tags:
@@ -208,6 +208,9 @@ header:
   overlay_image: {topic_data.get('overlay_image', '')}
   overlay_filter: 0.5
   teaser: {topic_data.get('teaser', '')}
+sitemap: 
+    changefreq : daily
+    priority : 0.5
 ---
 
 {content}
