@@ -171,7 +171,6 @@ def create_markdown_file(topic_data):
 title: "{topic_title}"
 subtitle: "{topic_data.get('summary', '')}"
 date: {TIME_STR}
-author: WakenHole
 categories: [Tech, Development] 
 tags: [Gemini, Automation] 
 published: false
