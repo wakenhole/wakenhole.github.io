@@ -296,9 +296,9 @@ defaults:
       related: true
       category_list: true
       tag_list: true
-      sidebar:
-        title: "Sample Title"
-        nav: category-list
+      # sidebar:
+      #   title: "Sample Title"
+      #   nav: category-list
       
   # _pages
   - scope:
