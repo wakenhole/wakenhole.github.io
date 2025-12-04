@@ -5,12 +5,13 @@ import requests
 import json
 import time
 import re
-import argparse # 👈 인자(Argument) 처리를 위해 추가
+import argparse
+import traceback
 
 # --- 설정 ---
 API_KEY = os.environ.get("GEMINI_API_KEY")
 
-# 텍스트 모델 설정
+# 사용자가 지정한 모델명 유지
 TEXT_MODEL_NAME = "gemini-2.5-flash-preview-09-2025" 
 TEXT_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{TEXT_MODEL_NAME}:generateContent?key={API_KEY}"
 
@@ -22,46 +23,64 @@ TIME_STR = now.strftime("%Y-%m-%d %H:%M:%S +0900")
 
 POSTS_DIR = "_posts"
 
-# --- 1. 인자 파싱 설정 (Workflow에서 값을 받아옴) ---
+# --- 1. 인자 파싱 설정 (Workflow 연동용) ---
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Generate Blog Post with Gemini")
-    parser.add_argument("--category", type=str, required=True, help="블로그 글의 대주제 (예: Tech, Investment)")
-    parser.add_argument("--audience", type=str, required=True, help="타겟 독자 (예: 개발자, 초보 투자자)")
-    parser.add_argument("--topic_keyword", type=str, default="최신 트렌드", help="글감 키워드 (예: AI 뉴스, 미국 주식)")
-    parser.add_argument("--tags", type=str, default="Blog", help="콤마로 구분된 태그 (예: IT, AI)")
+    parser.add_argument("--category", type=str, required=True, help="블로그 글의 대주제 (예: Tech)")
+    parser.add_argument("--audience", type=str, required=True, help="타겟 독자 (예: 개발자)")
+    parser.add_argument("--topic_keyword", type=str, default="최신 트렌드", help="글감 키워드")
+    parser.add_argument("--tags", type=str, default="Blog", help="콤마로 구분된 태그")
     return parser.parse_args()
 
 # ---
 
 def validate_image_url(url):
-    # (기존 코드와 동일)
-    if not url: return ""
+    """
+    주어진 URL이 유효한 이미지 링크인지 확인합니다.
+    디버깅 로그를 포함하여 실패 원인을 추적합니다.
+    """
+    if not url:
+        print("[DEBUG] 이미지 URL이 비어 있습니다.")
+        return ""
+    
     try:
-        headers = {'User-Agent': 'Mozilla/5.0 ...'} # 짧게 줄임
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+        print(f"[DEBUG] 🔗 이미지 링크 검사: {url[:60]}...")
         response = requests.get(url, headers=headers, timeout=5, stream=True)
-        if response.status_code == 200 and 'image' in response.headers.get('Content-Type', '').lower():
-            response.close()
-            return url
+        
+        if response.status_code == 200:
+            content_type = response.headers.get('Content-Type', '').lower()
+            if 'image' in content_type:
+                print(f"[DEBUG] ✅ 유효한 이미지입니다 ({content_type}).")
+                response.close()
+                return url
+            else:
+                print(f"[DEBUG] ⚠️ 이미지가 아닙니다 ({content_type}).")
+        else:
+            print(f"[DEBUG] ❌ 링크 접속 실패 (Status {response.status_code}).")
+        
         response.close()
         return ""
-    except Exception:
+    except Exception as e:
+        print(f"[DEBUG] ❌ 링크 검사 중 에러: {e}")
         return ""
 
-def generate_topic_and_content(args): # 👈 args를 받도록 수정
+def generate_topic_and_content(args):
     if not API_KEY:
-        print("🚨 에러: GEMINI_API_KEY가 설정되지 않았습니다.")
+        print("🚨 [CRITICAL] GEMINI_API_KEY가 없습니다.")
         sys.exit(1)
 
-    print(f"[{DATE_STR}] Gemini API 호출 중... 카테고리: {args.category}")
+    print(f"[{DATE_STR}] Gemini API 호출 시작... 카테고리: {args.category}")
 
-    # 🟢 [수정됨] 변수화된 시스템 프롬프트
+    # 🟢 동적 프롬프트 생성 (인자 반영)
     system_prompt = (
         f"당신은 전문적인 '{args.category}' 블로그 에디터입니다. \n"
         f"주제는 최근 뉴스나 트렌드 기반으로 선정하며, '{args.audience}'가 흥미를 가질만한 내용이어야 합니다.\n"
         "응답은 오직 JSON 형식이어야 합니다. Markdown 포맷을 사용하지 말고 순수 JSON 텍스트만 반환하세요."
     )
 
-    # 🟢 [수정됨] 변수화된 사용자 질의
     user_query = (
         f"오늘({DATE_STR}) '{args.audience}'를 위한 '{args.topic_keyword}' 관련 블로그 글을 작성해 주세요. \n"
         "글 작성시 사실에 기반해서 작성해야하고, 참조한 출처가 있다면 반드시 명시해야 합니다. \n"
@@ -78,41 +97,88 @@ def generate_topic_and_content(args): # 👈 args를 받도록 수정
         "systemInstruction": { "parts": [{ "text": system_prompt }] },
     }
     
-    # (이하 API 호출 및 파싱 로직은 기존 코드와 동일하지만, topic_data 반환 부분만 유지)
     topic_data = {}
-    # ... (API 호출 중략 - 기존과 동일) ...
+    max_retries = 3
     
-    # 편의를 위해 API 호출 부분은 기존 코드 그대로 사용하되, 
-    # 실제 구현 시에는 위에서 만든 payload를 사용하여 request를 보냅니다.
-    # (여기서는 생략된 API 호출 로직이 있다고 가정합니다)
-    
-    # 실제 실행을 위해 간략화된 호출 예시 (기존 루프 복원 필요)
-    try:
-        response = requests.post(TEXT_API_URL, headers={'Content-Type': 'application/json'}, data=json.dumps(payload), timeout=90)
-        result = response.json()
-        # ... (파싱 로직 기존 동일) ...
-        # 테스트를 위해 파싱 로직 복사 필요 시 알려주세요.
-        # 여기선 결과가 나왔다고 가정하고 진행합니다.
-        
-        # 실제 코드 병합 시 기존의 재시도(Retry) 로직을 그대로 유지하세요.
-        # 임시로 파싱 로직을 간소화하여 적지 않았습니다.
-    except Exception as e:
-        print(f"Error: {e}")
+    for attempt in range(max_retries):
+        try:
+            print(f"[DEBUG] API 요청 시도 {attempt + 1}...")
+            response = requests.post(
+                TEXT_API_URL, 
+                headers={'Content-Type': 'application/json'},
+                data=json.dumps(payload),
+                timeout=90 
+            )
+            
+            if response.status_code != 200:
+                print(f"⚠️ API 오류: {response.text}")
+                if response.status_code < 500: sys.exit(1)
+                raise requests.exceptions.RequestException(f"Status {response.status_code}")
 
-    # --- (중요) 기존 코드의 Loop 및 Parsing 로직을 그대로 유지하세요 --- 
-    # 단, payload 변수만 위에서 만든 것으로 대체하면 됩니다.
-    
-    # (테스트용 더미 데이터 반환 방지 - 실제 코드에선 삭제)
-    # 실제로는 API 응답을 파싱해서 topic_data를 채워야 합니다.
-    
+            try:
+                result = response.json()
+                candidates = result.get('candidates', [{}])
+                if not candidates:
+                    print(f"⚠️ [DEBUG] 후보군(candidates) 없음. 안전 차단됨?")
+                    continue
+                parts = candidates[0].get('content', {}).get('parts', [{}])
+                json_string = parts[0].get('text', '')
+                
+                # print(f"[DEBUG] 원본 응답:\n{json_string[:200]}...") # 필요시 주석 해제
+
+            except Exception as e:
+                print(f"⚠️ 응답 구조 파싱 실패: {e}")
+                continue
+            
+            if not json_string:
+                continue
+
+            # 🟢 [핵심 수정] 정규식으로 JSON 블록만 추출 (안정성 강화)
+            json_string_clean = ""
+            match = re.search(r'```json\s*(.*?)\s*```', json_string, re.DOTALL)
+            if match:
+                json_string_clean = match.group(1).strip()
+            else:
+                # 마크다운 없이 JSON만 왔을 경우 대비
+                match_raw = re.search(r'(\{.*\})', json_string, re.DOTALL)
+                if match_raw:
+                    json_string_clean = match_raw.group(1).strip()
+                else:
+                    json_string_clean = json_string.strip()
+            
+            try:
+                topic_data = json.loads(json_string_clean)
+                print(f"✅ 주제 생성 성공: {topic_data.get('topic')}")
+                break
+            except json.JSONDecodeError as e:
+                print(f"🚨 JSON 파싱 실패. (텍스트 일부: {json_string_clean[:50]}...)")
+                time.sleep(2)
+                continue
+
+        except Exception as e:
+            print(f"❌ 요청 중 예외 발생: {e}")
+            traceback.print_exc()
+            time.sleep(2 ** attempt)
+
+    # 이미지 URL 처리
+    if topic_data:
+        raw_url = topic_data.get('image_url', '')
+        valid_url = validate_image_url(raw_url)
+        topic_data['overlay_image'] = valid_url
+        topic_data['teaser'] = valid_url
+        
     return topic_data
 
-def create_markdown_file(topic_data, args): # 👈 args 추가
+def create_markdown_file(topic_data, args):
     try:
+        if not topic_data:
+            print("🚨 데이터가 없어 파일을 생성하지 않습니다.")
+            return
+
         os.makedirs(POSTS_DIR, exist_ok=True)
         content = topic_data.get('content', '')
-        
-        # 광고 삽입 로직 (기존 동일)
+
+        # 광고 삽입 (기존 로직 유지)
         ad_code = "\n{% include ad-inpost.html %}\n"
         content = re.sub(r'^(##\s+.*)', f'{ad_code}\\1', content, count=3, flags=re.MULTILINE)
 
@@ -120,21 +186,22 @@ def create_markdown_file(topic_data, args): # 👈 args 추가
         safe_title = re.sub(r'[^\w\s-]', '', topic_title).strip().replace(' ', '-')
         if len(safe_title) > 50: safe_title = safe_title[:50]
         
-        # 파일명에 카테고리 포함 (선택사항)
         filename = f"{DATE_STR}-{safe_title}.md"
         file_path = os.path.join(POSTS_DIR, filename)
         
-        # 🟢 [수정됨] Front Matter에 인자 반영
-        # args.tags는 "IT, AI" 문자열로 들어오므로 리스트 포맷으로 변환
-        tags_list = f"[{args.tags}]" 
+        # 🟢 태그와 카테고리를 YAML 리스트 포맷으로 변환
+        tag_list = [t.strip() for t in args.tags.split(',')]
+        tags_yaml = "\n".join([f"  - {tag}" for tag in tag_list])
         
         markdown_content = f"""---
 title: "{topic_title}"
 subtitle: "{topic_data.get('summary', '')}"
 date: {TIME_STR}
 author: WakenHole
-categories: [{args.category}] 
-tags: {tags_list}
+categories: 
+  - {args.category}
+tags:
+{tags_yaml}
 published: false
 toc: true
 toc_sticky: true
@@ -157,17 +224,16 @@ header:
         sys.exit(1)
 
 if __name__ == "__main__":
-    # 1. 인자 받기
+    # 1. 워크플로에서 전달된 인자 파싱
     args = parse_arguments()
+    print(f"[DEBUG] 시작 설정: {args}")
     
-    # 2. 로직 실행 시 args 전달
-    # 주의: generate_topic_and_content 내부의 API 호출 부분은 
-    # 기존 코드의 retry loop 로직을 그대로 사용하되 payload만 교체해야 합니다.
+    # 2. 콘텐츠 생성
     data = generate_topic_and_content(args)
     
+    # 3. 파일 저장
     if data and data.get('topic'):
         create_markdown_file(data, args)
     else:
-        # (기존 로직 유지) API 호출 실패 시 처리
-        # 코드를 합칠 때 기존의 retry loop가 잘 포함되었는지 확인해주세요.
-        pass
+        print("🚨 최종적으로 데이터 생성에 실패했습니다.")
+        sys.exit(1)

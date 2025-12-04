@@ -31,21 +31,21 @@ jobs:
         run: |
           # 1. 기술(Tech) 블로그 글 생성
           python generate_post.py \
-            --category "Tech, 기술" \
+            --category "Tech" \
             --audience "개발자" \
             --topic_keyword "최신 IT 기술 및 개발 트렌드" \
             --tags "기술, 개발, Development, AI, Cloud"
 
           # 2. 투자(Investment) 블로그 글 생성
           python generate_post.py \
-            --category "투자, Investment" \
+            --category "Investment" \
             --audience "초보 투자자" \
             --topic_keyword "한국, 미국 주식 시장 및 세계 경제 뉴스" \
             --tags "주식, 증시, 경제, Stock, Economy"
           
           # 3. 투자(Investment) 블로그 글 생성
           python generate_post.py \
-            --category "부동산, Real Estate" \
+            --category "부동산" \
             --audience "한국 부동산 투자자" \
             --topic_keyword "한국 부동산 정책 및 제도 관련 뉴스" \
             --tags "부동산, 정책, 제도"
