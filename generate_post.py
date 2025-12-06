@@ -77,7 +77,7 @@ def generate_topic_and_content(args):
     # 🟢 동적 프롬프트 생성 (인자 반영)
     system_prompt = (
         f"당신은 전문적인 '{args.category}' 블로그 에디터입니다. \n"
-        f"주제는 최근 뉴스나 트렌드 기반으로 선정하며, '{args.audience}'가 흥미를 가질만한 내용이어야 합니다.\n"
+        f"주제는 최근 뉴스나 트렌드 기반으로 선정하며, 의견이나 견해를 적기보다는 '{args.audience}'가 흥미를 가질만한 정보나 꿀팁 위주의 내용이어야 합니다.\n"
         "응답은 오직 JSON 형식이어야 합니다. Markdown 포맷을 사용하지 말고 순수 JSON 텍스트만 반환하세요."
     )
 
