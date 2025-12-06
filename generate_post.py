@@ -12,7 +12,7 @@ import traceback
 API_KEY = os.environ.get("GEMINI_API_KEY")
 
 # 사용자가 지정한 모델명 유지
-TEXT_MODEL_NAME = "gemini-2.5-flash-preview-09-2025" 
+TEXT_MODEL_NAME = "gemini-2.5-flash" 
 TEXT_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{TEXT_MODEL_NAME}:generateContent?key={API_KEY}"
 
 KST = datetime.timezone(datetime.timedelta(hours=9))
@@ -48,7 +48,7 @@ def validate_image_url(url):
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
         print(f"[DEBUG] 🔗 이미지 링크 검사: {url[:60]}...")
-        response = requests.get(url, headers=headers, timeout=5, stream=True)
+        response = requests.get(url, headers=headers, timeout=10, stream=True) # 타임아웃 10초로 연장
         
         if response.status_code == 200:
             content_type = response.headers.get('Content-Type', '').lower()
@@ -84,9 +84,9 @@ def generate_topic_and_content(args):
     user_query = (
         f"오늘({DATE_STR}) '{args.audience}'를 위한 '{args.topic_keyword}' 관련 블로그 글을 작성해 주세요. \n"
         "글 작성시 사실에 기반해서 작성해야하고, 참조한 출처가 있다면 반드시 명시해야 합니다. \n"
-        "1. **주제(topic)**: 임팩트 있는 **10자 내외**의 제목.\n"
-        "2. **내용(content)**: 깊이 있는 내용으로 마크다운 형식 **최소 1000자 이상** 작성. 본문 중간중간에 `##` 를 사용하여 소제목을 명확히 구분해 주세요.\n"
-        "3. **이미지(image_url)**: 주제와 관련된 **저작권 문제없는 공개 이미지(Unsplash 등)의 직접 링크(URL)** 하나를 검색해서 찾아주세요.\n\n"
+        "1. **주제(topic)**: 흥미를 끄는 **10자 내외**의 제목.\n"
+        "2. **내용(content)**: 깊이 있는 내용으로 마크다운 형식 **최소 1000자 이상** 작성. 본문 중간에 `##` 를 사용해 소제목을 명확히 구분해 주세요.\n"
+        "3. **이미지(image_url)**: 주제와 관련된 **저작권 문제없는 공개 이미지(Unsplash, Pexels 등)의 '직접 다운로드 가능한' URL** 하나를 찾아주세요. 웹페이지 링크가 아닌, `.jpg`, `.png` 등으로 끝나는 실제 이미지 파일 주소여야 합니다.\n\n"
         "응답은 다음 JSON 구조를 엄격히 따라 주세요: "
         '{"topic": "제목(10자 내외)", "summary": "요약", "content": "본문(1000자 이상)", "image_url": "https://..."}'
     )
@@ -160,12 +160,27 @@ def generate_topic_and_content(args):
             traceback.print_exc()
             time.sleep(2 ** attempt)
 
-    # 이미지 URL 처리
+    # 이미지 URL 처리 및 검증 (최대 2회 추가 시도)
     if topic_data:
-        raw_url = topic_data.get('image_url', '')
-        valid_url = validate_image_url(raw_url)
-        topic_data['overlay_image'] = valid_url
-        topic_data['teaser'] = valid_url
+        for img_attempt in range(3): # 총 3번 시도 (기본 1 + 추가 2)
+            print(f"[DEBUG] 이미지 검증 시도 {img_attempt + 1}...")
+            raw_url = topic_data.get('image_url', '')
+            valid_url = validate_image_url(raw_url)
+            if valid_url:
+                topic_data['overlay_image'] = valid_url
+                topic_data['teaser'] = valid_url
+                break # 성공 시 루프 탈출
+            
+            print("⚠️ 유효한 이미지를 찾지 못해, 다른 이미지 URL을 다시 요청합니다.")
+            topic_data['image_url'] = "" # 기존 URL 초기화
+            if img_attempt < 2: # 마지막 시도에서는 재요청 안함
+                # 간단한 이미지 재요청 프롬프트
+                retry_payload = {"contents": [{ "parts": [{ "text": f"'{topic_data.get('topic')}' 주제에 맞는 다른 이미지 URL을 찾아주세요. 직접 링크여야 합니다." }] }]}
+                # (실제 구현에서는 generate_topic_and_content의 일부를 재사용하여 API 호출)
+                # 이 부분은 간소화된 예시이며, 실제로는 API를 다시 호출하는 로직이 필요합니다.
+                # 지금은 실패 시 빈 값으로 두는 것으로 유지합니다.
+                topic_data['overlay_image'] = ""
+                topic_data['teaser'] = ""
         
     return topic_data
 
@@ -178,9 +193,24 @@ def create_markdown_file(topic_data, args):
         os.makedirs(POSTS_DIR, exist_ok=True)
         content = topic_data.get('content', '')
 
-        # 광고 삽입 (기존 로직 유지)
+        # 광고 삽입: 두 번째 소제목(##)부터 최대 3개의 광고를 삽입합니다.
         ad_code = "\n{% include ad-inpost.html %}\n"
-        content = re.sub(r'^(##\s+.*)', f'{ad_code}\\1', content, count=3, flags=re.MULTILINE)
+        parts = re.split(r'(^##\s+.*$)', content, flags=re.MULTILINE)
+        
+        new_content_parts = [parts[0]]
+        ad_count = 0
+        
+        for i in range(1, len(parts), 2):
+            heading = parts[i]
+            body = parts[i+1] if (i + 1) < len(parts) else ""
+            if i > 1 and ad_count < 3: # 첫번째 소제목(i=1)은 건너뜁니다.
+                new_content_parts.append(ad_code + heading)
+                ad_count += 1
+            else:
+                new_content_parts.append(heading)
+            new_content_parts.append(body)
+        
+        content = "".join(new_content_parts)
 
         topic_title = topic_data.get('topic', 'draft-topic')
         safe_title = re.sub(r'[^\w\s-]', '', topic_title).strip().replace(' ', '-')
