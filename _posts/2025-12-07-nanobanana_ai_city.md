@@ -11,7 +11,7 @@ header:
   teaser: https://image.fmkorea.com/files/attach/new5/20251204/9238675627_486616_0a7895c0f99bdffa28d66eb719c1f8a7.jpg
 ---
 
-최근 커뮤니티에서 세상을 축소해놓은 듯한 아기자기하면서도 정교한 '도시 미니어처' 이미지가 큰 인기를 끌고 있습니다. 마치 거인이 되어 세상을 내려다보는 듯한 이 독특한 시각적 경험은 '나노바나나'(특정 AI 모델의 애칭)를 통해 누구나 쉽게 구현할 수 있습니다.
+최근 커뮤니티에서 세상을 축소해놓은 듯한 아기자기하면서도 정교한 '도시 미니어처' 이미지가 큰 인기를 끌고 있습니다. 마치 거인이 되어 세상을 내려다보는 듯한 이 독특한 시각적 경험은 '나노바나나'(Google 이미지 생성 AI 모델)를 통해 누구나 쉽게 구현할 수 있습니다.
 
 
 오늘은 클리앙 등지에서 화제가 된 이 멋진 미니어처 스타일을 내 손으로 직접 만드는 방법을 상세히 알아보겠습니다. 핵심은 카메라 앵글과 질감을 표현하는 정확한 '프롬프트'에 있습니다.
@@ -37,19 +37,13 @@ At the top-center, place the title “강남구” in large bold text"
 All text must be centered with consistent spacing, and may subtly overlap the tops of the buildings.
 Square 1080x1080 dimension.
 ````
-
-  * **핵심 포인트:** `(isometric view:1.3)`으로 시점을 강제하고, `miniature cityscape diorama`로 전체적인 분위기를 정의합니다. `tilt-shift lens effect`와 `shallow depth of field`가 미니어처 특유의 질감을 완성합니다. 도시의 테마는 `cyberpunk style` 대신 `modern city`, `fantasy village` 등으로 자유롭게 변경해 보세요.
-
 -----
 
 {% include ad-inpost.html %}
-### 2\. 응용편: 날씨와 분위기를 더한 미니어처
-
-기본적인 도시 건설에 익숙해졌다면, 이제 그 작은 세상에 생명력을 불어넣을 차례입니다. 비가 오거나 눈이 내리는 날씨 효과는 미니어처의 디테일을 한층 더 돋보이게 만들고 감성적인 분위기를 연출합니다.
-
-날씨 효과를 추가할 때는 단순히 '비'나 '눈'이라는 단어만 추가하는 것이 아니라, 그 날씨로 인해 파생되는 환경 효과(젖은 바닥, 반사, 안개 등)를 함께 명시해 주는 것이 중요합니다.
 
 **🎯 날씨 포함 프롬프트**
+
+기본적인 도시 건설에 익숙해졌다면, 이제 그 작은 세상에 생명력을 불어넣을 차례입니다. 비가 오거나 눈이 내리는 날씨 효과는 미니어처의 디테일을 한층 더 돋보이게 만들고 감성적인 분위기를 연출합니다.
 
 ```markdown
 Present a clear, 45° top-down isometric miniature 3D cartoon scene of 강남구, featuring its most iconic landmarks and architectural elements. Use soft, refined textures with realistic PBR materials and gentle, lifelike lighting and shadows. Integrate the current weather conditions directly into the city environment to create an immersive atmospheric mood.
@@ -59,10 +53,23 @@ All text must be centered with consistent spacing, and may subtly overlap the to
 Square 1080x1080 dimension.
 ```
 
+![북경시 날씨](https://github.com/user-attachments/assets/7eaf11df-5102-46cd-92f6-a5e7723ea978)
+
+### 2\. 응용편: 날씨와 분위기를 더한 미니어처
+
+날씨 효과를 추가할 때는 단순히 '비'나 '눈'이라는 단어만 추가하는 것이 아니라, 그 날씨로 인해 파생되는 환경 효과(젖은 바닥, 반사, 안개 등)를 함께 명시해 주는 것이 중요합니다.
+
+```
+(isometric view:1.3), miniature city diorama at night, heavy rain falling, wet asphalt streets, reflections of neon lights on puddles, tiny people with umbrellas, misty atmosphere, detailed skyscrapers, tilt-shift lens effect, cinematic lighting, dramatic shadows, cozy atmosphere
+
+Negative Prompt:
+daylight, dry streets, clear sky, low resolution, ugly, blurry
+```
+
   * **핵심 포인트:** `heavy rain falling`과 함께 `wet asphalt streets`, `reflections of neon lights on puddles`를 추가하여 비 오는 날 특유의 질척이고 반짝이는 질감을 표현했습니다. `misty atmosphere`는 도시의 원경을 부드럽게 처리하여 깊이감을 더해줍니다. 눈 오는 날을 원한다면 `heavy snow`, `snow covered roofs` 등으로 응용할 수 있습니다.
 
+![북경시 날씨 및 분위기](https://github.com/user-attachments/assets/fac5d15a-647b-4e7d-a445-c01f21695435)
 
-![북경시 날씨](https://github.com/user-attachments/assets/7eaf11df-5102-46cd-92f6-a5e7723ea978)
 
 
 -----
