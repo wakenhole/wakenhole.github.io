@@ -169,7 +169,7 @@ def create_markdown_file(topic_data):
         
         markdown_content = f"""---
 title: "{topic_title}"
-subtitle: "{topic_data.get('summary', '')}"
+tagline: "{topic_data.get('summary', '')}"
 date: {TIME_STR}
 categories: [Tech, Development] 
 tags: [Gemini, Automation] 

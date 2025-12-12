@@ -225,7 +225,7 @@ def create_markdown_file(topic_data, args):
         
         markdown_content = f"""---
 title: "{topic_title}"
-subtitle: "{topic_data.get('summary', '')}"
+tagline: "{topic_data.get('summary', '')}"
 lastmod: {TIME_STR}
 categories: 
   - {args.category}
