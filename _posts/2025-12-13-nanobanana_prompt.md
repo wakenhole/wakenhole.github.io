@@ -4,6 +4,15 @@ title: "AI 화가 '나노바나나' 완벽 정복: 실전 프롬프트와 고품
 subtitle: "디테일이 살아있는 고화질 일러스트 생성을 위한 최적의 레시피"
 categories: [Tech]
 tags: [나노바나나, NanoBanana, AI그림, 프롬프트, 스테이블디퓨전]
+toc: true
+toc_sticky: true
+header:
+  overlay_image: https://images.unsplash.com/photo-1542831371-29b0f74f9713?fit=crop&w=1000&q=80
+  overlay_filter: 0.5
+  teaser: https://images.unsplash.com/photo-1542831371-29b0f74f9713?fit=crop&w=1000&q=80
+sitemap: 
+    changefreq : monthly
+    priority : 0.5
 ---
 
 최근 AI 이미지 생성 커뮤니티에서 **'나노바나나(NanoBanana)'** 모델이 보여주는 퍼포먼스가 심상치 않습니다. 특유의 부드러운 질감 표현과 뛰어난 인물 묘사 능력 덕분에 실사(Realistic)와 반실사(Semi-realistic)를 오가는 독창적인 화풍을 구현하는 데 탁월한 성능을 발휘하기 때문입니다.
@@ -38,6 +47,9 @@ tags: [나노바나나, NanoBanana, AI그림, 프롬프트, 스테이블디퓨�
 > **💡 포인트:** `detailed skin texture`와 `natural lighting`을 조합하여 인위적이지 않은 사실적인 피부 톤을 구현했습니다.
 
 **⬇️ [Test Result] 실제 생성 결과물**
+
+![도심 속의 데일리 룩](https://github.com/user-attachments/assets/f1f1220b-423d-413b-914c-75a8e5f66b6a)
+
 > *모델의 머릿결과 니트의 질감이 뭉개지지 않고 섬세하게 표현된 것을 확인할 수 있습니다.*
 
 ---
@@ -54,6 +66,8 @@ tags: [나노바나나, NanoBanana, AI그림, 프롬프트, 스테이블디퓨�
 > **💡 포인트:** `ethereal lighting`과 `cinematic composition`을 사용하여 영화의 한 장면 같은 깊이감을 부여했습니다. 배경의 몽환적인 느낌을 살리는 것이 핵심입니다.
 
 **⬇️ [Test Result] 실제 생성 결과물**
+![엘프](https://github.com/user-attachments/assets/37e86362-9595-4946-81b6-4555c6905e21)
+
 > *배경의 숲과 캐릭터 주변의 빛 입자(fireflies)가 어우러져 신비로운 분위기를 자아냅니다.*
 
 ---
@@ -70,6 +84,9 @@ tags: [나노바나나, NanoBanana, AI그림, 프롬프트, 스테이블디퓨�
 > **💡 포인트:** `neon lights reflection`과 `wet street`를 통해 젖은 거리에 비친 네온사인의 질감을 강조했습니다.
 
 **⬇️ [Test Result] 실제 생성 결과물**
+
+![사이버 펑크](https://github.com/user-attachments/assets/8fcfbc17-c33e-4af4-bcc5-37afd9470276)
+
 > *어두운 밤 배경임에도 불구하고 캐릭터의 윤곽선이 뚜렷하며, 네온 조명에 의한 색채 대비가 인상적입니다.*
 
 ---
