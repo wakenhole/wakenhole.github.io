@@ -1,7 +1,7 @@
 ---
 title: "베이징 미식 탐방: 현지인도 줄 서는 찐 맛집 BEST 5와 추천 메뉴 가이드"
 date: 2025-12-09
-categories: [여행, 맛집, 중국베이징]
+categories: [Travel]
 tags: [베이징여행, 북경맛집, 사계민복, 바슈왕포다샤, 팡주안창69호, 금정헌, 쥐치, 베이징카오야, 새우훠궈]
 published: true
 toc: true

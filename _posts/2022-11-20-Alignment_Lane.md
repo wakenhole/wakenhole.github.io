@@ -1,7 +1,7 @@
 ---
 title: "Basic Chapter 2. AVX Notations"
 categories:
-  - AVX
+  - Tech
 tags:
   - SIMD
   - Programming

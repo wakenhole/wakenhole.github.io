@@ -1,7 +1,7 @@
 ---
 title: "일본에 가지 않고도 일본 돈을 빌린다? '엔 캐리 트레이드'의 숨겨진 비밀"
 lastmod: 2025-12-09 08:24:03 +0900
-categories: [Finance, Insight]
+categories: [Insight]
 tags: [엔캐리트레이드, 환율, 경제상식, 파생상품]
 author_profile: true
 comments: true

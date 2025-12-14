@@ -1,8 +1,8 @@
 ---
 title: "상품 기획자를 위한 AI 툴 5선: 업무 효율 200% 높이기"
 lastmod: 2025-12-07 08:23:04 +0900
-categories: [Productivity, AI]
-tags: [Product Management, Tools, Efficiency]
+categories: [Tech]
+tags: [Product Management, Tools, Efficiency, AI]
 toc: true
 toc_sticky: true
 header:

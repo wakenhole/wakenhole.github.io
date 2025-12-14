@@ -2,7 +2,7 @@
 title: "실용 AI: RAG와 버티컬 모델"
 tagline: "AI가 보조 도구를 넘어 생산성 핵심 동력으로 진화함에 따라, LLM의 한계를 극복하는 RAG(검색 증강 생성) 아키텍처의 고도화와 온디바이스/버티컬 모델을 통한 AI 효율화 전략의 중요성을 분석합니다. 특히 데이터 센터 전력 이슈가 대두되는 국내 개발 환경에서, 비용 효율적인 AI 구축 방안을 모색합니다."
 date: 2025-12-04 08:13:04 +0900
-categories: [Tech, Development] 
+categories: [Tech] 
 tags: [Gemini, Automation] 
 published: true
 toc: true

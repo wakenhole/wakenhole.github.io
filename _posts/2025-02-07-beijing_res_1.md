@@ -1,7 +1,7 @@
 ---
 title: "베이징 식당 - 怡秀坊·亮马河畔"
 categories:
-  - Restaurant 
+  - Travel 
 tags:
   - 북경
   - 베이징

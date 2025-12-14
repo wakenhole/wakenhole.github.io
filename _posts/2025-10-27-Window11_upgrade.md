@@ -2,7 +2,6 @@
 title: "Windows 11 우회 설치 완전 가이드 | 자동 스크립트 사용"
 date: 2025-10-28
 categories:
-  - Windows
   - Tech
 tags: [Windows11, MediaCreationTool, TPM우회, Rufus, ISO]
 toc: true

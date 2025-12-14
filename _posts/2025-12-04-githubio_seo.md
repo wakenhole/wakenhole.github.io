@@ -1,7 +1,7 @@
 ---
 title: "GitHub 블로그(Jekyll) 검색 엔진 최적화(SEO) 완벽 가이드: 필수 설정 4가지"
 date: 2024-05-22
-categories: [Blog]
+categories: [Tech]
 description: "깃허브 블로그가 구글과 네이버에 검색되지 않을 때 해결하는 방법. robots.txt 파일명 오류 수정부터 _config.yml 설정, 사이트맵 제출까지 필수 SEO 체크리스트를 정리했습니다."
 tags:
   - Google Search Console 

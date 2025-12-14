@@ -1,8 +1,8 @@
 ---
 title: "나노바나나로 완성하는 나만의 작은 세상: 도시 미니어처 만들기 완전 정복 (프롬프트 예제 포함)"
 lastmod: 2025-12-07 08:23:04 +0900
-categories: [AI Art, Tutorial]
-tags: [나노바나나, 스테이블디퓨전, 미니어처, 아이소메트릭, 프롬프트, GitHub Actions]
+categories: [Tech]
+tags: [AI, 나노바나나, 스테이블디퓨전, 미니어처, 아이소메트릭, 프롬프트, GitHub Actions]
 toc: true
 toc_sticky: true
 header:

@@ -1,7 +1,7 @@
 ---
 title: "PPT 만들 때 유용한 AI 사이트 총정리 (무료·유료 비교표 포함)"
 categories:
-  - 생산성
+  - Tech
 tags:
   - AI
   - Productivity

@@ -1,7 +1,8 @@
 ---
 title: "📚 AI로 영어 공부하기: 단어장 사진을 데이터베이스화하고, 퀴즈 프로그램까지 만드는 방법 (예제 코드 포함)"
 categories:
-  - 학습
+  - Tech
+  - English
 tags:
   - AI
   - Productivity
