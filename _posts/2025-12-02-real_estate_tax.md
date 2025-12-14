@@ -1,10 +1,14 @@
 ---
 title: "2025년 종합부동산세 완전 정복: 계산법부터 2026년 다주택자 규제 변화까지"
 categories:
-  - 부동산
+  - Investment
 tags:
   - 세금
   - 종합부동산세
+  - 부동산
+  - 정책
+  - 제도
+published: true
 use_math: true
 toc: true
 toc_sticky: true

@@ -18,7 +18,7 @@ header:
   overlay_filter: 0.5
   teaser: https://aicertswpcdn.blob.core.windows.net/newsportal/2025/08/freepik__the-style-is-candid-image-photography-with-natural__76173-1.png
 sitemap: 
-    changefreq : daily
+    changefreq : monthly
     priority : 0.5
 ---
 

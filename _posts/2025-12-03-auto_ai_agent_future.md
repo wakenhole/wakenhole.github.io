@@ -2,7 +2,7 @@
 title: "자율 AI 에이전트, 개발의 미래"
 tagline: "단순 코파일럿(Copilot)을 넘어, 스스로 복잡한 작업을 계획하고 실행하는 '에이전트 AI'가 개발 생태계의 중심으로 부상하고 있습니다. 2025년 핵심 기술 트렌드로 지목되는 에이전트 AI의 정의, 주요 개발 동향, 그리고 한국 개발자가 갖춰야 할 역량 변화를 심도 있게 다룹니다."
 date: 2025-12-03 17:27:48 +0900
-categories: [Tech, Development] 
+categories: [Tech] 
 tags: [Gemini, Automation] 
 published: true
 toc: true

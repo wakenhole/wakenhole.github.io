@@ -1,11 +1,12 @@
 ---
 title: "Node js in Oracle cloud"
 categories:
-  - Programming
+  - Tech
 tags:
   - Optimization
   - C++
   - vector
+  - Programming
 toc: true
 toc_sticky: true
 tagline: "C++"

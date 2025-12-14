@@ -1,9 +1,10 @@
 ---
 title: "AVX Notations"
 categories:
-  - AVX
+  - Tech
 tags:
   - SIMD
+  - AVX
   - Programming
   - Notations
 toc: true

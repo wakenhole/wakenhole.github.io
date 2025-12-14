@@ -3,7 +3,7 @@ title: "DSR 규제 강화, 미분양 기회 포착"
 tagline: "2025년 12월 현재, 한국 부동산 정책은 '가계부채 관리'라는 대원칙 아래 강도 높은 금융 규제와 '지역 균형 발전'을 위한 세제 지원이라는 상반된 기조를 동시에 보여주고 있습니다. 특히 2025년 7월부터 전면 시행된 스트레스 DSR 3단계는 투자자뿐만 아니라 실수요자들의 대출 한도를 크게 축소시키며 유동성 리스크를 관리하고 있습니다. 반면, 인구감소지역 및 비수도권 미분양 주택에 대한 '세컨드 홈' 특례는 절세와 지방 투자라는 새로운 기회를 제공하고 있어, 투자자들은 정책의 양면성을 면밀히 분석하고 맞춤형 전략을 수립해야 할 시점입니다."
 lastmod: 2025-12-06 17:06:43 +0900
 categories: 
-  - 부동산
+  - Investment
 tags:
   - 부동산
   - 정책
@@ -17,7 +17,7 @@ header:
   caption: "[**Unsplash**](https://unsplash.com)"
   teaser: http://magazine.bizforms.co.kr/editor_img/20191030_154417.png
 sitemap: 
-    changefreq : daily
+    changefreq : monthly
     priority : 0.5
 ---
 

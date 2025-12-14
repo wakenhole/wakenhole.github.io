@@ -20,7 +20,7 @@ header:
   overlay_filter: 0.5
   teaser: https://img.alicdn.com/imgextra/i4/754398417/O1CN01gWdCES2C32eTPMCqI_!!754398417.jpg
 sitemap: 
-    changefreq : daily
+    changefreq : monthly
     priority : 0.5
 ---
 

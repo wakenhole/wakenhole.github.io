@@ -1,9 +1,10 @@
 ---
 title: "Basic Chapter 6. Understanding Performance Metric"
 categories:
-  - AVX
+  - Tech
 tags:
   - SIMD
+  - AVX
   - Programming
   - Performance
 toc: true

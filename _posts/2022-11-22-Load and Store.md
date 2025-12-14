@@ -1,9 +1,10 @@
 ---
 title: "Load and Store"
 categories:
-  - AVX
+  - Tech
 tags:
   - SIMD
+  - AVX
   - Programming
   - Optimization
 toc: true

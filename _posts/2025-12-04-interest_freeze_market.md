@@ -2,8 +2,8 @@
 title: "금리 동결, 시장 양극화 심화"
 tagline: "한국은행이 네 차례 연속 기준금리(연 2.5%)를 동결한 배경과 그 여파로 심화되는 주식 및 부동산 시장의 '양극화' 현상을 분석하고, 고금리 시대의 변동성에 대비하는 투자 전략을 제시합니다. 특히 규제에 따른 수도권 부동산의 거래량 감소와 지방 시장의 회복 조짐, 그리고 주식 시장의 외국인 매도세 속에서 AI/반도체, 2차전지 등 주도주를 중심으로 투자하는 전략의 중요성을 강조합니다."
 date: 2025-12-04 08:13:27 +0900
-categories: [Tech, Development] 
-tags: [Gemini, Automation] 
+categories: [Investment] 
+tags: [interest, Economy] 
 published: true
 toc: true
 toc_sticky: true

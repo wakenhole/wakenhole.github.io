@@ -18,7 +18,7 @@ header:
   overlay_filter: 0.5
   teaser: https://wpblogassets.paytm.com/paytmblog/uploads/2023/09/Blog_Paytm_What-Is-a-Long-Term-Investment-and-What-Are-Its-Benefits.jpg
 sitemap: 
-    changefreq : daily
+    changefreq : monthly
     priority : 0.5
 ---
 

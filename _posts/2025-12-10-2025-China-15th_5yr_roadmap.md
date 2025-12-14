@@ -11,7 +11,7 @@ header:
   overlay_filter: 0.3
   teaser: https://38picres.cgtn.com/photoAlbum/page/performance/img/2025/10/17/1760670749512_795.jpg
 sitemap: 
-  changefreq : daily
+  changefreq : monthly
   priority : 0.5
 ---
 

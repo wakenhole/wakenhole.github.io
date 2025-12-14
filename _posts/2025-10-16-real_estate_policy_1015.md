@@ -1,10 +1,13 @@
 ---
 title: "10.15 부동산 대책 총정리"
 categories:
-  - 부동산
+  - Investment
 tags:
   - 토지거래허가지역
   - 1015 대책
+  - 부동산
+  - 정책
+  - 제도
 toc: true
 toc_sticky: true
 toc_icon: "cog"

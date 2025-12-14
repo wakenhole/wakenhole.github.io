@@ -2,7 +2,7 @@
 layout: single
 title:  "[2026 전망] 다가오는 2026년, 대한민국을 관통할 핵심 키워드 3가지"
 date:   2025-12-10 09:00:00 +0900
-categories: [Trend, Insight]
+categories: [Insight]
 tags: [2026트렌드, AI비서, 헥사곤인재, 핀테크, 경제전망]
 toc: true
 toc_sticky: true
@@ -14,7 +14,7 @@ header:
   overlay_filter: 0.5
   teaser: https://t1.daumcdn.net/brunch/service/user/eBg3/image/y4xgY8nTzScR712PIDveA0pVwYU.jpg
 sitemap: 
-    changefreq : daily
+    changefreq : monthly
     priority : 0.5
 ---
 

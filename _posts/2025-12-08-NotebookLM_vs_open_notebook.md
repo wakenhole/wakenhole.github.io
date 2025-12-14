@@ -3,7 +3,6 @@ title: "Google NotebookLM vs Open Notebook: 아키텍처 및 기능 비교 분�
 tagline: "SaaS형 RAG 서비스와 오픈소스 Self-Hosted 솔루션의 장단점 및 기술적 특징 비교. 데이터 주권과 모델 유연성을 중심으로."
 date: 2025-12-08 10:00:00 +0900
 categories: 
-  - Engineering
   - AI
 tags:
   - NotebookLM

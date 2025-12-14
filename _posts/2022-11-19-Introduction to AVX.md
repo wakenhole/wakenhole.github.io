@@ -1,9 +1,10 @@
 ---
 title: "Introduction To AVX"
 categories:
-  - AVX
+  - Tech
 tags:
   - SIMD
+  - AVX
   - Programming
 toc: true
 toc_sticky: true

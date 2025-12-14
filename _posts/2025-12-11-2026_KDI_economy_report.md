@@ -2,7 +2,7 @@
 layout: single
 title: "저성장의 고착화인가? 2025년 0.9% 성장 쇼크와 2026년의 전망"
 tagline: "KDI와 한국은행 보고서로 읽는 대한민국 경제의 현주소와 미래"
-categories: [Economy, Insight]
+categories: [Insight]
 tags: [경제전망, KDI, 2026년경제, 금리인하, 반도체, 부동산]
 published: true
 toc: true
@@ -12,7 +12,7 @@ header:
   overlay_filter: 0.5
   teaser: https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop
 sitemap: 
-    changefreq : daily
+    changefreq : monthly
     priority : 0.5
 ---
 

@@ -11,7 +11,7 @@ header:
   overlay_filter: 0.5
   teaser: https://github.com/user-attachments/assets/021218de-a157-46c9-970d-444c5665bf10
 sitemap:
-  changefreq : daily
+  changefreq : monthly
   priority : 0.5
 ---
 

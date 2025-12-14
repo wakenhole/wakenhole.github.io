@@ -12,7 +12,7 @@ header:
   overlay_filter: 0.5
   teaser: https://img.khan.co.kr/news/r/700xX/2025/12/01/news-p.v1.20251130.ae183f52b39245ba81efd90b0ddeace5_P1.webp
 sitemap: 
-    changefreq : daily
+    changefreq : monthly
     priority : 0.5
 ---
 

@@ -18,7 +18,7 @@ header:
   overlay_filter: 0.5
   teaser: https://images.unsplash.com/photo-1611571741792-edb58d0ceb67
 sitemap: 
-    changefreq : daily
+    changefreq : monthly
     priority : 0.5
 ---
 
