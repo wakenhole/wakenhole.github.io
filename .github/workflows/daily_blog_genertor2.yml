@@ -2,7 +2,7 @@ name: Daily Blog Post Generator All (KST 8 AM)
 
 on:
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '0 23 * * 0'
   workflow_dispatch:
 
 jobs:
