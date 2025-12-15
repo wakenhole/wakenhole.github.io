@@ -39,7 +39,7 @@ jobs:
           # 2. 투자(Investment) 블로그 글 생성
           python generate_post.py \
             --category "Investment" \
-            --audience "초보 투자자" \
+            --audience "주식 투자자" \
             --topic_keyword "한국, 미국 주식 시장 및 세계 경제 뉴스" \
             --tags "주식, 증시, 경제, Stock, Economy"
           

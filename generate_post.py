@@ -239,7 +239,7 @@ header:
   overlay_filter: 0.5
   teaser: {topic_data.get('teaser', '')}
 sitemap: 
-    changefreq : daily
+    changefreq : monthly
     priority : 0.5
 ---
 
