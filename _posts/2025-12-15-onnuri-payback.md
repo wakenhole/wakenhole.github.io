@@ -24,9 +24,7 @@ header:
 
 기존의 10% 선할인 구매 혜택에 더해, 사용 금액의 일부를 다시 돌려받는 페이백 구조는 연말 소비 시즌에 놓쳐서는 안 될 핵심 재테크 수단입니다. 오늘은 이번 상생 페이백 행사의 핵심 구조와 이를 통해 얻을 수 있는 실질적인 경제적 이득, 그리고 연말정산 소득공제 혜택까지 심층적으로 분석해 보겠습니다.
 
-<div align="center">
-![Traditional Market](https://platum.kr/wp-content/uploads/2025/09/image-48.png){: width="600px"}
-</div>
+![Traditional Market](https://platum.kr/wp-content/uploads/2025/09/image-48.png){:.centered width="600px"}
 
 {% include ad-inpost.html %}
 
