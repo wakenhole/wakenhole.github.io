@@ -1,6 +1,6 @@
 ---
-title: "2025년, 얼굴 위의 전쟁이 시작됐다: 중국 AI 글래스 3대장 vs 메타 레이밴"
-subtitle: "스마트폰을 대체할 '제2의 눈', 바이두·알리바바·로키드의 반격"
+title: "[AI 글래스] 알리바바 Quark S1 출시: 중국 AI 글래스 3대장 vs 메타 레이밴"
+tagline: "스마트폰을 대체할 '제2의 눈', 바이두·알리바바·로키드의 반격"
 categories: [Tech]
 tags: [AI Glasses, Meta Ray-ban, Baidu Xiaodu, 알리바바, Quark, 로키드, Wearable]
 toc: true

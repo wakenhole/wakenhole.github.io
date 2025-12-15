@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "팝마트(9992.HK) 긴급 진단: -40% 폭락, 화려한 파티는 끝났다"
-subtitle: "아트토이 제국의 몰락인가, 일시적 조정인가? 주가 급락의 3가지 핵심 원인 분석"
+title: "[POPMART] 팝마트(9992.HK) 긴급 진단: -40% 폭락, 화려한 파티는 끝났다"
+tagline: "아트토이 제국의 몰락인가, 일시적 조정인가? 주가 급락의 3가지 핵심 원인 분석"
 categories: [Investment]
 tags: [팝마트, PopMart, 홍콩주식, 주가폭락, 라부부, 매도리포트]
 toc: true
