@@ -22,6 +22,8 @@ sitemap:
 
 ---
 
+{% include ad-inpost.html %}
+
 ### 📊 한눈에 보는 스펙 벤치마크
 
 미국과 중국의 대표 선수들을 스펙 기준으로 비교했습니다. 중국 제품들은 '경량화'와 '로컬 AI'에 사활을 건 모습입니다.
@@ -42,7 +44,7 @@ sitemap:
 > **"가장 안경다운 스마트 글래스"**
 
 
-![Meta Ray-ban](https://i.namu.wiki/i/bPwhG9Jf8DZfi3n_xRaY1EICQwdlKlTpD6NqLIWRwZjgDtL0oYlFvy7PG0V3huNNMq6-hvzV2e-gG5atE_VNjQ.webp){: width="100px" height="150px" }
+![Meta Ray-ban](https://i.namu.wiki/i/bPwhG9Jf8DZfi3n_xRaY1EICQwdlKlTpD6NqLIWRwZjgDtL0oYlFvy7PG0V3huNNMq6-hvzV2e-gG5atE_VNjQ.webp){: width="500px"}
 
 여전히 시장의 기준점입니다. 디스플레이를 과감히 포기한 대신, **49g의 가벼운 무게**와 레이밴 특유의 **웨이페어러(Wayfarer) 디자인**을 살려 '거부감 없는 착용'을 이끌어냈습니다.
 * **장점:** 인스타그램, 스포티파이 등 글로벌 앱 생태계와의 완벽한 연동. Llama 3 기반의 자연스러운 영어 대화.
@@ -50,10 +52,12 @@ sitemap:
 
 ---
 
+{% include ad-inpost.html %}
+
 ### 2. The Challenger: 바이두 샤오두 (Baidu Xiaodu AI)
 > **"무게는 줄이고, 카메라는 키웠다"**
 
-![Baidu Xiaodu AI](https://www.gizmochina.com/wp-content/uploads/2024/11/Baidu-Xiaodu-AI-Glasses-2.jpg){ width=400px }
+![Baidu Xiaodu AI](https://www.gizmochina.com/wp-content/uploads/2024/11/Baidu-Xiaodu-AI-Glasses-2.jpg){: width="500px"}
 
 바이두는 메타의 전략을 가장 충실히 벤치마킹했습니다. 디스플레이를 없애고 무게를 **45g**까지 줄여, 현존하는 AI 글래스 중 가장 가벼운 수준을 달성했습니다.
 * **킬러 기능:** 1,600만 화소 카메라를 활용한 **'칼로리 측정'**과 **'백과사전'** 기능. 바이두의 방대한 검색 데이터와 연동되어 중국 내에서는 최고의 비서 역할을 수행합니다.
@@ -61,10 +65,12 @@ sitemap:
 
 ---
 
+{% include ad-inpost.html %}
+
 ### 3. The Innovator: 알리바바 쿼크 S1 (Alibaba Quark S1)
 > **"보여주지 않는 AI는 반쪽이다"**
 
-![Alibaba Quark S1](https://cdn.digitalfocus.news/news/photo/202511/16736_17685_2625.png){ width=400px }
+![Alibaba Quark S1](https://cdn.digitalfocus.news/news/photo/202511/16736_17685_2625.png){: width="500px"}
 
 알리바바는 경쟁사들과 다른 길을 택했습니다. **Quark S1**은 **Micro-OLED 디스플레이**를 탑재하여 눈앞에 실시간 번역 자막과 내비게이션을 띄워줍니다.
 * **혁신:** **'무한 배터리 시스템'**. 안경 다리 끝부분의 배터리를 교체할 수 있어 충전 대기 시간이 없습니다.
@@ -75,13 +81,15 @@ sitemap:
 ### 4. The Stylist: 로키드 x 볼론 (Rokid Glasses)
 > **"테크 기업과 패션 브랜드의 만남"**
 
-![Rokid Glasses](https://global.rokid.com/cdn/shop/files/journey7.png?v=1751619376){ width=400px }
+![Rokid Glasses](https://global.rokid.com/cdn/shop/files/journey7.png?v=1751619376){: width="500px"}
 
 AR 글래스 명가 로키드(Rokid)는 중국의 유명 안경 브랜드 **볼론(BOLON)**과 손을 잡았습니다.
 * **디자인:** 테크 기기 특유의 투박함을 지우고, 패션 아이템으로서의 완성도를 높였습니다.
 * **개방성:** 알리바바의 Qwen뿐만 아니라 딥시크(DeepSeek) 등 다양한 LLM을 선택해서 사용할 수 있는 유연함이 특징입니다.
 
 ---
+
+{% include ad-inpost.html %}
 
 ### 📝 총평: 당신의 선택은?
 
@@ -92,6 +100,8 @@ AR 글래스 명가 로키드(Rokid)는 중국의 유명 안경 브랜드 **볼�
 3.  **"실시간 통역 자막과 내비게이션 화면이 꼭 필요하다."** 👉 **Alibaba Quark S1** (기능성 끝판왕)
 
 스마트폰을 주머니에서 꺼내지 않는 세상, 그 미래가 이제 안경 너머로 다가왔습니다. 여러분은 어떤 세상을 보고 싶으신가요?
+
+{% include ad-inpost.html %}
 
 ---
 *Disclaimer: 본 포스팅에 사용된 이미지는 각 제조사의 공식 발표 자료 및 보도 자료를 인용하였습니다. 제품의 스펙과 가격은 출시 시점 및 국가에 따라 달라질 수 있습니다.*
