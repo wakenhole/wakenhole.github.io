@@ -7,9 +7,9 @@ tags: [나노바나나, NanoBanana, AI그림, 프롬프트, 스테이블디퓨�
 toc: true
 toc_sticky: true
 header:
-  overlay_image: https://images.unsplash.com/photo-1542831371-29b0f74f9713?fit=crop&w=1000&q=80
+  overlay_image: https://media.licdn.com/dms/image/v2/D5612AQH-nAN31jH3AQ/article-cover_image-shrink_720_1280/B56ZkAWqZlHAAI-/0/1756647567614?e=2147483647&v=beta&t=cDX8o6z84nlesAYTnVpUthBtPMgeS6zxzBqyPbTKb1g
   overlay_filter: 0.5
-  teaser: https://images.unsplash.com/photo-1542831371-29b0f74f9713?fit=crop&w=1000&q=80
+  teaser: https://media.licdn.com/dms/image/v2/D5612AQH-nAN31jH3AQ/article-cover_image-shrink_720_1280/B56ZkAWqZlHAAI-/0/1756647567614?e=2147483647&v=beta&t=cDX8o6z84nlesAYTnVpUthBtPMgeS6zxzBqyPbTKb1g
 sitemap: 
     changefreq : monthly
     priority : 0.5
