@@ -3,6 +3,7 @@ title: "[IB Math] Applications of Integration: Finding the Volume of Revolution 
 date: 2025-12-15 09:00:00 +0900
 categories: [IB]
 tags: [Math, Calculus, Volume of Revolution, Washer Method, Integration]
+use_math: true
 toc: true
 toc_sticky: true
 tagline: "Study"
