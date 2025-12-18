@@ -26,13 +26,13 @@ Today, through a problem involving rotating a region where a trigonometric funct
 
 As shown in the figure below, there is a closed region $S$ enclosed between the curve $y = x + 2\cos x$ ($0 \le x \le 2\pi$) and the line $y = x$.
 
-![Problem Image](https://github.com/user-attachments/assets/c2c6feea-42bc-4aa8-8a0a-3c39e6edfcfd){: width="500px"}
+![Problem Image](https://github.com/user-attachments/assets/c2c6feea-42bc-4aa8-8a0a-3c39e6edfcfd){:.centered width="500px"}
+
 
 **Problem:**
 Find the volume $V$ of the solid generated when the region $S$ is rotated by $2\pi$ about the $x$-axis.
 
 > **(a)** Find the coordinates of the points where the two graphs meet.
-> 
 > **(b)** (i) Write down an integral that represents the volume $V$. (ii) Find the value of the volume $V$.
 
 ---
@@ -44,7 +44,7 @@ Here are the mathematical tools needed to solve this problem.
 ### 1) Washer Method
 This is the formula used when the cross-section of the solid of revolution is in the shape of a washer (a disk with a hole in it). You subtract the area of the inner circle from the area of the outer circle.
 
-$$V = \pi \int_{a}^{b} \left( [R(x)]^2 - [r(x)]^2 \right) dx$$
+$ V = \pi \int_{a}^{b} \left( [R(x)]^2 - [r(x)]^2 \right) dx $
 
 * **$R(x)$ (Outer Radius):** The function that is **farther** from the axis of rotation (the $x$-axis).
 * **$r(x)$ (Inner Radius):** The function that is **closer** to the axis of rotation (the $x$-axis).
@@ -61,8 +61,8 @@ $$V = \pi \int_{a}^{b} \left( [R(x)]^2 - [r(x)]^2 \right) dx$$
 
 To find the points where the two graphs meet, set the equations equal to each other.
 
-$$x + 2\cos x = x$$
-$$2\cos x = 0 \quad \Rightarrow \quad \cos x = 0$$
+$x + 2\cos x = x$
+$2\cos x = 0 \quad \Rightarrow \quad \cos x = 0$
 
 Within the given range $0 \le x \le 2\pi$, the values where cosine becomes 0 are:
 
@@ -80,7 +80,7 @@ Therefore, $x + 2\cos x$ is smaller than $x$, so the positional relationship of 
 
 Substitute these into the volume formula:
 
-$$V = \pi \int_{\frac{\pi}{2}}^{\frac{3\pi}{2}} \left( (x)^2 - (x + 2\cos x)^2 \right) dx$$
+$V = \pi \int_{\frac{\pi}{2}}^{\frac{3\pi}{2}} \left( (x)^2 - (x + 2\cos x)^2 \right) dx$
 
 <br>
 
@@ -89,34 +89,34 @@ $$V = \pi \int_{\frac{\pi}{2}}^{\frac{3\pi}{2}} \left( (x)^2 - (x + 2\cos x)^2 \
 #### 1. Simplify the Integrand
 Expand the expression inside the brackets to simplify it.
 
-$$x^2 - (x + 2\cos x)^2$$
-$$= x^2 - (x^2 + 4x\cos x + 4\cos^2 x)$$
-$$= -4x\cos x - 4\cos^2 x$$
+$x^2 - (x + 2\cos x)^2$
+$= x^2 - (x^2 + 4x\cos x + 4\cos^2 x)$
+$= -4x\cos x - 4\cos^2 x$
 
 If we factor out the constant $-4$, the expression to integrate is:
-$$V = -4\pi \int_{\frac{\pi}{2}}^{\frac{3\pi}{2}} (x\cos x + \cos^2 x) \, dx$$
+$V = -4\pi \int_{\frac{\pi}{2}}^{\frac{3\pi}{2}} (x\cos x + \cos^2 x) \, dx$
 
 #### 2. Calculate the Integral
 It is best to split this integral into two parts (**A** and **B**) for calculation.
 
 **(A) $\int x\cos x \, dx$ (Integration by Parts)**
 Set $u = x$ and $dv = \cos x \, dx$. Then $du = dx$ and $v = \sin x$.
-$$\int x\cos x \, dx = x\sin x - \int \sin x \, dx = x\sin x + \cos x$$
+$\int x\cos x \, dx = x\sin x - \int \sin x \, dx = x\sin x + \cos x$
 Applying the bounds $[\frac{\pi}{2}, \frac{3\pi}{2}]$:
-$$\left[ x\sin x + \cos x \right]_{\frac{\pi}{2}}^{\frac{3\pi}{2}} = \left(-\frac{3\pi}{2} + 0\right) - \left(\frac{\pi}{2} + 0\right) = -2\pi$$
+$\left[ x\sin x + \cos x \right]_{\frac{\pi}{2}}^{\frac{3\pi}{2}} = \left(-\frac{3\pi}{2} + 0\right) - \left(\frac{\pi}{2} + 0\right) = -2\pi$
 
 **(B) $\int \cos^2 x \, dx$ (Half-angle Identity)**
-$$\int \frac{1 + \cos 2x}{2} \, dx = \frac{1}{2}x + \frac{1}{4}\sin 2x$$
+$\int \frac{1 + \cos 2x}{2} \, dx = \frac{1}{2}x + \frac{1}{4}\sin 2x$
 Applying the bounds $[\frac{\pi}{2}, \frac{3\pi}{2}]$:
-$$\left[ \frac{1}{2}x + \frac{1}{4}\sin 2x \right]_{\frac{\pi}{2}}^{\frac{3\pi}{2}} = \left(\frac{3\pi}{4} + 0\right) - \left(\frac{\pi}{4} + 0\right) = \frac{\pi}{2}$$
+$\left[ \frac{1}{2}x + \frac{1}{4}\sin 2x \right]_{\frac{\pi}{2}}^{\frac{3\pi}{2}} = \left(\frac{3\pi}{4} + 0\right) - \left(\frac{\pi}{4} + 0\right) = \frac{\pi}{2}$
 
 #### 3. Combine Final Results
 Substitute the values obtained back into the original expression for volume.
 
-$$V = -4\pi \times ((A) + (B))$$
-$$V = -4\pi \times \left( -2\pi + \frac{\pi}{2} \right)$$
-$$V = -4\pi \times \left( -\frac{3\pi}{2} \right)$$
-$$\therefore V = 6\pi^2$$
+$V = -4\pi \times ((A) + (B))$
+$V = -4\pi \times \left( -2\pi + \frac{\pi}{2} \right)$
+$V = -4\pi \times \left( -\frac{3\pi}{2} \right)$
+$\therefore V = 6\pi^2$
 
 ---
 
