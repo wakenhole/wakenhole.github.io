@@ -12,7 +12,7 @@ import traceback
 API_KEY = os.environ.get("GEMINI_API_KEY")
 
 # 사용자가 지정한 모델명 유지
-TEXT_MODEL_NAME = "gemini-2.5-flash" 
+TEXT_MODEL_NAME = "gemini-3-pro-preview" 
 TEXT_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{TEXT_MODEL_NAME}:generateContent?key={API_KEY}"
 
 KST = datetime.timezone(datetime.timedelta(hours=9))
