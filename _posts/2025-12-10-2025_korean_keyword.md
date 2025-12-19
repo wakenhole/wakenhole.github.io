@@ -1,5 +1,4 @@
 ---
-layout: single
 title:  "[2026 전망] 다가오는 2026년, 대한민국을 관통할 핵심 키워드 3가지"
 date:   2025-12-10 09:00:00 +0900
 categories: [Insight]

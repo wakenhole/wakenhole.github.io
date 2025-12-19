@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "[POPMART] 팝마트(9992.HK) 긴급 진단: -40% 폭락, 화려한 파티는 끝났다"
 tagline: "아트토이 제국의 몰락인가, 일시적 조정인가? 주가 급락의 3가지 핵심 원인 분석"
 categories: [Investment]

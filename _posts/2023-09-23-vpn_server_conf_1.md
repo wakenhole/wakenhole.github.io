@@ -3,7 +3,7 @@ title: "간단한 개인용 VPN 서버 구축의 모든것 1: VPN용 VM 서버 �
 categories:
   - VPN 
 tags:
-  - V2Ray
+  - v2ray
   - x-ui
   - 중국
   - vless

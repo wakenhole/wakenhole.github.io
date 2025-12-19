@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "[Nanobanana] AI 화가 '나노바나나' 완벽 정복: 실전 프롬프트와 고품질 세팅 가이드"
 tagline: "디테일이 살아있는 고화질 일러스트 생성을 위한 최적의 레시피"
 categories: [Tech]
