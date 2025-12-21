@@ -21,7 +21,6 @@ header:
   teaser: https://www.webwise.ie/wp-content/uploads/2020/04/IMG009.jpg
 ---
 
-> Reference: [How to download zoom recording](https://michaelabrahamsen.com/posts/how-to-download-zoom-recordings/)
 
 Zoom 녹화 영상은 종종 제한된 기간 동안만 제공되며, 나중에 다시 참조하기 위해 다운로드할 수 있는 쉬운 방법을 제공하지 않는 경우가 많습니다.
 
@@ -95,6 +94,5 @@ Zoom 녹화 영상은 종종 제한된 기간 동안만 제공되며, 나중에 
 
 ---
 
-*본 글은 Michael Abrahamsen의 "How to download zoom recordings" 게시물을 원문 그대로 번역하여 작성되었습니다.*
+*본 글은 Michael Abrahamsen의 [How to download zoom recording](https://michaelabrahamsen.com/posts/how-to-download-zoom-recordings/) 게시물을 원문 그대로 번역하여 작성되었습니다.*
 
-```
