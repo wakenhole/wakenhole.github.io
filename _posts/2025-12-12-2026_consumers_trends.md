@@ -1,7 +1,7 @@
 ---
 title: "[Trend] 취향의 파편화, 2026년 소비 트렌드 '토핑 경제'를 읽다"
 tagline: "최고의 결과보다 나만의 재미를 찾는 소비자들 (Topping Economy)"
-categories: [Insight]
+categories: [Investment, Insight]
 tags: [토핑경제, 2026트렌드, 요아정, 커스터마이징, 옴니보어]
 published: true
 toc: true

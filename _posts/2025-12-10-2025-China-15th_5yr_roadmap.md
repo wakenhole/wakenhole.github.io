@@ -1,7 +1,7 @@
 ---
 title: "[Insight] 중국의 미래 5년 나침반: '제15차 5개년 계획(十五五)' 미리보기"
 date: 2025-12-10
-categories: [Insight]
+categories: [Investment, Insight]
 tags: [중국경제, 15차5개년계획, 十五五规划, 신질생산력, 기술자립, 글로벌트렌드]
 published: true
 toc: true
