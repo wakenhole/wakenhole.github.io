@@ -1,7 +1,6 @@
 ---
 title: "Basic Chapter 6. Understanding Performance Metric"
-categories:
-  - AVX
+categories: [Tech, Parallel Computing]
 tags:
   - SIMD
   - Programming

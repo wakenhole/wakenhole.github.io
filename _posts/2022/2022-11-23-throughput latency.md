@@ -1,7 +1,6 @@
 ---
 title: "Understanding Performance Metric"
-categories:
-  - Tech
+categories: [Tech, Parallel Computing]
 tags:
   - SIMD
   - AVX

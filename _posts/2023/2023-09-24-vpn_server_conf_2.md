@@ -1,7 +1,6 @@
 ---
 title: "간단한 개인용 VPN 서버 구축의 모든것 2: VPN 서버 보안 설정 (V2Ray using X-UI)"
-categories:
-  - VPN 
+categories: [Tech, Networking & VPN]
 tags:
   - v2ray
   - x-ui

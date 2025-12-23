@@ -1,7 +1,6 @@
 ---
 title: "Introduction To AVX"
-categories:
-  - Tech
+categories: [Tech, Parallel Computing]
 tags:
   - SIMD
   - AVX

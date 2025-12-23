@@ -1,7 +1,6 @@
 ---
 title: "간단한 개인용 VPN 서버 구축의 모든것 3: X-UI 설치 및 설정 (V2Ray using X-UI)"
-categories:
-  - VPN 
+categories: [Tech, Networking & VPN]
 tags:
   - v2ray
   - x-ui

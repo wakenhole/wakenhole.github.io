@@ -1,7 +1,6 @@
 ---
 title: "Wireguard & OpenVPN 손쉽게 구축하기"
-categories:
-  - VPN 
+categories: [Tech, Networking & VPN]
 tags:
   - wireguard
   - OpenVPN

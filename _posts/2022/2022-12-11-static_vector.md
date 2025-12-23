@@ -1,7 +1,6 @@
 ---
 title: "static_vector"
-categories:
-  - Tech
+categories: [Tech, C++]
 tags:
   - Optimization
   - C++

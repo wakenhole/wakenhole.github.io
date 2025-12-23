@@ -1,7 +1,6 @@
 ---
 title: "Load and Store"
-categories:
-  - Tech
+categories: [Tech, Parallel Computing]
 tags:
   - SIMD
   - AVX

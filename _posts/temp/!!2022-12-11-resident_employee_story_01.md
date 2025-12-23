@@ -1,7 +1,6 @@
 ---
 title: "연구원 개발자 주재원 파견 결정 과정"
-categories:
-  - Resident employee
+categories: [Career, Expat Life]
 tags:
   - 주재원
   - Resident employee  

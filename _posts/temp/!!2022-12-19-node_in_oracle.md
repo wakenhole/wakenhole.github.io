@@ -1,7 +1,6 @@
 ---
 title: "Node js in Oracle cloud"
-categories:
-  - Tech
+categories: [Tech, Cloud & Ops]
 tags:
   - Optimization
   - C++

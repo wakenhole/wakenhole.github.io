@@ -1,7 +1,6 @@
 ---
 title: "Oracle Cloud Free Tier Memory 부족 문제 해결하기"
-categories:
-  - Tech
+categories: [Tech, Cloud & Ops]
 tags:
   - Oracle 
   - Cloud

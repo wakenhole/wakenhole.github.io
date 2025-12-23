@@ -1,7 +1,6 @@
 ---
 title: "2023 호텔 멤버십 혜택 정리 (메리어트, 하얏트, 인터컨티넨탈, IHG)"
-categories:
-  - Travel 
+categories: [Travel, Hotels & Stays]
 tags:
   - 메리어트 
   - Marriott

@@ -1,7 +1,6 @@
 ---
 title: "Markup: HTML Tags and Formatting"
-categories:
-  - Markup
+categories: [Tech, Web Basics]
 tags:
   - content
   - css

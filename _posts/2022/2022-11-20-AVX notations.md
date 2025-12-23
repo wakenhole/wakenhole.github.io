@@ -1,7 +1,6 @@
 ---
 title: "AVX Notations"
-categories:
-  - Tech
+categories: [Tech, Parallel Computing]
 tags:
   - SIMD
   - AVX

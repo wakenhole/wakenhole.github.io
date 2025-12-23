@@ -1,7 +1,6 @@
 ---
 title: "Basic Chapter 2. AVX Notations"
-categories:
-  - Tech
+categories: [Tech, Parallel Computing]
 tags:
   - SIMD
   - Programming

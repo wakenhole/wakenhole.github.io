@@ -1,7 +1,6 @@
 ---
 title: "Undefined Behavior"
-categories:
-  - Programming
+categories: [Tech, C++]
 tags:
   - Optimization
   - Undefined behavior
