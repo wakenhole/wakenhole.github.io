@@ -1,5 +1,5 @@
 ---
-title: "Zoom(줌) 녹화 영상 다운로드 완벽 가이드: 다운로드 권한/버튼이 없을 때 해결 방벙"
+title: "[팁] Zoom(줌) 녹화 영상 다운로드 완벽 가이드: 다운로드 권한/버튼이 없을 때 해결 방벙"
 date: 2025-12-18 09:00:00 +0900
 categories: [Tech, Software Guides]
 tags:
