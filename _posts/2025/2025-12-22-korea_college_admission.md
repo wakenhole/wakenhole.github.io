@@ -23,7 +23,7 @@ description: "2026학년도 고교 입시 결과를 심층 분석하여 2028 대
 
 오늘은 방대한 입시 데이터를 바탕으로 2026년 고입 현상을 해부하고, 변화하는 환경 속에서 우리 아이가 선택해야 할 '최적의 고교 선택 및 학습 로드맵'을 정리해 드립니다.
 
-!(https://mrkp-static-production.themarkup.org/uploads/2021/05/schoolsegregation2-841x473.jpeg)
+![](https://mrkp-static-production.themarkup.org/uploads/2021/05/schoolsegregation2-841x473.jpeg)
 
 ## 1. 2026 고입의 핵심 키워드: '의대'와 '5등급제'가 바꾼 판도
 
@@ -54,7 +54,7 @@ description: "2026학년도 고교 입시 결과를 심층 분석하여 2028 대
 
 * **실제 데이터:** 서울권 외고 경쟁률 1.75:1 (전년 대비 8.7% 상승), 수원외고 1.89:1 등 뚜렷한 상승세 기록.
 
-!(https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80)
+![](https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80)
 
 ### ② 자사고(전국/광역): '불확실성'이 부른 하락세
 
@@ -83,7 +83,7 @@ description: "2026학년도 고교 입시 결과를 심층 분석하여 2028 대
 
 또한, 성남 낙생고처럼 정시(수능)에 강한 학군지 일반고나, 내신 따기 수월한 지방 거점 일반고 역시 '의대 지역인재 전형'을 노리는 학생들에게 각광받고 있습니다.
 
-!(https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80)
+![](https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80)
 
 ---
 
