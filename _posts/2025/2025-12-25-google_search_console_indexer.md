@@ -1,6 +1,6 @@
 ---
 title: "구글 SEO의 치트키: Google Indexing API 자동화로 검색 노출 시간 단축하기 (Feat. Python)"
-date: 2025-12-26 10:00:00 +0900
+date: 2025-12-25 10:00:00 +0900
 categories:
   - Tech
   - Web & SEO
@@ -35,6 +35,8 @@ Google Indexing API는 웹사이트 소유자가 페이지의 추가나 삭제�
 원래는 채용 정보(JobPosting)나 라이브 스트리밍(BroadcastEvent)처럼 시의성이 중요한 콘텐츠를 위해 만들어졌지만, 현재는 일반 웹페이지의 **빠른 색인(Indexing)** 을 위해서도 널리 사용되고 있습니다.
 
 이 API를 사용하면 구글 서치 콘솔(GSC)에서 일일이 '색인 생성 요청' 버튼을 누르는 수고를 덜 수 있습니다.
+
+{% include ad-inpost.html %}
 
 ### 2. 핵심 준비물: 구글 서비스 계정 (Service Account)
 
