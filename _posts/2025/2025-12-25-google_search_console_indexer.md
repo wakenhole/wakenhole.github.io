@@ -21,12 +21,12 @@ image:
   alt: 
 ---
 
+![Search Engine Optimization](https://images.unsplash.com/photo-1571786256017-aee7a0c009b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80)
+
 "글을 발행했는데 왜 구글에 안 뜨지?" 
 블로그를 운영하는 분들이라면 누구나 한 번쯤 겪는 고민입니다. 구글 봇(Google Bot)이 내 사이트를 크롤링해갈 때까지 기다리는 것은 너무나 수동적이고, 때로는 며칠이 걸리기도 합니다. 
 
 오늘은 이 답답한 시간을 획기적으로 줄여줄 수 있는 **Google Indexing API 자동화** 방법을 소개합니다. Python 기반의 오픈소스 도구인 `google-search-console-indexer`를 활용하면, 터미널 명령어 한 번으로 구글에게 "내 글 좀 빨리 가져가!"라고 직접 요청을 보낼 수 있습니다.
-
-![Search Engine Optimization](https://images.unsplash.com/photo-1571786256017-aee7a0c009b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80)
 
 {% include ad-inpost.html %}
 
