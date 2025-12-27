@@ -58,7 +58,7 @@ image:
 
 참치 대뱃살(오도로)과 방어(부리) 등으로 구성된 사시미 플레이트입니다. 적당히 숙성되어 감칠맛이 올라온 생선은 입안에서 녹아내리는 듯한 식감을 선사합니다. 와사비와 간장의 밸런스도 훌륭합니다.
 
-![Image](https://github.com/user-attachments/assets/d2276d98-f8f5-451c-8d79-8704a7c68b24){: width="600px" style="transform: rotate(270deg);"}
+![Image](https://github.com/user-attachments/assets/d2276d98-f8f5-451c-8d79-8704a7c68b24){: width="300px" style="transform: rotate(270deg);"}
 
 이곳만의 독창적인 터치가 들어간 요리들도 눈에 띕니다. 제철 식재료인 무화과 위에 치즈 혹은 말린 가다랑어를 얇게 갈아 올린 듯한 이 디시(Dish)는, 일식의 틀 안에서 양식의 터치를 가미하여 미각을 환기해 주는 역할을 했습니다.
 
@@ -70,7 +70,7 @@ image:
 
 갑오징어와 조개류로 구성된 스시입니다. 칼집을 정교하게 넣어 질길 수 있는 식감을 부드럽게 만들었고, 그 사이로 간장이 스며들어 풍미를 배가시킵니다.
 
-![Image](https://github.com/user-attachments/assets/761ce5a8-c401-4cc9-a87a-0dad067653e1){: width="600px" style="transform: rotate(270deg);"}
+![Image](https://github.com/user-attachments/assets/761ce5a8-c401-4cc9-a87a-0dad067653e1){: width="300px" style="transform: rotate(270deg);"}
 
 기름진 참치 뱃살과 붕장어(아나고) 스시입니다. 특히 아나고는 입에 넣는 순간 부드럽게 부서지며 타래 소스의 달콤 짭짤한 맛이 긴 여운을 남깁니다.
 
