@@ -1,9 +1,7 @@
 ---
 title: "[개발팁] 파이썬 가상환경 오류 해결: '이 시스템에서 스크립트를 실행할 수 없으므로...' 완벽 가이드"
 date: 2025-12-27 19:00:00 +0900
-categories:
-  - Tech
-  - Python
+categories: [Tech, Software Guides]
 tags:
   - venv
   - PowerShell
