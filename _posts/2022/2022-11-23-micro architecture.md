@@ -8,9 +8,9 @@ tags:
   - Performance
 toc: true
 classes: wide
-header:
+image:
   image: https://cdn.comparitech.com/wp-content/uploads/2018/11/Latency-vs-Throughput-.jpg
-  teaser: https://cdn.comparitech.com/wp-content/uploads/2018/11/Latency-vs-Throughput-.jpg
+  path: https://cdn.comparitech.com/wp-content/uploads/2018/11/Latency-vs-Throughput-.jpg
 ---
 
 ## Reference

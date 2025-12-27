@@ -12,11 +12,8 @@ use_math: true
 toc: true
 toc_sticky: true
 tagline: ""
-header:
-  overlay_image: http://magazine.bizforms.co.kr/editor_img/20191030_154417.png
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://zippoom.com/_next/image?url=https%3A%2F%2Fs3.ap-northeast-2.amazonaws.com%2Fpost.zippoom.com%2Fposting%2Fmawbtvft_%25EC%258D%25B8%25EB%2584%25A4%25EC%259D%25BC.jpg&w=1920&q=100
+image:
+  path: https://zippoom.com/_next/image?url=https%3A%2F%2Fs3.ap-northeast-2.amazonaws.com%2Fpost.zippoom.com%2Fposting%2Fmawbtvft_%25EC%258D%25B8%25EB%2584%25A4%25EC%259D%25BC.jpg&w=1920&q=100
 ---
 
 "2주택자는 월세만 아니면 세금 없다?"

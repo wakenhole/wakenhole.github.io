@@ -8,11 +8,8 @@ tags:
 toc: true
 toc_sticky: true
 tagline: "Basic Chapter 1"
-header:
-  overlay_image: https://cdn.appuals.com/wp-content/uploads/2022/02/Intel-3rd-Gen-Xeon-Scalable-5-Custom-2060x1373-1.jpg
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80
+image:
+  path: https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80
 ---
 
 ## Reference 
@@ -54,4 +51,3 @@ for (auto i : 16){
 __m512i A, B;
 A = _mm512_add_epi16(A,B); // 1 instrinsic is used
 ```
-

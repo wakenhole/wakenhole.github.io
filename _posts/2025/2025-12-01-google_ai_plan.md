@@ -12,11 +12,8 @@ tags:
 toc: true
 toc_sticky: true
 tagline: "AI"
-header:
-  overlay_image: https://www.reuters.com/resizer/v2/XLMOFVS2HJKDHJXQF2W4LTWKWY.jpg?auth=22dcf49be6b2395618652a1c8601b1c06bd34506755f2be7edcf09aec4c801dc&width=1080&quality=80
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://economymiddleeast.com/cdn-cgi/imagedelivery/Xfg_b7GtigYi5mxeAzkt9w/economymiddleeast.com/2025/02/Gemini.jpg/w=1200
+image:
+  path: https://economymiddleeast.com/cdn-cgi/imagedelivery/Xfg_b7GtigYi5mxeAzkt9w/economymiddleeast.com/2025/02/Gemini.jpg/w=1200
 ---
 
 
@@ -108,4 +105,3 @@ AI Plus가 가능한 계정을 가지고 있다면, AI Plus가 최고의 선택�
 따라서 Google One Premium 2TB 플랜을 구독하는 것이 가장 합리적인 선택이 될 수 있습니다.
 
 {% include ad-inpost.html %}
-

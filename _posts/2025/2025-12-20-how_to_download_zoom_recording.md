@@ -13,11 +13,8 @@ tags:
 toc: true
 toc_sticky: true
 tagline: "Productivity"
-header:
-  overlay_image: https://img.freepik.com/free-vector/two-women-video-chatting-via-computer-monitor-friend-distance-flat-vector-illustration-communication-digital-technology_74855-13272.jpg?semt=ais_hybrid&w=740&q=80
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://www.webwise.ie/wp-content/uploads/2020/04/IMG009.jpg
+image:
+  path: https://www.webwise.ie/wp-content/uploads/2020/04/IMG009.jpg
 ---
 
 
@@ -94,4 +91,3 @@ Zoom 녹화 영상은 종종 제한된 기간 동안만 제공되며, 나중에 
 ---
 
 *본 글은 Michael Abrahamsen의 [How to download zoom recording](https://michaelabrahamsen.com/posts/how-to-download-zoom-recordings/) 게시물을 원문 그대로 번역하여 작성되었습니다.*
-

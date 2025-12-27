@@ -6,10 +6,8 @@ tags: [중국경제, 15차5개년계획, 十五五规划, 신질생산력, 기�
 published: true
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://thumbs.dreamstime.com/b/smart-factory-automation-industrial-robots-ai-data-displays-futuristic-smart-factory-showcases-advanced-automation-396970576.jpg
-  overlay_filter: 0.3
-  teaser: https://38picres.cgtn.com/photoAlbum/page/performance/img/2025/10/17/1760670749512_795.jpg
+image:
+  path: https://38picres.cgtn.com/photoAlbum/page/performance/img/2025/10/17/1760670749512_795.jpg
 sitemap: 
   changefreq : monthly
   priority : 0.5
@@ -73,4 +71,3 @@ sitemap:
 
 최종 계획안이 발표되면 더 상세한 분석으로 찾아오겠습니다.
 {% include ad-inpost.html %}
-

@@ -12,11 +12,8 @@ use_math: true
 toc: true
 toc_sticky: true
 tagline: ""
-header:
-  overlay_image: http://magazine.bizforms.co.kr/editor_img/20191030_154417.png
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: http://magazine.bizforms.co.kr/editor_img/20191030_154417.png
+image:
+  path: http://magazine.bizforms.co.kr/editor_img/20191030_154417.png
 ---
 
 

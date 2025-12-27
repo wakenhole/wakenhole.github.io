@@ -12,10 +12,10 @@ tags:
 published: true
 toc: true
 toc_sticky: true
-header:
+image:
   overlay_image: https://wpblogassets.paytm.com/paytmblog/uploads/2023/09/Blog_Paytm_What-Is-a-Long-Term-Investment-and-What-Are-Its-Benefits.jpg
   overlay_filter: 0.5
-  teaser: https://wpblogassets.paytm.com/paytmblog/uploads/2023/09/Blog_Paytm_What-Is-a-Long-Term-Investment-and-What-Are-Its-Benefits.jpg
+  path: https://wpblogassets.paytm.com/paytmblog/uploads/2023/09/Blog_Paytm_What-Is-a-Long-Term-Investment-and-What-Are-Its-Benefits.jpg
 sitemap: 
     changefreq : monthly
     priority : 0.5

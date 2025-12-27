@@ -12,11 +12,8 @@ tags:
 toc: true
 toc_sticky: true
 tagline: "Immersive Dining"
-header:
-  overlay_image: https://github.com/user-attachments/assets/8809411f-7478-4c45-b4e1-1e97ee30f717
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://github.com/user-attachments/assets/9d8290e1-b056-403e-b5b1-e7a8201ae5fa
+image:
+  path: https://github.com/user-attachments/assets/9d8290e1-b056-403e-b5b1-e7a8201ae5fa
 ---
 
 진정한 미식(美食)이란 무엇일까요? 단순히 혀끝에 닿는 맛의 즐거움을 넘어, 공간과 시간, 그리고 이야기가 어우러지는 공감각적 체험이 현대 다이닝의 새로운 정의가 되고 있습니다.

@@ -12,11 +12,8 @@ tags:
 toc: true
 toc_sticky: true
 tagline: "github.io"
-header:
-  overlay_image: https://1330878074.rsc.cdn77.org/wp-content/uploads/2022/05/Oracle-Enhances-its-Comprehensive-Cloud-Security-Capabilities-with-Integrated-Threat-Management.jpg
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://1330878074.rsc.cdn77.org/wp-content/uploads/2022/05/Oracle-Enhances-its-Comprehensive-Cloud-Security-Capabilities-with-Integrated-Threat-Management.jpg
+image:
+  path: https://1330878074.rsc.cdn77.org/wp-content/uploads/2022/05/Oracle-Enhances-its-Comprehensive-Cloud-Security-Capabilities-with-Integrated-Threat-Management.jpg
 
 
 ---
@@ -105,4 +102,3 @@ analytics:
 ## 마치며
 
 블로그 검색 노출은 하루아침에 이루어지지 않습니다. 하지만 오늘 정리한 robots.txt 파일명 수정과 같은 기본적인 설정들이 되어 있지 않다면 아무리 기다려도 노출되지 않습니다. 지금 바로 설정을 점검하고, 여러분의 소중한 글들이 더 많은 사람들에게 닿을 수 있도록 준비해 보세요!
-

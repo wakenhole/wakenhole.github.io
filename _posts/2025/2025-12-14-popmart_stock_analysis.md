@@ -5,10 +5,8 @@ categories: [Investment, Stock Analysis]
 tags: [팝마트, PopMart, 홍콩주식, 주가폭락, 라부부, 매도리포트]
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=1600&auto=format&fit=crop
-  overlay_filter: 0.5
-  teaser: https://images.unsplash.com/photo-1542831371-29b0f74f9713?fit=crop&w=1000&q=80
+image:
+  path: https://images.unsplash.com/photo-1542831371-29b0f74f9713?fit=crop&w=1000&q=80
 sitemap: 
     changefreq : monthly
     priority : 0.5

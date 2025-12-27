@@ -12,10 +12,8 @@ tags:
 published: true
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://onlinedegrees.sandiego.edu/wp-content/uploads/2022/01/how-to-be-a-ai-developer.jpg
-  overlay_filter: 0.5
-  teaser: https://aicertswpcdn.blob.core.windows.net/newsportal/2025/08/freepik__the-style-is-candid-image-photography-with-natural__76173-1.png
+image:
+  path: https://aicertswpcdn.blob.core.windows.net/newsportal/2025/08/freepik__the-style-is-candid-image-photography-with-natural__76173-1.png
 sitemap: 
     changefreq : monthly
     priority : 0.5

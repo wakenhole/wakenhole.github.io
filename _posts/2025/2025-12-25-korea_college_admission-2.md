@@ -17,6 +17,8 @@ toc_sticky: true
 tagline: "폐지 위기에서 화려하게 부활한 2026년 외고와 국제고. 경쟁률 상승을 이끈 결정적 요인 3가지(내신 5등급제, 문과의 소외, 수시 전략)를 심층 분석합니다."
 math: true
 mermaid: true
+image:
+  path: https://postfiles.pstatic.net/MjAyNTExMTlfMjAz/MDAxNzYzNTIxNTMzNDM0.57rnP5aZTZ4woi42yKjl7d7WvkgH7ZnYhZ7eqW-bcR0g.kNuXOcc9L_hyUS9WTdcOSa07kgdZrbkMi80J1q4DU7kg.PNG/제목을_입력해주세요._(1).png?type=w966
 ---
 
 "외고는 이제 끝물 아닌가요?"라고 묻던 것이 불과 1~2년 전입니다. 하지만 2026학년도 고교 입시 뚜껑을 열어보니 결과는 정반대였습니다. 외고와 국제고의 경쟁률이 5년 만에 최고치를 경신하며 화려하게 부활했기 때문입니다.

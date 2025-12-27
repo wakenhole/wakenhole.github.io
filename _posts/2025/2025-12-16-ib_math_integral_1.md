@@ -7,11 +7,8 @@ use_math: true
 toc: true
 toc_sticky: true
 tagline: "Study"
-header:
-  overlay_image: https://isa.edu.gr/uploads/images/5953b0b961e2a/ODRAT50.jpg
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://ibstudies.com/wp-content/uploads/2015/12/IB-maths-Tutor-in-gurgaon.png
+image:
+  path: https://ibstudies.com/wp-content/uploads/2015/12/IB-maths-Tutor-in-gurgaon.png
 ---
 
 ## Introduction

@@ -12,11 +12,8 @@ tags:
 toc: true
 toc_sticky: true
 tagline: "Finance"
-header:
-  overlay_image: https://d1c5n4ri2guedi.cloudfront.net/post/3960/contents/44239/news_715_1.jpg
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://platum.kr/wp-content/uploads/2025/09/image-48.png
+image:
+  path: https://platum.kr/wp-content/uploads/2025/09/image-48.png
 ---
 
 고물가와 고금리가 뉴노멀(New Normal)이 된 2025년, 현명한 소비자들은 단순히 '아껴 쓰는 것'을 넘어 '쓰면서 돌려받는' 구조에 주목하고 있습니다. 그 중심에 정부가 소비 활성화와 소상공인 지원을 위해 강력하게 추진 중인 **'디지털 온누리 상생 페이백'**이 있습니다.

@@ -7,10 +7,8 @@ tags: [Gemini, Automation]
 published: true
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://www.itworld.co.kr/wp-content/uploads/2025/05/3998655-0-17356600-1748583222-shutterstock_2473384115.jpg
-  overlay_filter: 0.5
-  teaser: https://blog-ko.superb-ai.com/content/images/size/w2000/2025/03/2002.i039.010_chatbot_messenger_ai_isometric_set-03.jpg
+image:
+  path: https://blog-ko.superb-ai.com/content/images/size/w2000/2025/03/2002.i039.010_chatbot_messenger_ai_isometric_set-03.jpg
 ---
 
 # LLM 시대의 다음 과제: 실용 AI로 가는 길

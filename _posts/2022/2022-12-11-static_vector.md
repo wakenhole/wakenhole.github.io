@@ -9,11 +9,11 @@ tags:
 toc: true
 toc_sticky: true
 tagline: "C++"
-header:
+image:
   overlay_image: https://images.unsplash.com/photo-1625459201773-9b2386f53ca2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1630&q=80
   overlay_filter: 0.5
   caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+  path: https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
 ---
 
 {% include ad-inpost.html %}

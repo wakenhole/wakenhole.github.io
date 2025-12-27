@@ -5,10 +5,8 @@ categories: [Tech, AI]
 tags: [Product Management, Tools, Efficiency, AI]
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://github.com/user-attachments/assets/d1d4c474-d34c-4deb-b858-d6722243917c
-  overlay_filter: 0.5
-  teaser: https://github.com/user-attachments/assets/939fcf50-7709-49c3-aaf9-1231673160b9
+image:
+  path: https://github.com/user-attachments/assets/939fcf50-7709-49c3-aaf9-1231673160b9
 ---
 
 "AI가 내 일자리를 대체할까?"라는 걱정보다는, "AI를 잘 쓰는 동료가 나보다 앞서가지 않을까?"를 고민해야 할 때입니다. 오늘은 상품 기획자(PM/PO)가 기획 단계부터 디자인, 문서화까지 활용할 수 있는 실전 AI 도구 5가지를 소개합니다.

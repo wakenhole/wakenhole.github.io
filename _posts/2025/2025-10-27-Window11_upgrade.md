@@ -8,11 +8,8 @@ toc_sticky: true
 toc_icon: "cog"
 tagline: ""
 ads: true
-header:
-  overlay_image: https://images.unsplash.com/photo-1624571404553-49e7dbfbc90e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2970
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://images.unsplash.com/photo-1679269241012-f7640862d242?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3132
+image:
+  path: https://images.unsplash.com/photo-1679269241012-f7640862d242?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3132
 ---
 
 # 🪄 Windows 11 우회 설치 완전 가이드  

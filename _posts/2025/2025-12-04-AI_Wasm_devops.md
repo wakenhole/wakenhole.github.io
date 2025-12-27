@@ -12,10 +12,8 @@ tags:
 published: true
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://images.unsplash.com/photo-1542831371-29b0f74f9713?fit=crop&w=1000&q=80
-  overlay_filter: 0.5
-  teaser: https://images.unsplash.com/photo-1542831371-29b0f74f9713?fit=crop&w=1000&q=80
+image:
+  path: https://images.unsplash.com/photo-1542831371-29b0f74f9713?fit=crop&w=1000&q=80
 ---
 
 # AI와 Wasm: 개발 대격변, 2025년 개발자 생존 전략

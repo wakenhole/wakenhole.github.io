@@ -11,11 +11,8 @@ toc_sticky: true
 toc_icon: "cog"
 tagline: ""
 ads: true
-header:
-  overlay_image: https://i3.ruliweb.com/ori/24/11/15/1932e178d7d87fee.jpg
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://upload.wikimedia.org/wikipedia/commons/e/e6/Dodgers_at_Nationals_%2853677192000%29_%28cropped%29.jpg
+image:
+  path: https://upload.wikimedia.org/wikipedia/commons/e/e6/Dodgers_at_Nationals_%2853677192000%29_%28cropped%29.jpg
 
 ---
 

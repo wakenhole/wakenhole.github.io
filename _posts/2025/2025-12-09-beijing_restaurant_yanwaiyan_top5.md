@@ -6,10 +6,8 @@ tags: [베이징여행, 북경맛집, 사계민복, 바슈왕포다샤, 팡주�
 published: true
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://github.com/user-attachments/assets/8dc3ad3c-d848-4d3d-bced-ffae3a642ceb
-  overlay_filter: 0.5
-  teaser: https://github.com/user-attachments/assets/021218de-a157-46c9-970d-444c5665bf10
+image:
+  path: https://github.com/user-attachments/assets/021218de-a157-46c9-970d-444c5665bf10
 sitemap:
   changefreq : monthly
   priority : 0.5

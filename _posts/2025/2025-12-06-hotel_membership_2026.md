@@ -15,11 +15,8 @@ tags:
 toc: true
 toc_sticky: true
 tagline: "Hotel"
-header:
-  overlay_image: https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80
+image:
+  path: https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80
 ---
 
 진정한 호캉스의 완성은 티어(Tier) 혜택에서 나온다는 말이 있습니다. 조식 무료, 라운지 이용, 그리고 설레는 룸 업그레이드까지. 호텔 멤버십은 단순한 숙박 그 이상의 경험을 제공합니다. 2026년, 여러분의 호캉스를 책임질 주요 글로벌 호텔 체인의 멤버십 핵심 혜택을 정리했습니다. 지금 준비해야 내년에 누릴 수 있는 '스위트 스팟' 티어를 중심으로 살펴보겠습니다.
@@ -138,5 +135,3 @@ IHG와 아코르 역시 최근 멤버십 프로그램을 개편하며 매력적�
 
 {% include ad-inpost.html %}
  
-
-

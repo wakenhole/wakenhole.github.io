@@ -13,11 +13,8 @@ tags:
 toc: true
 toc_sticky: true
 tagline: "Tech & Money"
-header:
-  overlay_image: https://cdn.thescoop.co.kr/news/photo/202409/303343_208881_2351.jpg
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://cdn.thescoop.co.kr/news/photo/202409/303343_208881_2351.jpg
+image:
+  path: https://cdn.thescoop.co.kr/news/photo/202409/303343_208881_2351.jpg
 ---
 
 과거 '효도폰' 혹은 '저가폰'으로 치부되던 알뜰폰(MVNO) 시장이 2025년 말을 기점으로 가입자 1,500만 명을 돌파하며 통신 시장의 주류(Mainstream)로 자리 잡았습니다. 단순히 통신비를 아끼는 차원을 넘어, 이제는 통신 데이터를 자산처럼 관리하는 '데이터 테크(Data Tech)'의 시대가 도래했습니다. 

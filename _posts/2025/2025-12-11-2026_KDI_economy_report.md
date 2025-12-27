@@ -6,10 +6,8 @@ tags: [경제전망, KDI, 2026년경제, 금리인하, 반도체, 부동산]
 published: true
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop
-  overlay_filter: 0.5
-  teaser: https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop
+image:
+  path: https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop
 sitemap: 
     changefreq : monthly
     priority : 0.5

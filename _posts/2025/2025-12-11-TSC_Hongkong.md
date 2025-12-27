@@ -6,10 +6,8 @@ tags: [TSC, 홍콩, 화재, 재난]
 published: true
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://flexible.img.hani.co.kr/flexible/normal/970/582/imgdb/child/2025/1128/53_17643170336113_20251128502317.webp
-  overlay_filter: 0.5
-  teaser: https://img.khan.co.kr/news/r/700xX/2025/12/01/news-p.v1.20251130.ae183f52b39245ba81efd90b0ddeace5_P1.webp
+image:
+  path: https://img.khan.co.kr/news/r/700xX/2025/12/01/news-p.v1.20251130.ae183f52b39245ba81efd90b0ddeace5_P1.webp
 sitemap: 
     changefreq : monthly
     priority : 0.5

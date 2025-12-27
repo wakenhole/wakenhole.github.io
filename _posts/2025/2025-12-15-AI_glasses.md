@@ -5,10 +5,8 @@ categories: [Tech, Devices & Gadgets]
 tags: [AI Glasses, Meta Ray-ban, Baidu Xiaodu, 알리바바, Quark, 로키드, Wearable]
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://cdn.digitalfocus.news/news/photo/202511/16736_17685_2625.png
-  overlay_filter: 0.5
-  teaser: https://cdn.digitalfocus.news/news/photo/202511/16736_17685_2625.png
+image:
+  path: https://cdn.digitalfocus.news/news/photo/202511/16736_17685_2625.png
 sitemap: 
     changefreq : monthly
     priority : 0.5

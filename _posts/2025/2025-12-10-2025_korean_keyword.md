@@ -8,10 +8,8 @@ toc_sticky: true
 author_profile: true
 sidebar:
   nav: "docs"
-header:
-  overlay_image: https://wpblogassets.paytm.com/paytmblog/uploads/2023/09/Blog_Paytm_What-Is-a-Long-Term-Investment-and-What-Are-Its-Benefits.jpg
-  overlay_filter: 0.5
-  teaser: https://t1.daumcdn.net/brunch/service/user/eBg3/image/y4xgY8nTzScR712PIDveA0pVwYU.jpg
+image:
+  path: https://t1.daumcdn.net/brunch/service/user/eBg3/image/y4xgY8nTzScR712PIDveA0pVwYU.jpg
 sitemap: 
     changefreq : monthly
     priority : 0.5
@@ -89,4 +87,3 @@ sitemap:
 > **함께 읽으면 좋은 글**
 > * [2025-12-04 실용 AI RAG와 버티컬 모델](/2025-12-04-실용-AI-RAG와-버티컬-모델/)
 > * [2025-12-04 금리 향방 주도주 교체 임박](/2025-12-04-금리-향방-주도주-교체-임박/)
-

@@ -5,10 +5,8 @@ categories: [Investment, Crypto]
 tags: [비트코인, 암호화폐, 산타랠리, 연준, 가상자산전망, 투자전략]
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://images.unsplash.com/photo-1611974765270-ca1258634369?q=80&w=1600&auto=format&fit=crop
-  overlay_filter: 0.5
-  teaser: https://images.unsplash.com/photo-1642104704074-907c0698cbd9?q=80&w=1600&auto=format&fit=crop
+image:
+  path: https://images.unsplash.com/photo-1642104704074-907c0698cbd9?q=80&w=1600&auto=format&fit=crop
 sitemap: 
     changefreq : monthly
     priority : 0.5

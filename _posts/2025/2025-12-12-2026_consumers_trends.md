@@ -6,10 +6,8 @@ tags: [토핑경제, 2026트렌드, 요아정, 커스터마이징, 옴니보어]
 published: true
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=1600&auto=format&fit=crop
-  overlay_filter: 0.5
-  teaser: https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1600&auto=format&fit=crop
+image:
+  path: https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1600&auto=format&fit=crop
 sitemap: 
     changefreq : monthly
     priority : 0.5

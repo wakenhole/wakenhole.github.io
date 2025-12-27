@@ -234,10 +234,8 @@ tags:
 published: false
 toc: true
 toc_sticky: true
-header:
-  overlay_image: {topic_data.get('overlay_image', '')}
-  overlay_filter: 0.5
-  teaser: {topic_data.get('teaser', '')}
+image:
+  path: {topic_data.get('teaser', '')}
 sitemap: 
     changefreq : monthly
     priority : 0.5

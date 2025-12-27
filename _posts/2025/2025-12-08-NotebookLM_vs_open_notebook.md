@@ -13,10 +13,8 @@ tags:
 published: true
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://images.unsplash.com/photo-1727812100173-b33044cd3071
-  overlay_filter: 0.5
-  teaser: https://images.unsplash.com/photo-1611571741792-edb58d0ceb67
+image:
+  path: https://images.unsplash.com/photo-1611571741792-edb58d0ceb67
 ---
 
 {% include ad-inpost.html %}

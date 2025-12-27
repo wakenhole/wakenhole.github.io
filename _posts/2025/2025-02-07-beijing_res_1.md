@@ -9,11 +9,8 @@ toc: true
 ads: true
 toc_sticky: true
 tagline: "Restaurant"
-header:
-  overlay_image: https://img.meituan.net/msmerchant/c872a7598456ac7a02ddc461e9274987770136.jpg%40700w_700h_0e_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://poi-pic.cdn.bcebos.com/swd/ca476a02-ef32-3d18-b8b1-da1203fb07f6.jpg
+image:
+  path: https://poi-pic.cdn.bcebos.com/swd/ca476a02-ef32-3d18-b8b1-da1203fb07f6.jpg
 ---
 # 베이징 조양구 량마허 근처 고급 광둥음식 맛집 - [怡秀坊]
 

@@ -12,11 +12,8 @@ tags:
 toc: true
 toc_sticky: true
 tagline: "Polarization in 부동산"
-header:
-  overlay_image: https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1473&q=80
+image:
+  path: https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1473&q=80
 ---
 
 **"정책의 역설(Paradox of Policy)"**

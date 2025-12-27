@@ -7,10 +7,8 @@ tags: [Gemini, Automation]
 published: true
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://www.itworld.co.kr/wp-content/uploads/2025/05/3998655-0-17356600-1748583222-shutterstock_2473384115.jpg
-  overlay_filter: 0.5
-  teaser: https://blog-ko.superb-ai.com/content/images/size/w2000/2025/03/2002.i039.010_chatbot_messenger_ai_isometric_set-03.jpg
+image:
+  path: https://blog-ko.superb-ai.com/content/images/size/w2000/2025/03/2002.i039.010_chatbot_messenger_ai_isometric_set-03.jpg
 ---
 
 # 자율 AI 에이전트 시대, 개발자는 무엇을 준비해야 할까요?

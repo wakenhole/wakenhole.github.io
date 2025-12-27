@@ -10,11 +10,11 @@ tags:
 toc: true
 toc_sticky: true
 tagline: "Oracle"
-header:
+image:
   overlay_image: https://1330878074.rsc.cdn77.org/wp-content/uploads/2022/05/Oracle-Enhances-its-Comprehensive-Cloud-Security-Capabilities-with-Integrated-Threat-Management.jpg
   overlay_filter: 0.5
   caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://1330878074.rsc.cdn77.org/wp-content/uploads/2022/05/Oracle-Enhances-its-Comprehensive-Cloud-Security-Capabilities-with-Integrated-Threat-Management.jpg
+  path: https://1330878074.rsc.cdn77.org/wp-content/uploads/2022/05/Oracle-Enhances-its-Comprehensive-Cloud-Security-Capabilities-with-Integrated-Threat-Management.jpg
 ---
 
 {% include ad-inpost.html %}

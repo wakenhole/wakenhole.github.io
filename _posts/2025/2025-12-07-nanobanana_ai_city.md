@@ -5,10 +5,8 @@ categories: [Tech, AI]
 tags: [AI, 나노바나나, 스테이블디퓨전, 미니어처, 아이소메트릭, 프롬프트, GitHub Actions]
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://media.licdn.com/dms/image/v2/D5612AQH-nAN31jH3AQ/article-cover_image-shrink_720_1280/B56ZkAWqZlHAAI-/0/1756647567614?e=2147483647&v=beta&t=cDX8o6z84nlesAYTnVpUthBtPMgeS6zxzBqyPbTKb1g
-  overlay_filter: 0.5
-  teaser: https://image.fmkorea.com/files/attach/new5/20251204/9238675627_486616_0a7895c0f99bdffa28d66eb719c1f8a7.jpg
+image:
+  path: https://image.fmkorea.com/files/attach/new5/20251204/9238675627_486616_0a7895c0f99bdffa28d66eb719c1f8a7.jpg
 ---
 
 최근 커뮤니티에서 세상을 축소해놓은 듯한 아기자기하면서도 정교한 '도시 미니어처' 이미지가 큰 인기를 끌고 있습니다. 마치 거인이 되어 세상을 내려다보는 듯한 이 독특한 시각적 경험은 '나노바나나'(Google 이미지 생성 AI 모델)를 통해 누구나 쉽게 구현할 수 있습니다.

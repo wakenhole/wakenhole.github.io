@@ -14,11 +14,8 @@ toc: true
 toc_sticky: true
 toc_icon: "cog"
 tagline: ""
-header:
-  overlay_image: https://images.unsplash.com/photo-1752578753798-ff3a23e16498?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2970
-  overlay_filter: 0.5
-  caption: "[**Unsplash**](https://unsplash.com)"
-  teaser: https://images.unsplash.com/photo-1761311984594-3f38e73c83b5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3164
+image:
+  path: https://images.unsplash.com/photo-1761311984594-3f38e73c83b5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3164
 ---
 
 

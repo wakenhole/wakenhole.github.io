@@ -13,10 +13,8 @@ tags:
 published: true
 toc: true
 toc_sticky: true
-header:
-  overlay_image: https://img.alicdn.com/imgextra/i3/754398417/O1CN01DdGYMZ2C32eVqGk3d_!!754398417.jpg
-  overlay_filter: 0.5
-  teaser: https://img.alicdn.com/imgextra/i4/754398417/O1CN01gWdCES2C32eTPMCqI_!!754398417.jpg
+image:
+  path: https://img.alicdn.com/imgextra/i4/754398417/O1CN01gWdCES2C32eTPMCqI_!!754398417.jpg
 sitemap: 
     changefreq : monthly
     priority : 0.5
@@ -174,4 +172,3 @@ F87 Pro V2는 **플레이트 3종 + 스위치 5종** 구성 덕분에
   - F87 ProV2 黑雾透-流星轴-12000mAh
 
 이제 목적만 정하면 최적 조합을 선택할 수 있다!
-
