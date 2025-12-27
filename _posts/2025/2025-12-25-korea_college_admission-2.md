@@ -18,7 +18,7 @@ tagline: "폐지 위기에서 화려하게 부활한 2026년 외고와 국제고
 math: true
 mermaid: true
 image:
-  path: https://postfiles.pstatic.net/MjAyNTExMTlfMjAz/MDAxNzYzNTIxNTMzNDM0.57rnP5aZTZ4woi42yKjl7d7WvkgH7ZnYhZ7eqW-bcR0g.kNuXOcc9L_hyUS9WTdcOSa07kgdZrbkMi80J1q4DU7kg.PNG/제목을_입력해주세요._(1).png?type=w966
+  path: https://github.com/user-attachments/assets/bf9b9474-09f4-4ecc-b161-d96b659ab4cb
 ---
 
 "외고는 이제 끝물 아닌가요?"라고 묻던 것이 불과 1~2년 전입니다. 하지만 2026학년도 고교 입시 뚜껑을 열어보니 결과는 정반대였습니다. 외고와 국제고의 경쟁률이 5년 만에 최고치를 경신하며 화려하게 부활했기 때문입니다.

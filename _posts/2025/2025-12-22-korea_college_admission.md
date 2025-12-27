@@ -18,7 +18,7 @@ math: true
 mermaid: true
 tagline: "2026학년도 고교 입시 결과를 심층 분석하여 2028 대입 개편안과 의대 증원 이슈 속에서 학부모가 취해야 할 필승 로드맵을 제시합니다."
 image:
-  path: https://postfiles.pstatic.net/MjAyNTExMTlfMjAz/MDAxNzYzNTIxNTMzNDM0.57rnP5aZTZ4woi42yKjl7d7WvkgH7ZnYhZ7eqW-bcR0g.kNuXOcc9L_hyUS9WTdcOSa07kgdZrbkMi80J1q4DU7kg.PNG/제목을_입력해주세요._(1).png?type=w966
+  path: https://github.com/user-attachments/assets/bf9b9474-09f4-4ecc-b161-d96b659ab4cb
 ---
 
 대한민국 입시의 패러다임이 송두리째 바뀌고 있습니다. 과거 "특목고-자사고-일반고"로 이어지던 단순한 서열 공식은 이제 유효하지 않습니다. 
