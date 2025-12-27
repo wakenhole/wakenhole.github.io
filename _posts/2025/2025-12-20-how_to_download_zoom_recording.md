@@ -40,7 +40,7 @@ Zoom 녹화 영상은 종종 제한된 기간 동안만 제공되며, 나중에 
 
 #### 1단계 - youtube-dl 다운로드 (Step 1)
 
-먼저 `youtube-dl`을 다운로드해야 합니다. [youtube-dl 공식 사이트](https://youtube-dl.org/)의 다운로드 및 사용 지침을 따르세요.
+먼저 `youtube-dl`을 다운로드해야 합니다. [youtube-dl Github](https://github.com/ytdl-org/youtube-dl)의 다운로드 및 사용 지침을 따르세요.
 
 #### 2단계 - Zoom 녹화 페이지 방문 (Step 2)
 
