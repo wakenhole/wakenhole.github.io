@@ -77,4 +77,8 @@ on_Policies(https://go.microsoft.com/fwlink/?LinkID=135170)를 참조하십시�
 
 ```powershell
 # 가상환경 활성화 재시도
-.\Scripts\Activate
+.\Scripts\Activate.ps1
+```
+
+
+{% include ad-inpost.html %}
