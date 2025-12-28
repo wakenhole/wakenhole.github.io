@@ -11,7 +11,7 @@ tags:
   - 기업거버넌스
 toc: true
 toc_sticky: true
-tagline: "DevEnvironment"
+tagline: "Coupang History and Analysis"
 image:
   path: https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
 ---
