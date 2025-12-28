@@ -2,7 +2,7 @@
 title: "[칼럼] '야생'의 중국 vs '온실'의 한국: 규제의 역설이 만든 격차"
 date: 2025-12-28 10:00:00 +0900
 categories:
-  - Insight
+  - Investment
   - Economy
 tags:
   - 한국경제
