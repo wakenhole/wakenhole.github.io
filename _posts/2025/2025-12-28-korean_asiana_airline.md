@@ -17,8 +17,6 @@ image:
   path: https://i.ytimg.com/vi/975Vr2XjqdM/maxresdefault.jpg
 ---
 
-![Incheon Airport](https://i.ytimg.com/vi/975Vr2XjqdM/maxresdefault.jpg)
-
 [cite_start]2024년 12월 12일, 대한항공이 아시아나항공의 지분 63.88%를 취득하며 법적인 인수 절차를 마무리했습니다. [cite: 12] [cite_start]이는 지난 4년간 전 세계 14개국 경쟁 당국의 혹독한 심사를 거쳐 탄생한 대한민국 역사상 최초의 '메가 캐리어(Mega Carrier)' 탄생을 알리는 신호탄이었습니다. [cite: 8, 12]
 
 {% include ad-inpost.html %}
@@ -31,7 +29,7 @@ image:
 
 ### 1. 마일리지 통합 전쟁: 1대 1인가, 차등 적용인가?
 
-![Credit Cards and Mileage](https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80)
+![Credit Cards and Mileage](https://bankmeister.com/assets/images/card/828.png)
 
 소비자에게 있어 이번 합병의 최대 화두는 단연 '마일리지'입니다. 아시아나항공 마일리지는 적립이 상대적으로 용이하여 시장 가치가 대한항공 마일리지보다 낮게 평가되어 왔습니다. (시장 추정가: 대한항공 15~16원 vs 아시아나 11~12원) [cite_start][cite: 48, 49] 이 가치의 비대칭성이 통합 과정에서 심각한 갈등을 유발하고 있습니다.
 

@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 tagline: "Coupang History and Analysis"
 image:
-  path: https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
+  path: https://www.kedglobal.com/data/ked/image/2025/06/10/ked202506100004.700x.0.jpg
 ---
 
 ![Coupang Logistics Center](https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80)
