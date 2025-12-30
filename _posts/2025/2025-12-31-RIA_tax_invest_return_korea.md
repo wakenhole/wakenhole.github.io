@@ -1,6 +1,6 @@
 ---
-title: "2025년 세테크의 핵심, '서학개미의 귀환': RIA 제도를 활용한 절세와 자산 배분 전략"
-date: 2025-01-01
+title: "[절세팁] '서학개미의 귀환': RIA 제도를 활용한 절세와 자산 배분 전략"
+date: 2025-12-31
 categories:
   - Investment
   - Investing Basics
