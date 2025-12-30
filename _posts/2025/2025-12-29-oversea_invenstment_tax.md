@@ -17,7 +17,7 @@ image:
   path: https://wdenhfbqcovxgmrpasoz.supabase.co/storage/v1/render/image/public/blog/posts/0.10541222465775713-1747277148037.png
 ---
 
-![]({{ site.baseurl }}/_image/251229-tax.png)
+![](/_image/251229-tax.png)
 
 ## 서론: 수익률의 완성은 '세금'에서 결정된다
 
