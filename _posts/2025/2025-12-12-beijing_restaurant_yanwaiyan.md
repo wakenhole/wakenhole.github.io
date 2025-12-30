@@ -87,10 +87,11 @@ image:
 *▲ 가까이서 본 출연진의 의상 디테일과 장신구의 퀄리티가 놀랍습니다.*
 
 주변을 둘러보면 많은 손님들이 식당에서 제공한 의상을 입고 식사를 즐기고 있습니다. 현대적인 복장의 손님과 고전 의상의 직원들이 섞여 있는 모습이 아닌, 모두가 그 시대의 사람이 된 듯한 풍경이 옌와이옌만의 매력입니다.
+
 <!-- 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EBvHJiscnAE?si=LT9gvvo04tpdpefi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
-[Video](https://youtu.be/EBvHJiscnAE?si=Okj0uc0HVglkKgwf)
+[Video](https://youtu.be/EBvHJiscnAE?si=Okj0uc0HVglkKgwf){:.centered}
 
 {% include ad-inpost.html %}
 
