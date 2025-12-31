@@ -81,7 +81,7 @@ Gemini Code Assist의 에이전트 모드는 개발자를 코드를 '짜는' 사
 
 ---
 **References:**
-1. [Agent mode overview | Gemini Code Assist (Google for Developers)](https://developers.google.com/gemini-code-assist/docs/agent-mode)
+1. [Agent mode overview: Gemini Code Assist (Google for Developers)](https://developers.google.com/gemini-code-assist/docs/agent-mode)
 2. [Gemini Code Assist's June 2025 updates (Google Blog)](https://blog.google/technology/developers/gemini-code-assist-updates-july-2025/)
 3. [Gemini Code Assist release notes](https://developers.google.com/gemini-code-assist/resources/release-notes)
 4. [Use the Gemini Code Assist agent mode (Google Cloud Docs)](https://docs.cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer)
