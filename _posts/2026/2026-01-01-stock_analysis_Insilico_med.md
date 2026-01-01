@@ -18,7 +18,7 @@ tagline: "인실리코 메디슨 주식 분석"
 math: true
 mermaid: true
 image:
-  path: /assets/img/posts/2026/260101-med-teaser2.png
+  path: /assets/img/posts/2026/260101-med-teaser.png
 ---
 
 
