@@ -3,7 +3,7 @@ title: "구글 Gemini API 완벽 분석: 무료/유료 모델 비교 및 마이�
 date: 2025-12-31 09:00:00 +0900
 categories:
   - Tech
-  - AI & LLM
+  - AI
 tags:
   - Gemini
   - Google Cloud
