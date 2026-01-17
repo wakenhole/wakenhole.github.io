@@ -11,7 +11,6 @@ tags:
   - 2026년정책
 toc: true
 toc_sticky: true
-author: "Insight Writer"
 image:
   path: https://i.ytimg.com/vi/kFCdEA9MKZ8/maxresdefault.jpg
 ---

@@ -12,7 +12,6 @@ tags:
   - PP카드
 toc: true
 toc_sticky: true
-author: "Travel Hacker"
 image:
   path: https://api6.card-gorilla.com:8080/storage/post/2065/contents/20717/news_313_1.jpg
 ---

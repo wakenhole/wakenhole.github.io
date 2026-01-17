@@ -13,7 +13,6 @@ tags:
   - 직장인재테크
 toc: true
 toc_sticky: true
-author: "Tax Expert"
 image:
   path: https://d1c5n4ri2guedi.cloudfront.net/post/3399/post_top_img/45480/card_1635_0.jpg
 ---
