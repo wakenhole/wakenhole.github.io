@@ -13,11 +13,13 @@ toc_sticky: true
 published: true
 tagline: "VPN"
 image:
-  path: https://images.unsplash.com/photo-1691435828932-911a7801adfb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80
+  path: https://3x-ui.com/wp-content/uploads/2025/09/65422981-1024x1024.jpg
 ---
 
+무료로 사용할 수 있는 강력한 VPN 서버 관리 패널, **3x-ui**를 활용하여 초보자도 10분 만에 고성능 VPN 서버를 구축하는 방법을 소개합니다.
 
-## 전체 글 목록
+
+### 전체 글 목록
 1. [VPN용 VM 서버 구축](https://wakenhole.github.io/2023/vpn_server_conf_1/)
 2. [VPN 서버 보안 설정](https://wakenhole.github.io/2023/vpn_server_conf_2/)
 3. [X-UI 설치 및 설정](https://wakenhole.github.io/2023/vpn_server_conf_3/)
@@ -26,7 +28,7 @@ image:
 
 {% include ad-inpost.html %}
 
-## Reference
+### Reference
 1. [3X-UI github](https://github.com/MHSanaei/3x-ui?tab=readme-ov-file)
 2. [3X-UI wiki](https://github.com/MHSanaei/3x-ui/wiki)
 
