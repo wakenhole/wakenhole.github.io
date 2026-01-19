@@ -1,6 +1,7 @@
 ---
 title: "[NEW] 간단한 개인용 VPN 서버 구축의 모든것 3: 3x-ui로 구축하는 Xray 패널 완벽 가이드
 categories: [Tech, Networking & VPN]
+date: 2026-01-18 16:00:00 +0900
 tags:
   - 3x-ui
   - VPN구축
