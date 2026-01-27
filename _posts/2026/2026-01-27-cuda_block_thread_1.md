@@ -3,7 +3,7 @@ title: "[CUDA Study #3] 실전 예제로 이해하는 Block, Thread, Warp의 계
 date: 2026-01-27 11:00:00 +0900
 categories:
   - Tech
-  - AI
+  - CUDA
 tags:
   - CUDA
   - GPU Architecture

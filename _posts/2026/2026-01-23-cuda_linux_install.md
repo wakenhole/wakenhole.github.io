@@ -1,7 +1,7 @@
 ---
 title: "[CUDA Study #1] 우분투(Ubuntu) CUDA 개발 환경 구축: 드라이버부터 Hello World까지"
 date: 2026-01-23 10:30:00 +0900
-categories: [Tech, AI]
+categories: [Tech, CUDA]
 tags:
   - CUDA
   - Ubuntu

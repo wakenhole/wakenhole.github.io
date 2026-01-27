@@ -3,7 +3,7 @@ title: "[CUDA Study #2] CUDA의 핵심: Thread, Block, Grid 그리고 Warp 완�
 date: 2026-01-27 09:00:00 +0900
 categories: 
   - Tech
-  - AI
+  - CUDA
 tags:
   - CUDA
   - GPU Architecture
