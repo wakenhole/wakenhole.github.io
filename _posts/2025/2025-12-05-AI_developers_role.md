@@ -19,7 +19,7 @@ sitemap:
     priority : 0.5
 ---
 
-# AI, 코드 작성자를 넘어: 2025년 개발자 워크플로우 혁신
+## AI, 코드 작성자를 넘어: 2025년 개발자 워크플로우 혁신
 
 
 {% include ad-inpost.html %}

@@ -12,7 +12,7 @@ image:
   path: https://images.unsplash.com/photo-1679269241012-f7640862d242?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3132
 ---
 
-# 🪄 Windows 11 우회 설치 완전 가이드  
+## 🪄 Windows 11 우회 설치 완전 가이드  
 _AveYo **MediaCreationTool.bat** 사용법_
 
 > ⚠️ **요약:** TPM, Secure Boot, CPU 제한으로 Windows 11 설치가 막힐 때  

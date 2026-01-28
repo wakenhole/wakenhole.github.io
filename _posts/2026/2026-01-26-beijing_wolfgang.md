@@ -12,14 +12,12 @@ image:
   path: https://github.com/user-attachments/assets/0f5b4687-5ad9-4e53-aae3-ff4aa25805a4
 ---
 
-# [미식 리포트] 베이징에서 경험하는 뉴욕의 정점, 울프강 스테이크하우스 완벽 가이드
+## 1. 서론: 베이징의 심장에서 마주한 28일의 미학
+베이징의 역동적인 도심 속, 정통 뉴욕 스테이크의 자부심을 지켜가는 '울프강 스테이크하우스(Wolfgang's Steakhouse)'를 방문했습니다. 이곳은 단순한 레스토랑을 넘어, USDA 프라임 등급의 원육을 자체 숙성실(Own Aging Room)에서 드라이 에이징하여 최상의 풍미를 끌어내는 미식의 집약체입니다.
 
 {% include ad-inpost.html %}
 
 ![Wolfgang's Steakhouse Interior](https://github.com/user-attachments/assets/0f5b4687-5ad9-4e53-aae3-ff4aa25805a4)
-
-## 1. 서론: 베이징의 심장에서 마주한 28일의 미학
-베이징의 역동적인 도심 속, 정통 뉴욕 스테이크의 자부심을 지켜가는 '울프강 스테이크하우스(Wolfgang's Steakhouse)'를 방문했습니다. 이곳은 단순한 레스토랑을 넘어, USDA 프라임 등급의 원육을 자체 숙성실(Own Aging Room)에서 드라이 에이징하여 최상의 풍미를 끌어내는 미식의 집약체입니다.
 
 ![Elegant Dining Room](https://github.com/user-attachments/assets/e857d174-cd8a-4126-a77e-2be1eb0c6140)
 

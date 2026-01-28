@@ -21,8 +21,6 @@ image:
 
 {% include ad-inpost.html %}
 
-# 📚 ChatGPT로 단어장 사진을 데이터베이스화하고, 퀴즈 프로그램까지 만드는 방법
-
 ## 🧠 ChatGPT가 공부의 판을 바꾸다
 
 요즘 AI를 공부에 적극적으로 활용하는 사람들이 많죠.  

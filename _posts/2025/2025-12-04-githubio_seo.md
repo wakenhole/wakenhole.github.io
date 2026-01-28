@@ -54,7 +54,7 @@ Jekyll 블로그의 심장부인 _config.yml 파일 설정은 SEO에 지대한 �
 _config.yml 파일을 열어 url 항목이 자신의 실제 블로그 주소와 정확히 일치하는지 확인하세요.
 
 ```
-# _config.yml
+## _config.yml
 url: "[https://wakenhole.github.io](https://wakenhole.github.io)" # 마지막에 슬래시(/)를 넣지 않는 것이 일반적입니다.
 baseurl: "" # 서브 경로가 없다면 비워둡니다.
 title: "블로그 제목"
