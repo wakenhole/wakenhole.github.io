@@ -1,5 +1,5 @@
 ---
-title: "[CUDA Study #3] 실전 예제로 이해하는 Block, Thread, Warp의 계층 구조"
+title: "[CUDA Study #3] CUDA 동작 구조 기본: Block, Thread, Warp의 계층 구조"
 date: 2026-01-27 11:00:00 +0900
 categories:
   - Tech
@@ -19,8 +19,6 @@ image:
 ---
 
 지난 포스팅에서 우리는 CUDA의 논리적 구조와 하드웨어 구조를 이론적으로 살펴보았습니다. 하지만 "하나의 블록이 하나의 SM에 할당된다"거나 "스레드들이 32개씩 묶여 Warp를 이룬다"는 개념은 코드로 직접 확인하기 전까지는 다소 추상적으로 느껴질 수 있습니다.
-
-![CUDA Programming Concepts](https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80)
 
 오늘은 실제 CUDA 커널 코드를 통해 **Block ID**, **Thread ID**, 그리고 계산된 **Warp ID**가 어떻게 상호작용하는지 증명해 보겠습니다.
 

@@ -1,5 +1,5 @@
 ---
-title: "[CUDA Study #4] 벡터 덧셈(Vector Addition)으로 배우는 CUDA 메모리 워크플로우와 글로벌 인덱싱"
+title: "[CUDA Study #4] 벡터 덧셈(Vector Addition): CUDA 메모리 워크플로우와 글로벌 인덱싱"
 date: 2026-01-28 06:00:00 +0900
 categories:
   - Tech
@@ -14,8 +14,9 @@ toc_sticky: true
 tagline: "Scalable Indexing in CUDA"
 math: true
 image:
-  path: https://images.unsplash.com/photo-1551288560-1934bc03038a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
+  path: https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
 ---
+
 
 이번 포스팅에서는 CUDA 프로그래밍의 기본 워크플로우를 벡터 덧셈(Vector Addition) 예제를 통해 살펴봅니다. 특히, 단일 블록과 멀티 블록 환경에서의 인덱싱 방식을 비교하며, 대규모 데이터 처리를 위한 글로벌 인덱스 계산법을 익히겠습니다.
 
