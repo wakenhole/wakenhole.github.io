@@ -35,15 +35,15 @@ CUDA 프로그래밍을 시작할 때 가장 헷갈리는 부분이 바로 **소
 
 ```mermaid
 graph TD
-    Grid[Grid : The Entire Problem] --> Block0[Block (0,0)]
-    Grid --> Block1[Block (1,0)]
-    Grid --> BlockN[Block (N,M)]
+    Grid["Grid : The Entire Problem"] --> Block0["Block (0,0)"]
+    Grid --> Block1["Block (1,0)"]
+    Grid --> BlockN["Block (N,M)"]
     
     subgraph "Block (Shared Memory)"
-    Block0 --> T0[Thread 0]
-    Block0 --> T1[Thread 1]
-    Block0 --> T2[Thread 2]
-    Block0 --> T32[Thread 31...]
+    Block0 --> T0["Thread 0"]
+    Block0 --> T1["Thread 1"]
+    Block0 --> T2["Thread 2"]
+    Block0 --> T32["Thread 31..."]
     end
 ```
 
