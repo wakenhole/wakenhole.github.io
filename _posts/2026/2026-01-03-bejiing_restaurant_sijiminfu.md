@@ -1,10 +1,9 @@
 ---
-title: "[맛집]]사계민복(四季民福) 베이징카오야 예약 및 웨이팅 완벽 가이드"
+title: "[맛집] 사계민복(四季民福) 베이징카오야 예약 및 웨이팅 완벽 가이드"
 date: 2026-01-02
 categories:
   - Travel
-  - China
-  - Gourmet
+  - Food & Restaurants
 tags:
   - 베이징맛집
   - 사계민복
