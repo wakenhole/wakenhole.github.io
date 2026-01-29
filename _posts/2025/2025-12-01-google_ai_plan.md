@@ -16,7 +16,6 @@ image:
   path: https://economymiddleeast.com/cdn-cgi/imagedelivery/Xfg_b7GtigYi5mxeAzkt9w/economymiddleeast.com/2025/02/Gemini.jpg/w=1200
 ---
 
-
 ## 한국 vs 튀르키예: Google AI 구독 플랜 및 가격 비교 분석
 
 Google Gemini 공식 구독 페이지 및 사용자 피드백 정보를 반영하여, 한국과 튀르키예 시장의 Google One 일반 요금제와 AI 구독 플랜의 가격 및 혜택을 비교 분석했습니다.
@@ -77,10 +76,10 @@ Google Gemini 공식 구독 페이지 및 사용자 피드백 정보를 반영�
 
 가족도 추가 5명까지 공유가 가능하기 때문에 매우 유용하다고 볼 수 있습니다. 
 
-즉, 아래와 같이 Google Pay Profile에 터키 국가로 추가만 해주면, VPN 없이도 Google AI 기능 요금제를 구독할 수 있습니다.
-
-
 {% include ad-inpost.html %}
+
+즉, 아래와 같이 **Google Pay Profile**에 터키 국가로 추가만 해주면, VPN 없이도 Google AI 기능 요금제를 구독할 수 있습니다.
+
 
 ![Image](https://github.com/user-attachments/assets/dbe5d3d2-2730-4e30-872e-0c9669094ec4)
 
@@ -105,3 +104,7 @@ AI Plus가 가능한 계정을 가지고 있다면, AI Plus가 최고의 선택�
 따라서 Google One Premium 2TB 플랜을 구독하는 것이 가장 합리적인 선택이 될 수 있습니다.
 
 {% include ad-inpost.html %}
+
+## 연관글 목록
+1. [Google AI 요금 저렴하게 사용하는 방법 (VPN 불필요)](https://wakenhole.github.io/2025/google_ai_plan/)
+2. [단돈 7천원: 구글 제미나이(Gemini) 요금제 및 우회 결제 완벅 정리](https://wakenhole.github.io/2026/google_ai_plan_2026/)
