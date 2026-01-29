@@ -13,9 +13,7 @@ tags:
   - 북경여행
 toc: true
 toc_sticky: true
-tagline: "미니맥스 주식 분석"
 math: true
-mermaid: true
 image:
   path: https://www.architectureartdesigns.com/wp-content/uploads/2024/03/Siji-Minfu-Essence-Store-A-Communal-Experience-of-Taste-City-and-Time-4.jpg
 ---
