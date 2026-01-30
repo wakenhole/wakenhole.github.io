@@ -1,6 +1,6 @@
 ---
 title: "[Food] 두바이 쫀득 쿠키(Dubai Chewy Cookie) 정밀 레시피"
-date: 2024-05-22 14:00:00 +0900
+date: 2026-01-30 14:00:00 +0900
 categories:
   - Education
   - Recipe 
