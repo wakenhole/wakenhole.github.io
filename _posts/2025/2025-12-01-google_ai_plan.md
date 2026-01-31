@@ -1,6 +1,6 @@
 ---
 title: "Google AI 요금 저렴하게 사용하는 방법 (VPN 불필요)"
-categories: [Tech, AI]
+categories: [Tech, Tips]
 tags:
   - Google AI
   - Gemini
