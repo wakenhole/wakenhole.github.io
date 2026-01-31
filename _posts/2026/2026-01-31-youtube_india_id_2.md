@@ -39,7 +39,7 @@ image:
 이 방법의 핵심은 결제 주체를 구글에서 애플로 옮기는 것입니다.
 
 **[필수 준비물]**
-* **Google 인도 ID**: [2026년 유튜브 프리미엄 인도 우회 1탄: 구글 계정 생성 및 전화번호 인증 건너뛰는 법](https://wakehole.github.io/2006/youtube_india_id_1) 을 참고해서 Google 인도 계정을 만듭니다. 
+* **Google 인도 ID**: [2026년 유튜브 프리미엄 인도 우회 1탄: 구글 계정 생성 및 전화번호 인증 건너뛰는 법](https://wakenhole.github.io/2026/youtube_india_id_1/) 을 참고해서 Google 인도 계정을 만듭니다. 
 
 ---
 
