@@ -1,5 +1,5 @@
 ---
-title: "2026년 자율형 AI 에이전트의 경제적 혁명: GLM-4.7과 OpenClaw의 결합 전략"
+title: "OpenClaw (구 Clawdbot)에 최적화된 가성비 LLM: Zhipu AI GLM-4.7 모델 분석 및 연동 가이드"
 date: 2026-02-03 14:40:00 +0900
 categories:
   - Tech
@@ -12,7 +12,7 @@ tags:
   - 시스템 자동화
 tagline: "최고급 추론 성능을 1/200 가격으로 누리는 에이전트 구축 가이드"
 image:
-  path: https://www.youngurbanproject.com/wp-content/uploads/2026/01/Moltbot-Setup-Guide-ClawdBot-Installation.jpg
+  path: https://www.cnet.com/a/img/resize/23206224e5c665a8630c1778319bd0d272a242a8/hub/2026/01/30/a0605f4b-533d-410e-9bbf-49113e923a1b/image.png?auto=webp&fit=crop&height=675&width=1200
 ---
 
 ## 1. 서론: 지능형 에이전트의 대중화와 비용의 상관관계
