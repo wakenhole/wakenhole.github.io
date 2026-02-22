@@ -50,15 +50,15 @@ Seedance는 독립적인 소프트웨어라기보다는 바이트댄스의 통�
 
 계정 준비가 완료되었다면, 이제 본격적으로 Seedance의 성능을 시험해 볼 차례입니다. 
 
-![](/assets/img/posts/2026/260222-seedance.png)
-
 1.  **공식 사이트 접속**: 지몽의 공식 웹사이트([https://jimeng.jianying.com/ai-tool/home](https://jimeng.jianying.com/ai-tool/home))에 접속합니다. 크롬(Chrome)이나 엣지(Edge) 브라우저의 자동 번역 기능을 활용하면 중국어 인터페이스를 원활하게 탐색할 수 있습니다.
 2.  **로그인 및 연동**: 왼쪽 하단에 **登录**라고 표시된 로그인 버튼을 클릭한 후, 앞서 Douyin앱을 열어서 생성한 Douyin 계정의 QR 코드 스캔 방식을 통해 접속합니다. (扫一扫 버튼)
 3.  **비디오 생성 모드 선택**: 메인 화면에서 **视频生成**으로 표시된 비디오 생성 메뉴를 선택합니다. 이곳에서 Seedance 2.0 모델이 적용된 최신 엔진을 선택할 수 있는 옵션이 제공됩니다.
 4.  **프롬프트 입력 및 설정**: 구현하고자 하는 장면을 상세히 기술합니다. 움직임의 강도, 카메라 워킹, 해상도(최대 4K 지원 가능) 등을 설정한 후 생성 버튼을 누릅니다.
 5.  **결과물 확인 및 편집**: 생성된 영상은 지몽 내부의 편집 도구를 통해 즉시 수정하거나 고화질로 다운로드할 수 있습니다.
 
-{% include ad-inpost.html %}
+아래는 실제로 Seedance로 영상을 생성한 결과입니다. 
+
+![](/assets/img/posts/2026/260222-seedance.png)
 
 ### 5. Seedance 성능을 극대화하는 카테고리별 프롬프트 예제
 
@@ -79,6 +79,8 @@ Seedance 모델은 구체적인 형용사와 광학적 특성을 설명할 때 �
 #### 5-4. 판타지 아트 및 풍경 (Fantasy & Ethereal)
 > **설명:** 비현실적인 공간에서의 물리 법칙과 몽환적인 분위기를 조성합니다.
 * **Prompt:** *A floating island with cascading waterfalls falling into the endless clouds. Giant glowing butterflies flying around ancient ruins. Ethereal atmosphere, vibrant colors, dreamlike lighting, masterpiece, wide-angle lens.*
+
+실제로 생성해서 만든 영상입니다. 럭셔리 제품 광고인데 짧지만 매우 훌륭하게 만들어줍니다.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VH8DixDiIy4?si=Xw4S4dwH1YVWHGC-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
