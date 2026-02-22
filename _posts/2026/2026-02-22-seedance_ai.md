@@ -80,7 +80,7 @@ Seedance 모델은 구체적인 형용사와 광학적 특성을 설명할 때 �
 > **설명:** 비현실적인 공간에서의 물리 법칙과 몽환적인 분위기를 조성합니다.
 * **Prompt:** *A floating island with cascading waterfalls falling into the endless clouds. Giant glowing butterflies flying around ancient ruins. Ethereal atmosphere, vibrant colors, dreamlike lighting, masterpiece, wide-angle lens.*
 
-[text](https://youtu.be/VH8DixDiIy4)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VH8DixDiIy4?si=Xw4S4dwH1YVWHGC-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### 6. 결론: Seedance가 제시하는 콘텐츠 제작의 미래
 
