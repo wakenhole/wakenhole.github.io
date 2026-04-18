@@ -5,7 +5,8 @@
       "Bash(xargs '-I{}' bash -c 'count=$\\(grep -c \"ad-inpost\" \"{}\"\\); if [ \"$count\" -gt 2 ]; then echo \"$count {}\"; fi')",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "WebSearch"
     ]
   }
 }
