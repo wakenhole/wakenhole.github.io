@@ -12,7 +12,7 @@ tags:
   - 절세
   - KODEX
   - TIGER
-published: false
+published: true
 toc: true
 toc_sticky: true
 tagline: "방치된 IRP 계좌, 이제는 움직일 때"
