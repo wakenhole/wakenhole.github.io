@@ -27,8 +27,6 @@ image:
 
 이에 대한 대안으로 등장한 **Open Notebook**은 NotebookLM의 핵심 기능을 오픈소스로 구현하여 로컬 호스팅이 가능한 환경을 제공한다. 본 포스트에서는 두 솔루션의 아키텍처 차이, 기능적 특징, 그리고 배포 방식에 따른 장단점을 엔지니어 관점에서 비교 분석한다.
 
-{% include ad-inpost.html %}
-
 ## 기술 사양 비교 (Technical Specs)
 
 Google의 관리형 서비스(SaaS)와 사용자가 직접 제어하는 오픈소스 솔루션 간의 주요 차이점은 다음과 같다.
@@ -61,10 +59,7 @@ Google 서비스는 Gemini 모델에 종속적이다. Open Notebook은 LLM 레�
 ### 3. TTS 파이프라인의 제어권
 Audio Overview(팟캐스트) 생성 시, Open Notebook은 화자(Speaker)의 수(최대 4인)와 각 화자의 페르소나를 프롬프트 레벨에서 정의할 수 있다 [2]. 이는 단순 요약을 넘어 특정 도메인(예: 기술 인터뷰, 뉴스 브리핑)에 맞는 톤앤매너 설정이 가능함을 의미한다.
 
-{% include ad-inpost.html %}
-
 ## 도입 시 고려사항 및 한계 (Trade-offs)
-
 
 오픈소스 솔루션 도입 시 엔지니어링 비용과 유지보수 이슈를 고려해야 한다.
 
@@ -74,7 +69,6 @@ Audio Overview(팟캐스트) 생성 시, Open Notebook은 화자(Speaker)의 수
 
 ---
 
-{% include ad-inpost.html %}
 ## 결론
 
 **Google NotebookLM**은 별도의 설치 과정 없이 즉시 사용 가능한 문서 분석 도구가 필요한 일반 사용자나, 비민감성 데이터를 다루는 경우에 적합하다 [11].

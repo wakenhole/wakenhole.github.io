@@ -62,8 +62,6 @@ myKernel<<< 2, 128 >>>(devPtr);
 ```
 위 코드는 *"128개의 스레드로 이루어진 블록을 2개 생성하라 (총 256개 스레드)"* 라는 의미입니다.
 
-{% include ad-inpost.html %}
-
 ![Chip Architecture](https://images.unsplash.com/photo-1555664424-778a1e5e1b48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80){:.centered width="500px"}
 
 ### 2. 물리적 하드웨어 구조 (Hardware View)
@@ -90,8 +88,6 @@ myKernel<<< 2, 128 >>>(devPtr);
 | **전체 작업** | Grid (그리드) | Device (GPU) | 여러 SM에 분산되어 실행 |
 
 > **Key Insight:** 하나의 Block은 쪼개져서 여러 SM에 들어갈 수 **없습니다**. 반드시 하나의 SM에 통째로 할당됩니다. 반면, 하나의 SM은 자원이 허용하는 한 여러 개의 Block을 동시에 실행할 수 있습니다.
-
-{% include ad-inpost.html %}
 
 ### 4. Warp: 논리와 물리를 잇는 다리
 

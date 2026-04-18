@@ -39,8 +39,6 @@ lspci | grep -i nvidia
 ```
 **[Result]** Tesla P40 (GP102GL) 카드가 정상적으로 인식되고 있습니다. 본 포스팅에서는 P40 8장이 꽂힌 서버를 기준으로 진행합니다.
 
-{% include ad-inpost.html %}
-
 ### 2. NVIDIA 드라이버 설치
 
 우분투에서는 `ubuntu-drivers-common` 패키지를 통해 시스템에 적합한 드라이버를 추천받을 수 있습니다.
@@ -64,8 +62,6 @@ nvidia-smi
 `nvidia-smi` 명령어가 정상적으로 실행되고, GPU 목록과 드라이버 버전(550.xx 이상)이 표기된다면 하드웨어 레벨의 준비는 끝난 것입니다.
 
 > **Tip:** `nvidia-smi` 화면 우측 상단의 `CUDA Version: 13.0` 표기는 드라이버가 지원하는 최대 CUDA 버전을 의미하며, 실제 설치된 Toolkit 버전과는 다를 수 있습니다.
-
-{% include ad-inpost.html %}
 
 ### 3. CUDA Toolkit 설치
 
@@ -106,8 +102,6 @@ export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
 nvcc --version
 ```
 위 명령 입력 시 `Cuda compilation tools, release 13.1` 메시지가 출력되면 성공입니다.
-
-{% include ad-inpost.html %}
 
 ### 5. Hello World 실전 테스트
 

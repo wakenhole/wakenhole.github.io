@@ -26,17 +26,11 @@ image:
 
 ### 1. 왜 Shared Memory인가? (Global vs Shared)
 
-
-
 GPU의 글로벌 메모리는 용량이 크지만 지연 시간(Latency)이 매우 깁니다. 반면, SM(Streaming Multiprocessor) 내부에 위치한 **Shared Memory**는 L1 캐시 수준의 속도를 자랑합니다.
 
 행렬 곱셈에서 $C_{row, col}$ 하나의 원소를 계산하기 위해 $A$의 한 행과 $B$의 한 열을 읽어야 하는데, 이때 동일한 데이터가 여러 스레드에 의해 중복해서 읽힙니다. 이 중복된 데이터를 한 번만 글로벌 메모리에서 가져와 Shared Memory에 올려두고 공유하면, 비싼 메모리 접근 비용을 획기적으로 줄일 수 있습니다.
 
-{% include ad-inpost.html %}
-
 ### 2. Tiling 기법의 핵심 원리
-
-
 
 전체 행렬을 한꺼번에 처리하는 대신, **Tile(타일)**이라고 부르는 작은 블록 단위로 쪼개서 처리합니다.
 
@@ -46,8 +40,6 @@ GPU의 글로벌 메모리는 용량이 크지만 지연 시간(Latency)이 매�
 4.  다음 Tile 영역으로 넘어가며 이 과정을 반복하여 최종 결과값을 누적합니다.
 
 이를 통해 글로벌 메모리 접근 횟수를 Tile 크기 비율만큼 감소시킬 수 있습니다.
-
-{% include ad-inpost.html %}
 
 ### 3. 전체 소스 코드 (Full Implementation)
 
@@ -159,8 +151,6 @@ int main() {
     return 0;
 }
 ```
-
-{% include ad-inpost.html %}
 
 ### 4. 기술 포인트 분석
 

@@ -15,7 +15,6 @@ image:
   path: https://images.unsplash.com/photo-1691435828932-911a7801adfb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80
 ---
 
-
 ## 전체 글 목록
 1. [VPN용 VM 서버 구축](https://wakenhole.github.io/2023/vpn_server_conf_1/)
 2. [VPN 서버 보안 설정](https://wakenhole.github.io/2023/vpn_server_conf_2/)
@@ -41,9 +40,7 @@ Xray 예전 버전은 Google에서 국가를 제대로 인지하지 못해서, �
 1. [VPN용 VM 서버 구축](https://wakenhole.github.io/vpn/vpn_server_conf_1/)
 2. [VPN 서버 보안 설정](https://wakenhole.github.io/vpn/vpn_server_conf_2/)
 
-
 {% include ad-inpost.html %}
-
 
 ### Marzban 설치
 
@@ -56,7 +53,6 @@ sudo bash -c "$(curl -sL https://github.com/Gozargah/Marzban-scripts/raw/master/
 > Marzban 데이터는 /var/lib/marzban 디렉토리에 저장됩니다.
 > 
 > Marzban 애플리케이션 파일(docker-compose.yml 및 .env)은 /opt/marzban 디렉토리에 저장됩니다.
-
 
 ### Marzhan 기본 설정
 
@@ -74,8 +70,6 @@ marzban cli admin create --sudo
 ```
 marzban --help
 ```
-
-{% include ad-inpost.html %}
 
 ### SSL 설정
 

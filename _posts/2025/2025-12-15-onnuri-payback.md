@@ -51,8 +51,6 @@ image:
 
 ![Savings and Growth](https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80){: width="600px"}
 
-{% include ad-inpost.html %}
-
 ### 3. 놓치면 후회하는 '절세'의 마법: 소득공제 40%
 
 많은 분들이 페이백 금액에만 집중하느라 놓치는 부분이 바로 **'소득공제'**입니다. 국세청은 전통시장 및 골목상권 활성화를 위해 온누리상품권 사용분에 대해 일반 신용카드(15%)보다 훨씬 높은 **40%의 소득공제율**을 적용하고 있습니다.
@@ -70,8 +68,6 @@ image:
 * **학원 및 병원:** 일부 상점가 내에 위치한 학원이나 병원, 약국에서도 결제가 가능한 경우가 많으므로, '지맵(Z-MAP)' 앱을 통해 가맹점을 미리 확인하는 것이 좋습니다.
 
 ![Traditional Market](https://images.unsplash.com/photo-1533900298318-6b8da08a523e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80){: width="600px"}
-
-{% include ad-inpost.html %}
 
 ### 5. 전문가의 총평: 소비의 질을 높이는 선택
 

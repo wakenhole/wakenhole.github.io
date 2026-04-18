@@ -44,8 +44,6 @@ cd gdrive-download-video
 pip install -r requirements.txt
 ```
 
-{% include ad-inpost.html %}
-
 ### 3. How to Use
 
 Depending on whether you want a single file or a whole course folder, use the appropriate command below.
@@ -83,8 +81,6 @@ python gdrive_video_download.py 1HFkHQYetpcNnyQoxxxxxX1I1TAcF6Q0us -v
 * **Recursively Scans:** It checks sub-folders and downloads videos from there too.
 * **Structure Preserved:** It keeps your local folders organized exactly like the Drive.
 * **-v option:** Shows verbose logs so you can see the progress.
-
-{% include ad-inpost.html %}
 
 ### 4. Why Use This Tool?
 

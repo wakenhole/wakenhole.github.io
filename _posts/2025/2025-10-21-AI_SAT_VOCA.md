@@ -18,7 +18,6 @@ image:
   path: https://images.unsplash.com/photo-1761311984594-3f38e73c83b5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3164
 ---
 
-
 {% include ad-inpost.html %}
 
 ## 🧠 ChatGPT가 공부의 판을 바꾸다
@@ -59,8 +58,6 @@ ChatGPT가 **자동으로 단어·뜻·예문** 등을 인식해서 표 형태�
 
 ---
 
-{% include ad-inpost.html %}
-
 ## 🧾 2단계: 데이터베이스로 변환하기
 
 ChatGPT가 만들어준 표는 바로 **데이터베이스(DB)** 로 사용할 수 있습니다.  
@@ -95,7 +92,6 @@ Vibe 코딩을 통해서 이런 간단한 프로그램은 누구나 만들 수 �
 - 문제 출제 순서를 랜덤으로하고, 매 문제별 오답, 정답을 알려주고, 마지막에 최종 점수를 100점으로 환산해서 표기해줘
 - 프로그램이 처음 시작되면 Sheet 이름을 입력받아서, 해당 Sheet에 있는 단어를 출제하면 됨. 
 
-
 그러면 AI 도구가 알아서 코드를 생성해 줍니다. 
 이 과정에서 코드를 직접 입력할 필요도 없습니다. 예제 Database를 제공하고 실제 테스트 해보세요. 
 개인적으로는 ChatGPT보다는 Goolge AI Studio가 더 정확한 코드를 만들어 줬습니다. 
@@ -104,12 +100,7 @@ Vibe 코딩을 통해서 이런 간단한 프로그램은 누구나 만들 수 �
 ChatGPT가 위 요구사항을 기반으로 자동 생성한  
 **로컬 실행용 Python 퀴즈 프로그램 예제**는 아래 GitHub에서 확인할 수 있습니다.  
 
-{% include ad-inpost.html %}
-
 👉 [🔗 실제 코드 예제 클릭 — quiz_local.py](https://github.com/wakenhole/sat-voca/blob/main/quiz_local.py)
-
-
-{% include ad-inpost.html %}
 
 이 예제는  
 - CSV로 된 단어 데이터베이스를 불러오고,  
@@ -135,7 +126,6 @@ Google App Script와 Form을 이용하면, 매일 아침 자동으로 퀴즈를 
 | 3️⃣ | ChatGPT로 코드 생성 | 자동 퀴즈 앱 제작 |
 | 4️⃣ | 자동 반복 학습 | 개인 맞춤형 복습 시스템 |
 
-
 ---
 
 {% include ad-inpost.html %}
@@ -152,7 +142,6 @@ ChatGPT가 사진 속 단어를 읽고, 표로 만들고,
 모든 시험 대비에 적용할 수 있습니다.  
 
 ---
-
 
 **#ChatGPT단어장 #AI공부법 #단어암기앱 #공부자동화 #Python없이AI코딩 #구글시트퀴즈 #GoogleAIStudio**
 

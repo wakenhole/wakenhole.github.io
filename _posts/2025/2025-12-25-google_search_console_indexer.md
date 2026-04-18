@@ -35,8 +35,6 @@ Google Indexing API는 웹사이트 소유자가 페이지의 추가나 삭제�
 
 이 API를 사용하면 구글 서치 콘솔(GSC)에서 일일이 '색인 생성 요청' 버튼을 누르는 수고를 덜 수 있습니다.
 
-{% include ad-inpost.html %}
-
 ### 2. 핵심 준비물: 구글 서비스 계정 (Service Account)
 
 API를 사용하려면 '열쇠'가 필요합니다. 구글 클라우드 플랫폼(GCP)에서 서비스 계정을 만들고 JSON 키를 발급받아야 합니다. 과정이 조금 복잡해 보일 수 있지만, 아래 가이드를 따라 차근차근 진행하면 누구나 할 수 있습니다.
@@ -50,8 +48,6 @@ API를 사용하려면 '열쇠'가 필요합니다. 구글 클라우드 플랫�
 상세한 이미지와 함께 단계별 설명이 필요하다면, 아래 링크를 반드시 참조하여 설정을 완료해 주세요.
 
 > **참고 가이드:** [Google Indexing API 서비스 계정 생성 및 GSC 연동 완벽 가이드](https://pocodingwer.github.io/blog/2024/10/30/google-indexing/)
-
-{% include ad-inpost.html %}
 
 ### 3. 도구 소개: google-search-console-indexer
 
@@ -99,8 +95,6 @@ python main.py
 ```
 
 실행 화면에서 `[200] OK` 메시지가 뜬다면 성공입니다! 구글에게 "이 페이지 좀 봐줘"라고 성공적으로 전달된 것입니다.
-
-{% include ad-inpost.html %}
 
 ### 5. 마치며: SEO는 속도전이다
 

@@ -11,13 +11,10 @@ image:
 
 최근 커뮤니티에서 세상을 축소해놓은 듯한 아기자기하면서도 정교한 '도시 미니어처' 이미지가 큰 인기를 끌고 있습니다. 마치 거인이 되어 세상을 내려다보는 듯한 이 독특한 시각적 경험은 '나노바나나'(Google 이미지 생성 AI 모델)를 통해 누구나 쉽게 구현할 수 있습니다.
 
-
 오늘은 클리앙 등지에서 화제가 된 이 멋진 미니어처 스타일을 내 손으로 직접 만드는 방법을 상세히 알아보겠습니다. 핵심은 카메라 앵글과 질감을 표현하는 정확한 '프롬프트'에 있습니다.
 
 {% include ad-inpost.html %}
 ### 1. 기본편: 정교한 도시 미니어처 만들기
-
-
 
 미니어처 스타일의 핵심은 두 가지입니다. 바로 **'아이소메트릭(Isometric)'** 뷰와 **'틸트 시프트(Tilt-shift)'** 효과입니다.
 
@@ -36,8 +33,6 @@ All text must be centered with consistent spacing, and may subtly overlap the to
 Square 1080x1080 dimension.
 ````
 -----
-
-{% include ad-inpost.html %}
 
 **🎯 날씨 포함 프롬프트**
 
@@ -67,8 +62,6 @@ daylight, dry streets, clear sky, low resolution, ugly, blurry
   * **핵심 포인트:** `heavy rain falling`과 함께 `wet asphalt streets`, `reflections of neon lights on puddles`를 추가하여 비 오는 날 특유의 질척이고 반짝이는 질감을 표현했습니다. `misty atmosphere`는 도시의 원경을 부드럽게 처리하여 깊이감을 더해줍니다. 눈 오는 날을 원한다면 `heavy snow`, `snow covered roofs` 등으로 응용할 수 있습니다.
 
 ![북경시 날씨 및 분위기](https://github.com/user-attachments/assets/fac5d15a-647b-4e7d-a445-c01f21695435)
-
-
 
 -----
 

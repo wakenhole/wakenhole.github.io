@@ -19,7 +19,6 @@ image:
 
 무료로 사용할 수 있는 강력한 VPN 서버 관리 패널, **3x-ui**를 활용하여 초보자도 10분 만에 고성능 VPN 서버를 구축하는 방법을 소개합니다.
 
-
 ### 전체 글 목록
 1. [VPN용 VM 서버 구축](https://wakenhole.github.io/2023/vpn_server_conf_1/)
 2. [VPN 서버 보안 설정](https://wakenhole.github.io/2023/vpn_server_conf_2/)
@@ -38,8 +37,6 @@ image:
 **[MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui)**를 활용하여, 초보자도 10분 만에 고성능 VPN 서버를 구축하는 방법을 소개합니다. "[X-UI 설치 및 설정](https://wakenhole.github.io/2023/vpn_server_conf_3/)" 여기서 소개한 방법과 크게 차이가 없으니 더 자세한 내용은 위 링크를 참고하여도 좋다.
 
 > **⚠️ 주의사항:** 본 가이드는 네트워크 학습 및 개인 정보 보호(Privacy)를 위한 교육 목적으로 작성되었습니다. 불법적인 용도로의 사용을 금합니다.
-
-{% include ad-inpost.html %}
 
 ### 1. 준비물: 해외 VPS 서버
 
@@ -77,7 +74,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
 웹 브라우저를 열고 `http://서버IP:포트`로 접속한 뒤, 방금 설정한 아이디와 비밀번호로 로그인합니다.
 
 로그인으로 하고 Panel Setting > General > General > URI path를 "/"를 수정한다. 보안 경고가 뜨지만, 편의성을 위해서 가볍게 무시한다. 
-
 
  Panel Setting > General > Certificates 에서 public key와 private key를 위에서 생성한 SSL key 경로로 입력해준다. 
 

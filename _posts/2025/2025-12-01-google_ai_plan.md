@@ -30,8 +30,6 @@ Google Gemini 공식 구독 페이지 및 사용자 피드백 정보를 반영�
 
 표 이외에도 다양한 요금제가 있지만, 가장 대표적인 요금제 위주로 비교했습니다.
 
-{% include ad-inpost.html %}
-
 | 구분 | 튀르키예 (TR) - AI Plus | 튀르키예 (TR) - Premium 2TB | 튀르키예 (TR) - AI Pro | 한국 (KR) - AI Pro | TR AI Ultra (TR) |
 |---|---|---|---|---|---|
 | 플랜 명칭 | AI Plus (200GB) | Premium (2TB) | AI Pro (2TB) | AI Pro (2TB) | AI Ultra (30TB) |
@@ -41,14 +39,9 @@ Google Gemini 공식 구독 페이지 및 사용자 피드백 정보를 반영�
 | AI 모델 접근 | Gemini 사용 가능 | Gemini 사용 가능 | Gemini 사용 가능 | Gemini 사용 가능 | Gemini 사용 가능 |
 | AI 혜택 공유 | 가능 (최대 5명) | 가능 (최대 5명) | 가능 (최대 5명) | 가능 (최대 5명) | 가능 (최대 5명) |
 
-
 > 환율: 1 TRY ≈ 34.57 KRW 기준. 실제 가격 및 혜택은 시장 상황에 따라 변동될 수 있습니다.)
 >
 > AI 크레딧은 요금제 마다 다르게 할당 받음, Google One 요금제는 상대적으로 적음
-
-
-{% include ad-inpost.html %}
-
 
 ### 2. 튀르키예 시장의 특징과 플랜 분석
 
@@ -59,10 +52,6 @@ Google Gemini 공식 구독 페이지 및 사용자 피드백 정보를 반영�
 #### 2.2. AI Pro (2TB) 비교
  * 가격 차이: 튀르키예 AI Pro(약 ₩24,900)는 한국 AI Pro(₩29,000)보다 환율상 약 4,100원 저렴합니다.
  * 현지 인상률: 튀르키예 Premium 2TB 플랜 대비 AI Pro는 가격이 크게 높게 책정되어 있어, 더 강력한 Gemini Advanced 기능(최고 모델, Deep Research 등)에 대한 프리미엄이 반영된 것으로 보입니다. (Premium 2TB는 일반적인 Gemini 사용 가능 혜택 제공)
-
-
-{% include ad-inpost.html %}
-
 
 #### 2.3. AI Pro (2TB) 비교
  * 가격 차이: 튀르키예 AI Pro(약 ₩24,900)는 한국 AI Pro(₩29,000)보다 환율상 약 4,100원 저렴합니다.
@@ -76,22 +65,15 @@ Google Gemini 공식 구독 페이지 및 사용자 피드백 정보를 반영�
 
 가족도 추가 5명까지 공유가 가능하기 때문에 매우 유용하다고 볼 수 있습니다. 
 
-{% include ad-inpost.html %}
-
 즉, 아래와 같이 **Google Pay Profile**에 터키 국가로 추가만 해주면, VPN 없이도 Google AI 기능 요금제를 구독할 수 있습니다.
 
-
 ![Image](https://github.com/user-attachments/assets/dbe5d3d2-2730-4e30-872e-0c9669094ec4)
-
 
 ### 3. 플랜 선택 가이드
  * 한국 사용자 (AI 기능 필수): **Google AI Pro (29,000원)**를 구독해야만 Gemini Advanced 및 Workspace AI 기능을 사용할 수 있습니다.
  * 튀르키예 사용자 (가장 저렴한 AI 접근): **AI Plus (200GB)**는 가장 낮은 가격으로 Gemini 기능을 접근하고 가족과 공유할 수 있는 매력적인 선택지입니다.
  * 튀르키예 사용자 (가장 효율적인 2TB): **Premium (2TB)**는 2TB의 넉넉한 스토리지와 Gemini 사용 및 공유 혜택을 저렴한 가격에 제공하는 효율적인 플랜입니다.
  * 최상위 전문가: **AI Ultra (30TB)**는 압도적인 스토리지와 동영상 생성, 최고 수준의 AI 접근 권한 및 YouTube Premium을 포함하는 궁극의 플랜입니다.
-
-{% include ad-inpost.html %}
-
 
 ### 4. 결론
 

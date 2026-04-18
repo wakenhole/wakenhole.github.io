@@ -19,7 +19,6 @@ _AveYo **MediaCreationTool.bat** 사용법_
 > AveYo의 **MediaCreationTool.bat** 스크립트를 이용하면 안전하게 ISO 생성 및 업그레이드가 가능합니다.  
 > 단, Microsoft는 비호환 PC의 설치를 **공식적으로 지원하지 않으며**, 반드시 **백업 후 진행**하세요.
 
-
 {% include ad-inpost.html %}
 ---
 
@@ -47,12 +46,8 @@ TPM 2.0·Secure Boot·CPU 검사 등 **설치 제한을 자동으로 우회**합
 - ✅ Windows 10에서 바로 업그레이드 가능  
 - ✅ 완전 무료 & 깃허브 공개
 
-
-{% include ad-inpost.html %}
-
 🔗 **공식 GitHub:** [https://github.com/AveYo/MediaCreationTool.bat](https://github.com/AveYo/MediaCreationTool.bat)
 
-{% include ad-inpost.html %}
 ---
 
 ## 👥 누구에게 적합한가
@@ -79,15 +74,11 @@ TPM 2.0·Secure Boot·CPU 검사 등 **설치 제한을 자동으로 우회**합
 
 > ✅ 설치 전 `제어판 → 복구 → 복원 드라이브 만들기`로 복구 USB를 꼭 만들어 두세요.
 
-
-{% include ad-inpost.html %}
 ---
 
 ## ⚙️ 설치 절차
 
 ### ① GitHub에서 파일 다운로드
-
-{% include ad-inpost.html %}
 
 1. [MediaCreationTool.bat 저장소](https://github.com/AveYo/MediaCreationTool.bat) 접속  
 2. 우측 **Code → Download ZIP** 클릭  
@@ -95,14 +86,9 @@ TPM 2.0·Secure Boot·CPU 검사 등 **설치 제한을 자동으로 우회**합
 
 ---
 
-
-{% include ad-inpost.html %}
-
 ### ② 관리자 권한으로 실행
 - `MediaCreationTool.bat`을 **우클릭 → 관리자 권한으로 실행**
 - PowerShell 창이 열리면 아래와 같은 메뉴가 표시됩니다:
-
-
 
 - 여기서 **“11”** (Windows 11)을 선택합니다.
 
@@ -120,8 +106,6 @@ TPM 2.0·Secure Boot·CPU 검사 등 **설치 제한을 자동으로 우회**합
 > 💡 **처음이라면 → `Create ISO` 권장**  
 > ISO로 안전하게 파일을 만든 후 USB 설치나 업그레이드를 진행하세요.
 
-
-{% include ad-inpost.html %}
 ---
 
 ### ④ 자동 우회 패치 적용
@@ -158,8 +142,6 @@ AveYo의 스크립트에는 내부적으로 `Skip_TPM_Check_on_Dynamic_Update.cm
 
 > 💡 설치 중 오류나 부팅 문제 시, 복구 USB로 “시스템 복원” 기능을 사용하세요.
 
-
-{% include ad-inpost.html %}
 ---
 
 ## 🧾 설치 후 점검 사항
@@ -181,8 +163,6 @@ AveYo의 스크립트에는 내부적으로 `Skip_TPM_Check_on_Dynamic_Update.cm
 BIOS 업데이트 + 최신 칩셋/그래픽 드라이버 설치  
 가능하다면 TPM 모듈 장착으로 정식 호환 유지
 
-
-{% include ad-inpost.html %}
 ---
 
 ## ❓ FAQ
@@ -200,8 +180,6 @@ A3. 보안/정책 위반 우려가 있으므로 절대 권장하지 않습니다
 
 ## 🔗 참고 링크
 
-{% include ad-inpost.html %}
-
 - 🔹 [MediaCreationTool.bat (AveYo)](https://github.com/AveYo/MediaCreationTool.bat)  
 - 🔹 [Rufus 공식 사이트](https://rufus.ie/)  
 - 🔹 [Microsoft 공식 Windows 11 최소 사양 문서](https://learn.microsoft.com/windows/)
@@ -216,8 +194,6 @@ A3. 보안/정책 위반 우려가 있으므로 절대 권장하지 않습니다
 - 중앙: Windows 로고 + USB 아이콘  
 - 하단 배너: `⚠️ 백업 필수 / 기업 비권장`  
 - 크기: 1280×720  
-
-
 
 {% include ad-inpost.html %}
 ---

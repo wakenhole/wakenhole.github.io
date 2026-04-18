@@ -30,7 +30,6 @@ image:
 
 ![AI 에이전트의 미래](https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80){:.centered width="600px"}
 
-
 Moltbot의 설계 철학은 '개인 정보의 물리적 통제'와 '로컬 우선(Local-first)'에 기반합니다. 기존 SaaS 기반 AI 모델들이 데이터를 클라우드로 전송하는 것과 달리, Moltbot은 사용자의 하드웨어에서 직접 '게이트웨이(Gateway)'를 실행합니다. 
 
 * **게이트웨이(Gateway):** 시스템의 심장부로서 채널 연결과 제어 평면을 관리합니다.
@@ -40,8 +39,6 @@ Moltbot의 설계 철학은 '개인 정보의 물리적 통제'와 '로컬 우�
 이러한 구조 덕분에 사용자는 외부에서도 메시징 앱(텔레그램, 왓츠앱 등)을 통해 자신의 컴퓨터를 제어할 수 있으며, 모든 대화 기록은 로컬 마크다운 형식으로 저장되어 데이터 주권을 보장받습니다.
 
 ---
-
-{% include ad-inpost.html %}
 
 ## 2. 시스템 요구사항 및 하드웨어 전략
 
@@ -62,7 +59,6 @@ Moltbot은 복합적인 작업을 수행하는 에이전트 특성상 안정적�
 
 ![macOS와 하드웨어 통합](https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80){:.centered width="600px"}
 
-
 ### 3-1. macOS 환경 (권장 플랫폼)
 macOS는 Moltbot의 기능을 가장 세련되게 활용할 수 있는 플랫폼입니다. 
 
@@ -77,7 +73,6 @@ macOS는 Moltbot의 기능을 가장 세련되게 활용할 수 있는 플랫폼
 ### 3-2. Windows 환경 (WSL2 전략)
 
 ![Windows 시스템 구성](https://images.unsplash.com/photo-1633419461186-7d40a38105ec?auto=format&fit=crop&w=1200&q=80){:.centered width="600px"}
-
 
 윈도우 환경에서는 유닉스 기반 명령과의 호환성을 위해 **WSL2(Ubuntu 24.04 LTS)** 사용이 강력하게 권장됩니다.
 
@@ -98,14 +93,11 @@ macOS는 Moltbot의 기능을 가장 세련되게 활용할 수 있는 플랫폼
 
 온보딩 과정에서 **'모델 페일오버(Model Failover)'**를 활성화하면 주 모델 오류 시 보조 모델로 자동 전환되어 서비스 연속성을 확보할 수 있습니다.
 
-{% include ad-inpost.html %}
-
 ---
 
 ## 5. 보안 아키텍처: 'Spicy'한 리스크에 대비하기
 
 ![사이버 보안](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80){:.centered width="600px"}
-
 
 시스템 셸 액세스 권한을 가진 에이전트를 구동하는 것은 개발자의 표현대로 **'매콤한(Spicy) 보안 리스크'**를 동반합니다. 이를 방어하기 위해 Moltbot은 강력한 보안 계층을 제공합니다.
 
@@ -129,7 +121,4 @@ Moltbot은 단순한 소프트웨어를 넘어 사용자와 함께 성장하는 
 * 상태 확인: `moltbot status`
 * 최신 업데이트: `moltbot update`
 * 에이전트 재시작: `moltbot restart`
-
-
-
 

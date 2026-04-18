@@ -38,8 +38,6 @@ on_Policies(https://go.microsoft.com/fwlink/?LinkID=135170)를 참조하십시�
 
 이 메시지는 시스템의 오류라기보다는, 윈도우가 악성 스크립트의 무분별한 실행을 방지하기 위해 기본적으로 설정해 둔 **보안 기능**이 작동하고 있음을 의미합니다. 마이크로소프트는 PowerShell의 기본 실행 정책을 `Restricted`(제한됨)로 설정하여, 서명되지 않은 스크립트가 실행되는 것을 차단하고 있습니다. 즉, 우리가 생성한 가상환경 실행 파일인 `Activate.ps1` 역시 시스템 입장에서는 '신뢰할 수 없는 외부 스크립트'로 간주되어 실행이 거부된 것입니다.
 
-{% include ad-inpost.html %}
-
 ### 2. 해결 방법: 실행 정책 변경 (Set-ExecutionPolicy)
 
 이 문제를 해결하기 위해서는 PowerShell의 실행 정책을 변경해야 합니다. 가장 널리 권장되는 설정은 **`RemoteSigned`** 입니다. 이는 로컬 컴퓨터에서 작성한 스크립트는 실행을 허용하되, 인터넷에서 다운로드한 스크립트는 신뢰할 수 있는 배포자의 서명이 있어야만 실행할 수 있도록 하는 '타협점'과 같은 설정입니다.
@@ -80,5 +78,3 @@ on_Policies(https://go.microsoft.com/fwlink/?LinkID=135170)를 참조하십시�
 .\Scripts\Activate.ps1
 ```
 
-
-{% include ad-inpost.html %}

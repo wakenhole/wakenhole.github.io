@@ -203,7 +203,7 @@ def create_markdown_file(topic_data, args):
         for i in range(1, len(parts), 2):
             heading = parts[i]
             body = parts[i+1] if (i + 1) < len(parts) else ""
-            if i > 1 and ad_count < 3: # 첫번째 소제목(i=1)은 건너뜁니다.
+            if i > 1 and ad_count < 1: # 첫번째 소제목(i=1)은 건너뜁니다.
                 new_content_parts.append(ad_code + heading)
                 ad_count += 1
             else:

@@ -46,8 +46,6 @@ cd gdrive-download-video
 pip install -r requirements.txt
 ```
 
-{% include ad-inpost.html %}
-
 ### 3. 사용 방법 (상황별 가이드)
 
 다운로드하려는 대상이 "영상 하나"인지, "강의 폴더 전체"인지에 따라 명령어가 다릅니다.
@@ -84,8 +82,6 @@ python gdrive_video_download.py 1HFkHQYetpcNnyQoxxxxxX1I1TAcF6Q0us -v
 ```
 
 * `-v` 옵션을 붙이면 현재 어떤 파일이 다운로드되고 있는지 자세히 보여줍니다.
-
-{% include ad-inpost.html %}
 
 ### 4. 이 도구가 좋은 이유
 

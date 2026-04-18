@@ -18,7 +18,6 @@ image:
 
 {% include ad-inpost.html %}
 
-
 ## Reference
 1. [Boost](https://www.boost.org/doc/libs/1_80_0/doc/html/boost/container/static_vector.html)
 2. [Open standard](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0843r2.html)
@@ -52,8 +51,6 @@ One of most popular one is boost:static_vector.
 * nth(position) - Returns an iterator to the mentioned position.
 * index_of(iterator) - Returns the index of the position the iterator is pointing to.
 * pop_back() - Removes the last element of the list
-{% include ad-inpost.html %}
-
 {% include ad-inpost.html %}
 
 ## Example
@@ -128,8 +125,6 @@ int main() {
   std::cout<<"The last element of vector v1 is "<<v1.back()<<std::endl;  
 }
 ```
-{% include ad-inpost.html %}
-
 
 ### Output
 ```
@@ -151,6 +146,4 @@ The first element of vector v1 is 0
 The element at index 3 of vector v1 is 3
 The last element of vector v1 is 0
 ``` 
-
-
 

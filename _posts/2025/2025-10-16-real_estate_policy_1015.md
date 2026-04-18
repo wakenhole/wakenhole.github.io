@@ -15,7 +15,6 @@ image:
   path: https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/3xR/image/kAumR8L62A5Va7-63budXTKMkpc.JPG
 ---
 
-
 {% include ad-inpost.html %}
 
 ## 🏠 10·15 부동산 대책 총정리｜토지거래허가제의 확대와 시장 영향 분석
@@ -44,9 +43,6 @@ image:
 
 ---
 
-{% include ad-inpost.html %}
-
-
 ## 🧾 2. 토지거래허가제(토허제)란 무엇인가?
 
 토지거래허가제는 **토지나 부동산을 거래할 때 관할 관청의 허가를 받아야 하는 제도**입니다.  
@@ -70,9 +66,6 @@ image:
    - 상속, 경매, 공공사업용 토지 등은 일정 조건 하에 예외가 적용될 수 있습니다.
 
 ---
-
-{% include ad-inpost.html %}
-
 
 ## 📈 3. 토지거래허가제가 시장에 미칠 영향
 
@@ -106,9 +99,6 @@ image:
 
 ---
 
-
-{% include ad-inpost.html %}
-
 ## 💡 4. 대응 전략과 체크포인트
 
 | 체크 항목 | 설명 |
@@ -136,8 +126,6 @@ image:
 정책 발표 후 시행령과 지역별 세부 지정 현황을 꼭 확인해두세요.
 
 ---
-
-{% include ad-inpost.html %}
 
 ### 📊 관련 키워드
 `#1015부동산대책` `#토지거래허가제` `#부동산규제` `#부동산시장분석` `#정부대책` `#실거주요건`

@@ -20,7 +20,6 @@ image:
 
 오늘 소개할 곳은 베이징의 **'옌와이옌(Yanwaiyan, 宴外宴)'**입니다. 이곳은 단순한 식당이 아닙니다. 문을 열고 들어서는 순간, 21세기의 베이징은 사라지고 중국 고전 소설 **<홍루몽(紅樓夢)>**의 화려하고도 애절한 세계가 펼쳐집니다. 직접 방문하여 촬영한 사진과 함께 그 환상적인 경험을 소개합니다.
 
-
 {% include ad-inpost.html %}
 
 ### 1. 입구: 현실과 환상의 경계
@@ -52,9 +51,6 @@ image:
 ![배우들의 연기와 홍루몽 배경](https://github.com/user-attachments/assets/9d8290e1-b056-403e-b5b1-e7a8201ae5fa)
 
 *▲ <홍루몽>의 서사를 담은 배우들의 깊이 있는 연기*
-
-
-{% include ad-inpost.html %}
 
 ### 3. 미식(Gastronomy): 예술이 된 요리
 
@@ -89,8 +85,6 @@ image:
 주변을 둘러보면 많은 손님들이 식당에서 제공한 의상을 입고 식사를 즐기고 있습니다. 현대적인 복장의 손님과 고전 의상의 직원들이 섞여 있는 모습이 아닌, 모두가 그 시대의 사람이 된 듯한 풍경이 옌와이옌만의 매력입니다.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EBvHJiscnAE?si=U0hQv7okt70ZqfWu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-{% include ad-inpost.html %}
 
 ### 5. 총평: 베이징에서의 가장 잊지 못할 하룻밤
 

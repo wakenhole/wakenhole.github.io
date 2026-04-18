@@ -40,8 +40,6 @@ image:
 
 ![Solar Panel Manufacturing](https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=1472&q=80)
 
-{% include ad-inpost.html %}
-
 ## 2. AI와 전기차: 은을 원하는 새로운 거인들
 
 태양광뿐만이 아닙니다. 4차 산업혁명의 핵심인 **AI와 전기차(EV)** 역시 은을 강력하게 필요로 합니다.

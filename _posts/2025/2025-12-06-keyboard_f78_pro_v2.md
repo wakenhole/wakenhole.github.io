@@ -31,8 +31,6 @@ Aliexpress나 한국어 페이지를 가보면 번역기를 자동으로 돌린�
 ![alt text](https://img.croketglobal.net/item/thumbnail/c7ee9d60-d14a-4f0d-b464-1c2ccbb05555.webp) | ![alt text](https://img.alicdn.com/imgextra/i4/754398417/O1CN010erKaT2C32iNuoBSo_!!754398417.jpg)
 ---|---|
 
-
-
 {% include ad-inpost.html %}
 
 ## 🧩 F87 Pro V2 전체 스펙·축·플레이트 종합 분석 보고서
@@ -60,7 +58,6 @@ Aliexpress나 한국어 페이지를 가보면 번역기를 자동으로 돌린�
 
 **추천 성향:** 게임·타이핑 모두 균형형, 전천후 사용자
 
-
 ### ### ③ PC 플레이트 (PC软弹定位板)
 - 매우 부드럽고 탄성 있음  
 - 소리는 저음·먹먹·부드러움  
@@ -69,9 +66,6 @@ Aliexpress나 한국어 페이지를 가보면 번역기를 자동으로 돌린�
 **추천 성향:** 사무용, 조용한 분위기, 소프트 리니어 선호자
 
 ---
-
-
-{% include ad-inpost.html %}
 
 ### 2. 스위치 5종 종합 분석
 
@@ -108,8 +102,6 @@ Aliexpress나 한국어 페이지를 가보면 번역기를 자동으로 돌린�
 ### ✔ 대체 옵션  
 - PC 플레이트 + 카라멜 라떼축 (부드럽고 깊은 저음)
 
-{% include ad-inpost.html %}
-
 ## 💼 사무실용 추천  
 **목표:** 정숙, 안정된 소리, 손가락 부담 적음  
 
@@ -120,9 +112,6 @@ Aliexpress나 한국어 페이지를 가보면 번역기를 자동으로 돌린�
 
 ### ✔ 더 조용한 옵션  
 - PC 플레이트 + 경우축
-
-
-{% include ad-inpost.html %}
 
 ## 🎮 게임용 추천  
 **목표:** 반응속도, 명확한 피드백, 빠른 키입력  
@@ -137,7 +126,6 @@ Aliexpress나 한국어 페이지를 가보면 번역기를 자동으로 돌린�
 
 ### ✔ e스포츠급  
 - 8kHz 폴링레이트 모델 + 유성축  
-
 
 {% include ad-inpost.html %}
 ---

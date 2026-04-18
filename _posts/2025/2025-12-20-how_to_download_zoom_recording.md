@@ -17,7 +17,6 @@ image:
   path: https://www.webwise.ie/wp-content/uploads/2020/04/IMG009.jpg
 ---
 
-
 Zoom 녹화 영상은 종종 제한된 기간 동안만 제공되며, 나중에 다시 참조하기 위해 다운로드할 수 있는 쉬운 방법을 제공하지 않는 경우가 많습니다.
 
 하지만 해결책이 있습니다. `youtube-dl`을 사용하면 이전에 녹화된 Zoom 통화나 회의를 다운로드할 수 있습니다.
@@ -33,8 +32,6 @@ Zoom 녹화 영상은 종종 제한된 기간 동안만 제공되며, 나중에 
   --add-header "Cookie: <cookie string>" \
   '<video_url>'
 ```
-
-{% include ad-inpost.html %}
 
 ### 단계별 가이드: Zoom 다시보기 및 녹화 영상 다운로드 방법
 
@@ -85,8 +82,6 @@ Zoom 녹화 영상은 종종 제한된 기간 동안만 제공되며, 나중에 
 ```
 
 위 명령어를 터미널에 입력하면 다운로드가 시작됩니다.
-
-{% include ad-inpost.html %}
 
 ---
 

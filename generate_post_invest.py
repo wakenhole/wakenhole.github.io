@@ -156,7 +156,7 @@ def create_markdown_file(topic_data):
         ad_code = "\n{% include ad-inpost.html %}\n"
         
         # 정규표현식: 라인의 시작(^)에 ## 공백이 있는 패턴을 찾음 (Multiline 모드)
-        content = re.sub(r'^(##\s+.*)', f'{ad_code}\\1', content, count=3, flags=re.MULTILINE)
+        content = re.sub(r'^(##\s+.*)', f'{ad_code}\\1', content, count=1, flags=re.MULTILINE)
 
         topic_title = topic_data.get('topic', 'draft-topic')
 

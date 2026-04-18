@@ -27,8 +27,6 @@ image:
 ![Image](https://github.com/user-attachments/assets/5a55d9dc-45d0-4885-b56e-bae5b707f51f)
 ![Image](https://github.com/user-attachments/assets/d2a376fe-6e40-4550-882a-c6f2f45a92bb)
 
-{% include ad-inpost.html %}
-
 ## 3. Appetizers & Seafood: 미각을 깨우는 화려한 서막
 본격적인 스테이크에 앞서 즐기는 전채 요리는 울프강의 식재료 선도를 여실히 보여줍니다.
 * **Wolfgang's Crab Cake**: 게살의 결이 살아있는 크랩 케이크(280 RMB)는 겉은 바삭하고 속은 촉촉한 풍미를 자랑합니다.
@@ -44,8 +42,6 @@ image:
 * **Sizzling Performance**: 고온의 오븐에서 구워져 접시 위에서 버터와 함께 지글거리는 소리를 내며 서빙되는 스테이크는 시각과 청각을 동시에 만족시킵니다.
 
 ![Image](https://github.com/user-attachments/assets/43b3f3bf-8283-4054-93a9-6c5ed67cabf5)
-
-{% include ad-inpost.html %}
 
 ## 5. 완벽한 곁들임: 전문적인 서비스와 사이드 메뉴
 스테이크의 풍미를 보조하는 사이드 메뉴와 서비스 또한 수준급입니다.

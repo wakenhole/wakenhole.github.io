@@ -34,8 +34,6 @@ sitemap:
 
 ---
 
-{% include ad-inpost.html %}
-
 ### 2. Theme 01: 도심 속의 데일리 룩 (Daily Look Portrait)
 
 나노바나나의 가장 큰 장점은 피부 질감과 의상의 디테일입니다. 복잡한 배경보다는 인물에 집중된 조명과 현대적인 의상을 매칭했을 때 그 진가가 드러납니다.
@@ -55,8 +53,6 @@ sitemap:
 
 ---
 
-{% include ad-inpost.html %}
-
 ### 3. Theme 02: 신비로운 판타지 엘프 (Fantasy Atmosphere)
 
 실사를 넘어 환상적인 분위기를 연출하고 싶다면 조명(Lighting) 태그에 집중해야 합니다. 나노바나나는 빛의 산란 효과를 매우 감성적으로 처리합니다.
@@ -74,8 +70,6 @@ sitemap:
 > *배경의 숲과 캐릭터 주변의 빛 입자(fireflies)가 어우러져 신비로운 분위기를 자아냅니다.*
 
 ---
-
-{% include ad-inpost.html %}
 
 ### 4. Theme 03: 사이버펑크 네온 시티 (Cyberpunk & Neon)
 
@@ -95,8 +89,6 @@ sitemap:
 > *어두운 밤 배경임에도 불구하고 캐릭터의 윤곽선이 뚜렷하며, 네온 조명에 의한 색채 대비가 인상적입니다.*
 
 ---
-
-{% include ad-inpost.html %}
 
 ### 5. 품질 보증수표: 네거티브 프롬프트 (Negative Prompt)
 
