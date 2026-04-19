@@ -1,5 +1,5 @@
 ---
-title: "[AI] 차세대 개인용 AI 에이전트, Moltbot(구 Clawdbot) 완벽 설치 및 보안 가이드"
+title: "Moltbot(구 Clawdbot) 설치 가이드: Windows/Mac 환경별 정리"
 date: 2026-01-28 17:55:00 +0900
 categories:
   - Tech
@@ -20,105 +20,105 @@ image:
   path: https://www.youngurbanproject.com/wp-content/uploads/2026/01/Moltbot-Setup-Guide-ClawdBot-Installation.jpg
 ---
 
+Clawdbot이 Moltbot으로 이름이 바뀌었다. 2026년 1월에 Anthropic에서 상표권 요청을 해서 리브랜딩한 것이다. 기능 자체는 그대로다.
+
+에이전틱 AI 도구 중에서 가장 많이 언급되는 도구인데, 설치 과정이 OS마다 좀 다르고 보안 설정을 제대로 안 하면 리스크가 있어서 정리해둔다.
+
 {% include ad-inpost.html %}
 
-인공지능 기술의 패러다임이 단순한 대화형 챗봇에서 사용자의 시스템 내에서 능동적으로 업무를 수행하는 '에이전트 AI'로 급격히 전환되고 있습니다. 이러한 변화의 중심에는 피터 스테인버거(Peter Steinberger)가 개발한 **Moltbot(구 Clawdbot)**이 자리하고 있습니다. 본고에서는 2026년 1월, 앤스로픽의 상표권 요청으로 인해 새롭게 탈바꿈한 Moltbot의 기술적 구조를 분석하고, 윈도우와 맥 환경에서의 정밀한 설치 절차를 안내하고자 합니다.
+---
+
+## 구조 이해: 로컬에서 게이트웨이가 실행된다
+
+Moltbot은 클라우드 기반이 아니라 사용자 하드웨어에서 게이트웨이(Gateway)를 직접 실행하는 구조다. 외부에서 메시징 앱(텔레그램, 왓츠앱 등)을 통해 내 컴퓨터에 명령을 내릴 수 있고, 대화 기록은 로컬 마크다운 형식으로 저장된다.
+
+* **게이트웨이(Gateway):** 채널 연결과 제어 평면 담당
+* **Pi 에이전트:** Claude, GPT 등 LLM을 통해 판단
+* **권한 범위:** 파일 시스템 접근, 브라우저 자동화, 터미널 명령 실행 가능
+
+이 구조 때문에 데이터가 외부로 나가지 않는다는 장점이 있지만, 동시에 보안 설정이 중요해진다.
 
 ---
 
-## 1. Moltbot의 아키텍처: 왜 '로컬 우선'인가?
+## 시스템 요구사항
 
-![AI 에이전트의 미래](https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80){:.centered width="600px"}
-
-Moltbot의 설계 철학은 '개인 정보의 물리적 통제'와 '로컬 우선(Local-first)'에 기반합니다. 기존 SaaS 기반 AI 모델들이 데이터를 클라우드로 전송하는 것과 달리, Moltbot은 사용자의 하드웨어에서 직접 '게이트웨이(Gateway)'를 실행합니다. 
-
-* **게이트웨이(Gateway):** 시스템의 심장부로서 채널 연결과 제어 평면을 관리합니다.
-* **Pi 에이전트:** Claude, GPT 등 다양한 LLM을 통해 논리적 결정을 내립니다.
-* **행동력의 근원:** 이 모델은 인공지능이 사용자의 파일 시스템에 접근하고, 브라우저를 자동화하며, 터미널 명령을 실행할 수 있는 실질적인 권한을 부여합니다.
-
-이러한 구조 덕분에 사용자는 외부에서도 메시징 앱(텔레그램, 왓츠앱 등)을 통해 자신의 컴퓨터를 제어할 수 있으며, 모든 대화 기록은 로컬 마크다운 형식으로 저장되어 데이터 주권을 보장받습니다.
-
----
-
-## 2. 시스템 요구사항 및 하드웨어 전략
-
-Moltbot은 복합적인 작업을 수행하는 에이전트 특성상 안정적인 자원 확보가 필수적입니다. 
-
-| 리소스 유형 | 최소 요구사항 | 권장 요구사항 |
+| 리소스 | 최소 | 권장 |
 | :--- | :--- | :--- |
-| **CPU** | 2 코어 이상 | 4 코어 이상 (Apple Silicon 권장) |
+| **CPU** | 2코어 | 4코어 이상 (Apple Silicon 권장) |
 | **RAM** | 2GB (챗 전용) | 4GB~8GB (브라우저 자동화용) |
-| **저장공간** | 20GB | 50GB 이상 (NVMe SSD 권장) |
+| **저장공간** | 20GB | 50GB+ (NVMe SSD 권장) |
 | **런타임** | Node.js v22+ | pnpm (소스 빌드 시) |
 
-특히 24시간 중단 없는 가동을 원하는 사용자에게는 **Mac Mini(M4 이상)**가 표준적인 선택지로 부상하고 있으나, 보안상 실제 데이터와 격리된 환경을 원한다면 월 5달러 수준의 **VPS(가상 사설 서버)** 활용이 권장됩니다.
+24시간 가동을 원한다면 Mac Mini(M4 이상)가 실용적인 선택이다. 보안상 격리가 필요하다면 월 5달러 수준의 VPS를 쓰는 방법도 있다.
 
 ---
 
-## 3. 운영 체제별 정밀 설치 가이드
+## macOS 설치
 
-![macOS와 하드웨어 통합](https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80){:.centered width="600px"}
+macOS에서 가장 깔끔하게 돌아간다.
 
-### 3-1. macOS 환경 (권장 플랫폼)
-macOS는 Moltbot의 기능을 가장 세련되게 활용할 수 있는 플랫폼입니다. 
-
-1.  **사전 준비:** 터미널에서 `xcode-select --install`을 실행하여 개발자 도구를 설치합니다.
-2.  **원클릭 설치:** 공식 셸 스크립트를 사용하여 설치를 진행합니다.
+1. 터미널에서 `xcode-select --install` 실행 (개발자 도구 설치)
+2. 원클릭 설치:
     ```bash
-    curl -fsSL [https://molt.bot/install.sh](https://molt.bot/install.sh) | bash
+    curl -fsSL https://molt.bot/install.sh | bash
     ```
-3.  **경로 적용:** 설치 후 `exec zsh`를 실행하여 설정을 반영합니다.
-4.  **메뉴바 앱 활용:** macOS 전용 메뉴바 앱을 통해 게이트웨이 상태를 모니터링하고 'Talk Mode'를 활성화할 수 있습니다.
-
-### 3-2. Windows 환경 (WSL2 전략)
-
-![Windows 시스템 구성](https://images.unsplash.com/photo-1633419461186-7d40a38105ec?auto=format&fit=crop&w=1200&q=80){:.centered width="600px"}
-
-윈도우 환경에서는 유닉스 기반 명령과의 호환성을 위해 **WSL2(Ubuntu 24.04 LTS)** 사용이 강력하게 권장됩니다.
-
-1.  **WSL2 활성화:** PowerShell(관리자)에서 `wsl --install`을 실행하고 재부팅합니다.
-2.  **Node.js 설치:** Ubuntu 터미널에서 Node.js v22를 설치합니다.
-3.  **CLI 설치:** `npm install -g moltbot@latest` 명령어를 통해 전역 설치를 진행합니다.
-4.  **데몬 등록:** `--install-daemon` 플래그를 사용하여 시스템 시작 시 자동 실행되도록 설정합니다.
+3. 설치 후 `exec zsh` 실행해서 설정 반영
+4. macOS 전용 메뉴바 앱으로 게이트웨이 상태 모니터링 및 Talk Mode 활성화 가능
 
 ---
 
-## 4. 온보딩 및 AI 프로바이더 구성
+## Windows 설치 (WSL2 방식)
 
-설치가 완료되었다면 `moltbot onboard --install-daemon` 명령어를 통해 초기 구성을 시작합니다. Moltbot의 핵심은 특정 모델에 종속되지 않는 유연성입니다.
+Windows는 WSL2 경유가 공식 권장 방식이다.
 
-* **Anthropic (Claude 4.5):** 에이전트의 지시 이행 능력과 보안성이 가장 뛰어납니다.
-* **OpenAI (GPT-5):** 빠른 도구 호출 속도와 범용성이 강점입니다.
-* **Ollama (Local):** 완전한 오프라인 환경을 구축하여 데이터 유출을 원천 차단합니다.
-
-온보딩 과정에서 **'모델 페일오버(Model Failover)'**를 활성화하면 주 모델 오류 시 보조 모델로 자동 전환되어 서비스 연속성을 확보할 수 있습니다.
-
----
-
-## 5. 보안 아키텍처: 'Spicy'한 리스크에 대비하기
-
-![사이버 보안](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80){:.centered width="600px"}
-
-시스템 셸 액세스 권한을 가진 에이전트를 구동하는 것은 개발자의 표현대로 **'매콤한(Spicy) 보안 리스크'**를 동반합니다. 이를 방어하기 위해 Moltbot은 강력한 보안 계층을 제공합니다.
-
-1.  **페어링(Pairing) 시스템:** 신뢰할 수 없는 접근을 차단하기 위해 8자리의 페어링 코드를 통한 명시적 승인 절차를 거칩니다.
-2.  **도커 샌드박싱:** 위험한 작업이나 외부 스크립트 실행 시 호스트 시스템과 격리된 **Docker 컨테이너** 내부에서만 동작하도록 설정하여 물리적 장벽을 구축합니다.
-3.  **테일스케일(Tailscale) 연동:** 공인 IP 노출 없이 전용 VPN망을 통해서만 게이트웨이에 접근하도록 설정하는 것이 안전합니다.
+1. PowerShell(관리자)에서 `wsl --install` 실행 후 재부팅
+2. Ubuntu 터미널에서 Node.js v22 설치
+3. CLI 전역 설치:
+    ```bash
+    npm install -g moltbot@latest
+    ```
+4. 데몬 등록 (시스템 시작 시 자동 실행):
+    ```bash
+    moltbot --install-daemon
+    ```
 
 ---
 
-## 마치며: 자가 진화하는 개인용 OS의 시대
+## 온보딩 및 LLM 연결
 
-Moltbot은 단순한 소프트웨어를 넘어 사용자와 함께 성장하는 개인용 AI 운영체제로 진화하고 있습니다. 특히 **ClawdHub**를 통해 공유되는 다양한 '스킬(Skills)'은 에이전트가 웹 검색, 브라우저 자동화, 생산성 도구 연동 등을 수행할 수 있게 합니다.
+설치 완료 후:
+```bash
+moltbot onboard --install-daemon
+```
 
-성공적인 운영의 핵심은 보안과 편의성 사이의 균형입니다. 본 가이드의 절차를 숙지하여 자신만의 안전하고 지능적인 에이전트 생태계를 구축하시길 바랍니다.
+지원하는 LLM 백엔드:
+* **Anthropic (Claude 4.5):** 에이전트 지시 이행과 보안성이 가장 안정적
+* **OpenAI (GPT-5):** 빠른 도구 호출 속도, 범용성
+* **Ollama (Local):** 완전 오프라인, 데이터 유출 차단
+
+온보딩에서 '모델 페일오버(Model Failover)'를 활성화하면 주 모델 오류 시 보조 모델로 자동 전환된다.
+
+---
+
+## 보안 설정: 반드시 해야 할 것들
+
+내 컴퓨터 전권을 AI에게 주는 구조라서 보안은 기본이다.
+
+1. **페어링 코드:** 8자리 코드를 통한 명시적 승인 — 낯선 접근 차단
+2. **Docker 샌드박싱:** 위험하거나 외부 스크립트 실행은 Docker 컨테이너 안에서만. 호스트 시스템과 격리
+3. **Tailscale 연동:** 공인 IP를 노출하지 않고 전용 VPN망으로만 게이트웨이에 접근
+
+이 세 가지 없이 그냥 실행하는 건 추천하지 않는다.
+
+---
+
+## 유지보수 명령어
+
+```bash
+moltbot doctor    # 시스템 진단
+moltbot status    # 상태 확인
+moltbot update    # 최신 업데이트
+moltbot restart   # 에이전트 재시작
+```
 
 {% include ad-inpost.html %}
-
----
-**유지보수 필수 명령어**
-* 시스템 진단: `moltbot doctor`
-* 상태 확인: `moltbot status`
-* 최신 업데이트: `moltbot update`
-* 에이전트 재시작: `moltbot restart`
-
